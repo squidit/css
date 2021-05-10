@@ -1,0 +1,73 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+figure {
+  margin: 0;
+}
+
+p,
+a,
+span,
+li,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+button,
+select {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--gray_fake);
+  margin: 0;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+a {
+  color: blue;
+  display: inline-block;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 auto 15px;
+  color: black;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 18px;
+}
