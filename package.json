@@ -15,6 +15,11 @@
     "js/{src}/**/*.{js,map}",
     "scss/**/*.scss"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run dist"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.2.5",
@@ -23,6 +28,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
+    "husky": "^6.0.0",
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",

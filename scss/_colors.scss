@@ -1,5 +1,37 @@
 /* Sass Vars */
+$black:      #31353B !default;
+$white:      #ECEFF4 !default;
+$gray:       #ACB5BD !default;
+$grayLight:  #DDE2E5 !default;
+$grayDark:   #495057 !default;
+$pink:       #E94589 !default;
+$green:      #01ED6E !default;
+$yellow:     #FED708 !default;
+$red:        #EE3030 !default;
+$blue:       #5E9BFF !default;
 /* Sass Vars */
 
 /* CSS Vars */
+:root {
+  --white:          #{$white};
+  --black:          #{$black};
+  --gray:           #{$gray};
+  --gray_light:     #{$grayLight};
+  --graypink_dark:  #{$grayDark};
+  --pink:           #{$pink};
+  --pink_light:     #{lighten($pink, 15%)};
+  --pink_dark:      #{darken($pink, 15%)};
+  --green:          #{$green};
+  --green_light:    #{lighten($green, 15%)};
+  --green_dark:     #{darken($green, 15%)};
+  --yellow:         #{$yellow};
+  --yellow_light:   #{lighten($yellow, 15%)};
+  --yellow_dark:    #{darken($yellow, 15%)};
+  --red:            #{$red};
+  --red_light:      #{lighten($red, 15%)};
+  --red_dark:       #{darken($red, 15%)};
+  --blue:           #{$blue};
+  --blue_light:     #{lighten($blue, 15%)};
+  --blue_dark:      #{darken($blue, 15%)};
+}
 /* CSS Vars */

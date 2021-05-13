@@ -31,7 +31,7 @@ gulp.task('watch-js', function(done){
 })
 
 gulp.task('watch', function(done){
-  gulp.watch('scss/squid.scss', gulp.series('sass'))
+  gulp.watch('scss/*.scss', gulp.series('sass'))
   gulp.watch('js/*.js', gulp.series('concat'))
   done()
 })
