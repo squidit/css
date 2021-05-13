@@ -5,9 +5,10 @@
     "start": "gulp watch",
     "css": "sass scss/squid.scss:dist/css/squid.min.css --style compressed",
     "css:watch": "sass scss/squid.scss:dist/css/squid.min.css --style compressed --watch",
-    "js": "uglifyjs js/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
+    "js": "uglifyjs js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
     "js:watch": "gulp watch-js",
-    "dist": "npm-run-all --parallel css js"
+    "dist": "npm-run-all --parallel css js",
+    "lint": "npx eslint ./js/*.js"
   },
   "private": false,
   "files": [
@@ -17,13 +18,17 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "npm run dist"
+      "pre-commit": "npm run lint && npm run dist"
     }
   },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
@@ -47,6 +52,6 @@
     "type": "git",
     "url": "git+https://github.com/squidit/front-end.git"
   },
-  "main": "dist/js/squid.js",
-  "style": "dist/css/squid.css"
+  "main": "dist/js/squid.min.js",
+  "style": "dist/css/squid.min.css"
 }
