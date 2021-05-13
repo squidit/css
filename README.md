@@ -1,1 +1,22 @@
 # Squid Front-End
+
+## Usage
+
+// TODO
+
+## Developtment
+
+1. Install npm dependences
+
+`npm install`
+
+2. Install Husky, Eslint, Sass, Gulp and Uglifyjs Globally
+    1. `npm install husky -g`
+    2. `npm install eslint -g`
+    3. `npm install sass -g`
+    4. `npm install gulp -g`
+    5. `npm install uglifyjs -g`
+
+3. Run `npm start` to watch `.scss` and `.js` files
+
+4. On commit `husky` will generate the `dist` files and `lint` `js` files
