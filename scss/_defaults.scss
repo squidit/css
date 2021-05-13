@@ -10,6 +10,7 @@ p,
 a,
 span,
 li,
+ol,
 label,
 h1,
 h2,
@@ -20,10 +21,12 @@ h6,
 input,
 textarea,
 button,
-select {
+select,
+div {
   font-size: 14px;
   text-decoration: none;
   color: var(--gray_fake);
+  font-weight: 400;
   margin: 0;
   &:hover {
     text-decoration: none;
@@ -46,28 +49,29 @@ h5,
 h6 {
   margin: 0 auto 15px;
   color: black;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 48px;
-}
-
-h3 {
-  font-size: 40px;
-}
-
-h4 {
-  font-size: 32px;
-}
-
-h5 {
   font-size: 24px;
 }
 
-h6 {
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
   font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
 }
