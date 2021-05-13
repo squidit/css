@@ -3473,7 +3473,7 @@ select,
 div {
   font-size: 14px;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-weight: 400;
   margin: 0; }
   p:hover,
@@ -3508,7 +3508,7 @@ h4,
 h5,
 h6 {
   margin: 0 auto 15px;
-  color: black;
+  color: var(--black);
   font-weight: 700; }
 
 h1 {
