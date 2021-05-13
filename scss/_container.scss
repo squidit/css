@@ -1,0 +1,31 @@
+$breakpointXs:  0;
+$breakpointSm:  576px;
+$breakpointMd:  768px;
+$breakpointLg:  992px;
+$breakpointXl:  1200px;
+
+.container-fluid, .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  @media (max-width: $breakpointXl) {
+    max-width: 1140px;
+  }
+  @media (max-width: $breakpointLg) {
+    max-width: 960px;
+  }
+  @media (max-width: $breakpointMd) {
+    max-width: 720px;
+  }
+  @media (max-width: $breakpointSm) {
+    max-width: 540px;
+  }
+  @media (max-width: $breakpointXs) {
+    max-width: initial;
+  }
+}
