@@ -5,7 +5,7 @@ var concat = require('gulp-concat')
 
 gulp.task('sass', function(done){
   gulp.src('scss/squid.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass())
     .pipe(gulp.dest('dist/css'))
     done()
 })

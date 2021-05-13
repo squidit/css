@@ -1,0 +1,101 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$gutter;
+  margin-left: -$gutter;
+  &>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  &.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    &>* {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.col,
+*[class*="col-"] {
+  position: relative;
+  width: 100%;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@mixin make-col($size, $columns: $grid-columns) {
+  flex: 0 0 percentage($size / $columns);
+  max-width: percentage($size / $columns);
+}
+
+@mixin make-col-auto() {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+@mixin make-col-offset($size, $columns: $grid-columns) {
+  $num: $size / $columns;
+  margin-left: if($num == 0, 0, percentage($num));
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $columns: 24;
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  @if $columns > 0 {
+    @for $i from 1 through $columns {
+      .col#{$infix}-#{$i} {
+        @extend .col;
+      }
+    }
+  }
+  .col#{$infix},
+  .col#{$infix}-auto {
+    @extend .col;
+  }
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    .col#{$infix} {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .col#{$infix}-auto {
+      @include make-col-auto();
+    }
+    @if $columns > 0 {
+      @for $i from 1 through $columns {
+        .col#{$infix}-#{$i} {
+          @include make-col($i, $columns);
+        }
+      }
+    }
+    .order#{$infix}-first {
+      order: -1;
+    }
+    .order#{$infix}-last {
+      order: $columns + 1;
+    }
+    @for $i from 0 through $columns {
+      .order#{$infix}-#{$i} { order: $i; }
+    }
+    @if $columns > 0 {
+      @for $i from 0 through ($columns - 1) {
+        @if not ($infix == "" and $i == 0) {
+          .offset#{$infix}-#{$i} {
+            @include make-col-offset($i, $columns);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,37 +1,80 @@
 /* Sass Vars */
+$amoutLigthen: 15%;
+$amountDarken: 15%;
+
 $black:      #31353B !default;
 $white:      #ECEFF4 !default;
 $gray:       #ACB5BD !default;
 $grayLight:  #DDE2E5 !default;
 $grayDark:   #495057 !default;
 $pink:       #E94589 !default;
+$lilac:      #7C70D1 !default;
+$cian:       #5ACAED !default;
 $green:      #01ED6E !default;
 $yellow:     #FED708 !default;
 $red:        #EE3030 !default;
 $blue:       #5E9BFF !default;
+
+$colors: (
+  black: (
+    base: $black
+  ),
+  white: (
+    base: $white
+  ),
+  gray: (
+    base: $gray,
+    light: $grayLight,
+    dark: $grayDark
+  ),
+  pink: (
+    base: $pink,
+    light: lighten($pink, $amoutLigthen),
+    dark: darken($pink, $amountDarken)
+  ),
+  lilac: (
+    base: $lilac,
+    light: lighten($lilac, $amoutLigthen),
+    dark: darken($lilac, $amountDarken)
+  ),
+  cian: (
+    base: $cian,
+    light: lighten($cian, $amoutLigthen),
+    dark: darken($cian, $amountDarken) 
+  ),
+  green: (
+    base: $green,
+    light: lighten($green, $amoutLigthen),
+    dark: darken($green, $amountDarken)
+  ),
+  yellow: (
+    base: $yellow,
+    light: lighten($yellow, $amoutLigthen),
+    dark: darken($yellow, $amountDarken)
+  ),
+  red: (
+    base: $red,
+    light: lighten($red, $amoutLigthen),
+    dark: darken($red, $amountDarken)
+  ),
+  blue: (
+    base: $blue,
+    light: lighten($blue, $amoutLigthen),
+    dark: darken($blue, $amountDarken)
+  )
+) !default;
 /* Sass Vars */
 
 /* CSS Vars */
 :root {
-  --white:          #{$white};
-  --black:          #{$black};
-  --gray:           #{$gray};
-  --gray_light:     #{$grayLight};
-  --graypink_dark:  #{$grayDark};
-  --pink:           #{$pink};
-  --pink_light:     #{lighten($pink, 15%)};
-  --pink_dark:      #{darken($pink, 15%)};
-  --green:          #{$green};
-  --green_light:    #{lighten($green, 15%)};
-  --green_dark:     #{darken($green, 15%)};
-  --yellow:         #{$yellow};
-  --yellow_light:   #{lighten($yellow, 15%)};
-  --yellow_dark:    #{darken($yellow, 15%)};
-  --red:            #{$red};
-  --red_light:      #{lighten($red, 15%)};
-  --red_dark:       #{darken($red, 15%)};
-  --blue:           #{$blue};
-  --blue_light:     #{lighten($blue, 15%)};
-  --blue_dark:      #{darken($blue, 15%)};
+  @each $colorName, $colorGroup in $colors {
+    @each $tone, $color in $colorGroup {
+      @if ($tone == base) {
+        --#{"" + $colorName}: #{$color};
+      } @else {
+        --#{"" + $colorName}_#{$tone}: #{$color};
+      }
+    }
+  }
 }
 /* CSS Vars */

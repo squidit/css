@@ -20,3 +20,7 @@
 3. Run `npm start` to watch `.scss` and `.js` files
 
 4. On commit `husky` will generate the `dist` files and `lint` `js` files
+
+## Animate.css
+
+> This framework uses Animate.css lib, see docs [here](https://animate.style/)

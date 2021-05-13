@@ -1,31 +1,24 @@
-$breakpointXs:  0;
-$breakpointSm:  576px;
-$breakpointMd:  768px;
-$breakpointLg:  992px;
-$breakpointXl:  1200px;
+$container-sizes: (
+  xs: initial,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
 
 .container-fluid, .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: $gutter;
+  padding-left: $gutter;
   margin-right: auto;
   margin-left: auto;
 }
 
 .container {
-  @media (max-width: $breakpointXl) {
-    max-width: 1140px;
-  }
-  @media (max-width: $breakpointLg) {
-    max-width: 960px;
-  }
-  @media (max-width: $breakpointMd) {
-    max-width: 720px;
-  }
-  @media (max-width: $breakpointSm) {
-    max-width: 540px;
-  }
-  @media (max-width: $breakpointXs) {
-    max-width: initial;
+  @each $name, $value in $grid-breakpoints {
+    @media (min-width: $value) {
+      max-width: map-get($container-sizes, $name);
+    }
   }
 }

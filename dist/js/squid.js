@@ -1,7 +1,7 @@
-loadjs('https://kit.fontawesome.com/91c8580ef2.js')
+loadScript('https://kit.fontawesome.com/91c8580ef2.js')
 
 
-function loadjs (file) {
+function loadScript (file) {
   const script = document.createElement('script')
   script.type = 'text/javascript'
   script.src = file
