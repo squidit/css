@@ -25,6 +25,10 @@ gulp.task('scripts', function(done){
     done()
 })
 
+gulp.task('watch-js', function(done){
+  gulp.watch('js/*.js', gulp.series('concat'))
+  done()
+})
 
 gulp.task('watch', function(done){
   gulp.watch('scss/squid.scss', gulp.series('sass'))

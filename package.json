@@ -6,7 +6,7 @@
     "css": "sass scss/squid.scss:dist/css/squid.min.css --style compressed",
     "css:watch": "sass scss/squid.scss:dist/css/squid.min.css --style compressed --watch",
     "js": "uglifyjs js/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
-    "js:watch": "gulp scripts",
+    "js:watch": "gulp watch-js",
     "dist": "npm-run-all --parallel css js"
   },
   "private": false,
@@ -32,7 +32,6 @@
   "keywords": [
     "css",
     "sass",
-    "mobile-first",
     "responsive",
     "front-end",
     "framework",
