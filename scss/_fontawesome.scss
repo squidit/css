@@ -7,7 +7,8 @@
 .far,
 .fal,
 .fad,
-.fab {
+.fab,
+.fasq {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -125,32 +126,26 @@
             transform: rotate(360deg); } }
 
 .fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
 
 .fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
 .fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg); }
 
 .fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1); }
 
 .fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
           transform: scale(1, -1); }
 
 .fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1); }
 
@@ -12752,6 +12747,7 @@ readers do not read off random characters that represent icons */
 
 .fad.fa-yin-yang:after {
   content: "\10f6ad"; }
+
 @font-face {
   font-family: 'Font Awesome 5 Pro';
   font-style: normal;
@@ -12781,6 +12777,27 @@ readers do not read off random characters that represent icons */
   font-display: block;
   src: url("../fonts/fontawesome/fa-solid-900.eot");
   src: url("../fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fasq {
+  font-family: 'Font Squid';
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Font Squid';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/squid/squid.eot");
+  src: 
+    url("../fonts/squid/squid.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/squid/squid.woff") format("woff"),
+    url("../fonts/squid/squid.ttf") format("truetype"),
+    url("../fonts/squid/squid.svg#fontawesome") format("svg");
+}
+  
+.fasq.fa-squid:after {
+  content: "\eaeb"; }
+
 
 .fa,
 .fas {

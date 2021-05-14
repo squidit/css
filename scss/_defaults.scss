@@ -10,6 +10,12 @@ figure {
   margin: 0;
 }
 
+body {
+  font-size: 14px;
+  max-width: 100%;
+  display: block;
+}
+
 p,
 a,
 span,
@@ -38,7 +44,7 @@ div {
 }
 
 a {
-  color: blue;
+  color: var(--blue_dark);
   display: inline-block;
   &:hover {
     text-decoration: underline;
@@ -51,8 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 auto 15px;
-  color: var(--black);
+  margin: 0 auto 1rem;
   font-weight: 700;
 }
 
