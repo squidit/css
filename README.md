@@ -4,7 +4,7 @@
 
 > Squid CSS Framework.
 
-![Squid](https://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg)
+![https://squidit.com.br](https://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg)
 
 ## Usage
 
