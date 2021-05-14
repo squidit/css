@@ -1,4 +1,10 @@
-# Squid Front-End
+# CSS - Components Squid Style
+
+## About
+
+> Squid CSS Framework.
+
+![Squid](http://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg)
 
 ## Usage
 
