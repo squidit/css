@@ -24,3 +24,7 @@
 ## Animate.css
 
 > This framework uses Animate.css lib, see docs [here](https://animate.style/)
+
+## Grid System
+
+> This framework uses a Grid based on Boostrap 5 Grid System with modifications, see docs [here](https://getbootstrap.com/docs/5.0/)

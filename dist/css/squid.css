@@ -138,6 +138,242 @@
   --blue_dark: #126bff; }
 
 /* CSS Vars */
+/* Classes */
+.black {
+  color: #31353B !important; }
+
+.background-black {
+  background-color: #31353B !important; }
+
+.border-black {
+  border-color: #31353B !important; }
+
+.white {
+  color: #ECEFF4 !important; }
+
+.background-white {
+  background-color: #ECEFF4 !important; }
+
+.border-white {
+  border-color: #ECEFF4 !important; }
+
+.gray {
+  color: #ACB5BD !important; }
+
+.background-gray {
+  background-color: #ACB5BD !important; }
+
+.border-gray {
+  border-color: #ACB5BD !important; }
+
+.gray-light {
+  color: #DDE2E5 !important; }
+
+.background-gray-light {
+  background-color: #DDE2E5 !important; }
+
+.border-gray-light {
+  border-color: #DDE2E5 !important; }
+
+.gray-dark {
+  color: #495057 !important; }
+
+.background-gray-dark {
+  background-color: #495057 !important; }
+
+.border-gray-dark {
+  border-color: #495057 !important; }
+
+.pink {
+  color: #E94589 !important; }
+
+.background-pink {
+  background-color: #E94589 !important; }
+
+.border-pink {
+  border-color: #E94589 !important; }
+
+.pink-light {
+  color: #f189b4 !important; }
+
+.background-pink-light {
+  background-color: #f189b4 !important; }
+
+.border-pink-light {
+  border-color: #f189b4 !important; }
+
+.pink-dark {
+  color: #ca1862 !important; }
+
+.background-pink-dark {
+  background-color: #ca1862 !important; }
+
+.border-pink-dark {
+  border-color: #ca1862 !important; }
+
+.lilac {
+  color: #7C70D1 !important; }
+
+.background-lilac {
+  background-color: #7C70D1 !important; }
+
+.border-lilac {
+  border-color: #7C70D1 !important; }
+
+.lilac-light {
+  color: #b1aae4 !important; }
+
+.background-lilac-light {
+  background-color: #b1aae4 !important; }
+
+.border-lilac-light {
+  border-color: #b1aae4 !important; }
+
+.lilac-dark {
+  color: #4b3cb9 !important; }
+
+.background-lilac-dark {
+  background-color: #4b3cb9 !important; }
+
+.border-lilac-dark {
+  border-color: #4b3cb9 !important; }
+
+.cian {
+  color: #5ACAED !important; }
+
+.background-cian {
+  background-color: #5ACAED !important; }
+
+.border-cian {
+  border-color: #5ACAED !important; }
+
+.cian-light {
+  color: #9fe0f5 !important; }
+
+.background-cian-light {
+  background-color: #9fe0f5 !important; }
+
+.border-cian-light {
+  border-color: #9fe0f5 !important; }
+
+.cian-dark {
+  color: #19b2e2 !important; }
+
+.background-cian-dark {
+  background-color: #19b2e2 !important; }
+
+.border-cian-dark {
+  border-color: #19b2e2 !important; }
+
+.green {
+  color: #01ED6E !important; }
+
+.background-green {
+  background-color: #01ED6E !important; }
+
+.border-green {
+  border-color: #01ED6E !important; }
+
+.green-light {
+  color: #3cfe96 !important; }
+
+.background-green-light {
+  background-color: #3cfe96 !important; }
+
+.border-green-light {
+  border-color: #3cfe96 !important; }
+
+.green-dark {
+  color: #01a14b !important; }
+
+.background-green-dark {
+  background-color: #01a14b !important; }
+
+.border-green-dark {
+  border-color: #01a14b !important; }
+
+.yellow {
+  color: #FED708 !important; }
+
+.background-yellow {
+  background-color: #FED708 !important; }
+
+.border-yellow {
+  border-color: #FED708 !important; }
+
+.yellow-light {
+  color: #fee354 !important; }
+
+.background-yellow-light {
+  background-color: #fee354 !important; }
+
+.border-yellow-light {
+  border-color: #fee354 !important; }
+
+.yellow-dark {
+  color: #b99c01 !important; }
+
+.background-yellow-dark {
+  background-color: #b99c01 !important; }
+
+.border-yellow-dark {
+  border-color: #b99c01 !important; }
+
+.red {
+  color: #EE3030 !important; }
+
+.background-red {
+  background-color: #EE3030 !important; }
+
+.border-red {
+  border-color: #EE3030 !important; }
+
+.red-light {
+  color: #f47777 !important; }
+
+.background-red-light {
+  background-color: #f47777 !important; }
+
+.border-red-light {
+  border-color: #f47777 !important; }
+
+.red-dark {
+  color: #c21010 !important; }
+
+.background-red-dark {
+  background-color: #c21010 !important; }
+
+.border-red-dark {
+  border-color: #c21010 !important; }
+
+.blue {
+  color: #5E9BFF !important; }
+
+.background-blue {
+  background-color: #5E9BFF !important; }
+
+.border-blue {
+  border-color: #5E9BFF !important; }
+
+.blue-light {
+  color: #abcbff !important; }
+
+.background-blue-light {
+  background-color: #abcbff !important; }
+
+.border-blue-light {
+  border-color: #abcbff !important; }
+
+.blue-dark {
+  color: #126bff !important; }
+
+.background-blue-dark {
+  background-color: #126bff !important; }
+
+.border-blue-dark {
+  border-color: #126bff !important; }
+
+/* Classes */
 :root {
   --animate-duration:1s;
   --animate-delay:1s;
@@ -3528,6 +3764,189 @@ h5 {
 
 h6 {
   font-size: 16px; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-justify {
+  text-align: justify !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-thin {
+  font-weight: 100 !important; }
+
+.text-light {
+  font-weight: 300 !important; }
+
+.text-regular {
+  font-weight: 400 !important; }
+
+.text-medium {
+  font-weight: 500 !important; }
+
+.text-bold {
+  font-weight: 700 !important; }
+
+.text-black {
+  font-weight: 900 !important; }
+
+.box-shadow-default {
+  box-shadow: 0px 4px 12px -5px var(--gray); }
+
+.text-shadow-default {
+  text-shadow: 0px 4px 12px var(--gray); }
+
+.drop-shadow-default {
+  filter: drop-shadow(0px 4px 12px var(--gray)); }
+
+.display-none {
+  display: none !important; }
+
+.display-inline {
+  display: inline !important; }
+
+.display-block {
+  display: block !important; }
+
+.display-list-item {
+  display: list-item !important; }
+
+.display-inline-block {
+  display: inline-block !important; }
+
+.display-inline-table {
+  display: inline-table !important; }
+
+.display-table {
+  display: table !important; }
+
+.display-table-cell {
+  display: table-cell !important; }
+
+.display-table-column {
+  display: table-column !important; }
+
+.display-table-column-group {
+  display: table-column-group !important; }
+
+.display-table-footer-group {
+  display: table-footer-group !important; }
+
+.display-table-header-group {
+  display: table-header-group !important; }
+
+.display-table-row {
+  display: table-row !important; }
+
+.display-table-row-group {
+  display: table-row-group !important; }
+
+.display-flex {
+  display: flex !important; }
+
+.display-inline-flex {
+  display: inline-flex !important; }
+
+.display-grid {
+  display: grid !important; }
+
+.display-inline-grid {
+  display: inline-grid !important; }
+
+.display-run-in {
+  display: run-in !important; }
+
+.display-inherit {
+  display: inherit !important; }
+
+.align-items-center {
+  align-items: center !important; }
+
+.align-self-center {
+  align-self: center !important; }
+
+.align-items-start {
+  align-items: start !important; }
+
+.align-self-start {
+  align-self: start !important; }
+
+.align-items-end {
+  align-items: end !important; }
+
+.align-self-end {
+  align-self: end !important; }
+
+.align-items-flex-start {
+  align-items: flex-start !important; }
+
+.align-self-flex-start {
+  align-self: flex-start !important; }
+
+.align-items-flex-end {
+  align-items: flex-end !important; }
+
+.align-self-flex-end {
+  align-self: flex-end !important; }
+
+.align-items-unset {
+  align-items: unset !important; }
+
+.align-self-unset {
+  align-self: unset !important; }
+
+.justify-content-center {
+  justify-content: center !important; }
+
+.justify-self-center {
+  justify-self: center !important; }
+
+.justify-content-start {
+  justify-content: start !important; }
+
+.justify-self-start {
+  justify-self: start !important; }
+
+.justify-content-end {
+  justify-content: end !important; }
+
+.justify-self-end {
+  justify-self: end !important; }
+
+.justify-content-flex-start {
+  justify-content: flex-start !important; }
+
+.justify-self-flex-start {
+  justify-self: flex-start !important; }
+
+.justify-content-flex-end {
+  justify-content: flex-end !important; }
+
+.justify-self-flex-end {
+  justify-self: flex-end !important; }
+
+.justify-content-left {
+  justify-content: left !important; }
+
+.justify-self-left {
+  justify-self: left !important; }
+
+.justify-content-right {
+  justify-content: right !important; }
+
+.justify-self-right {
+  justify-self: right !important; }
+
+.justify-content-unset {
+  justify-content: unset !important; }
+
+.justify-self-unset {
+  justify-self: unset !important; }
 
 .container-fluid, .container {
   width: 100%;

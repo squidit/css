@@ -78,3 +78,31 @@ $colors: (
   }
 }
 /* CSS Vars */
+
+/* Classes */
+@each $colorName, $colorGroup in $colors {
+  @each $tone, $color in $colorGroup {
+    @if ($tone == base) {
+      .#{"" + $colorName} {
+        color: #{$color} !important;
+      }
+      .background-#{"" + $colorName} {
+        background-color: #{$color} !important;
+      }
+      .border-#{"" + $colorName} {
+        border-color: #{$color} !important;
+      }
+    } @else {
+      .#{"" + $colorName}-#{$tone} {
+        color: #{$color} !important;
+      }
+      .background-#{"" + $colorName}-#{$tone} {
+        background-color: #{$color} !important;
+      }
+      .border-#{"" + $colorName}-#{$tone} {
+        border-color: #{$color} !important;
+      }
+    }
+  }
+}
+/* Classes */
