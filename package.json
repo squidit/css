@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "start": "gulp watch",
-    "css": "sass scss/squid.scss:dist/css/squid.min.css --style compressed",
-    "css:watch": "sass scss/squid.scss:dist/css/squid.min.css --style compressed --watch",
-    "js": "uglifyjs js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
+    "css": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed",
+    "css:watch": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed --watch",
+    "js": "uglifyjs src/js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
     "js:watch": "gulp watch-js",
     "dist": "npm-run-all --parallel css js",
     "lint": "npx eslint ./js/*.js"
@@ -13,8 +13,8 @@
   "private": false,
   "files": [
     "dist/{css,js}/*.{css,js,map}",
-    "js/{src}/**/*.{js,map}",
-    "scss/**/*.scss"
+    "src/js/**/*.{js,map}",
+    "src/scss/**/*.scss"
   ],
   "husky": {
     "hooks": {

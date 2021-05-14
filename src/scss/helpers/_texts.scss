@@ -19,3 +19,10 @@ $weights: (
     font-weight: $value !important;
   }
 }
+
+.disabled {
+  cursor: not-allowed !important;
+  color: var(--gray) !important;
+  border-color: var(--gray_light) !important;
+  background: var(--gray_light) !important;
+}

@@ -1,0 +1,74 @@
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-weight: 500;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: none;
+  color: var(--white);
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  transition: $transition;
+  &.button-xl {
+    padding: 1rem;
+  }
+  &.button-sm {
+    padding: 0.25rem 1rem;
+  }
+  &:hover, &:focus {
+    outline: none;
+    cursor: pointer;
+    background-color: var(--gray_dark);
+    border: 2px solid var(--gray_dark);
+    &:before {
+      border-color: inherit;
+    }
+  }
+  &.inverted {
+    background-color: white;
+    color: var(--black);
+    &:hover {
+      color: white;
+      background-color: var(--black);
+      border-color: var(--black);
+    }
+  }
+  &[disabled] {
+    @extend .disabled;
+  }
+  @each $colorName, $colorGroup in $colors {
+    &.button-#{"" + $colorName} {
+      background-color: var(--#{"" + $colorName});
+      border-color: var(--#{"" + $colorName});
+      @if ($colorName == yellow or $colorName == cian or $colorName == white) {
+        color: var(--black);
+      }
+      &:hover, &:focus {
+        background-color: var(--#{"" + $colorName + "_dark"});
+        border-color: var(--#{"" + $colorName  + "_dark"});
+        @if ($colorName == black) {
+          background-color: var(--gray_dark);
+          border-color: var(--gray_dark);
+        }
+      }
+    }
+    &.button-#{"" + $colorName}.inverted {
+      color: var(--#{"" + $colorName});
+      background-color: white;
+      border-color: var(--#{"" + $colorName});
+      @if ($colorName == yellow or $colorName == cian or $colorName == white) {
+        
+      }
+      &:hover, &:focus {
+        background-color: var(--#{"" + $colorName});
+        border-color: var(--#{"" + $colorName});
+        color: white;
+        @if ($colorName == yellow or $colorName == cian or $colorName == white) {
+          color: var(--black);
+        }
+      }
+    }
+  }
+}
