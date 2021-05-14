@@ -28,3 +28,7 @@
 ## Grid System
 
 > This framework uses a Grid based on Boostrap 5 Grid System with modifications, see docs [here](https://getbootstrap.com/docs/5.0/)
+
+## Icons
+
+> This framework uses Icons from Font Awersome, see [here](https://fontawesome.com/)
