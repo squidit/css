@@ -16618,7 +16618,7 @@ h6 {
   border-color: var(--gray_light) !important;
   background: var(--gray_light) !important; }
 
-.box-shadow-default {
+.box-shadow-default, .box {
   box-shadow: 0px 4px 12px -5px var(--gray); }
 
 .text-shadow-default {
@@ -18522,3 +18522,10 @@ h6 {
       background-color: var(--blue);
       border-color: var(--blue);
       color: white; }
+
+.box {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0 auto 1rem;
+  overflow: hidden; }
