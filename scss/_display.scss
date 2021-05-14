@@ -1,0 +1,63 @@
+$displayAll:
+  none,
+  inline,
+  block,
+  list-item,
+  inline-block,
+  inline-table,
+  table,
+  table-cell,
+  table-column,
+  table-column-group,
+  table-footer-group,
+  table-header-group,
+  table-row,
+  table-row-group,
+  flex,
+  inline-flex,
+  grid,
+  inline-grid,
+  run-in,
+  inherit !default;
+
+$alignAll: 
+  center,
+  start,
+  end,
+  flex-start,
+  flex-end,
+  unset !default;
+
+$justifyAll: 
+  center,
+  start,
+  end,
+  flex-start,
+  flex-end,
+  left,
+  right,
+  unset, !default;
+
+@each $display in $displayAll {
+  .display-#{"" + $display} {
+    display: $display !important;
+  }
+}
+
+@each $align in $alignAll {
+  .align-items-#{"" + $align} {
+    align-items: $align !important;
+  }
+  .align-self-#{"" + $align} {
+    align-self: $align !important;
+  }
+}
+
+@each $justify in $justifyAll {
+  .justify-content-#{"" + $justify} {
+    justify-content: $justify !important;
+  }
+  .justify-self-#{"" + $justify} {
+    justify-self: $justify !important;
+  }
+}

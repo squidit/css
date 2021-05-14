@@ -1,0 +1,21 @@
+$aligns: center, justify, left, right !default;
+$weights: (
+  thin: 100,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+  black: 900
+) !default;
+
+@each $align in $aligns {
+  .text-#{"" + $align} {
+    text-align: $align !important;
+  }
+}
+
+@each $name, $value in $weights {
+  .text-#{"" + $name} {
+    font-weight: $value !important;
+  }
+}

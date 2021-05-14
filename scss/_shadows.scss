@@ -1,0 +1,13 @@
+
+$configShadow: 0px 4px 12px;
+.box-shadow-default {
+  box-shadow: $configShadow -5px var(--gray);
+}
+
+.text-shadow-default {
+  text-shadow: $configShadow var(--gray);
+}
+
+.drop-shadow-default {
+  filter: drop-shadow($configShadow var(--gray));
+}
