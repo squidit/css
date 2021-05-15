@@ -10,7 +10,7 @@
 
 // TODO
 
-## Developtment
+## Development
 
 1. Install npm dependences
 
