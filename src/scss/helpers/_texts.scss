@@ -26,3 +26,9 @@ $weights: (
   border-color: var(--gray_light) !important;
   background: var(--gray_light) !important;
 }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

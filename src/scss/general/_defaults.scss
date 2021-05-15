@@ -10,7 +10,7 @@ figure {
   margin: 0;
 }
 
-body {
+body, html {
   font-size: 14px;
   line-height: 16px;
   max-width: 100%;
@@ -45,12 +45,24 @@ div {
   }
 }
 
+span,
+a,
+li,
+ol,
+label {
+  font-weight: inherit;
+}
+
 a {
   color: var(--blue_dark);
   display: inline-block;
   &:hover {
     text-decoration: underline;
   }
+}
+
+.border-radius {
+  border-radius: 5px;
 }
 
 h1,
