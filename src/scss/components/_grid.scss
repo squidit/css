@@ -1,14 +1,14 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -$gutter;
-  margin-left: -$gutter;
+  margin-right: -$gutterGrid;
+  margin-left: -$gutterGrid;
   &>* {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: $gutter;
-    padding-left: $gutter;
+    padding-right: $gutterGrid;
+    padding-left: $gutterGrid;
   }
   &.no-spacings {
     margin-right: 0;

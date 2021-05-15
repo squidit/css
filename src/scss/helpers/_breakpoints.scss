@@ -8,7 +8,8 @@ $grid-breakpoints: (
   xxl: 1400px
 ) !default;
 
-$gutter: 1rem;
+$gutter: 1rem !default;
+$gutterGrid: $gutter / 2  !default;
 /* Sass Vars */
 
 /* CSS Vars */
