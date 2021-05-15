@@ -25,6 +25,12 @@
 
 3. Run `npm start` to watch `.scss` and `.js` files
 
+## Production
+
+1. Run `npm run dist`
+
+2. Commit and Push to Git Remote
+
 ## Animate.css
 
 > This framework uses Animate.css lib, see docs [here](https://animate.style/)
