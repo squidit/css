@@ -36,3 +36,7 @@
 ## Icons
 
 > This framework uses Icons from Font Awersome, see [here](https://fontawesome.com/)
+
+## Based Styleguide
+
+> This framework is based on [Squid Styleguide](https://www.figma.com/file/jgIT00DpxPCgaFwxlN7BZv/PADRONIZA%C3%87%C3%83O?node-id=0%3A1)
