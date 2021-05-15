@@ -27,6 +27,12 @@ $weights: (
   background: var(--gray_light) !important;
 }
 
+.readonly {
+  color: var(--black) !important;
+  border-color: var(--gray_light) !important;
+  background: var(--white) !important;
+}
+
 .text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;

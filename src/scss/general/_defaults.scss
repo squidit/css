@@ -48,8 +48,7 @@ div {
 span,
 a,
 li,
-ol,
-label {
+ol {
   font-weight: inherit;
 }
 
@@ -59,6 +58,12 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+label {
+  font-weight: 500;
+  color: var(--gray_dark);
+  @extend .mb-2;
 }
 
 .border-radius {

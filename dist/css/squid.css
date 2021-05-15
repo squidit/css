@@ -16546,8 +16546,7 @@ div {
 span,
 a,
 li,
-ol,
-label {
+ol {
   font-weight: inherit; }
 
 a {
@@ -16555,6 +16554,10 @@ a {
   display: inline-block; }
   a:hover {
     text-decoration: underline; }
+
+label {
+  font-weight: 500;
+  color: var(--gray_dark); }
 
 .border-radius {
   border-radius: 5px; }
@@ -16622,11 +16625,16 @@ h6 {
 .text-black {
   font-weight: 900 !important; }
 
-.disabled, .button[disabled] {
+.disabled, .button[disabled], .input[disabled], .textarea[disabled], .input.disabled, .disabled.textarea {
   cursor: not-allowed !important;
   color: var(--gray) !important;
   border-color: var(--gray_light) !important;
   background: var(--gray_light) !important; }
+
+.readonly, .input[readonly], .textarea[readonly], .input.readonly, .readonly.textarea {
+  color: var(--black) !important;
+  border-color: var(--gray_light) !important;
+  background: var(--white) !important; }
 
 .text-ellipsis {
   overflow: hidden;
@@ -18578,7 +18586,7 @@ h6 {
 .mx-2 {
   margin-right: 0.5rem !important; }
 
-.mb-2,
+.mb-2, label,
 .my-2 {
   margin-bottom: 0.5rem !important; }
 
@@ -19963,19 +19971,19 @@ h6 {
   .px-xxl-7 {
     padding-left: 3rem !important; } }
 
-.scrollbar::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar, .textarea::-webkit-scrollbar {
   width: 7px;
   height: 7px; }
 
-.scrollbar::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track {
   background: var(--gray_light);
   border-radius: 7px; }
 
-.scrollbar::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb {
   background: var(--gray);
   border-radius: 7px; }
 
-.scrollbar::-webkit-scrollbar-thumb:hover {
+.scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
   background: var(--gray_dark); }
 
 .button {
@@ -20157,6 +20165,66 @@ h6 {
       background-color: var(--blue);
       border-color: var(--blue);
       color: white; }
+
+.input, .textarea {
+  border-radius: 8px;
+  min-height: 40px;
+  border: 1px solid var(--gray);
+  background: white;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease; }
+  .input:focus, .textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 1px var(--pink);
+    border-color: #E94589; }
+  .input.error, .error.textarea {
+    border-width: 1px;
+    border-color: var(--red); }
+    .input.error:focus, .error.textarea:focus {
+      box-shadow: 0px 0px 0px 1px var(--red); }
+
+.textarea {
+  min-height: 80px;
+  resize: none;
+  overflow: auto; }
+
+.wrapper-input {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%; }
+  .wrapper-input .input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--gray);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 8px; }
+    .wrapper-input .input-group-text:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .wrapper-input .input-group-text:last-child {
+      margin-left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+  .wrapper-input .input, .wrapper-input .textarea, .wrapper-input .textarea {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0; }
+    .wrapper-input .input:not(:first-child), .wrapper-input .textarea:not(:first-child), .wrapper-input .textarea:not(:first-child) {
+      margin-left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+    .wrapper-input .input:not(:last-child), .wrapper-input .textarea:not(:last-child), .wrapper-input .textarea:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
 
 .box {
   background: white;
