@@ -10,11 +10,19 @@
     box-shadow: 0px 0px 0px 1px var(--pink);
     border-color: $pink;
   }
-  &.error {
+  &.error,
+  &:invalid {
     border-width: 1px;
     border-color: var(--red);
     &:focus {
       box-shadow: 0px 0px 0px 1px var(--red);
+    }
+  }
+  &.valid {
+    border-width: 1px;
+    border-color: var(--green);
+    &:focus {
+      box-shadow: 0px 0px 0px 1px var(--green);
     }
   }
   &[readonly],
@@ -63,19 +71,44 @@
       border-bottom-left-radius: 0;
     }
   }
-  .input, .textarea {
+  &>:not(:first-child):not(.box-validation):not(.tooltip) {
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  &>:not(:last-child):not(.box-validation):not(.tooltip) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .input, .textarea, .select {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     min-width: 0;
-    &:not(:first-child) {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+  }
+}
+
+.box-validation {
+  display: none;
+  width: 100%;
+  margin-top: $gutter / 4;
+  font-size: 12px;
+  color: var(--gray_dark);
+  i {
+    font-size: 11px;
+    margin: 0 ($gutter / 4) 0 0;
+  }
+  &.box-invalid {
+    i {
+      color: var(--red);
     }
-    &:not(:last-child) {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+  }
+  &.box-valid {
+    i {
+      color: var(--green);
     }
+  }
+  &.show {
+    display: block;
   }
 }

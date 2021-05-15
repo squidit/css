@@ -20177,11 +20177,16 @@ h6 {
     outline: none;
     box-shadow: 0px 0px 0px 1px var(--pink);
     border-color: #E94589; }
-  .input.error, .error.textarea {
+  .input.error, .error.textarea, .input:invalid, .textarea:invalid {
     border-width: 1px;
     border-color: var(--red); }
-    .input.error:focus, .error.textarea:focus {
+    .input.error:focus, .error.textarea:focus, .input:invalid:focus, .textarea:invalid:focus {
       box-shadow: 0px 0px 0px 1px var(--red); }
+  .input.valid, .valid.textarea {
+    border-width: 1px;
+    border-color: var(--green); }
+    .input.valid:focus, .valid.textarea:focus {
+      box-shadow: 0px 0px 0px 1px var(--green); }
 
 .textarea {
   min-height: 80px;
@@ -20213,18 +20218,34 @@ h6 {
       margin-left: -1px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
-  .wrapper-input .input, .wrapper-input .textarea, .wrapper-input .textarea {
+  .wrapper-input > :not(:first-child):not(.box-validation):not(.tooltip) {
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .wrapper-input > :not(:last-child):not(.box-validation):not(.tooltip) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .wrapper-input .input, .wrapper-input .textarea, .wrapper-input .textarea, .wrapper-input .select {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     min-width: 0; }
-    .wrapper-input .input:not(:first-child), .wrapper-input .textarea:not(:first-child), .wrapper-input .textarea:not(:first-child) {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0; }
-    .wrapper-input .input:not(:last-child), .wrapper-input .textarea:not(:last-child), .wrapper-input .textarea:not(:last-child) {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0; }
+
+.box-validation {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 12px;
+  color: var(--gray_dark); }
+  .box-validation i {
+    font-size: 11px;
+    margin: 0 0.25rem 0 0; }
+  .box-validation.box-invalid i {
+    color: var(--red); }
+  .box-validation.box-valid i {
+    color: var(--green); }
+  .box-validation.show {
+    display: block; }
 
 .box {
   background: white;
