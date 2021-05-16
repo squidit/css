@@ -10,8 +10,7 @@
     box-shadow: 0px 0px 0px 1px var(--pink);
     border-color: $pink;
   }
-  &.error,
-  &:invalid {
+  &.error {
     border-width: 1px;
     border-color: var(--red);
     &:focus {
@@ -53,22 +52,16 @@
     display: flex;
     align-items: center;
     padding: ($gutter / 2) $gutter;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--gray);
+   
     text-align: center;
     white-space: nowrap;
-    background-color: var(--white);
     border: 1px solid var(--gray);
     border-radius: 8px;
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-    &:last-child {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+    &:not(button) {
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--gray);
+      background-color: var(--white);
     }
   }
   &>:not(:first-child):not(.box-validation):not(.tooltip) {

@@ -16625,13 +16625,13 @@ h6 {
 .text-black {
   font-weight: 900 !important; }
 
-.disabled, .button[disabled], .input[disabled], .textarea[disabled], .input.disabled, .disabled.textarea {
+.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select {
   cursor: not-allowed !important;
   color: var(--gray) !important;
   border-color: var(--gray_light) !important;
   background: var(--gray_light) !important; }
 
-.readonly, .input[readonly], .textarea[readonly], .input.readonly, .readonly.textarea {
+.readonly, .input[readonly], .textarea[readonly], .select[readonly], .input.readonly, .readonly.textarea, .readonly.select {
   color: var(--black) !important;
   border-color: var(--gray_light) !important;
   background: var(--white) !important; }
@@ -20166,26 +20166,26 @@ h6 {
       border-color: var(--blue);
       color: white; }
 
-.input, .textarea {
+.input, .textarea, .select {
   border-radius: 8px;
   min-height: 40px;
   border: 1px solid var(--gray);
   background: white;
   padding: 0.5rem 1rem;
   transition: all 0.3s ease; }
-  .input:focus, .textarea:focus {
+  .input:focus, .textarea:focus, .select:focus {
     outline: none;
     box-shadow: 0px 0px 0px 1px var(--pink);
     border-color: #E94589; }
-  .input.error, .error.textarea, .input:invalid, .textarea:invalid {
+  .input.error, .error.textarea, .error.select {
     border-width: 1px;
     border-color: var(--red); }
-    .input.error:focus, .error.textarea:focus, .input:invalid:focus, .textarea:invalid:focus {
+    .input.error:focus, .error.textarea:focus, .error.select:focus {
       box-shadow: 0px 0px 0px 1px var(--red); }
-  .input.valid, .valid.textarea {
+  .input.valid, .valid.textarea, .valid.select {
     border-width: 1px;
     border-color: var(--green); }
-    .input.valid:focus, .valid.textarea:focus {
+    .input.valid:focus, .valid.textarea:focus, .valid.select:focus {
       box-shadow: 0px 0px 0px 1px var(--green); }
 
 .textarea {
@@ -20203,21 +20203,15 @@ h6 {
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--gray);
     text-align: center;
     white-space: nowrap;
-    background-color: var(--white);
     border: 1px solid var(--gray);
     border-radius: 8px; }
-    .wrapper-input .input-group-text:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0; }
-    .wrapper-input .input-group-text:last-child {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0; }
+    .wrapper-input .input-group-text:not(button) {
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--gray);
+      background-color: var(--white); }
   .wrapper-input > :not(:first-child):not(.box-validation):not(.tooltip) {
     margin-left: -1px;
     border-top-left-radius: 0;
@@ -20225,7 +20219,7 @@ h6 {
   .wrapper-input > :not(:last-child):not(.box-validation):not(.tooltip) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .wrapper-input .input, .wrapper-input .textarea, .wrapper-input .textarea, .wrapper-input .select {
+  .wrapper-input .input, .wrapper-input .textarea, .wrapper-input .select, .wrapper-input .textarea, .wrapper-input .select {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
@@ -20246,6 +20240,10 @@ h6 {
     color: var(--green); }
   .box-validation.show {
     display: block; }
+
+.select option[placeholder],
+.select option.placeholder {
+  display: none; }
 
 .box {
   background: white;

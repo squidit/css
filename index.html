@@ -839,11 +839,11 @@
               id='input-text-icon-3'
               placeholder='XX'
             />
-            <span
-              class='input-group-text'
+            <button
+              class='button button-pink input-group-text'
             >
-              ,00
-            </span>
+              <i class="fas fa-check"></i>
+            </button>
           </div>
         </div>
         <div class='col-24 col-md-4'>
@@ -902,7 +902,7 @@
             />
           </div>
           <div class='box-validation box-invalid show mb-3'>
-            <i class="fas fa-exclamation-triangle"></i>Erro
+            <i class="fas fa-exclamation-triangle"></i>Error
           </div>
           <label class='display-block' for='input-text-valid'>
             Label
@@ -1022,7 +1022,7 @@
             ></textarea>
           </div>
           <div class='box-validation box-invalid show mb-3'>
-            <i class="fas fa-exclamation-triangle"></i>Erro
+            <i class="fas fa-exclamation-triangle"></i>Error
           </div>
         </div>
       </div>
@@ -1031,6 +1031,90 @@
           <h2>
             Select
           </h2>
+        </div>
+        <div class='col-24 col-md-4'>
+          <h6 class='text-medium'>
+            Default
+          </h6>
+          <label class='display-block' for='select'>
+            Label
+          </label>
+          <div class='wrapper-input mb-3'>
+            <select
+              class='select display-block'
+              name='select'
+              id='select'
+            >
+              <option value="" disabled selected placeholder>Select something</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <label class='display-block' for='select'>
+            Label
+          </label>
+          <div class='wrapper-input mb-3'>
+            <span
+              class='input-group-text'
+            >
+              @
+            </span>
+            <select
+              class='select display-block'
+              name='select'
+              id='select'
+            >
+              <option value="" disabled selected placeholder>Select something</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+        </div>
+        <div class='col-24 col-md-4'>
+          <h6 class='text-medium'>
+            Disabled
+          </h6>
+          <label class='display-block' for='select-disabled'>
+            Label
+          </label>
+          <div class='wrapper-input mb-3'>
+            <select
+              class='select display-block'
+              name='select-disabled'
+              id='select-disabled'
+              disabled
+            >
+              <option value="" disabled selected placeholder>Select something</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+        </div>
+        <div class='col-24 col-md-4'>
+          <h6 class='text-medium'>
+            Validation
+          </h6>
+          <label class='display-block' for='select-error'>
+            Label
+          </label>
+          <div class='wrapper-input'>
+            <select
+              class='select display-block error'
+              name='select-error'
+              id='select-error'
+            >
+              <option value="" disabled selected placeholder>Select something</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <div class='box-validation box-invalid show mb-3'>
+            <i class="fas fa-exclamation-triangle"></i>Error
+          </div>
         </div>
       </div>
       <div class='row'>
