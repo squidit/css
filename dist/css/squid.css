@@ -16625,7 +16625,7 @@ h6 {
 .text-black {
   font-weight: 900 !important; }
 
-.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select {
+.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select, .wrapper-selectors input[disabled] + label::before, .wrapper-selectors input.disabled + label::before {
   cursor: not-allowed !important;
   color: var(--gray) !important;
   border-color: var(--gray_light) !important;
@@ -20171,7 +20171,7 @@ h6 {
   min-height: 40px;
   border: 1px solid var(--gray);
   background: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   transition: all 0.3s ease; }
   .input:focus, .textarea:focus, .select:focus {
     outline: none;
@@ -20207,7 +20207,7 @@ h6 {
     white-space: nowrap;
     border: 1px solid var(--gray);
     border-radius: 8px; }
-    .wrapper-input .input-group-text:not(button) {
+    .wrapper-input .input-group-text:not(button), .wrapper-input .input-group-text:not(.loader) {
       font-weight: 400;
       line-height: 1.5;
       color: var(--gray);
@@ -20244,6 +20244,86 @@ h6 {
 .select option[placeholder],
 .select option.placeholder {
   display: none; }
+
+.wrapper-selectors {
+  position: relative; }
+  .wrapper-selectors input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+    .wrapper-selectors input + label {
+      cursor: pointer;
+      padding: 0 0 0 2rem;
+      line-height: 20px; }
+      .wrapper-selectors input + label.hide-input {
+        padding: 0; }
+      .wrapper-selectors input + label::before {
+        content: " ";
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid var(--gray);
+        background: var(--white);
+        color: var(--white);
+        font-size: 16px;
+        transition: all 0.3s ease;
+        font-weight: 700; }
+      .wrapper-selectors input + label::after {
+        transition: all 0.3s ease;
+        content: "\2713";
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        height: 20px;
+        width: 18px;
+        text-align: center;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        position: absolute; }
+    .wrapper-selectors input[type='radio'] + label::before {
+      border-radius: 50%; }
+    .wrapper-selectors input[type='radio'] + label::after {
+      content: " ";
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background: white;
+      left: 6px;
+      top: 6px;
+      opacity: 0;
+      position: absolute; }
+    .wrapper-selectors input:checked + label::before {
+      background-color: var(--pink); }
+    .wrapper-selectors input:checked + label::after {
+      opacity: 1; }
+    .wrapper-selectors input[disabled] + label, .wrapper-selectors input.disabled + label, .wrapper-selectors input.button[disabled] + label, .wrapper-selectors input.input[disabled] + label, .wrapper-selectors input.textarea[disabled] + label, .wrapper-selectors input.select[disabled] + label {
+      cursor: not-allowed; }
+  .wrapper-selectors.toggle input + label {
+    line-height: 20px;
+    padding: 0 0 0 3.5rem; }
+    .wrapper-selectors.toggle input + label::before {
+      width: 44px;
+      height: 20px;
+      border-radius: 96px; }
+    .wrapper-selectors.toggle input + label::after {
+      opacity: 1;
+      content: " ";
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background: white;
+      left: 4px;
+      top: 4px; }
+  .wrapper-selectors.toggle input:checked + label::after {
+    left: calc(6px + 22px); }
 
 .box {
   background: white;
