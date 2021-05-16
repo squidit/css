@@ -1,0 +1,26 @@
+.range[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: var(--gray_light);
+  outline: none;
+  opacity: 0.9;
+  border-radius: 12px;
+  transition: $transition;
+  &:hover {
+    opacity: 1;
+  }
+  &::-webkit-slider-thumb,
+  &::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: var(--pink);
+    cursor: pointer;
+  }
+}

@@ -1263,11 +1263,50 @@
           <h6 class='text-medium'>
             Default
           </h6>
+          <label
+            for='range'
+            class='display-block'
+          >
+            Label
+          </label>
+          <input
+            min='0'
+            max='100'
+            oninput="this.nextElementSibling.value = this.value"
+            type="range"
+            class='range mb-1'
+            id='range'
+            name='range'
+          >
+          <output
+            class='display-block mb-3 text-center'
+          >
+            50
+          </output>
         </div>
         <div class='col-24 col-md-4'>
           <h6 class='text-medium'>
             Disabled
           </h6>
+          <label
+            for='range-disabled'
+            class='display-block'
+          >
+            Label
+          </label>
+          <input
+            type="range"
+            class='range mb-1'
+            id='range-disabled'
+            oninput="this.nextElementSibling.value = this.value"
+            name='range-disabled'
+            disabled
+          >
+          <output
+            class='display-block mb-3 text-center'
+          >
+            50
+          </output>
         </div>
       </div>
       <div class='row'>
