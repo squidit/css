@@ -1,35 +1,31 @@
 .wrapper-selectors {
   position: relative;
+  display: flex;
+  align-items: center;
+  label {
+    cursor: pointer;
+    margin: 0;
+  }
   input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-    & + label {
-      cursor: pointer;
-      padding: 0 0 0 ($gutter * 2);
+    & + label.checkbox {
+      width: 24px;
+      height: 24px;
       line-height: 24px;
-      &.hide-input {
-        padding: 0;
-      }
-      &::before {
-        content: " ";
-        width: 24px;
-        height: 24px;
-        line-height: 24px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        text-align: center;
-        border-radius: 5px;
-        border: 1px solid var(--gray);
-        background: var(--white);
-        color: var(--white);
-        font-size: 16px;
-        transition: $transition;
-        font-weight: 700;
-      }
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid var(--gray);
+      background: var(--white);
+      color: var(--white);
+      font-size: 16px;
+      transition: $transition;
+      font-weight: 700;
+      display: inline-block;
+      margin-right: ($gutter / 2);
       &::after {
         transition: $transition;
         content: "\2713";
@@ -46,10 +42,8 @@
       }
     }
     &[type='radio'] {
-      & + label {
-        &::before {
-          border-radius: 50%;
-        }
+      & + label.checkbox {
+        border-radius: 50%;
         &::after {
           content: " ";
           height: 10px;
@@ -64,10 +58,8 @@
       }
     }
     &:checked {
-      & + label {
-        &::before {
-          background-color: var(--pink);
-        }
+      & + label.checkbox {
+        background-color: var(--pink);
         &::after {
           opacity: 1;
         }
@@ -75,24 +67,18 @@
     }
     &[disabled],
     &.disabled {
-      & + label {
+      & + label.checkbox {
         cursor: not-allowed;
-        &::before {
-          @extend .disabled; 
-        }
+        @extend .disabled; 
       }
     }
   }
   &.toggle {
     input {
-      & + label {
-        line-height: 24px;
-        padding: 0 0 0 ($gutter * 4);
-        &::before {
-          width: 48px;
-          height: 24px;
-          border-radius: 96px;
-        }
+      & + label.checkbox {
+        width: 48px;
+        height: 24px;
+        border-radius: 96px;
         &::after {
           opacity: 1;
           content: " ";
@@ -105,7 +91,7 @@
         }
       }
       &:checked {
-        & + label {
+        & + label.checkbox {
           &::after {
             left: calc(4px + 22px);
           }

@@ -1,0 +1,41 @@
+.tag {
+  border: 1px solid var(--gray_light);
+  transition: $transition;
+  cursor: pointer;
+  padding: ($gutter / 1.5);
+  padding-right: ($gutter * 2.5);
+  font-weight: 700;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  &::after {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 700;
+    content: '\f057';
+    right: ($gutter / 1.5);
+    position: absolute;
+    font-size: 16px;
+  }
+  &:hover {
+    @extend .box-shadow-default;
+  }
+  &.readonly-tag {
+    cursor: default;
+    background: var(--white) !important;
+    &::after {
+      color: var(--black) !important;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  &.disabled {
+    @extend .disabled;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  &.rounded {
+    border-radius: 50px;
+  }
+}
