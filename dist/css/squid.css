@@ -16662,7 +16662,7 @@ h6 {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.box-shadow-default, .tag:hover, .box {
+.box-shadow-default, .tag:hover, .box, .card {
   box-shadow: 0px 4px 12px -5px var(--gray); }
 
 .text-shadow-default {
@@ -20476,9 +20476,12 @@ h6 {
   .tag.rounded {
     border-radius: 50px; }
 
-.box {
+.box, .card {
   background: white;
   padding: 1rem;
   border-radius: 5px;
   margin: 0 0 1rem;
   overflow: hidden; }
+
+.card {
+  border-left: 0.5rem solid var(--black); }
