@@ -20233,7 +20233,8 @@ i {
     background-color: var(--pink);
     transition: width 0.6s ease; }
     .progress .progress-bar.background-dashed {
-      background-size: 50px 50px; }
+      background-size: 50px 50px;
+      animation: move-bg 1.5s linear infinite; }
   .progress .animate-bar {
     animation: width-100 3s linear infinite; }
     .progress .animate-bar.background-dashed {

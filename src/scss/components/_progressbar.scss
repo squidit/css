@@ -17,6 +17,7 @@
     transition: width 0.6s ease;
     &.background-dashed {
       background-size: 50px 50px;
+      animation: move-bg 1.5s linear infinite;
     }
   }
   .animate-bar {
