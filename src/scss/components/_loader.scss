@@ -1,0 +1,27 @@
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  vertical-align: -.125em;
+  border: .35rem solid var(--pink);
+  border-right-color: var(--gray_light) !important;
+  border-radius: 50%;
+  animation: 1s linear infinite loader;
+  &.small {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.2rem;
+  }
+  &.big {
+    width: 5rem;
+    height: 5rem;
+    border-width: 0.5rem;
+  }
+}
+
+@keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}

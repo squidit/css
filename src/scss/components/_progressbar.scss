@@ -1,0 +1,33 @@
+.progress {
+  width: 100%;
+  background-color: var(--gray_light);
+  border-radius: 12px;
+  height: 10px;
+  overflow: hidden;
+  .progress-bar {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--pink);
+    transition: width 0.6s ease;
+  }
+  .animate-bar {
+    animation-name: animate-bar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes animate-bar {
+  from {
+    width: 0%
+  }
+  to {
+    width: 100%
+  }
+}

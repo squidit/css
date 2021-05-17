@@ -16604,6 +16604,18 @@ h6 {
   font-size: 16px;
   line-height: 18px; }
 
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important; }
+
 .text-center {
   text-align: center !important; }
 
@@ -19994,6 +20006,57 @@ h6 {
 
 .scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
   background: var(--gray_dark); }
+
+.progress {
+  width: 100%;
+  background-color: var(--gray_light);
+  border-radius: 12px;
+  height: 10px;
+  overflow: hidden; }
+  .progress .progress-bar {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--pink);
+    transition: width 0.6s ease; }
+  .progress .animate-bar {
+    animation-name: animate-bar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
+
+@keyframes animate-bar {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  vertical-align: -.125em;
+  border: 0.35rem solid var(--pink);
+  border-right-color: var(--gray_light) !important;
+  border-radius: 50%;
+  animation: 1s linear infinite loader; }
+  .loader.small {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.2rem; }
+  .loader.big {
+    width: 5rem;
+    height: 5rem;
+    border-width: 0.5rem; }
+
+@keyframes loader {
+  100% {
+    transform: rotate(360deg); } }
 
 .button {
   display: inline-block;

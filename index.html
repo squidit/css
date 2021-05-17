@@ -1400,6 +1400,38 @@
             Progress Bar
           </h2>
         </div>
+        <div class='col-24 col-md-6'>
+          <div class="progress my-3">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 25%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar background-lilac"
+              role="progressbar"
+              style="width: 75%"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
       </div>
       <div class='row'>
         <div class='col-24 col-md-6'>
@@ -1411,11 +1443,38 @@
           <h6 class='text-medium'>
             Default
           </h6>
+          <div class="loader small mb-3 display-block" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="loader mb-3 display-block" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="loader big border-lilac mb-3 display-block" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
         </div>
         <div class='col-24 col-md-8'>
           <h6 class='text-medium'>
             Bar
           </h6>
+          <div class="progress mb-3">
+            <!-- animate-bar class is only for demonstration, the real implementation only makes sense width a Javascript width modify -->
+            <div
+              class="progress-bar animate-bar"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="progress mb-3">
+            <!-- animate-bar class is only for demonstration, the real implementation only makes sense width a Javascript width modify -->
+            <div
+              class="progress-bar background-lilac animate-bar"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
         </div>
       </div>
       <div class='row'>
