@@ -16616,6 +16616,13 @@ h6 {
   white-space: nowrap !important;
   border: 0 !important; }
 
+a,
+p,
+li,
+ol,
+i {
+  transition: all 0.3s ease; }
+
 .text-center {
   text-align: center !important; }
 
@@ -20485,3 +20492,33 @@ h6 {
 
 .card {
   border-left: 0.5rem solid var(--black); }
+
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center; }
+  .breadcrumb li {
+    display: block;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+    opacity: 0.7; }
+    .breadcrumb li a {
+      color: inherit;
+      font-size: inherit; }
+    .breadcrumb li:hover {
+      opacity: 0.9; }
+    .breadcrumb li::after {
+      content: '/';
+      color: inherit;
+      right: -0.85rem;
+      position: absolute; }
+    .breadcrumb li:last-child {
+      text-decoration: underline;
+      opacity: 1; }
+      .breadcrumb li:last-child::after {
+        display: none; }

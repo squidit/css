@@ -134,3 +134,11 @@ h6 {
 }
 
 $transition: all 0.3s ease;
+
+a,
+p,
+li,
+ol,
+i {
+  transition: $transition;
+}
