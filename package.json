@@ -48,5 +48,12 @@
     "url": "git+https://github.com/squidit/front-end.git"
   },
   "main": "dist/js/squid.min.js",
-  "style": "dist/css/squid.min.css"
+  "style": "dist/css/squid.min.css",
+  "description": "## About",
+  "bugs": {
+    "url": "https://github.com/squidit/front-end/issues"
+  },
+  "homepage": "https://github.com/squidit/front-end#readme",
+  "author": "Squid <developers@squidit.com.br>",
+  "license": "MIT"
 }
