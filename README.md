@@ -51,6 +51,10 @@ Just reference CSS `/dist/css/squid.min.css` and Javascript `/dist/js/squid.min.
 
 2. Commit and Push to Git Remote
 
+## Documentation
+
+Soon
+
 ## Animate.css
 
 > This framework uses Animate.css lib, see docs [here](https://animate.style/)
