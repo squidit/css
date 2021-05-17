@@ -7,7 +7,7 @@
   border: .35rem solid var(--pink);
   border-right-color: var(--gray_light) !important;
   border-radius: 50%;
-  animation: 1s linear infinite loader;
+  animation: 1s linear infinite rotate360;
   &.small {
     width: 1rem;
     height: 1rem;
@@ -17,11 +17,5 @@
     width: 5rem;
     height: 5rem;
     border-width: 0.5rem;
-  }
-}
-
-@keyframes loader {
-  100% {
-    transform: rotate(360deg);
   }
 }

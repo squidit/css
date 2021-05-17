@@ -15,19 +15,15 @@
     white-space: nowrap;
     background-color: var(--pink);
     transition: width 0.6s ease;
+    &.background-dashed {
+      background-size: 50px 50px;
+    }
   }
   .animate-bar {
-    animation-name: animate-bar;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation: width-100 3s linear infinite;
+    &.background-dashed {
+      animation: width-100 3s linear infinite, move-bg 1.5s linear infinite;
+    }
   }
 }
 
-@keyframes animate-bar {
-  from {
-    width: 0%
-  }
-  to {
-    width: 100%
-  }
-}

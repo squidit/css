@@ -12911,6 +12911,22 @@ readers do not read off random characters that represent icons */
   --breakpoint-xxl: 1400px; }
 
 /* CSS Vars */
+@keyframes rotate360 {
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes width-100 {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+@keyframes move-bg {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 50px 50px; } }
+
 /* Sass Vars */
 /* Sass Vars */
 /* CSS Vars */
@@ -12940,7 +12956,25 @@ readers do not read off random characters that represent icons */
   --red_dark: #c21010;
   --blue: #5E9BFF;
   --blue_light: #abcbff;
-  --blue_dark: #126bff; }
+  --blue_dark: #126bff;
+  --instagram: #F42A9C;
+  --instagram_light: #f873be;
+  --instagram_dark: #c70a75;
+  --twitter: #1DA1F2;
+  --twitter_light: #65bff6;
+  --twitter_dark: #0b76b8;
+  --youtube: #FF0000;
+  --youtube_light: #ff4d4d;
+  --youtube_dark: #b30000;
+  --pinterest: #E60023;
+  --pinterest_light: #ff3452;
+  --pinterest_dark: #9a0017;
+  --facebook: #4267B2;
+  --facebook_light: #7591cc;
+  --facebook_dark: #2d477a;
+  --google: #0F9D58;
+  --google_light: #16e37f;
+  --google_dark: #085731; }
 
 /* CSS Vars */
 /* Classes */
@@ -13177,6 +13211,168 @@ readers do not read off random characters that represent icons */
 
 .border-blue-dark {
   border-color: #126bff !important; }
+
+.instagram {
+  color: #F42A9C !important; }
+
+.background-instagram {
+  background-color: #F42A9C !important; }
+
+.border-instagram {
+  border-color: #F42A9C !important; }
+
+.instagram-light {
+  color: #f873be !important; }
+
+.background-instagram-light {
+  background-color: #f873be !important; }
+
+.border-instagram-light {
+  border-color: #f873be !important; }
+
+.instagram-dark {
+  color: #c70a75 !important; }
+
+.background-instagram-dark {
+  background-color: #c70a75 !important; }
+
+.border-instagram-dark {
+  border-color: #c70a75 !important; }
+
+.twitter {
+  color: #1DA1F2 !important; }
+
+.background-twitter {
+  background-color: #1DA1F2 !important; }
+
+.border-twitter {
+  border-color: #1DA1F2 !important; }
+
+.twitter-light {
+  color: #65bff6 !important; }
+
+.background-twitter-light {
+  background-color: #65bff6 !important; }
+
+.border-twitter-light {
+  border-color: #65bff6 !important; }
+
+.twitter-dark {
+  color: #0b76b8 !important; }
+
+.background-twitter-dark {
+  background-color: #0b76b8 !important; }
+
+.border-twitter-dark {
+  border-color: #0b76b8 !important; }
+
+.youtube {
+  color: #FF0000 !important; }
+
+.background-youtube {
+  background-color: #FF0000 !important; }
+
+.border-youtube {
+  border-color: #FF0000 !important; }
+
+.youtube-light {
+  color: #ff4d4d !important; }
+
+.background-youtube-light {
+  background-color: #ff4d4d !important; }
+
+.border-youtube-light {
+  border-color: #ff4d4d !important; }
+
+.youtube-dark {
+  color: #b30000 !important; }
+
+.background-youtube-dark {
+  background-color: #b30000 !important; }
+
+.border-youtube-dark {
+  border-color: #b30000 !important; }
+
+.pinterest {
+  color: #E60023 !important; }
+
+.background-pinterest {
+  background-color: #E60023 !important; }
+
+.border-pinterest {
+  border-color: #E60023 !important; }
+
+.pinterest-light {
+  color: #ff3452 !important; }
+
+.background-pinterest-light {
+  background-color: #ff3452 !important; }
+
+.border-pinterest-light {
+  border-color: #ff3452 !important; }
+
+.pinterest-dark {
+  color: #9a0017 !important; }
+
+.background-pinterest-dark {
+  background-color: #9a0017 !important; }
+
+.border-pinterest-dark {
+  border-color: #9a0017 !important; }
+
+.facebook {
+  color: #4267B2 !important; }
+
+.background-facebook {
+  background-color: #4267B2 !important; }
+
+.border-facebook {
+  border-color: #4267B2 !important; }
+
+.facebook-light {
+  color: #7591cc !important; }
+
+.background-facebook-light {
+  background-color: #7591cc !important; }
+
+.border-facebook-light {
+  border-color: #7591cc !important; }
+
+.facebook-dark {
+  color: #2d477a !important; }
+
+.background-facebook-dark {
+  background-color: #2d477a !important; }
+
+.border-facebook-dark {
+  border-color: #2d477a !important; }
+
+.google {
+  color: #0F9D58 !important; }
+
+.background-google {
+  background-color: #0F9D58 !important; }
+
+.border-google {
+  border-color: #0F9D58 !important; }
+
+.google-light {
+  color: #16e37f !important; }
+
+.background-google-light {
+  background-color: #16e37f !important; }
+
+.border-google-light {
+  border-color: #16e37f !important; }
+
+.google-dark {
+  color: #085731 !important; }
+
+.background-google-dark {
+  background-color: #085731 !important; }
+
+.border-google-dark {
+  border-color: #085731 !important; }
 
 /* Classes */
 :root {
@@ -16603,6 +16799,11 @@ h5 {
 h6 {
   font-size: 16px;
   line-height: 18px; }
+
+.background-dashed {
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+  .background-dashed.animated-dashed {
+    animation: move-bg 1.5s linear infinite; }
 
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
@@ -20031,16 +20232,12 @@ i {
     white-space: nowrap;
     background-color: var(--pink);
     transition: width 0.6s ease; }
+    .progress .progress-bar.background-dashed {
+      background-size: 50px 50px; }
   .progress .animate-bar {
-    animation-name: animate-bar;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; }
-
-@keyframes animate-bar {
-  from {
-    width: 0%; }
-  to {
-    width: 100%; } }
+    animation: width-100 3s linear infinite; }
+    .progress .animate-bar.background-dashed {
+      animation: width-100 3s linear infinite, move-bg 1.5s linear infinite; }
 
 .loader {
   display: inline-block;
@@ -20051,7 +20248,7 @@ i {
   border: 0.35rem solid var(--pink);
   border-right-color: var(--gray_light) !important;
   border-radius: 50%;
-  animation: 1s linear infinite loader; }
+  animation: 1s linear infinite rotate360; }
   .loader.small {
     width: 1rem;
     height: 1rem;
@@ -20060,10 +20257,6 @@ i {
     width: 5rem;
     height: 5rem;
     border-width: 0.5rem; }
-
-@keyframes loader {
-  100% {
-    transform: rotate(360deg); } }
 
 .button {
   display: inline-block;
@@ -20243,6 +20436,90 @@ i {
     .button.button-blue.inverted:hover, .button.button-blue.inverted:focus {
       background-color: var(--blue);
       border-color: var(--blue);
+      color: white; }
+  .button.button-instagram {
+    background-color: var(--instagram);
+    border-color: var(--instagram); }
+    .button.button-instagram:hover, .button.button-instagram:focus {
+      background-color: var(--instagram_dark);
+      border-color: var(--instagram_dark); }
+  .button.button-instagram.inverted {
+    color: var(--instagram);
+    background-color: white;
+    border-color: var(--instagram); }
+    .button.button-instagram.inverted:hover, .button.button-instagram.inverted:focus {
+      background-color: var(--instagram);
+      border-color: var(--instagram);
+      color: white; }
+  .button.button-twitter {
+    background-color: var(--twitter);
+    border-color: var(--twitter); }
+    .button.button-twitter:hover, .button.button-twitter:focus {
+      background-color: var(--twitter_dark);
+      border-color: var(--twitter_dark); }
+  .button.button-twitter.inverted {
+    color: var(--twitter);
+    background-color: white;
+    border-color: var(--twitter); }
+    .button.button-twitter.inverted:hover, .button.button-twitter.inverted:focus {
+      background-color: var(--twitter);
+      border-color: var(--twitter);
+      color: white; }
+  .button.button-youtube {
+    background-color: var(--youtube);
+    border-color: var(--youtube); }
+    .button.button-youtube:hover, .button.button-youtube:focus {
+      background-color: var(--youtube_dark);
+      border-color: var(--youtube_dark); }
+  .button.button-youtube.inverted {
+    color: var(--youtube);
+    background-color: white;
+    border-color: var(--youtube); }
+    .button.button-youtube.inverted:hover, .button.button-youtube.inverted:focus {
+      background-color: var(--youtube);
+      border-color: var(--youtube);
+      color: white; }
+  .button.button-pinterest {
+    background-color: var(--pinterest);
+    border-color: var(--pinterest); }
+    .button.button-pinterest:hover, .button.button-pinterest:focus {
+      background-color: var(--pinterest_dark);
+      border-color: var(--pinterest_dark); }
+  .button.button-pinterest.inverted {
+    color: var(--pinterest);
+    background-color: white;
+    border-color: var(--pinterest); }
+    .button.button-pinterest.inverted:hover, .button.button-pinterest.inverted:focus {
+      background-color: var(--pinterest);
+      border-color: var(--pinterest);
+      color: white; }
+  .button.button-facebook {
+    background-color: var(--facebook);
+    border-color: var(--facebook); }
+    .button.button-facebook:hover, .button.button-facebook:focus {
+      background-color: var(--facebook_dark);
+      border-color: var(--facebook_dark); }
+  .button.button-facebook.inverted {
+    color: var(--facebook);
+    background-color: white;
+    border-color: var(--facebook); }
+    .button.button-facebook.inverted:hover, .button.button-facebook.inverted:focus {
+      background-color: var(--facebook);
+      border-color: var(--facebook);
+      color: white; }
+  .button.button-google {
+    background-color: var(--google);
+    border-color: var(--google); }
+    .button.button-google:hover, .button.button-google:focus {
+      background-color: var(--google_dark);
+      border-color: var(--google_dark); }
+  .button.button-google.inverted {
+    color: var(--google);
+    background-color: white;
+    border-color: var(--google); }
+    .button.button-google.inverted:hover, .button.button-google.inverted:focus {
+      background-color: var(--google);
+      border-color: var(--google);
       color: white; }
 
 .input, .textarea, .select {
@@ -20504,8 +20781,8 @@ i {
     margin: 0 0.5rem;
     padding: 0.5rem;
     position: relative;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
     opacity: 0.7; }
     .breadcrumb li a {
       color: inherit;

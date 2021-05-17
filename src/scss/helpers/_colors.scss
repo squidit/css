@@ -14,6 +14,12 @@ $green:      #01ED6E !default;
 $yellow:     #FED708 !default;
 $red:        #EE3030 !default;
 $blue:       #5E9BFF !default;
+$instagram:  #F42A9C !default;
+$twitter:    #1DA1F2 !default;
+$youtube:    #FF0000 !default;
+$pinterest:  #E60023 !default;
+$facebook:   #4267B2 !default;
+$google:     #0F9D58 !default;
 
 $colors: (
   black: (
@@ -61,6 +67,36 @@ $colors: (
     base: $blue,
     light: lighten($blue, $amoutLigthen),
     dark: darken($blue, $amountDarken)
+  ),
+  instagram: (
+    base: $instagram,
+    light: lighten($instagram, $amoutLigthen),
+    dark: darken($instagram, $amountDarken)
+  ),
+  twitter: (
+    base: $twitter,
+    light: lighten($twitter, $amoutLigthen),
+    dark: darken($twitter, $amountDarken)
+  ),
+  youtube: (
+    base: $youtube,
+    light: lighten($youtube, $amoutLigthen),
+    dark: darken($youtube, $amountDarken)
+  ),
+  pinterest: (
+    base: $pinterest,
+    light: lighten($pinterest, $amoutLigthen),
+    dark: darken($pinterest, $amountDarken)
+  ),
+  facebook: (
+    base: $facebook,
+    light: lighten($facebook, $amoutLigthen),
+    dark: darken($facebook, $amountDarken)
+  ),
+  google: (
+    base: $google,
+    light: lighten($google, $amoutLigthen),
+    dark: darken($google, $amountDarken)
   )
 ) !default;
 /* Sass Vars */
