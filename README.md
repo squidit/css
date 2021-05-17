@@ -8,7 +8,27 @@
 
 ## Usage
 
-// TODO
+### Install
+
+You can easily install the latest free version of CSS
+
+`npm install @squidit/css --save`
+
+
+Just reference CSS `/dist/css/squid.min.css` and Javascript `/dist/js/squid.min.js` on your page or your framework
+
+```html
+<html>
+    <head>
+        ...
+        <link rel="stylesheet" href="./dist/css/squid.min.css">
+    </head>
+    <body>
+    ...
+    <script defer src='./dist/js/squid.min.js'></script>
+    </body>
+</html>
+```
 
 ## Development
 

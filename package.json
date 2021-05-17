@@ -1,5 +1,5 @@
 {
-  "name": "front-end-squid",
+  "name": "@squidit/css",
   "version": "1.0.0",
   "scripts": {
     "start": "gulp watch",
