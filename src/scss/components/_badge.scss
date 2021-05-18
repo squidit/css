@@ -1,0 +1,45 @@
+.badge {
+  padding: 0 ($gutter / 4);
+  background-color: var(--red);
+  color: white;
+  font-size: 8px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 8px;
+  min-height: 8px;
+  @extend .corner-rounded;
+  &.rounded {
+    @extend .rounded;
+  }
+  &.over-element {
+    position: absolute;
+    left: calc(100% - 0.35rem);
+    bottom: calc(100% - 0.35rem);
+    top: initial;
+    right: initial;
+    &.top-left {
+      right: calc(100% - 0.35rem);
+      bottom: calc(100% - 0.35rem);
+      top: initial;
+      left: initial;
+    }
+    &.top-right {
+      left: calc(100% - 0.35rem);
+      bottom: calc(100% - 0.35rem);
+      top: initial;
+      right: initial;
+    }
+    &.bottom-left {
+      right: calc(100% - 0.35rem);
+      top: calc(100% - 0.5rem);
+      bottom: initial;
+      left: initial;
+    }
+    &.bottom-right {
+      left: calc(100% - 0.35rem);
+      top: calc(100% - 0.5rem);
+      bottom: initial;
+      right: initial;
+    }
+  }
+}

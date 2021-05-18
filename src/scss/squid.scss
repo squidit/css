@@ -11,10 +11,13 @@
 @import 'helpers/texts';
 @import 'helpers/shadows';
 @import 'helpers/display';
+@import 'helpers/position';
+@import 'helpers/gradients';
 @import 'components/container';
 @import 'components/grid';
 @import 'helpers/spacing';
 @import 'helpers/scrollbar';
+@import 'helpers/rounds';
 @import 'components/progressbar';
 @import 'components/loader';
 @import 'components/button';
@@ -23,6 +26,8 @@
 @import 'components/selectors';
 @import 'components/range';
 @import 'components/tag';
+@import 'components/badge';
 @import 'components/box';
 @import 'components/card';
 @import 'components/breadcrumb';
+@import 'components/table';

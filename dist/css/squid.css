@@ -16800,23 +16800,6 @@ h6 {
   font-size: 16px;
   line-height: 18px; }
 
-.background-dashed {
-  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
-  .background-dashed.animated-dashed {
-    animation: move-bg 1.5s linear infinite; }
-
-.visually-hidden,
-.visually-hidden-focusable:not(:focus):not(:focus-within) {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important; }
-
 a,
 p,
 li,
@@ -17512,6 +17495,124 @@ i {
     justify-content: unset !important; }
   .justify-self-xxl-unset {
     justify-self: unset !important; } }
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important; }
+
+.position-static {
+  position: static !important; }
+
+.position-absolute {
+  position: absolute !important; }
+
+.position-fixed {
+  position: fixed !important; }
+
+.position-relative {
+  position: relative !important; }
+
+.position-sticky {
+  position: sticky !important; }
+
+.position-initial {
+  position: initial !important; }
+
+.position-inherit {
+  position: inherit !important; }
+
+@media (min-width: 576px) {
+  .position-sm-static {
+    position: static !important; }
+  .position-sm-absolute {
+    position: absolute !important; }
+  .position-sm-fixed {
+    position: fixed !important; }
+  .position-sm-relative {
+    position: relative !important; }
+  .position-sm-sticky {
+    position: sticky !important; }
+  .position-sm-initial {
+    position: initial !important; }
+  .position-sm-inherit {
+    position: inherit !important; } }
+
+@media (min-width: 768px) {
+  .position-md-static {
+    position: static !important; }
+  .position-md-absolute {
+    position: absolute !important; }
+  .position-md-fixed {
+    position: fixed !important; }
+  .position-md-relative {
+    position: relative !important; }
+  .position-md-sticky {
+    position: sticky !important; }
+  .position-md-initial {
+    position: initial !important; }
+  .position-md-inherit {
+    position: inherit !important; } }
+
+@media (min-width: 992px) {
+  .position-lg-static {
+    position: static !important; }
+  .position-lg-absolute {
+    position: absolute !important; }
+  .position-lg-fixed {
+    position: fixed !important; }
+  .position-lg-relative {
+    position: relative !important; }
+  .position-lg-sticky {
+    position: sticky !important; }
+  .position-lg-initial {
+    position: initial !important; }
+  .position-lg-inherit {
+    position: inherit !important; } }
+
+@media (min-width: 1200px) {
+  .position-xl-static {
+    position: static !important; }
+  .position-xl-absolute {
+    position: absolute !important; }
+  .position-xl-fixed {
+    position: fixed !important; }
+  .position-xl-relative {
+    position: relative !important; }
+  .position-xl-sticky {
+    position: sticky !important; }
+  .position-xl-initial {
+    position: initial !important; }
+  .position-xl-inherit {
+    position: inherit !important; } }
+
+@media (min-width: 1400px) {
+  .position-xxl-static {
+    position: static !important; }
+  .position-xxl-absolute {
+    position: absolute !important; }
+  .position-xxl-fixed {
+    position: fixed !important; }
+  .position-xxl-relative {
+    position: relative !important; }
+  .position-xxl-sticky {
+    position: sticky !important; }
+  .position-xxl-initial {
+    position: initial !important; }
+  .position-xxl-inherit {
+    position: inherit !important; } }
+
+.background-dashed {
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+  .background-dashed.animated-dashed {
+    animation: move-bg 1.5s linear infinite; }
 
 .container-fluid, .container {
   width: 100%;
@@ -20215,6 +20316,12 @@ i {
 .scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
   background: var(--gray_dark); }
 
+.rounded, .badge.rounded {
+  border-radius: 50%; }
+
+.corner-rounded, .badge {
+  border-radius: 5px; }
+
 .progress {
   width: 100%;
   background-color: var(--gray_light);
@@ -20760,6 +20867,42 @@ i {
     box-shadow: none; }
   .tag.rounded {
     border-radius: 50px; }
+
+.badge {
+  padding: 0 0.25rem;
+  background-color: var(--red);
+  color: white;
+  font-size: 8px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 8px;
+  min-height: 8px; }
+  .badge.over-element {
+    position: absolute;
+    left: calc(100% - 0.35rem);
+    bottom: calc(100% - 0.35rem);
+    top: initial;
+    right: initial; }
+    .badge.over-element.top-left {
+      right: calc(100% - 0.35rem);
+      bottom: calc(100% - 0.35rem);
+      top: initial;
+      left: initial; }
+    .badge.over-element.top-right {
+      left: calc(100% - 0.35rem);
+      bottom: calc(100% - 0.35rem);
+      top: initial;
+      right: initial; }
+    .badge.over-element.bottom-left {
+      right: calc(100% - 0.35rem);
+      top: calc(100% - 0.5rem);
+      bottom: initial;
+      left: initial; }
+    .badge.over-element.bottom-right {
+      left: calc(100% - 0.35rem);
+      top: calc(100% - 0.5rem);
+      bottom: initial;
+      right: initial; }
 
 .box, .card {
   background: white;
