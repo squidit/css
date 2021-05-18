@@ -3,7 +3,9 @@ $amoutLigthen: 15%;
 $amountDarken: 15%;
 
 $black:      #31353B !default;
+$blackHtml:  #000000 !default;
 $white:      #ECEFF4 !default;
+$whiteHtml:  #FFFFFF !default;
 $gray:       #ACB5BD !default;
 $grayLight:  #DDE2E5 !default;
 $grayDark:   #495057 !default;
@@ -27,6 +29,12 @@ $colors: (
   ),
   white: (
     base: $white
+  ),
+  black-html: (
+    base: $blackHtml
+  ),
+  white-html: (
+    base: $whiteHtml
   ),
   gray: (
     base: $gray,

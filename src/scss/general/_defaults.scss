@@ -34,7 +34,8 @@ textarea,
 button,
 select,
 div,
-output {
+output,
+caption {
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
@@ -44,6 +45,12 @@ output {
   &:hover {
     text-decoration: none;
   }
+}
+
+.img-fluid {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .small {

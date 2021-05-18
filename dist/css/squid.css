@@ -12933,6 +12933,8 @@ readers do not read off random characters that represent icons */
 :root {
   --black: #31353B;
   --white: #ECEFF4;
+  --black-html: #000000;
+  --white-html: #FFFFFF;
   --gray: #ACB5BD;
   --gray_light: #DDE2E5;
   --gray_dark: #495057;
@@ -12995,6 +12997,24 @@ readers do not read off random characters that represent icons */
 
 .border-white {
   border-color: #ECEFF4 !important; }
+
+.black-html {
+  color: #000000 !important; }
+
+.background-black-html {
+  background-color: #000000 !important; }
+
+.border-black-html {
+  border-color: #000000 !important; }
+
+.white-html {
+  color: #FFFFFF !important; }
+
+.background-white-html {
+  background-color: #FFFFFF !important; }
+
+.border-white-html {
+  border-color: #FFFFFF !important; }
 
 .gray {
   color: #ACB5BD !important; }
@@ -16714,7 +16734,8 @@ textarea,
 button,
 select,
 div,
-output {
+output,
+caption {
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
@@ -16738,8 +16759,14 @@ output {
   button:hover,
   select:hover,
   div:hover,
-  output:hover {
+  output:hover,
+  caption:hover {
     text-decoration: none; }
+
+.img-fluid {
+  max-width: 100%;
+  display: block;
+  height: auto; }
 
 .small {
   font-size: 85%; }
@@ -20301,26 +20328,26 @@ i {
   .px-xxl-7 {
     padding-left: 3rem !important; } }
 
-.scrollbar::-webkit-scrollbar, .textarea::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar, .textarea::-webkit-scrollbar, .table::-webkit-scrollbar {
   width: 7px;
   height: 7px; }
 
-.scrollbar::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track, .table::-webkit-scrollbar-track {
   background: var(--gray_light);
   border-radius: 7px; }
 
-.scrollbar::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb {
   background: var(--gray);
   border-radius: 7px; }
 
-.scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
+.scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover {
   background: var(--gray_dark); }
 
 .rounded, .badge.rounded {
-  border-radius: 50%; }
+  border-radius: 50% !important; }
 
 .corner-rounded, .badge {
-  border-radius: 5px; }
+  border-radius: 5px !important; }
 
 .progress {
   width: 100%;
@@ -20429,6 +20456,34 @@ i {
       border-color: var(--white);
       color: white;
       color: var(--black); }
+  .button.button-black-html {
+    background-color: var(--black-html);
+    border-color: var(--black-html); }
+    .button.button-black-html:hover, .button.button-black-html:focus {
+      background-color: var(--black-html_dark);
+      border-color: var(--black-html_dark); }
+  .button.button-black-html.inverted {
+    color: var(--black-html);
+    background-color: white;
+    border-color: var(--black-html); }
+    .button.button-black-html.inverted:hover, .button.button-black-html.inverted:focus {
+      background-color: var(--black-html);
+      border-color: var(--black-html);
+      color: white; }
+  .button.button-white-html {
+    background-color: var(--white-html);
+    border-color: var(--white-html); }
+    .button.button-white-html:hover, .button.button-white-html:focus {
+      background-color: var(--white-html_dark);
+      border-color: var(--white-html_dark); }
+  .button.button-white-html.inverted {
+    color: var(--white-html);
+    background-color: white;
+    border-color: var(--white-html); }
+    .button.button-white-html.inverted:hover, .button.button-white-html.inverted:focus {
+      background-color: var(--white-html);
+      border-color: var(--white-html);
+      color: white; }
   .button.button-gray {
     background-color: var(--gray);
     border-color: var(--gray); }
@@ -20943,3 +20998,69 @@ i {
       opacity: 1; }
       .breadcrumb li:last-child::after {
         display: none; }
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.table {
+  width: 100%;
+  overflow: auto;
+  border-color: var(--gray_light);
+  vertical-align: top;
+  position: relative;
+  border-collapse: collapse; }
+  .table caption {
+    caption-side: top;
+    text-align: left;
+    margin-bottom: 0.5rem; }
+    .table caption.caption-bottom {
+      caption-side: bottom;
+      margin-bottom: 0;
+      margin-top: 0.5rem; }
+  .table tr {
+    border-spacing: 0;
+    border: none;
+    position: relative; }
+  .table .wrapper-buttons {
+    transition: all 0.3s ease;
+    opacity: 0; }
+  .table.header-stick > thead tr th, .table.header-stick > thead tr td {
+    position: sticky;
+    top: 0; }
+  .table > thead {
+    vertical-align: middle;
+    border: none; }
+    .table > thead th, .table > thead td {
+      background-color: var(--white);
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--black);
+      font-weight: 700;
+      padding: 1rem 0.5rem;
+      border: none;
+      border-bottom: 4px solid var(--white); }
+      .table > thead th:first-child, .table > thead td:first-child {
+        border-radius: 5px 0 0 0; }
+      .table > thead th:last-child, .table > thead td:last-child {
+        border-radius: 0 5px 0 0; }
+  .table > tbody {
+    vertical-align: middle; }
+    .table > tbody > tr {
+      border-bottom: 1px solid var(--gray_light);
+      transition: all 0.3s ease; }
+      .table > tbody > tr:hover {
+        background-color: var(--gray_light); }
+        .table > tbody > tr:hover .wrapper-buttons {
+          opacity: 1; }
+      .table > tbody > tr td, .table > tbody > tr th {
+        text-align: center;
+        padding: 1rem 0.5rem; }
+      .table > tbody > tr:last-child {
+        border-bottom: 1px solid var(--gray_dark); }
+  .table > tfoot {
+    vertical-align: middle; }
+    .table > tfoot tr {
+      border-bottom: 1px solid var(--gray_light); }
+      .table > tfoot tr td, .table > tfoot tr th {
+        padding: 1rem 0.5rem; }
