@@ -35,10 +35,16 @@
     align-items: center;
     justify-content: flex-end;
     opacity: 0;
+    overflow: hidden;
     right: 0;
     top: 2px;
+    padding: 0 ($gutter / 2);
     height: calc(100% - 2px);
-    background-color: var(--gray_light);
+    background-color: white;
+    box-shadow:
+      inset 1px 0 0 var(--gray_light),
+      inset -1px 0 0 var(--gray_light),
+      -3px 0 3px 0px var(--gray_light); 
     @media (max-width: map-get($grid-breakpoints, lg)) {
       position: initial;
       top: initial;
@@ -88,7 +94,11 @@
       border-bottom: 1px solid var(--gray_light);
       transition: $transition;
       &:hover {
-        background-color: var(--gray_light);
+        box-shadow:
+          inset 1px 0 0 var(--gray_light),
+          inset -1px 0 0 var(--gray_light),
+          0 0 4px 0 var(--gray_light),
+          0 0 6px 2px var(--gray_light); 
         .wrapper-buttons {
           opacity: 1;
         }
