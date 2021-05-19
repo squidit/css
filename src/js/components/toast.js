@@ -1,6 +1,6 @@
 (function () {
   'use strict'
-
+  // Toast class based from https://github.com/talsu/vanilla-toast
   const Toast = (function () {
     function Toast () {
       this.queue = new TaskQueue()
@@ -186,7 +186,6 @@
       const s = self.element.toastBox.style
       s.opacity = 1
 
-      // start fade out and call callback function.
       _fade(s, -fadeStep, fadeInterval, cancellationToken, function () {
         s.display = 'none'
         if (callback) callback()
@@ -195,7 +194,6 @@
       return self
     }
 
-    // run fade animation
     function _fade (style, step, interval, cancellationToken, callback) {
       (function fade () {
         if (cancellationToken.isCancellationRequested) {
