@@ -116,7 +116,7 @@
         s.opacity = 0
         s.display = 'inline-grid'
 
-        self.element.container.className = `toast-container ${(option && option.position) ? option.position : ''}`
+        self.element.container.className = `toast-container ${(option && option.position) ? option.position : ''} ${option.closeButton ? 'has-close' : ''}`
 
         _setStyle(self, preset, option)
 

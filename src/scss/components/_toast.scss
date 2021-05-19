@@ -20,6 +20,11 @@
     right: 0;
     left: initial;
   }
+  &.has-close {
+    .toast {
+      grid-template-columns: 1fr 12px;
+    }
+  }
 }
 
 .toast {
@@ -35,7 +40,7 @@
   background-color: white;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 12px;
+  grid-template-columns: 1fr;
   grid-column-gap: $gutter;
   flex-grow: 1;
   font-size: 1rem;
