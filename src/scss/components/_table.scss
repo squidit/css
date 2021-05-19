@@ -1,6 +1,7 @@
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  @extend .scrollbar;
 }
 .table {
   width: 100%;
@@ -21,13 +22,32 @@
     }
   }
   tr {
+    position: relative;
     border-spacing: 0;
     border: none;
-    position: relative;
+    transform: scale(1);
   }
   .wrapper-buttons {
     transition: $transition;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
     opacity: 0;
+    right: 0;
+    top: 2px;
+    height: calc(100% - 2px);
+    background-color: var(--gray_light);
+    @media (max-width: map-get($grid-breakpoints, lg)) {
+      position: initial;
+      top: initial;
+      right: initial;
+      height: initial;
+      width: 100%;
+      display: table-caption;
+      background-color: inherit;
+      opacity: 1;
+    }
   }
   &.header-stick {
     > thead {
@@ -42,6 +62,7 @@
   > thead {
     vertical-align: middle;
     border: none;
+    position: relative;
     th, td {
       background-color: var(--white);
       font-size: 14px;
@@ -61,6 +82,7 @@
   }
   > tbody {
     vertical-align: middle;
+    position: relative;
     &> tr {
       border-bottom: 1px solid var(--gray_light);
       transition: $transition;
@@ -81,6 +103,7 @@
   }
   > tfoot {
     vertical-align: middle;
+    position: relative;
     tr {
       border-bottom: 1px solid var(--gray_light);
       td, th {

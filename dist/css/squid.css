@@ -12935,6 +12935,7 @@ readers do not read off random characters that represent icons */
   --white: #ECEFF4;
   --black-html: #000000;
   --white-html: #FFFFFF;
+  --transparent: transparent;
   --gray: #ACB5BD;
   --gray_light: #DDE2E5;
   --gray_dark: #495057;
@@ -13015,6 +13016,15 @@ readers do not read off random characters that represent icons */
 
 .border-white-html {
   border-color: #FFFFFF !important; }
+
+.transparent {
+  color: transparent !important; }
+
+.background-transparent {
+  background-color: transparent !important; }
+
+.border-transparent {
+  border-color: transparent !important; }
 
 .gray {
   color: #ACB5BD !important; }
@@ -20328,19 +20338,19 @@ i {
   .px-xxl-7 {
     padding-left: 3rem !important; } }
 
-.scrollbar::-webkit-scrollbar, .textarea::-webkit-scrollbar, .table::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar, .textarea::-webkit-scrollbar, .table-responsive::-webkit-scrollbar, .table::-webkit-scrollbar {
   width: 7px;
   height: 7px; }
 
-.scrollbar::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track, .table::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track, .table-responsive::-webkit-scrollbar-track, .table::-webkit-scrollbar-track {
   background: var(--gray_light);
   border-radius: 7px; }
 
-.scrollbar::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb, .table-responsive::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb {
   background: var(--gray);
   border-radius: 7px; }
 
-.scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover {
+.scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover, .table-responsive::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover {
   background: var(--gray_dark); }
 
 .rounded, .badge.rounded {
@@ -20483,6 +20493,20 @@ i {
     .button.button-white-html.inverted:hover, .button.button-white-html.inverted:focus {
       background-color: var(--white-html);
       border-color: var(--white-html);
+      color: white; }
+  .button.button-transparent {
+    background-color: var(--transparent);
+    border-color: var(--transparent); }
+    .button.button-transparent:hover, .button.button-transparent:focus {
+      background-color: var(--transparent_dark);
+      border-color: var(--transparent_dark); }
+  .button.button-transparent.inverted {
+    color: var(--transparent);
+    background-color: white;
+    border-color: var(--transparent); }
+    .button.button-transparent.inverted:hover, .button.button-transparent.inverted:focus {
+      background-color: var(--transparent);
+      border-color: var(--transparent);
       color: white; }
   .button.button-gray {
     background-color: var(--gray);
@@ -21019,18 +21043,38 @@ i {
       margin-bottom: 0;
       margin-top: 0.5rem; }
   .table tr {
+    position: relative;
     border-spacing: 0;
     border: none;
-    position: relative; }
+    transform: scale(1); }
   .table .wrapper-buttons {
     transition: all 0.3s ease;
-    opacity: 0; }
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    right: 0;
+    top: 2px;
+    height: calc(100% - 2px);
+    background-color: var(--gray_light); }
+    @media (max-width: 992px) {
+      .table .wrapper-buttons {
+        position: initial;
+        top: initial;
+        right: initial;
+        height: initial;
+        width: 100%;
+        display: table-caption;
+        background-color: inherit;
+        opacity: 1; } }
   .table.header-stick > thead tr th, .table.header-stick > thead tr td {
     position: sticky;
     top: 0; }
   .table > thead {
     vertical-align: middle;
-    border: none; }
+    border: none;
+    position: relative; }
     .table > thead th, .table > thead td {
       background-color: var(--white);
       font-size: 14px;
@@ -21045,7 +21089,8 @@ i {
       .table > thead th:last-child, .table > thead td:last-child {
         border-radius: 0 5px 0 0; }
   .table > tbody {
-    vertical-align: middle; }
+    vertical-align: middle;
+    position: relative; }
     .table > tbody > tr {
       border-bottom: 1px solid var(--gray_light);
       transition: all 0.3s ease; }
@@ -21059,7 +21104,8 @@ i {
       .table > tbody > tr:last-child {
         border-bottom: 1px solid var(--gray_dark); }
   .table > tfoot {
-    vertical-align: middle; }
+    vertical-align: middle;
+    position: relative; }
     .table > tfoot tr {
       border-bottom: 1px solid var(--gray_light); }
       .table > tfoot tr td, .table > tfoot tr th {
