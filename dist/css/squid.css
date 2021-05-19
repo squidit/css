@@ -94,10 +94,6 @@
   font-style: italic; }
 
 /* Roboto black italic */
-/*!
-* Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com
-* License - https://fontawesome.com/license (Commercial License)
-*/
 .fa,
 .fas,
 .far,
@@ -13405,13 +13401,6 @@ readers do not read off random characters that represent icons */
   border-color: #085731 !important; }
 
 /* Classes */
-/*!
- * animate.css - https://animate.style/
- * Version - 4.1.1
- * Licensed under the MIT license - https://opensource.org/licenses/MIT
- *
- * Copyright (c) 2021 Animate.css
- */
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
