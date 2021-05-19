@@ -21127,20 +21127,20 @@ i {
         .table.table-responsive tr:hover {
           background-color: inherit; }
         .table.table-responsive tr:last-child {
-          border-color: var(--gray_light); }
+          border-bottom: 1px solid var(--gray_light); }
       .table.table-responsive tr:nth-of-type(odd) {
         background: var(--white); }
       .table.table-responsive td {
         border: none;
-        border-bottom: 1px solid var(--gray_light);
         position: relative;
-        padding-left: 50%; }
+        padding-left: 50%;
+        text-align: left; }
       .table.table-responsive td:before {
         content: attr(data-label);
         position: absolute;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         font-family: 'Roboto', sans-serif;
         font-size: inherit;
         padding: 1rem 0.5rem;
@@ -21148,8 +21148,11 @@ i {
         left: 0;
         height: 100%;
         width: 50%;
-        white-space: nowrap; } }
+        white-space: nowrap;
+        font-weight: 700; } }
   .table.table-responsive > tfoot {
     display: none; }
-  .table.table-responsive caption.caption-bottom {
-    display: none; }
+  .table.table-responsive caption {
+    display: block; }
+    .table.table-responsive caption.caption-bottom {
+      display: none; }
