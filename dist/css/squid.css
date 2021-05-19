@@ -21149,10 +21149,10 @@ i {
         height: 100%;
         width: 50%;
         white-space: nowrap;
-        font-weight: 700; } }
-  .table.table-responsive > tfoot {
-    display: none; }
-  .table.table-responsive caption {
-    display: block; }
-    .table.table-responsive caption.caption-bottom {
-      display: none; }
+        font-weight: 700; }
+      .table.table-responsive > tfoot {
+        display: none; }
+      .table.table-responsive caption {
+        display: block; }
+        .table.table-responsive caption.caption-bottom {
+          display: none; } }

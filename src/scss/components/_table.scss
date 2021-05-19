@@ -157,14 +157,14 @@
         white-space: nowrap;
         font-weight: 700;
       }
-    }
-    > tfoot {
-      display: none;
-    }
-    caption {
-      display: block;
-      &.caption-bottom {
+      > tfoot {
         display: none;
+      }
+      caption {
+        display: block;
+        &.caption-bottom {
+          display: none;
+        }
       }
     }
   }
