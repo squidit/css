@@ -1,4 +1,6 @@
 .scrollbar {
+  scrollbar-color: var(--gray_light) var(--gray);
+  scrollbar-width: thin;
   &::-webkit-scrollbar {
     width: 7px;
     height: 7px;

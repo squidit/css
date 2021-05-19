@@ -280,4 +280,4 @@
   } else {
     this.Toast = new Toast()
   }
-}.call(this))
+}.call(this));

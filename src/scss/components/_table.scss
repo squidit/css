@@ -54,6 +54,8 @@
       display: table-caption;
       background-color: inherit;
       opacity: 1;
+      box-shadow: none;
+      padding-bottom: $gutter;
     }
   }
   &.header-stick {

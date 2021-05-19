@@ -1,15 +1,36 @@
 // Global Variables or functions here
-function loadScript (file) {
-  const script = document.createElement('script')
-  script.type = 'text/javascript'
-  script.src = file
-  document.body.appendChild(script)
+
+
+
+
+function tabify (element) {
+  const header = element.querySelector('.tabs-header')
+  const content = element.querySelector('.tabs-wrapper-content')
+  const tabHeaders = [...header.children]
+  const tabContents = [...content.children]
+  let currentTabIndex = -1
+
+  function setTab (index) {
+    if (currentTabIndex > -1) {
+      tabHeaders[currentTabIndex].classList.remove('active')
+      tabContents[currentTabIndex].classList.remove('active')
+    }
+    tabContents[index].classList.add('active')
+    tabHeaders[index].classList.add('active')
+    currentTabIndex = index
+  }
+
+  defaultTabIndex = tabHeaders.findIndex(x => [...x.classList].indexOf('default-gator-tab') > -1)
+
+  defaultTabIndex = defaultTabIndex === -1 ? 0 : defaultTabIndex
+  setTab(defaultTabIndex)
+  // eslint-disable-next-line
+  tabHeaders.forEach((x, i) => x.onclick = event => setTab(i))
 }
 
-
-
-
-
+(function () {
+  [...document.querySelectorAll('.tabs-container')].forEach(x => tabify(x))
+})();
 
 (function () {
   'use strict'
@@ -293,5 +314,12 @@ function loadScript (file) {
   } else {
     this.Toast = new Toast()
   }
-}.call(this))
+}.call(this));
 
+
+function loadScript (file) {
+  const script = document.createElement('script')
+  script.type = 'text/javascript'
+  script.src = file
+  document.body.appendChild(script)
+}
