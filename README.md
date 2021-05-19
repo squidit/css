@@ -10,9 +10,10 @@
 
 ### Install
 
-You can easily install the latest free version of CSS
+You can easily install with npm or download [here](https://github.com/squidit/css/releases)
 
 `npm install @squidit/css --save`
+
 
 
 Just reference CSS `/dist/css/squid.min.css` and Javascript `/dist/js/squid.min.js` on your page or your framework
@@ -21,11 +22,11 @@ Just reference CSS `/dist/css/squid.min.css` and Javascript `/dist/js/squid.min.
 <html>
     <head>
         ...
-        <link rel="stylesheet" href="./dist/css/squid.min.css">
+        <link rel="stylesheet" href="path-to-files/dist/css/squid.min.css">
     </head>
     <body>
     ...
-    <script defer src='./dist/js/squid.min.js'></script>
+    <script defer src='path-to-files/dist/js/squid.min.js'></script>
     </body>
 </html>
 ```
