@@ -20389,10 +20389,10 @@ i {
 .loader {
   display: inline-block;
   position: relative;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   vertical-align: -.125em;
-  border: 0.35rem solid var(--pink);
+  border: 0.25rem solid var(--pink);
   border-right-color: var(--gray_light) !important;
   border-radius: 50%;
   animation: 1s linear infinite rotate360; }
@@ -20401,9 +20401,13 @@ i {
     height: 1rem;
     border-width: 0.2rem; }
   .loader.big {
-    width: 5rem;
-    height: 5rem;
-    border-width: 0.5rem; }
+    width: 4rem;
+    height: 4rem;
+    border-width: 0.4rem; }
+  .loader.bigger {
+    width: 6rem;
+    height: 6rem;
+    border-width: 0.6rem; }
 
 .button {
   display: inline-block;
