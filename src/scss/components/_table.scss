@@ -1,5 +1,6 @@
-.table-responsive {
+.table-overflow {
   overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   @extend .scrollbar;
 }
@@ -108,6 +109,60 @@
       border-bottom: 1px solid var(--gray_light);
       td, th {
         padding: $gutter ($gutter / 2);
+      }
+    }
+  }
+  &.table-responsive {
+    @media (max-width: map-get($grid-breakpoints, lg))  {
+      display: block; 
+      thead, tbody, th, td, tr { 
+        display: block; 
+      }
+      thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr {
+        border: 1px solid var(--gray_light);
+        &:hover {
+          background-color: inherit;
+        }
+        &:last-child {
+          border-color: var(--gray_light);
+        }
+      }
+      tr:nth-of-type(odd) { 
+        background: var(--white); 
+      }
+      td { 
+        border: none;
+        border-bottom: 1px solid var(--gray_light); 
+        position: relative;
+        padding-left: 50%;
+      }
+      td:before {
+        content: attr(data-label);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: inherit;
+        padding: $gutter ($gutter / 2);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        white-space: nowrap;
+      }
+    }
+    > tfoot {
+      display: none;
+    }
+    caption {
+      &.caption-bottom {
+        display: none;
       }
     }
   }

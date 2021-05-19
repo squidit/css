@@ -7,7 +7,7 @@
   display: inline-block;
   min-width: 8px;
   min-height: 8px;
-  @extend .corner-rounded;
+  @extend .border-radius;
   &.rounded {
     @extend .rounded;
   }
