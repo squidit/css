@@ -16892,7 +16892,7 @@ i {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.box-shadow-default, .tag:hover, .box, .card {
+.box-shadow-default, .tag:hover, .box, .card, .toast {
   box-shadow: 0px 4px 12px -5px var(--gray); }
 
 .text-shadow-default {
@@ -20358,7 +20358,7 @@ i {
 .rounded, .badge.rounded {
   border-radius: 50% !important; }
 
-.border-radius, .badge {
+.border-radius, .badge, .toast {
   border-radius: 5px !important; }
 
 .progress {
@@ -20405,9 +20405,9 @@ i {
     height: 4rem;
     border-width: 0.4rem; }
   .loader.bigger {
-    width: 6rem;
-    height: 6rem;
-    border-width: 0.6rem; }
+    width: 7rem;
+    height: 7rem;
+    border-width: 0.7rem; }
 
 .button {
   display: inline-block;
@@ -21028,6 +21028,72 @@ i {
       opacity: 1; }
       .breadcrumb li:last-child::after {
         display: none; }
+
+.toast-container {
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed; }
+  .toast-container.top {
+    top: 0;
+    bottom: initial; }
+  .toast-container.bottom {
+    bottom: 0;
+    top: initial; }
+  .toast-container.left {
+    left: 0;
+    right: initial; }
+  .toast-container.right {
+    right: 0;
+    left: initial; }
+
+.toast {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  color: var(--black);
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 12px;
+  grid-column-gap: 1rem;
+  flex-grow: 1;
+  font-size: 1rem; }
+  .toast.full {
+    width: 95%; }
+  .toast.success {
+    background: var(--green);
+    color: white; }
+  .toast.inverted {
+    background: var(--black);
+    color: white; }
+  .toast.info {
+    background: var(--blue);
+    color: white; }
+  .toast.warning {
+    background: var(--yellow);
+    color: var(--black); }
+  .toast.error {
+    background: var(--red);
+    color: white; }
+  .toast.grayscale {
+    background: var(--white);
+    color: var(--black); }
+
+.toast-text {
+  display: inline-block;
+  margin: 0;
+  color: inherit; }
+
+.toast-close-button {
+  display: none;
+  justify-self: flex-end;
+  font-size: 1rem;
+  font-weight: 700;
+  color: inherit; }
 
 .table-overflow {
   overflow-x: auto;

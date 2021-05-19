@@ -1,6 +1,6 @@
 {
   "name": "@squidit/css",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "scripts": {
     "start": "gulp watch",
     "css": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed",
@@ -8,7 +8,7 @@
     "js": "uglifyjs src/js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
     "js:watch": "gulp watch-js",
     "dist": "npm-run-all --parallel css js",
-    "lint": "npx eslint ./src/js/*.js"
+    "lint": "npx eslint ./src/js/**/*.js"
   },
   "private": false,
   "files": [

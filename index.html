@@ -1725,8 +1725,109 @@
         </div>
         <div class='col-24 col-md-4'>
           <h6 class='text-medium'>
-            Example
+            Layout
           </h6>
+          <div class="toast display-inline-block m-0 mb-3">
+            <div class="toast-text">
+              Hello world
+            </div>
+          </div>
+          <div class="toast inverted display-inline-block m-0 mb-3">
+            <div class="toast-text">
+              Hello world
+            </div>
+          </div>
+          <div class="toast success display-inline-block m-0 mb-3">
+            <div class="toast-text">
+              Hello world
+            </div>
+          </div>
+          <div class="toast warning display-inline-block m-0 mb-3">
+            <div class="toast-text">
+              Hello world
+            </div>
+            <span class="toast-close-button" style="display: inline;">
+              ✖
+            </span>
+          </div>
+          <div class="toast error display-inline-block m-0 mb-3">
+            <div class="toast-text">
+              Hello world
+            </div>
+            <span class="toast-close-button" style="display: inline;">
+              ✖
+            </span>
+          </div>
+          <div class="toast info display-inline-block m-0 mb-3">
+            <div class="toast-text">
+              Hello world
+            </div>
+            <span class="toast-close-button" style="display: inline;">
+              ✖
+            </span>
+          </div>
+          <div class="toast grayscale display-inline-block m-0 mb-3">
+            <div class="toast-text">
+              Hello world
+            </div>
+            <span class="toast-close-button" style="display: inline;">
+              ✖
+            </span>
+          </div>
+        </div>
+        <div class='col-24 col-md-4'>
+          <h6 class='text-medium'>
+            Exemple
+          </h6>
+          <button
+            type='button'
+            class='button inverted button-black mb-3'
+            onclick='Toast.show("Hello world", { closeButton: true, position: "top right" } );'
+          >
+            Click here
+          </button>
+          <button
+            type='button'
+            class='button mb-3'
+            onclick='Toast.inverted("Hello world", { position: "bottom", className: "full" } );'
+          >
+            Click here
+          </button>
+          <button
+            type='button'
+            class='button button-green mb-3'
+            onclick='Toast.success("<i class=\"fas fa-check mr-1\"></i> Hello world", { closeButton: true, position: "bottom right" } );'
+          >
+            Click here
+          </button>
+          <button
+            type='button'
+            class='button button-yellow mb-3'
+            onclick='Toast.warning("Hello world", { closeButton: true, position: "bottom left" } );'
+          >
+            Click here
+          </button>
+          <button
+            type='button'
+            class='button button-red mb-3'
+            onclick='Toast.error("Hello world", { closeButton: true, position: "bottom" } );'
+          >
+            Click here
+          </button>
+          <button
+            type='button'
+            class='button button-gray mb-3'
+            onclick='Toast.grayscale("Hello world", { closeButton: true, position: "top", className: "full" } );'
+          >
+            Click here
+          </button>
+          <button
+            type='button'
+            class='button button-pink mb-3'
+            onclick='Toast.custom("Hello world", { position: "top left", className: "background-pink white-html" } );'
+          >
+            Click here
+          </button>
         </div>
       </div>
       <div class='row'>
