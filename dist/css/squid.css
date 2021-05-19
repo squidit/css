@@ -20945,7 +20945,7 @@ i {
   .tag.button:hover[disabled], .tag.input:hover[disabled], .tag.textarea:hover[disabled], .tag.select:hover[disabled], .wrapper-selectors input[disabled] + label.tag.checkbox:hover, .wrapper-selectors input.disabled + label.tag.checkbox:hover, .tag.disabled:hover {
     box-shadow: none; }
   .tag.rounded {
-    border-radius: 50px; }
+    border-radius: 50px !important; }
 
 .badge {
   padding: 0 0.25rem;
