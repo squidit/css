@@ -63,5 +63,16 @@
         max-height: 9999px;           
       }
     }
+    &.collapse-disabled {
+      .collapse-title {
+        @extend .disabled;
+      }
+      .collapse-body {
+        opacity: 0;
+        height: auto;
+        max-height: 0;
+        padding: 0;
+      }
+    }
   }
 }

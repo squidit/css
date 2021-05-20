@@ -17010,7 +17010,7 @@ i {
 .text-black {
   font-weight: 900 !important; }
 
-.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select, .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .tag.disabled, .tabs-header li.disabled {
+.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select, .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .tag.disabled, .accordion .collapse.collapse-disabled .collapse-title, .tabs-header li.disabled {
   cursor: not-allowed !important;
   color: var(--gray) !important;
   border-color: var(--gray_light) !important;
@@ -20984,7 +20984,7 @@ i {
       background-color: var(--pink); }
       .wrapper-selectors input:checked + label.checkbox::after {
         opacity: 1; }
-    .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .wrapper-selectors input.button[disabled] + label.checkbox, .wrapper-selectors input.input[disabled] + label.checkbox, .wrapper-selectors input.textarea[disabled] + label.checkbox, .wrapper-selectors input.select[disabled] + label.checkbox {
+    .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .wrapper-selectors input.button[disabled] + label.checkbox, .wrapper-selectors input.input[disabled] + label.checkbox, .wrapper-selectors input.textarea[disabled] + label.checkbox, .wrapper-selectors input.select[disabled] + label.checkbox, .wrapper-selectors .accordion .collapse.collapse-disabled input.collapse-title + label.checkbox, .accordion .collapse.collapse-disabled .wrapper-selectors input.collapse-title + label.checkbox {
       cursor: not-allowed; }
   .wrapper-selectors.toggle input + label.checkbox {
     width: 48px;
@@ -21041,16 +21041,16 @@ i {
     border: 2px solid transparent; }
     .range[type='range']::-moz-range-thumb:hover {
       border-color: var(--pink); }
-  .range[type='range'].disabled, .range.button[type='range'][disabled], .range.input[type='range'][disabled], .range.textarea[type='range'][disabled], .range.select[type='range'][disabled], .wrapper-selectors input[disabled] + label.range.checkbox[type='range'], .wrapper-selectors input.disabled + label.range.checkbox[type='range'], .range[type='range'][disabled] {
+  .range[type='range'].disabled, .range.button[type='range'][disabled], .range.input[type='range'][disabled], .range.textarea[type='range'][disabled], .range.select[type='range'][disabled], .wrapper-selectors input[disabled] + label.range.checkbox[type='range'], .wrapper-selectors input.disabled + label.range.checkbox[type='range'], .accordion .collapse.collapse-disabled .range.collapse-title[type='range'], .range[type='range'][disabled] {
     cursor: not-allowed; }
-    .range[type='range'].disabled::-webkit-slider-thumb, .range.button[disabled][type='range']::-webkit-slider-thumb, .range.input[disabled][type='range']::-webkit-slider-thumb, .range.textarea[disabled][type='range']::-webkit-slider-thumb, .range.select[disabled][type='range']::-webkit-slider-thumb, .wrapper-selectors input[disabled] + label.range.checkbox[type='range']::-webkit-slider-thumb, .wrapper-selectors input.disabled + label.range.checkbox[type='range']::-webkit-slider-thumb, .range[type='range'][disabled]::-webkit-slider-thumb {
+    .range[type='range'].disabled::-webkit-slider-thumb, .range.button[disabled][type='range']::-webkit-slider-thumb, .range.input[disabled][type='range']::-webkit-slider-thumb, .range.textarea[disabled][type='range']::-webkit-slider-thumb, .range.select[disabled][type='range']::-webkit-slider-thumb, .wrapper-selectors input[disabled] + label.range.checkbox[type='range']::-webkit-slider-thumb, .wrapper-selectors input.disabled + label.range.checkbox[type='range']::-webkit-slider-thumb, .accordion .collapse.collapse-disabled .range.collapse-title[type='range']::-webkit-slider-thumb, .range[type='range'][disabled]::-webkit-slider-thumb {
       padding: 0;
       height: 22px;
       width: 22px;
       border: none !important;
       background: var(--gray);
       cursor: not-allowed; }
-    .range[type='range'].disabled::-moz-range-thumb, .range.button[disabled][type='range']::-moz-range-thumb, .range.input[disabled][type='range']::-moz-range-thumb, .range.textarea[disabled][type='range']::-moz-range-thumb, .range.select[disabled][type='range']::-moz-range-thumb, .wrapper-selectors input[disabled] + label.range.checkbox[type='range']::-moz-range-thumb, .wrapper-selectors input.disabled + label.range.checkbox[type='range']::-moz-range-thumb, .range[type='range'][disabled]::-moz-range-thumb {
+    .range[type='range'].disabled::-moz-range-thumb, .range.button[disabled][type='range']::-moz-range-thumb, .range.input[disabled][type='range']::-moz-range-thumb, .range.textarea[disabled][type='range']::-moz-range-thumb, .range.select[disabled][type='range']::-moz-range-thumb, .wrapper-selectors input[disabled] + label.range.checkbox[type='range']::-moz-range-thumb, .wrapper-selectors input.disabled + label.range.checkbox[type='range']::-moz-range-thumb, .accordion .collapse.collapse-disabled .range.collapse-title[type='range']::-moz-range-thumb, .range[type='range'][disabled]::-moz-range-thumb {
       padding: 0;
       height: 22px;
       width: 22px;
@@ -21082,7 +21082,7 @@ i {
       color: var(--black) !important; }
     .tag.readonly-tag:hover {
       box-shadow: none; }
-  .tag.button:hover[disabled], .tag.input:hover[disabled], .tag.textarea:hover[disabled], .tag.select:hover[disabled], .wrapper-selectors input[disabled] + label.tag.checkbox:hover, .wrapper-selectors input.disabled + label.tag.checkbox:hover, .tag.disabled:hover {
+  .tag.button:hover[disabled], .tag.input:hover[disabled], .tag.textarea:hover[disabled], .tag.select:hover[disabled], .wrapper-selectors input[disabled] + label.tag.checkbox:hover, .wrapper-selectors input.disabled + label.tag.checkbox:hover, .tag.disabled:hover, .accordion .collapse.collapse-disabled .tag.collapse-title:hover {
     box-shadow: none; }
   .tag.rounded {
     border-radius: 50px !important; }
@@ -21213,6 +21213,11 @@ i {
       padding: 1rem;
       opacity: 1;
       max-height: 9999px; }
+    .accordion .collapse.collapse-disabled .collapse-body {
+      opacity: 0;
+      height: auto;
+      max-height: 0;
+      padding: 0; }
 
 .modal {
   position: fixed;
@@ -21368,7 +21373,7 @@ i {
     text-align: center;
     color: var(--gray);
     cursor: pointer;
-    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; }
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; }
     .tabs-header li.active {
       flex-shrink: 0;
       width: auto;

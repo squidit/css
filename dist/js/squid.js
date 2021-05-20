@@ -7,7 +7,7 @@ function initAccordion (element) {
     if (index < 0) {
       return
     }
-    if (!collapses[index].classList.contains('disabled')) {
+    if (!collapses[index].classList.contains('collapse-disabled')) {
       if (currentTabIndex > -1 && element.classList.contains('only-one')) {
         if (index !== currentTabIndex) {
           collapses[currentTabIndex].classList.remove('active')
