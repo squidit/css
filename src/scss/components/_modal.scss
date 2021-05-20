@@ -19,11 +19,16 @@
   @extend .scrollbar;
   &.open {
     opacity: 1;
+    .modal-dialog {
+      transform: translate(0, 0);
+    }
   }
   .modal-dialog {
+    transition: $transition;
     position: relative;
     width: 100%;
     margin: 0 $gutter;
+    transform: translate(0,-50px);
     &.modal-container {
       @extend .container;
     }

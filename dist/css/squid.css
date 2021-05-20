@@ -21234,10 +21234,14 @@ i {
   flex-wrap: wrap; }
   .modal.open {
     opacity: 1; }
+    .modal.open .modal-dialog {
+      transform: translate(0, 0); }
   .modal .modal-dialog {
+    transition: all 0.3s ease;
     position: relative;
     width: 100%;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    transform: translate(0, -50px); }
     .modal .modal-dialog.modal-sm {
       margin: 0 auto;
       max-width: 300px; }
