@@ -21517,9 +21517,9 @@ i {
     opacity: 0;
     overflow: hidden;
     right: 0;
-    top: 2px;
+    top: 5px;
     padding: 0 0.5rem;
-    height: calc(100% - 2px);
+    height: calc(100% - 8px);
     background-color: white;
     box-shadow: inset 1px 0 0 var(--gray_light), inset -1px 0 0 var(--gray_light), -3px 0 3px 0px var(--gray_light); }
     @media (max-width: 992px) {
@@ -21549,7 +21549,7 @@ i {
       font-weight: 700;
       padding: 1rem 0.5rem;
       border: none;
-      border-bottom: 4px solid var(--white); }
+      border-bottom: 7px solid var(--white); }
       .table > thead th:first-child, .table > thead td:first-child {
         border-radius: 5px 0 0 0; }
       .table > thead th:last-child, .table > thead td:last-child {
