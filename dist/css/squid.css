@@ -21212,7 +21212,8 @@ i {
   display: none;
   opacity: 0;
   transition: all 0.3s ease;
-  padding: 1rem; }
+  padding: 1rem;
+  width: 100%; }
   .tab-content.active {
     display: block;
     opacity: 1; }

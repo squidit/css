@@ -11,19 +11,23 @@ function tabify (element) {
   let currentTabIndex = -1
 
   function setTab (index) {
-    if (currentTabIndex > -1) {
-      tabHeaders[currentTabIndex].classList.remove('active')
-      tabContents[currentTabIndex].classList.remove('active')
+    if (index < 0) {
+      return
     }
-    tabContents[index].classList.add('active')
-    tabHeaders[index].classList.add('active')
-    currentTabIndex = index
+    if (!tabHeaders[index].classList.contains('disabled')) {
+      if (currentTabIndex > -1) {
+        tabHeaders[currentTabIndex].classList.remove('active')
+        tabContents[currentTabIndex].classList.remove('active')
+      }
+      tabContents[index].classList.add('active')
+      tabHeaders[index].classList.add('active')
+      currentTabIndex = index
+    }
   }
 
-  defaultTabIndex = tabHeaders.findIndex(x => [...x.classList].indexOf('default-gator-tab') > -1)
-
-  defaultTabIndex = defaultTabIndex === -1 ? 0 : defaultTabIndex
-  setTab(defaultTabIndex)
+  defaultTabIndex = tabHeaders.findIndex(x => [...x.classList].indexOf('active') > -1)
+  currentTabIndex = defaultTabIndex === -1 ? 0 : defaultTabIndex
+  setTab(currentTabIndex)
   // eslint-disable-next-line
   tabHeaders.forEach((x, i) => x.onclick = event => setTab(i))
 }
