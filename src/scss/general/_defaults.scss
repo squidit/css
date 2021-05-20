@@ -23,6 +23,13 @@ body, html {
   display: block;
 }
 
+body {
+  &.block {
+    overflow: hidden;
+    padding-right: 7px;
+  }
+}
+
 p,
 a,
 span,

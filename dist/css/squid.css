@@ -16862,6 +16862,10 @@ body, html {
   max-width: 100%;
   display: block; }
 
+body.block {
+  overflow: hidden;
+  padding-right: 7px; }
+
 p,
 a,
 span,
@@ -20470,19 +20474,19 @@ i {
   .px-xxl-7 {
     padding-left: 3rem !important; } }
 
-.scrollbar, .textarea, .table-overflow, .table {
+.scrollbar, .textarea, .modal, .table-overflow, .table {
   scrollbar-color: var(--gray_light) var(--gray);
   scrollbar-width: thin; }
-  .scrollbar::-webkit-scrollbar, .textarea::-webkit-scrollbar, .table-overflow::-webkit-scrollbar, .table::-webkit-scrollbar {
+  .scrollbar::-webkit-scrollbar, .textarea::-webkit-scrollbar, .modal::-webkit-scrollbar, .table-overflow::-webkit-scrollbar, .table::-webkit-scrollbar {
     width: 7px;
     height: 7px; }
-  .scrollbar::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track, .table-overflow::-webkit-scrollbar-track, .table::-webkit-scrollbar-track {
+  .scrollbar::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track, .modal::-webkit-scrollbar-track, .table-overflow::-webkit-scrollbar-track, .table::-webkit-scrollbar-track {
     background: var(--gray_light);
     border-radius: 7px; }
-  .scrollbar::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb, .table-overflow::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb {
+  .scrollbar::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb, .table-overflow::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb {
     background: var(--gray);
     border-radius: 7px; }
-  .scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover, .table-overflow::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover {
+  .scrollbar::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover, .modal::-webkit-scrollbar-thumb:hover, .table-overflow::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover {
     background: var(--gray_dark); }
 
 .rounded, .badge.rounded {
@@ -21209,6 +21213,56 @@ i {
       padding: 1rem;
       opacity: 1;
       max-height: 9999px; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center; }
+  .modal.open {
+    visibility: visible;
+    opacity: 1;
+    display: block; }
+  .modal .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 1rem; }
+  .modal .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid var(--gray_light);
+    border-radius: 5px;
+    outline: 0; }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0; }
+  .modal-backdrop.show {
+    opacity: 0.5; }
 
 .pagination {
   display: inline-flex;
