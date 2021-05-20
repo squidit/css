@@ -21331,7 +21331,8 @@ i {
   padding: 0;
   margin: 0;
   border: 1px solid var(--gray);
-  border-radius: 5px; }
+  border-radius: 5px;
+  overflow: hidden; }
   .pagination li {
     display: block;
     color: var(--gray);
