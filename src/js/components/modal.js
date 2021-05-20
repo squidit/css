@@ -9,14 +9,22 @@ modals.forEach(function (trigger) {
     document.body.appendChild(backdrop)
     const body = document.getElementsByTagName('body')[0]
     body.classList.add('block')
-    modal.classList.add('open')
+    modal.style.display = 'flex'
+    setTimeout(() => {
+      modal.classList.add('open')
+    }, 100)
     const exits = modal.querySelectorAll('.modal-exit')
     exits.forEach(function (exit) {
       exit.addEventListener('click', function (event) {
         event.preventDefault()
+        if (backdrop.parentNode) {
+          backdrop.parentNode.removeChild(backdrop)
+        }
         modal.classList.remove('open')
-        backdrop.parentNode.removeChild(backdrop)
-        body.classList.remove('block')
+        setTimeout(() => {
+          modal.style.display = 'none'
+          body.classList.remove('block')
+        }, 500)
       })
     })
   })

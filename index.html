@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./dist/css/squid.css">
   </head>
   <body class='py-sm-3 scrollbar background-white'>
-    <div class='container py-3 border-gray-light box mb-0' style='border: 2px solid transparent; background: white'>
+    <div class='container py-3 border-gray-light box mb-0' style='border: 2px solid transparent'>
       <h1 class='text-center mb-0'>
         CSS - Components Squid Style <i class="fasq fa-squid pink"></i>
       </h1>
@@ -2078,28 +2078,55 @@
             JS Required
           </p>
         </div>
-        <div class='col-24 col-md-4'>
+        <div class='col-24 col-md-6'>
           <h6 class='text-medium'>
             Layout
           </h6>
+          <div class='modal-content mb-3'>
+            <div class='modal-header'>
+              <h5 class='m-0'>Modal Title</h5>
+              <button class="button-close modal-exit">
+                <i class="far fa-times"></i>
+              </button>
+            </div>
+            <div class='modal-body'>
+              <p>
+                Content Modal
+              </p>
+            </div>
+            <div class='modal-footer'>
+              <button
+                class='button button-white black mr-3 modal-exit'
+              >
+                Close
+              </button>
+              <button
+                class='button button-pink'
+              >
+                Button
+              </button>
+            </div>
+          </div>
         </div>
-        <div class='col-24 col-md-4'>
+        <div class='col-24 col-md-6'>
           <h6 class='text-medium'>
             Example
           </h6>
           <button
             type='button'
-            class='button button-pink'
+            class='button button-pink mb-3'
             data-modal="modal"
           >
-            Clique
+            Open
           </button>
-          <div class="modal modal-exit" id="modal" data-backdrop="static">
-            <div class="modal-dialog">
+          <div class="modal align-items-center" id="modal" data-backdrop="static">
+            <div class="modal-dialog modal-md">
               <div class='modal-content'>
                 <div class='modal-header'>
-                  <h1>Amazing Modal</h1>
-                  <button class="modal-close modal-exit">X</button>
+                  <h5 class='m-0'>Modal Title</h5>
+                  <button class="button-close modal-exit">
+                    <i class="far fa-times"></i>
+                  </button>
                 </div>
                 <div class='modal-body'>
                   <p>
