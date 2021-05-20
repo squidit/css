@@ -2,7 +2,6 @@
 
 
 
-
 function tabify (element) {
   const header = element.querySelector('.tabs-header')
   const content = element.querySelector('.tabs-wrapper-content')
