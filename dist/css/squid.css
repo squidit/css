@@ -21195,7 +21195,8 @@ i {
   background: var(--white);
   list-style: none;
   align-items: center;
-  margin: 0; }
+  margin: 0;
+  flex-wrap: wrap; }
   .tabs-header li {
     flex: 0 1 auto;
     overflow: hidden;
@@ -21233,6 +21234,8 @@ i {
     justify-content: center; }
     .tabs-header.tabs-center li {
       width: initial; }
+  .tabs-header.tabs-width li {
+    flex: 1 0 0; }
 
 .tabs-wrapper-content {
   display: flex; }

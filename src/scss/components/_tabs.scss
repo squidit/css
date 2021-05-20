@@ -6,6 +6,7 @@
   list-style: none;
   align-items: center;
   margin: 0;
+  flex-wrap: wrap;
   li {
     flex: 0 1 auto;
     overflow: hidden;
@@ -55,6 +56,11 @@
     justify-content: center;
     li {
       width: initial;
+    }
+  }
+  &.tabs-width {
+    li {
+      flex: 1 0 0;
     }
   }
 }
