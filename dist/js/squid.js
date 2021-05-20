@@ -8,14 +8,14 @@ function initAccordion (element) {
       return
     }
     if (!collapses[index].classList.contains('collapse-disabled')) {
-      if (currentTabIndex > -1 && element.classList.contains('only-one')) {
-        if (index !== currentTabIndex) {
+      if (currentTabIndex > -1) {
+        if (element.classList.contains('only-one') && index !== currentTabIndex) {
           collapses[currentTabIndex].classList.remove('active')
           collapses[index].classList.add('active')
         } else {
           collapses[index].classList.toggle('active')
         }
-      } else {
+      } else if (!element.classList.contains('only-one')) {
         collapses[index].classList.toggle('active')
       }
       currentTabIndex = index
@@ -23,8 +23,7 @@ function initAccordion (element) {
   }
 
   defaultTabIndex = collapses.findIndex(x => [...x.classList].indexOf('active') > -1)
-  currentTabIndex = defaultTabIndex === -1 ? 0 : defaultTabIndex
-  setTab(currentTabIndex)
+  setTab(defaultTabIndex)
   // eslint-disable-next-line
   collapses.forEach((x, i) => x.onclick = event => setTab(i))
 }
