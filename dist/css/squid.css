@@ -12936,43 +12936,43 @@ readers do not read off random characters that represent icons */
   --gray_light: #DDE2E5;
   --gray_dark: #495057;
   --pink: #E94589;
-  --pink_light: #f189b4;
+  --pink_light: #f5aecc;
   --pink_dark: #ca1862;
   --lilac: #7C70D1;
-  --lilac_light: #b1aae4;
+  --lilac_light: #cdc9ee;
   --lilac_dark: #4b3cb9;
   --cian: #5ACAED;
-  --cian_light: #9fe0f5;
+  --cian_light: #c4ecf9;
   --cian_dark: #19b2e2;
   --green: #01ED6E;
-  --green_light: #3cfe96;
+  --green_light: #65feac;
   --green_dark: #01a14b;
   --yellow: #FED708;
-  --yellow_light: #fee354;
+  --yellow_light: #feea7d;
   --yellow_dark: #b99c01;
   --red: #EE3030;
-  --red_light: #f47777;
+  --red_light: #f79c9c;
   --red_dark: #c21010;
   --blue: #5E9BFF;
-  --blue_light: #abcbff;
+  --blue_light: #d3e4ff;
   --blue_dark: #126bff;
   --instagram: #F42A9C;
-  --instagram_light: #f873be;
+  --instagram_light: #fa9ad0;
   --instagram_dark: #c70a75;
   --twitter: #1DA1F2;
-  --twitter_light: #65bff6;
+  --twitter_light: #8ccff8;
   --twitter_dark: #0b76b8;
   --youtube: #FF0000;
-  --youtube_light: #ff4d4d;
+  --youtube_light: #ff7575;
   --youtube_dark: #b30000;
   --pinterest: #E60023;
-  --pinterest_light: #ff3452;
+  --pinterest_light: #ff5c75;
   --pinterest_dark: #9a0017;
   --facebook: #4267B2;
-  --facebook_light: #7591cc;
+  --facebook_light: #93a9d7;
   --facebook_dark: #2d477a;
   --google: #0F9D58;
-  --google_light: #16e37f;
+  --google_light: #36ec93;
   --google_dark: #085731; }
 
 /* CSS Vars */
@@ -13059,13 +13059,13 @@ readers do not read off random characters that represent icons */
   border-color: #E94589 !important; }
 
 .pink-light {
-  color: #f189b4 !important; }
+  color: #f5aecc !important; }
 
 .background-pink-light {
-  background-color: #f189b4 !important; }
+  background-color: #f5aecc !important; }
 
 .border-pink-light {
-  border-color: #f189b4 !important; }
+  border-color: #f5aecc !important; }
 
 .pink-dark {
   color: #ca1862 !important; }
@@ -13086,13 +13086,13 @@ readers do not read off random characters that represent icons */
   border-color: #7C70D1 !important; }
 
 .lilac-light {
-  color: #b1aae4 !important; }
+  color: #cdc9ee !important; }
 
 .background-lilac-light {
-  background-color: #b1aae4 !important; }
+  background-color: #cdc9ee !important; }
 
 .border-lilac-light {
-  border-color: #b1aae4 !important; }
+  border-color: #cdc9ee !important; }
 
 .lilac-dark {
   color: #4b3cb9 !important; }
@@ -13113,13 +13113,13 @@ readers do not read off random characters that represent icons */
   border-color: #5ACAED !important; }
 
 .cian-light {
-  color: #9fe0f5 !important; }
+  color: #c4ecf9 !important; }
 
 .background-cian-light {
-  background-color: #9fe0f5 !important; }
+  background-color: #c4ecf9 !important; }
 
 .border-cian-light {
-  border-color: #9fe0f5 !important; }
+  border-color: #c4ecf9 !important; }
 
 .cian-dark {
   color: #19b2e2 !important; }
@@ -13140,13 +13140,13 @@ readers do not read off random characters that represent icons */
   border-color: #01ED6E !important; }
 
 .green-light {
-  color: #3cfe96 !important; }
+  color: #65feac !important; }
 
 .background-green-light {
-  background-color: #3cfe96 !important; }
+  background-color: #65feac !important; }
 
 .border-green-light {
-  border-color: #3cfe96 !important; }
+  border-color: #65feac !important; }
 
 .green-dark {
   color: #01a14b !important; }
@@ -13167,13 +13167,13 @@ readers do not read off random characters that represent icons */
   border-color: #FED708 !important; }
 
 .yellow-light {
-  color: #fee354 !important; }
+  color: #feea7d !important; }
 
 .background-yellow-light {
-  background-color: #fee354 !important; }
+  background-color: #feea7d !important; }
 
 .border-yellow-light {
-  border-color: #fee354 !important; }
+  border-color: #feea7d !important; }
 
 .yellow-dark {
   color: #b99c01 !important; }
@@ -13194,13 +13194,13 @@ readers do not read off random characters that represent icons */
   border-color: #EE3030 !important; }
 
 .red-light {
-  color: #f47777 !important; }
+  color: #f79c9c !important; }
 
 .background-red-light {
-  background-color: #f47777 !important; }
+  background-color: #f79c9c !important; }
 
 .border-red-light {
-  border-color: #f47777 !important; }
+  border-color: #f79c9c !important; }
 
 .red-dark {
   color: #c21010 !important; }
@@ -13221,13 +13221,13 @@ readers do not read off random characters that represent icons */
   border-color: #5E9BFF !important; }
 
 .blue-light {
-  color: #abcbff !important; }
+  color: #d3e4ff !important; }
 
 .background-blue-light {
-  background-color: #abcbff !important; }
+  background-color: #d3e4ff !important; }
 
 .border-blue-light {
-  border-color: #abcbff !important; }
+  border-color: #d3e4ff !important; }
 
 .blue-dark {
   color: #126bff !important; }
@@ -13248,13 +13248,13 @@ readers do not read off random characters that represent icons */
   border-color: #F42A9C !important; }
 
 .instagram-light {
-  color: #f873be !important; }
+  color: #fa9ad0 !important; }
 
 .background-instagram-light {
-  background-color: #f873be !important; }
+  background-color: #fa9ad0 !important; }
 
 .border-instagram-light {
-  border-color: #f873be !important; }
+  border-color: #fa9ad0 !important; }
 
 .instagram-dark {
   color: #c70a75 !important; }
@@ -13275,13 +13275,13 @@ readers do not read off random characters that represent icons */
   border-color: #1DA1F2 !important; }
 
 .twitter-light {
-  color: #65bff6 !important; }
+  color: #8ccff8 !important; }
 
 .background-twitter-light {
-  background-color: #65bff6 !important; }
+  background-color: #8ccff8 !important; }
 
 .border-twitter-light {
-  border-color: #65bff6 !important; }
+  border-color: #8ccff8 !important; }
 
 .twitter-dark {
   color: #0b76b8 !important; }
@@ -13302,13 +13302,13 @@ readers do not read off random characters that represent icons */
   border-color: #FF0000 !important; }
 
 .youtube-light {
-  color: #ff4d4d !important; }
+  color: #ff7575 !important; }
 
 .background-youtube-light {
-  background-color: #ff4d4d !important; }
+  background-color: #ff7575 !important; }
 
 .border-youtube-light {
-  border-color: #ff4d4d !important; }
+  border-color: #ff7575 !important; }
 
 .youtube-dark {
   color: #b30000 !important; }
@@ -13329,13 +13329,13 @@ readers do not read off random characters that represent icons */
   border-color: #E60023 !important; }
 
 .pinterest-light {
-  color: #ff3452 !important; }
+  color: #ff5c75 !important; }
 
 .background-pinterest-light {
-  background-color: #ff3452 !important; }
+  background-color: #ff5c75 !important; }
 
 .border-pinterest-light {
-  border-color: #ff3452 !important; }
+  border-color: #ff5c75 !important; }
 
 .pinterest-dark {
   color: #9a0017 !important; }
@@ -13356,13 +13356,13 @@ readers do not read off random characters that represent icons */
   border-color: #4267B2 !important; }
 
 .facebook-light {
-  color: #7591cc !important; }
+  color: #93a9d7 !important; }
 
 .background-facebook-light {
-  background-color: #7591cc !important; }
+  background-color: #93a9d7 !important; }
 
 .border-facebook-light {
-  border-color: #7591cc !important; }
+  border-color: #93a9d7 !important; }
 
 .facebook-dark {
   color: #2d477a !important; }
@@ -13383,13 +13383,13 @@ readers do not read off random characters that represent icons */
   border-color: #0F9D58 !important; }
 
 .google-light {
-  color: #16e37f !important; }
+  color: #36ec93 !important; }
 
 .background-google-light {
-  background-color: #16e37f !important; }
+  background-color: #36ec93 !important; }
 
 .border-google-light {
-  border-color: #16e37f !important; }
+  border-color: #36ec93 !important; }
 
 .google-dark {
   color: #085731 !important; }
