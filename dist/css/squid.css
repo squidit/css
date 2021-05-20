@@ -21568,7 +21568,7 @@ i {
         text-align: center;
         padding: 1rem 0.5rem; }
       .table > tbody > tr:last-child {
-        border-bottom: 1px solid var(--gray_dark); }
+        border-bottom: 1px solid var(--gray); }
   .table > tfoot {
     vertical-align: middle;
     position: relative; }
