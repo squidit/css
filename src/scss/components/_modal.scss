@@ -88,7 +88,7 @@
   border-radius: 5px;
   padding: $gutter;
   outline: 0;
-  @extend .box-shadow-default;
+  @extend .box-shadow;
   .modal-header {
     padding: 0 $gutter 0 0;
     display: block;

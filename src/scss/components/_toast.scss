@@ -45,7 +45,7 @@
   flex-grow: 1;
   font-size: 1rem;
   @extend .border-radius;
-  @extend .box-shadow-default;
+  @extend .box-shadow;
   &.success {
     background: var(--green);
     color: white;

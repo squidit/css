@@ -29,7 +29,7 @@
       background: white;
       color: var(--black);
       font-weight: 700;
-      @extend .box-shadow-default;
+      @extend .box-shadow;
     }
     &.disabled {
       @extend .disabled;

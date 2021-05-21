@@ -1,6 +1,6 @@
 function initAccordion (element) {
   const collapses = [...element.children]
-  let currentTabIndex = -1
+  let currentTabIndex = 0
 
   function setTab (index) {
     if (index < 0) {

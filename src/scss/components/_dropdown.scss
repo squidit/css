@@ -1,0 +1,58 @@
+.dropdown {
+  position: absolute;
+  z-index: 1079;
+	display: none;
+  min-width: ($gutter * 10);
+  max-width: 100vw;
+  margin: 0;
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid var(--gray_light);
+  border-radius: 5px;
+  padding: 0;
+  background-clip: padding-box;
+  @extend .box-shadow;
+  @extend .scrollbar;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: ($gutter / 4) 0;
+  &.open {
+    display: flex;
+  }
+  li {
+    display: block;
+    width: 100%;
+    .dropdown-divider,
+    button, a {
+      width: calc(100% + #{($gutter * 2)});
+    }
+    button, a {
+      display: block;
+      cursor: pointer;
+      padding: $gutter;
+      border: none;
+      box-shadow: none;
+      background-color: white;
+      transition: $transition;
+      color: inherit;
+      text-align: left;
+      &:hover {
+        background-color: var(--white);
+      }
+    }
+  }
+}
+
+.dropdown-divider {
+  padding: 0 !important;
+  margin: ($gutter / 2) 0;
+  overflow: hidden;
+}
+
+.dropdown-plain {
+  width: 100%;
+  display: block;
+  padding: $gutter;
+}

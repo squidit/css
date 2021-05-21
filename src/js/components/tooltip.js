@@ -56,6 +56,7 @@
         if (document.querySelector(`.tooltip-${numberTooltip}`)) {
           document.body.removeChild(document.querySelector(`.tooltip-${numberTooltip}`))
         }
+        e.target.removeAttribute('data-tooltip-open')
       }, delay || 0)
     }
   }
