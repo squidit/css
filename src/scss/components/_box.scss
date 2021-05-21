@@ -4,5 +4,6 @@
   border-radius: 5px;
   margin: 0 0 $gutter;
   overflow: hidden;
+  border: 1px solid transparent;
   @extend .box-shadow;
 }

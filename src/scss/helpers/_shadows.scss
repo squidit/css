@@ -4,10 +4,22 @@ $configShadow: 0px 4px 12px;
   box-shadow: $configShadow -5px var(--gray);
 }
 
+.box-shadow-none {
+  box-shadow: none;
+}
+
 .text-shadow {
   text-shadow: $configShadow var(--gray);
 }
 
+.text-shadow-none {
+  box-shadow: none;
+}
+
 .drop-shadow {
   filter: drop-shadow($configShadow var(--gray));
+}
+
+.drop-shadow-none {
+  box-shadow: none;
 }
