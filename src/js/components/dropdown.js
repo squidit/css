@@ -21,7 +21,7 @@
   window.onclick = function (event) {
     if (toClose && toClose.classList) {
       const button = getButtonDropdownToClose(toClose)
-      if (button && !button.contains(event.target)) {
+      if (button && !button.contains(event.target) && !toClose.contains(event.target)) {
         button.classList.remove('dropdown-open')
         button.removeAttribute('data-dropdown-open')
         document.body.removeChild(toClose)

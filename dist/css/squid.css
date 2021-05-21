@@ -17011,7 +17011,7 @@ i {
 .text-black {
   font-weight: 900 !important; }
 
-.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select, .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .tag.disabled, .accordion .collapse.collapse-disabled .collapse-title, .tabs-header li.disabled {
+.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select, .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .tag.disabled, .accordion .collapse.collapse-disabled .collapse-title, .dropdown li button.disabled, .dropdown li a.disabled, .tabs-header li.disabled {
   cursor: not-allowed !important;
   color: var(--gray) !important;
   border-color: var(--gray_light) !important;
