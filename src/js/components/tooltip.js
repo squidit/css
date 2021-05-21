@@ -1,6 +1,30 @@
 (function () {
   'use strict'
+  document.body.addEventListener('click', function (e) {
+    if (e.target.hasAttribute('data-tooltip') && e.target.getAttribute('data-tooltip-trigger') === 'click') {
+      if (e.target.classList.contains('tooltip-open')) {
+        e.target.classList.remove('tooltip-open')
+        removeTooltip(e)
+      } else {
+        e.target.classList.add('tooltip-open')
+        createTooltip(e)
+      }
+    }
+  })
+
   document.body.addEventListener('mouseover', function (e) {
+    if (e.target.hasAttribute('data-tooltip') && e.target.getAttribute('data-tooltip-trigger') !== 'click') {
+      createTooltip(e)
+    }
+  })
+
+  document.body.addEventListener('mouseout', function (e) {
+    if (e.target.hasAttribute('data-tooltip') && e.target.getAttribute('data-tooltip-trigger') !== 'click') {
+      removeTooltip(e)
+    }
+  })
+
+  function createTooltip (e) {
     if (!e.target.hasAttribute('data-tooltip')) {
       return
     }
@@ -9,8 +33,9 @@
     const pos = e.target.getAttribute('data-tooltip-position') || 'center bottom'
     const tooltip = document.createElement('div')
     const tooltipArrow = document.createElement('div')
-    tooltip.className = `tooltip tooltip-${theme} tooltip-${pos.replace(' ', '-')}`
-    tooltip.id = 'tooltip'
+    const tooltipCount = (document.querySelectorAll('.tooltip.tooltip-generated').length + 1) || 1
+    tooltip.className = `tooltip tooltip-generated tooltip-${theme} tooltip-${tooltipCount} tooltip-${pos.replace(' ', '-')}`
+    e.target.setAttribute('data-tooltip-open', tooltipCount)
     tooltipArrow.className = 'tooltip-arrow'
     tooltip.appendChild(tooltipArrow)
     tooltip.append(e.target.getAttribute('data-tooltip'))
@@ -21,16 +46,19 @@
     const posVertical = pos.split(' ')[1]
 
     positionAt(e.target, tooltip, posHorizontal, posVertical, distance)
-  })
+  }
 
-  document.body.addEventListener('mouseout', function (e) {
+  function removeTooltip (e) {
     if (e.target.hasAttribute('data-tooltip')) {
       const delay = e.target.getAttribute('data-tooltip-delay')
+      const numberTooltip = e.target.getAttribute('data-tooltip-open')
       setTimeout(function () {
-        document.body.removeChild(document.querySelector('#tooltip'))
+        if (document.querySelector(`.tooltip-${numberTooltip}`)) {
+          document.body.removeChild(document.querySelector(`.tooltip-${numberTooltip}`))
+        }
       }, delay || 0)
     }
-  })
+  }
 
   function positionAt (parent, tooltip, posHorizontal, posVertical, distance) {
     const parentCoords = parent.getBoundingClientRect()
