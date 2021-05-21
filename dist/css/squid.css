@@ -17037,13 +17037,13 @@ i {
   text-shadow: 0px 4px 12px var(--gray); }
 
 .text-shadow-none {
-  box-shadow: none; }
+  text-shadow: none; }
 
 .drop-shadow {
   filter: drop-shadow(0px 4px 12px var(--gray)); }
 
 .drop-shadow-none {
-  box-shadow: none; }
+  filter: drop-shadow(none); }
 
 .display-none {
   display: none !important; }

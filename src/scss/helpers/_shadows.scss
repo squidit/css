@@ -13,7 +13,7 @@ $configShadow: 0px 4px 12px;
 }
 
 .text-shadow-none {
-  box-shadow: none;
+  text-shadow: none;
 }
 
 .drop-shadow {
@@ -21,5 +21,5 @@ $configShadow: 0px 4px 12px;
 }
 
 .drop-shadow-none {
-  box-shadow: none;
+  filter: drop-shadow(none);
 }
