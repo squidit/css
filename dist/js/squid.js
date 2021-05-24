@@ -29,7 +29,7 @@ function initAccordion (element) {
 }
 
 (function () {
-  [...document.querySelectorAll('.accordion')].forEach(x => initAccordion(x))
+  [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
 })();
 
 (function () {
@@ -225,7 +225,7 @@ function tabify (element) {
 }
 
 (function () {
-  [...document.querySelectorAll('.tabs-container')].forEach(x => tabify(x))
+  [...document.querySelectorAll('[data-tabs]')].forEach(x => tabify(x))
 })();
 
 (function () {

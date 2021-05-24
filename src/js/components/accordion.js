@@ -28,5 +28,5 @@ function initAccordion (element) {
 }
 
 (function () {
-  [...document.querySelectorAll('.accordion')].forEach(x => initAccordion(x))
+  [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
 })();

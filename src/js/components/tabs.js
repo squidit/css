@@ -28,5 +28,5 @@ function tabify (element) {
 }
 
 (function () {
-  [...document.querySelectorAll('.tabs-container')].forEach(x => tabify(x))
+  [...document.querySelectorAll('[data-tabs]')].forEach(x => tabify(x))
 })();
