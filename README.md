@@ -72,7 +72,7 @@ After using the `npm install` command, do the following:
     "src/styles.scss"
   ],
   "scripts": [
-    "node_modules/@squidit/css/dist/js/squid.min.js" // This line
+    "node_modules/@squidit/css/dist/js/squid.min.js" // JS includes
   ]
   ...
 }
@@ -80,7 +80,7 @@ After using the `npm install` command, do the following:
 
 2. Add to your `style.scss` main file
 ```scss
-$fontsFolderPath: './assets/fonts'; // Overwrite default font path
+$fontsFolderPath: '/assets/fonts'; // Overwrite default font path
 @import '~@squidit/css/src/scss/squid.scss'; // Import all Framework Styles
 ```
 
