@@ -1,31 +1,30 @@
-# CSS - Components Squid Style
-
-## About
-
-> Squid CSS Framework.
-
 <p align="center">
   <a href="https://squidit.com.br" target='_blank'>
     <img src="https://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg" alt="Squid logo">
   </a>
 </p>
 
+<h1 align="center">CSS - Components Squid Style</h1>
+
+## About
+
+> Squid CSS Framework
+
 ## Table of contents
 
-- [CSS - Components Squid Style](#css---components-squid-style)
-  - [About](#about)
-  - [Table of contents](#table-of-contents)
-  - [Usage](#usage)
-    - [Install](#install)
-  - [Development](#development)
-  - [Production](#production)
-  - [Documentation](#documentation)
-  - [External Libaries and Inspiration](#external-libaries-and-inspiration)
-    - [Animate.css](#animatecss)
-    - [Grid System](#grid-system)
-    - [Icons](#icons)
-    - [Toast](#toast)
-    - [Based Styleguide](#based-styleguide)
+- [About](#about)
+- [Table of contents](#table-of-contents)
+- [Usage](#usage)
+  - [Install](#install)
+- [Development](#development)
+- [Production](#production)
+- [Documentation](#documentation)
+- [External Libaries and Inspiration](#external-libaries-and-inspiration)
+  - [Animate.css](#animatecss)
+  - [Grid System](#grid-system)
+  - [Icons](#icons)
+  - [Toast](#toast)
+  - [Based Styleguide](#based-styleguide)
 
 ## Usage
 
