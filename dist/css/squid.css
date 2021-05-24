@@ -21143,6 +21143,10 @@ i {
 
 .card {
   border-left: 0.5rem solid var(--black); }
+  .card.one-border {
+    border-right: none;
+    border-top: none;
+    border-bottom: none; }
 
 .breadcrumb {
   list-style: none;

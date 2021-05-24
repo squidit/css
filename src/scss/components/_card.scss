@@ -1,4 +1,9 @@
 .card {
   @extend .box;
   border-left: ($gutter / 2) solid var(--black);
+  &.one-border {
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
 }
