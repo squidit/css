@@ -19,7 +19,7 @@
 - [Development](#development)
 - [Production](#production)
 - [Documentation](#documentation)
-- [External Libaries and Inspiration](#external-libaries-and-inspiration)
+- [External Libraries and Inspiration](#external-libraries-and-inspiration)
   - [Animate.css](#animatecss)
   - [Grid System](#grid-system)
   - [Icons](#icons)
@@ -76,7 +76,7 @@ Just reference CSS `/dist/css/squid.min.css` and Javascript `/dist/js/squid.min.
 
 Soon
 
-## External Libaries and Inspiration
+## External Libraries and Inspiration
 
 ### Animate.css
 
