@@ -3,76 +3,77 @@
   flex-direction: column;
   width: 100%;
   height: auto;
-  .collapse {
-    display: flex;
-    flex-direction: column;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @extend .mb-2;
+  &:last-child {
+    @extend .mb-0;
+  }
+  .collapse-title {
+    margin: 0;
+    position: relative;
+    padding: $gutter ($gutter * 2);
     width: 100%;
-    @extend .mb-2;
-    &:last-child {
-      @extend .mb-0;
+    color: var(--black);
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    font-weight: 500;
+    background-color: var(--white);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
+    cursor: pointer;
+    transition: $transition;
+    border-radius: 5px;
+    &:hover {
+      background-image: linear-gradient(180deg, rgba(0,0,0, 0.2) 0%, rgba(0,0,0,0.2) 100%);
     }
-    .collapse-title {
-      margin: 0;
-      position: relative;
-      padding: $gutter ($gutter * 2);
-      width: 100%;
-      color: var(--black);
-      font-size: 16px;
-      line-height: 18px;
+    .icon {
       display: block;
-      font-weight: 500;
-      background-color: var(--white);
-      background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
-      cursor: pointer;
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      right: $gutter;
+      top: $gutter;
+      font-size: 14px;
+      line-height: 16px;
       transition: $transition;
-      border-radius: 5px;
-      &:hover {
-        background-image: linear-gradient(180deg, rgba(0,0,0, 0.2) 0%, rgba(0,0,0,0.2) 100%);
-      }
+      text-align: center;
+    }
+      
+  }
+  .collapse-body {
+    width: 100%;       
+    transition: $transition;
+    opacity: 0;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+  }
+  &.active{
+    .collapse-title {
       .icon {
-        display: block;
-        position: absolute;
-        height: 16px;
-        width: 16px;
-        right: $gutter;
-        top: $gutter;
-        font-size: 14px;
-        line-height: 16px;
-        transition: $transition;
-        text-align: center;
+        transform: rotate(180deg);
       }
-        
+    }
+    .collapse-body {               
+      padding: $gutter;
+      opacity: 1;
+      max-height: 9999px;           
+    }
+  }
+  &.collapse-disabled {
+    .collapse-title {
+      @extend .disabled;
     }
     .collapse-body {
-      width: 100%;       
-      transition: $transition;
       opacity: 0;
       height: auto;
       max-height: 0;
-      overflow: hidden;
-    }
-    &.active{
-      .collapse-title {
-        .icon {
-          transform: rotate(180deg);
-        }
-      }
-      .collapse-body {               
-        padding: $gutter;
-        opacity: 1;
-        max-height: 9999px;           
-      }
-    }
-    &.collapse-disabled {
-      .collapse-title {
-        @extend .disabled;
-      }
-      .collapse-body {
-        opacity: 0;
-        height: auto;
-        max-height: 0;
-        padding: 0;
-      }
+      padding: 0;
     }
   }
 }
