@@ -4,7 +4,28 @@
 
 > Squid CSS Framework.
 
-![https://squidit.com.br](https://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg)
+<p align="center">
+  <a href="https://squidit.com.br" target='_blank'>
+    <img src="https://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg" alt="Squid logo">
+  </a>
+</p>
+
+## Table of contents
+
+- [CSS - Components Squid Style](#css---components-squid-style)
+  - [About](#about)
+  - [Table of contents](#table-of-contents)
+  - [Usage](#usage)
+    - [Install](#install)
+  - [Development](#development)
+  - [Production](#production)
+  - [Documentation](#documentation)
+  - [External Libaries and Inspiration](#external-libaries-and-inspiration)
+    - [Animate.css](#animatecss)
+    - [Grid System](#grid-system)
+    - [Icons](#icons)
+    - [Toast](#toast)
+    - [Based Styleguide](#based-styleguide)
 
 ## Usage
 
@@ -56,22 +77,24 @@ Just reference CSS `/dist/css/squid.min.css` and Javascript `/dist/js/squid.min.
 
 Soon
 
-## Animate.css
+## External Libaries and Inspiration
+
+### Animate.css
 
 > This framework uses Animate.css lib, see docs [here](https://animate.style/)
 
-## Grid System
+### Grid System
 
 > This framework uses a Grid based on Boostrap 5 Grid System with modifications, see docs [here](https://getbootstrap.com/docs/5.0/)
 
-## Icons
+### Icons
 
 > This framework uses Icons from Font Awersome, see [here](https://fontawesome.com/)
 
-## Toast
+### Toast
 
 > This framework uses a adaptation of VanillaToast, see [here](https://github.com/talsu/vanilla-toast)
 
-## Based Styleguide
+### Based Styleguide
 
 > This framework is based on [Squid Styleguide](https://www.figma.com/file/jgIT00DpxPCgaFwxlN7BZv/PADRONIZA%C3%87%C3%83O?node-id=0%3A1)
