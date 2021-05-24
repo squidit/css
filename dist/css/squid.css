@@ -21215,7 +21215,7 @@ i {
       width: 16px;
       right: 1rem;
       top: 1rem;
-      margin-right: 1rem;
+      margin-left: 1rem;
       font-size: 14px;
       line-height: 16px;
       transition: all 0.3s ease;
@@ -21475,7 +21475,8 @@ i {
     flex: 1 0 0; }
 
 .tabs-wrapper-content {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .tab-content {
   display: none;
