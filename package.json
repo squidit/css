@@ -1,6 +1,6 @@
 {
   "name": "@squidit/css",
-  "version": "1.0.7",
+  "version": "1.0.71",
   "scripts": {
     "start": "gulp watch",
     "css": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed",
