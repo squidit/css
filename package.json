@@ -1,6 +1,6 @@
 {
   "name": "@squidit/css",
-  "version": "1.0.72",
+  "version": "1.0.73",
   "scripts": {
     "start": "gulp watch",
     "css": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed",
@@ -51,7 +51,7 @@
   "bugs": {
     "url": "https://github.com/squidit/front-end/issues"
   },
-  "homepage": "https://github.com/squidit/front-end#readme",
+  "homepage": "https://squidit.github.io/css",
   "author": "Squid <developers@squidit.com.br>",
   "license": "MIT"
 }
