@@ -21,6 +21,7 @@
     - [React.js Install](#reactjs-install)
     - [Vue.js Install](#vuejs-install)
 - [Development](#development)
+  - [Write Documentation](#write-documentation)
 - [Production](#production)
 - [Documentation](#documentation)
 - [External Libraries and Inspiration](#external-libraries-and-inspiration)
@@ -113,6 +114,10 @@ Soon
     5. `npm install uglifyjs -g`
 
 3. Run `npm start` to watch `.scss` and `.js` files
+
+### Write Documentation
+
+Soon
 
 ## Production
 
