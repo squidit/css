@@ -8,7 +8,10 @@
     "js": "uglifyjs src/js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
     "js:watch": "gulp watch-js",
     "dist": "npm-run-all --parallel css js",
-    "lint": "npx eslint ./src/js/**/*.js"
+    "lint": "npx eslint ./src/js/**/*.js",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve"
   },
   "private": false,
   "files": [

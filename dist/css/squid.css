@@ -21142,8 +21142,9 @@ i {
   padding: 1rem;
   border-radius: 5px;
   margin: 0 0 1rem;
-  overflow: hidden;
-  border: 1px solid transparent; }
+  overflow: hidden; }
+  .box .borded, .card .borded {
+    border: 1px solid transparent; }
 
 .card {
   border-left: 0.5rem solid var(--black); }
@@ -21493,7 +21494,8 @@ i {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  position: fixed; }
+  position: fixed;
+  z-index: 1100; }
   .toast-container.top {
     top: 0;
     bottom: initial; }
