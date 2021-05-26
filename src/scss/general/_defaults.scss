@@ -22,6 +22,7 @@ body, html {
   max-width: 100%;
   display: block;
   position: relative;
+  color: var(--black);
 }
 
 body {
@@ -53,7 +54,6 @@ caption {
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
-  color: var(--black);
   font-weight: 400;
   margin: 0;
   &:hover {

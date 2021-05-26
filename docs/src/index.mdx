@@ -40,15 +40,18 @@ After using the `npm install` command, do the following:
     {
       "glob": "**/*",
       "input": "./node_modules/@squidit/css/dist/fonts",
-      "output": "./assets/fonts" // Output fonts
+      // Output fonts
+      "output": "./assets/fonts"
     },
-    "src/assets" // Default assets
+     // Default assets
+    "src/assets"
   ],
   "styles": [
     "src/styles.scss"
   ],
+  // JS includes
   "scripts": [
-    "node_modules/@squidit/css/dist/js/squid.min.js" // JS includes
+    "node_modules/@squidit/css/dist/js/squid.min.js"
   ],
   ...
 }
@@ -56,8 +59,10 @@ After using the `npm install` command, do the following:
 
 2. Add to your `style.scss` main file
 ```scss
-$fontsFolderPath: '/assets/fonts'; // Overwrite default font path
-@import '~@squidit/css/src/scss/squid.scss'; // Import all Framework Styles
+// Overwrite default font path
+$fontsFolderPath: '/assets/fonts';
+// Import all Framework Styles
+@import '~@squidit/css/src/scss/squid.scss';
 ```
 
 ## React.js Install
