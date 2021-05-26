@@ -1,0 +1,16 @@
+{
+  "name": "@squidit/css-docs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "docz dev",
+    "build": "docz build",
+    "serve": "docz serve"
+  },
+  "dependencies": {
+    "docz": "latest",
+    "dotenv": "^10.0.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}

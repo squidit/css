@@ -8,10 +8,7 @@
     "js": "uglifyjs src/js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
     "js:watch": "gulp watch-js",
     "dist": "npm-run-all --parallel css js",
-    "lint": "npx eslint ./src/js/**/*.js",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "lint": "npx eslint ./src/js/**/*.js"
   },
   "private": false,
   "files": [
@@ -20,11 +17,7 @@
     "src/js/**/*.{js,map}",
     "src/scss/**/*.scss"
   ],
-  "dependencies": {
-    "docz": "^2.3.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
@@ -54,7 +47,7 @@
   },
   "main": "dist/js/squid.min.js",
   "style": "dist/css/squid.min.css",
-  "description": "## About",
+  "description": "Squid CSS Styleguide",
   "bugs": {
     "url": "https://github.com/squidit/front-end/issues"
   },
