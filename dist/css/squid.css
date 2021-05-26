@@ -21147,11 +21147,9 @@ i {
     border: 1px solid transparent; }
 
 .card {
-  border-left: 0.5rem solid var(--black); }
-  .card.one-border {
-    border-right: none;
-    border-top: none;
-    border-bottom: none; }
+  border-left: 0.5rem solid var(--pink); }
+  .card.borded {
+    border-left-width: 0.5rem; }
 
 .breadcrumb {
   list-style: none;
