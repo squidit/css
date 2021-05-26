@@ -127,7 +127,7 @@ Soon
 
 ## Documentation
 
-Soon
+See Docs [here](https://squidit.github.io/css/docs)
 
 ## External Libraries and Inspiration
 
