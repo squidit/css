@@ -20,7 +20,11 @@
     "src/js/**/*.{js,map}",
     "src/scss/**/*.scss"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "docz": "^2.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "devDependencies": {
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",

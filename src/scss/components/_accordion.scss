@@ -36,7 +36,7 @@
       width: 16px;
       right: $gutter;
       top: $gutter;
-      margin-left: $gutter;
+      margin-left: ($gutter / 2);
       font-size: 14px;
       line-height: 16px;
       transition: $transition;
