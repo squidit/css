@@ -146,7 +146,7 @@ function initAccordion (element) {
     const distance = e.target.getAttribute('data-dropdown-distance') || 3
     const width = e.target.getAttribute('data-dropdown-width') || e.target.offsetWidth
     const pos = e.target.getAttribute('data-dropdown-position') || 'right bottom'
-    const dropdown = menu.cloneNode()
+    const dropdown = menu.cloneNode(true)
     const dropdownCount = (document.querySelectorAll('.dropdown.dropdown-generated').length + 1) || 1
     dropdown.className = `dropdown open dropdown-generated ${className} dropdown-count-${dropdownCount} dropdown-${pos.replace(' ', '-')}`
     e.target.setAttribute('data-dropdown-open', dropdownCount)

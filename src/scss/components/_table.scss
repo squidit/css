@@ -73,7 +73,6 @@
     vertical-align: middle;
     border: none;
     position: relative;
-    border-radius: 5px 5px 0 0;
     overflow: hidden;
     th, td {
       background-color: var(--white);
@@ -85,7 +84,7 @@
       border: none;
       border-bottom: 4px solid var(--white);
       &:first-child {
-        border-radius: 5px 5px 0 0;
+        border-radius: 5px 0 0 0;
       }
       &:last-child, &.last-col {
         border-radius: 0 5px 0 0;

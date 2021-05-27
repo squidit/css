@@ -21259,7 +21259,8 @@ i {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0.25rem 0;
-  color: var(--black); }
+  color: var(--black);
+  font-size: 0; }
   .dropdown.open {
     display: flex; }
   .dropdown li {
@@ -21489,7 +21490,8 @@ i {
   opacity: 0;
   transition: all 0.3s ease;
   padding: 1rem;
-  width: 100%; }
+  width: 100%;
+  color: var(--black); }
   .tab-content.active {
     display: block;
     opacity: 1; }
@@ -21712,7 +21714,6 @@ i {
     vertical-align: middle;
     border: none;
     position: relative;
-    border-radius: 5px 5px 0 0;
     overflow: hidden; }
     .table > thead th, .table > thead td {
       background-color: var(--white);
@@ -21724,7 +21725,7 @@ i {
       border: none;
       border-bottom: 4px solid var(--white); }
       .table > thead th:first-child, .table > thead td:first-child {
-        border-radius: 5px 5px 0 0; }
+        border-radius: 5px 0 0 0; }
       .table > thead th:last-child, .table > thead th.last-col, .table > thead td:last-child, .table > thead td.last-col {
         border-radius: 0 5px 0 0; }
   .table > tbody {

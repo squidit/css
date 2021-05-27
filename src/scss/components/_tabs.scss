@@ -79,6 +79,7 @@
   transition: $transition;
   padding: $gutter;
   width: 100%;
+  color: var(--black);
   &.active {
     display: block;
     opacity: 1;
