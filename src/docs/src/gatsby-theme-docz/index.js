@@ -97,6 +97,7 @@ const Theme = ({ children }) => {
     }
     .table {
       margin-top: 0 !important;
+      border-collapse: collapse !important;
     }
     .table p {
       margin: 0 !important;
@@ -135,6 +136,9 @@ const Theme = ({ children }) => {
     .table>tfoot tr th {
       padding: 1rem .5rem !important;
       color: var(--black);
+    }
+    .dropdown li:last-child {
+      margin: 0 0 -15px 0;
     }
   `
   return (
