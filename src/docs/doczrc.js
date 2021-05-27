@@ -10,8 +10,7 @@ export default {
     'Forms',
     'Components',
     'Utilities',
-    'Styleguide',
-    'About'
+    'Styleguide'
   ],
   dest: '../../docs',
   ignore: [

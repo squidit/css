@@ -131,6 +131,11 @@ const Theme = ({ children }) => {
       margin: .5rem 0 !important;
       border-color: var(--gray_light);
     }
+    .table>tfoot tr td,
+    .table>tfoot tr th {
+      padding: 1rem .5rem !important;
+      color: var(--black);
+    }
   `
   return (
     <ThemeProvider theme={config.themeConfig}>

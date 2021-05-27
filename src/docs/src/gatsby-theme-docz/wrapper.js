@@ -11,10 +11,10 @@ const Wrapper = ({ children, doc }) => <React.Fragment>
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/squidit/css@1.0.75/dist/css/squid.min.css"
+      href="https://cdn.jsdelivr.net/gh/squidit/css@1.0.76/dist/css/squid.min.css"
     />
   </Helmet>
   {children}
-  <script src='https://cdn.jsdelivr.net/gh/squidit/css/dist/js/squid.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/gh/squidit/css@1.0.76/dist/js/squid.min.js'></script>
 </React.Fragment>
 export default Wrapper

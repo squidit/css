@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   padding: ($gutter / 4) 0;
   color: var(--black);
+  font-size: 0;
   &.open {
     display: flex;
   }
