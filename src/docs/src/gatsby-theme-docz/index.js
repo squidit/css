@@ -65,9 +65,16 @@ const themeConfig = {
 
 const Theme = ({ children }) => {
   const config = useConfig()
+  const style = `
+    .img-fluid {
+      margin: 0 !important;
+    }
+  `
   return (
     <ThemeProvider theme={config.themeConfig}>
+      <style dangerouslySetInnerHTML={{__html: style}} />
       <ComponentsProvider components={components}>
+        {/* eslint-disable-next-line */}
         <Styled.root>{children}</Styled.root>
       </ComponentsProvider>
     </ThemeProvider>

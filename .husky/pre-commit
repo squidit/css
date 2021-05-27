@@ -4,6 +4,6 @@
 npm run lint
 npm run dist
 cd src/docs
-DOCZ_BASE=/css/ && npm run build
+npm run build
 cd ../..
 git add .

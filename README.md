@@ -117,7 +117,7 @@ Soon
 
 ### Write Documentation
 
-Soon
+See Intructions [here](https://github.com/squidit/css/src/docs/README.md)
 
 ## Production
 
@@ -127,7 +127,7 @@ Soon
 
 ## Documentation
 
-See Docs [here](https://squidit.github.io/css/docs)
+See Docs [here](https://css.squidit.com.br)
 
 ## External Libraries and Inspiration
 
