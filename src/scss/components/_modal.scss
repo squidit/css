@@ -17,6 +17,7 @@
   padding: $gutter 0;
   flex-wrap: wrap;
   @extend .scrollbar;
+  color: var(--black);
   &.open {
     opacity: 1;
     .modal-dialog {

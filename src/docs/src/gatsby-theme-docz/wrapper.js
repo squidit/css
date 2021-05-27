@@ -11,7 +11,7 @@ const Wrapper = ({ children, doc }) => <React.Fragment>
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/squidit/css@1.0.74/dist/css/squid.min.css"
+      href="https://cdn.jsdelivr.net/gh/squidit/css@1.0.75/dist/css/squid.min.css"
     />
   </Helmet>
   {children}

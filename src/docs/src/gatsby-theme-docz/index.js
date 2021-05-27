@@ -72,20 +72,22 @@ const Theme = ({ children }) => {
     }
   }
   const style = `
-    div[data-testid="header"]{
-      position: fixed;
-      width: 100%;
-      z-index: 2;
-    }
-    div[data-testid="sidebar"] {
-      position: fixed;
-      top: 80px;
-      left: 0;
-      min-height: 100vh;
-    }
-    div[data-testid="main-container"] {
-      grid-column: 2;
-      padding-top: 112px;
+    @media (min-width: 921px) {
+      div[data-testid="header"]{
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+      }
+      div[data-testid="sidebar"] {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        min-height: 100vh;
+      }
+      div[data-testid="main-container"] {
+        grid-column: 2;
+        padding-top: 112px;
+      }
     }
     .img-fluid {
       margin: 0 !important;

@@ -5,6 +5,7 @@
   display: inline-flex;
   align-items: center;
   li {
+    color: var(--black);
     display: block;
     margin: 0 ($gutter / 2);
     padding: ($gutter / 2);

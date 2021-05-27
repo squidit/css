@@ -21158,6 +21158,7 @@ i {
   display: inline-flex;
   align-items: center; }
   .breadcrumb li {
+    color: var(--black);
     display: block;
     margin: 0 0.5rem;
     padding: 0.5rem;
@@ -21257,11 +21258,13 @@ i {
   background-clip: padding-box;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 0.25rem 0; }
+  padding: 0.25rem 0;
+  color: var(--black); }
   .dropdown.open {
     display: flex; }
   .dropdown li {
     display: block;
+    color: inherit;
     width: 100%; }
     .dropdown li .dropdown-divider,
     .dropdown li button, .dropdown li a {
@@ -21306,7 +21309,8 @@ i {
   transition: all 0.3s ease;
   justify-content: center;
   padding: 1rem 0;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  color: var(--black); }
   .modal.open {
     opacity: 1; }
     .modal.open .modal-dialog {
@@ -21432,7 +21436,8 @@ i {
   list-style: none;
   align-items: center;
   margin: 0;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  color: var(--black); }
   .tabs-header li {
     flex: 0 1 auto;
     overflow: hidden;

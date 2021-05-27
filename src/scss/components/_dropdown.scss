@@ -18,11 +18,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: ($gutter / 4) 0;
+  color: var(--black);
   &.open {
     display: flex;
   }
   li {
     display: block;
+    color: inherit;
     width: 100%;
     .dropdown-divider,
     button, a {
