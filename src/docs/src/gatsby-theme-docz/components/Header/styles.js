@@ -52,6 +52,9 @@ export const headerButton = {
   fontSize: 0,
   fontWeight: 600,
   cursor: 'pointer',
+  ':hover': {
+    textDecoration: 'none'
+  }
 }
 
 export const editButton = {

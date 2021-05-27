@@ -129,6 +129,7 @@ const Theme = ({ children }) => {
     }
     .dropdown-divider {
       margin: .5rem 0 !important;
+      border-color: var(--gray_light);
     }
   `
   return (

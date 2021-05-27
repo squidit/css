@@ -21369,6 +21369,7 @@ i {
   border: 1px solid var(--gray_light);
   border-radius: 5px;
   padding: 1rem;
+  color: var(--black);
   outline: 0; }
   .modal-content .modal-header {
     padding: 0 1rem 0 0;
@@ -21483,6 +21484,7 @@ i {
   flex-wrap: wrap; }
 
 .tab-content {
+  color: inherit;
   display: none;
   opacity: 0;
   transition: all 0.3s ease;

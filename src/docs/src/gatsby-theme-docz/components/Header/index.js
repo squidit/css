@@ -22,7 +22,7 @@ export const Header = props => {
     <div sx={styles.wrapper} data-testid="header">
       <Box sx={styles.menuIcon}>
         <button sx={styles.menuButton} onClick={onOpen}>
-          <i style={{fontSize: '20px', lineHeight: '26px'}} class="far fa-bars"></i>
+          <i style={{fontSize: '20px', lineHeight: '26px'}} className="far fa-bars"></i>
         </button>
       </Box>
       <div sx={styles.innerContainer}>
@@ -36,7 +36,7 @@ export const Header = props => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i style={{fontSize: '20px'}} class="fab fa-github"></i>
+                <i style={{fontSize: '20px'}} className="fab fa-github"></i>
               </a>
             </Box>
           )}
@@ -46,7 +46,7 @@ export const Header = props => {
               onClick={toggleColorMode}
               aria-label={`Switch to ${colorMode} mode`}
             >
-              <i style={{fontSize: '20px'}} class="far fa-sun"></i>
+              <i style={{fontSize: '20px'}} className="far fa-sun"></i>
             </button>
           )}
         </Flex>
@@ -57,7 +57,7 @@ export const Header = props => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i style={{fontSize: '20px'}} class="far fa-file-edit"></i>
+            <i style={{fontSize: '20px'}} className="far fa-file-edit"></i>
             <Box sx={{ pl: 2 }}>Edit page</Box>
           </a>
         )}
