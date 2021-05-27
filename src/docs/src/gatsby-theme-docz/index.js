@@ -130,6 +130,7 @@ const Theme = ({ children }) => {
     .dropdown,
     .box p {
       margin-left: 0 !important;
+      margin-bottom: 0 !important;
     }
     label, .box-validation {
       color: var(--theme-ui-colors-text);
