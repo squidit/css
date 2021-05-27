@@ -3,7 +3,7 @@
 
 npm run dist
 cd src/docs
-npm run build
+# npm run build
 cd ../..
 git add .
-git commit -m "Build generated"
+git commit -m "Build generated" --no-verify
