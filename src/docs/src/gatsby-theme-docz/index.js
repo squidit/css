@@ -89,6 +89,25 @@ const Theme = ({ children }) => {
         padding-top: 112px;
       }
     }
+    div[data-testid="sidebar"] {
+      scrollbar-color: var(--gray_light) var(--gray);
+      scrollbar-width: thin;
+    }
+    div[data-testid="sidebar"]::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    div[data-testid="sidebar"]::-webkit-scrollbar-track {
+      background: var(--gray_light);
+      border-radius: 7px;
+    }
+    div[data-testid="sidebar"]::-webkit-scrollbar-thumb  {
+      background: var(--gray);
+      border-radius: 7px;
+    }
+    div[data-testid="sidebar"]::-webkit-scrollbar-thumb:hover {
+      background: var(--gray_dark);
+    }
     .img-fluid {
       margin: 0 !important;
     }
