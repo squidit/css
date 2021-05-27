@@ -1,6 +1,8 @@
 export default {
   title: 'CSS - Components Squid Style',
   description: 'Front-end framework style created by Squid',
+  repository: 'https://github.com/squidit/css',
+  port: 3838,
   menu: [
     'Getting Started',
     'Content',
@@ -9,8 +11,10 @@ export default {
     'Components',
     'Utilities',
     'Styleguide',
-    'About',
-    'Documentation'
+    'About'
   ],
-  dest: '../../docs'
+  dest: '../../docs',
+  ignore: [
+    'README.md'
+  ]
 }

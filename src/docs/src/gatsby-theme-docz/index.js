@@ -65,20 +65,36 @@ const themeConfig = {
 
 const Theme = ({ children }) => {
   const config = useConfig()
+  if (typeof document !== `undefined`) {
+    const body = document.getElementsByTagName('body')[0]
+    if (body) {
+      body.classList.add('scrollbar')
+    }
+  }
   const style = `
-    div[class$="-Header"{
+    div[data-testid="header"]{
       position: fixed;
       width: 100%;
       z-index: 2;
     }
-    div[data-testid="layout"] main{
-      padding-top: 80px;
+    div[data-testid="sidebar"] {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      min-height: 100vh;
+    }
+    div[data-testid="main-container"] {
+      grid-column: 2;
+      padding-top: 112px;
     }
     .img-fluid {
       margin: 0 !important;
     }
     .pagination li {
       margin: 0 !important;
+    }
+    .table {
+      margin-top: 0 !important;
     }
     .table p {
       margin: 0 !important;
@@ -95,6 +111,22 @@ const Theme = ({ children }) => {
     }
     label, .box-validation {
       color: var(--theme-ui-colors-text);
+    }
+    .table tr {
+      border-collapse: collapse;
+    }
+    .table>tbody>tr td,
+    .table>tbody>tr th {
+      align-items: center;
+      vertical-align: middle;
+      border: none;
+      padding: 1rem .5rem !important;
+    }
+    .tabs-header li {
+      margin-bottom: 0 !important;
+    }
+    .dropdown-divider {
+      margin: .5rem 0 !important;
     }
   `
   return (

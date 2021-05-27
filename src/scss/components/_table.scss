@@ -41,10 +41,11 @@
     padding: 0 ($gutter / 2);
     height: calc(100% - 8px);
     background-color: white;
+    border: none;
     box-shadow:
-      inset 1px 0 0 var(--gray_light),
-      inset -1px 0 0 var(--gray_light),
-      -3px 0 3px 0px var(--gray_light); 
+      inset 1px 0 0 var(--gray),
+      inset -1px 0 0 var(--gray),
+      -3px 0 3px 0px var(--gray); 
     @media (max-width: map-get($grid-breakpoints, lg)) {
       position: initial;
       top: initial;
@@ -72,6 +73,8 @@
     vertical-align: middle;
     border: none;
     position: relative;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
     th, td {
       background-color: var(--white);
       font-size: 14px;
@@ -80,11 +83,11 @@
       font-weight: 700;
       padding: $gutter ($gutter / 2);
       border: none;
-      border-bottom: 7px solid var(--white);
+      border-bottom: 4px solid var(--white);
       &:first-child {
-        border-radius: 5px 0 0 0;
+        border-radius: 5px 5px 0 0;
       }
-      &:last-child {
+      &:last-child, &.last-col {
         border-radius: 0 5px 0 0;
       }
     }
@@ -92,7 +95,9 @@
   > tbody {
     vertical-align: middle;
     position: relative;
+    color: var(--black);
     &> tr {
+      background-color: white;
       border-bottom: 1px solid var(--gray_light);
       transition: $transition;
       &:hover {
@@ -118,6 +123,7 @@
     vertical-align: middle;
     position: relative;
     tr {
+      background-color: white;
       border-bottom: 1px solid var(--gray_light);
       td, th {
         padding: $gutter ($gutter / 2);

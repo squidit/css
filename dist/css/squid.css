@@ -21554,6 +21554,7 @@ i {
   justify-self: flex-end;
   font-size: 1rem;
   font-weight: 700;
+  margin-left: 0.5rem;
   color: inherit; }
 
 .tooltip {
@@ -21683,7 +21684,8 @@ i {
     padding: 0 0.5rem;
     height: calc(100% - 8px);
     background-color: white;
-    box-shadow: inset 1px 0 0 var(--gray_light), inset -1px 0 0 var(--gray_light), -3px 0 3px 0px var(--gray_light); }
+    border: none;
+    box-shadow: inset 1px 0 0 var(--gray), inset -1px 0 0 var(--gray), -3px 0 3px 0px var(--gray); }
     @media (max-width: 992px) {
       .table .wrapper-buttons {
         position: initial;
@@ -21702,7 +21704,9 @@ i {
   .table > thead {
     vertical-align: middle;
     border: none;
-    position: relative; }
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden; }
     .table > thead th, .table > thead td {
       background-color: var(--white);
       font-size: 14px;
@@ -21711,15 +21715,17 @@ i {
       font-weight: 700;
       padding: 1rem 0.5rem;
       border: none;
-      border-bottom: 7px solid var(--white); }
+      border-bottom: 4px solid var(--white); }
       .table > thead th:first-child, .table > thead td:first-child {
-        border-radius: 5px 0 0 0; }
-      .table > thead th:last-child, .table > thead td:last-child {
+        border-radius: 5px 5px 0 0; }
+      .table > thead th:last-child, .table > thead th.last-col, .table > thead td:last-child, .table > thead td.last-col {
         border-radius: 0 5px 0 0; }
   .table > tbody {
     vertical-align: middle;
-    position: relative; }
+    position: relative;
+    color: var(--black); }
     .table > tbody > tr {
+      background-color: white;
       border-bottom: 1px solid var(--gray_light);
       transition: all 0.3s ease; }
       .table > tbody > tr:hover {
@@ -21735,6 +21741,7 @@ i {
     vertical-align: middle;
     position: relative; }
     .table > tfoot tr {
+      background-color: white;
       border-bottom: 1px solid var(--gray_light); }
       .table > tfoot tr td, .table > tfoot tr th {
         padding: 1rem 0.5rem; }

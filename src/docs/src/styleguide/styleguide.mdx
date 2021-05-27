@@ -1505,13 +1505,13 @@ route: /styleguide
     <h6 class='text-medium'>
       Default
     </h6>
-    <div class='tag-box background-white mb-3 pink'>
+    <div class='tag-box background-white-html mb-3 pink'>
       I'm a tag
     </div><br />
-    <div class='tag-box background-white rounded pink mb-3'>
+    <div class='tag-box background-white-html rounded pink mb-3'>
       I'm a tag
     </div><br />
-    <div class='tag-box background-white mb-3 lilac'>
+    <div class='tag-box background-white-html mb-3 lilac'>
       I'm a tag
     </div>
   </div>
@@ -1560,16 +1560,16 @@ route: /styleguide
     <h6 class='text-medium'>
       Over Element
     </h6>
-    <i class="far fa-comment-alt-lines mb-3 position-relative gray-dark" style='font-size: 20px'>
+    <i class="far fa-comment-alt-lines mb-3 position-relative" style='font-size: 20px; color: var(--theme-ui-colors-text)'>
       <span class='badge over-element'></span>
     </i><br />
-    <i class="far fa-comment-alt-lines mb-3 position-relative gray-dark" style='font-size: 20px'>
+    <i class="far fa-comment-alt-lines mb-3 position-relative" style='font-size: 20px; color: var(--theme-ui-colors-text)'>
       <span class='badge over-element top-left'>10</span>
     </i><br />
-    <i class="far fa-comment-alt-lines mb-3 position-relative gray-dark" style='font-size: 20px'>
+    <i class="far fa-comment-alt-lines mb-3 position-relative" style='font-size: 20px; color: var(--theme-ui-colors-text)'>
       <span class='badge background-yellow black over-element bottom-right'>100</span>
     </i><br />
-    <i class="far fa-comment-alt-lines mb-3 position-relative gray-dark" style='font-size: 20px'>
+    <i class="far fa-comment-alt-lines mb-3 position-relative" style='font-size: 20px; color: var(--theme-ui-colors-text)'>
       <span class='badge background-yellow black rounded over-element bottom-left'>100</span>
     </i><br />
   </div>
@@ -1999,6 +1999,7 @@ route: /styleguide
       <li>
         <button
           type='button'
+          onClick={() => false }
         >
           Button
         </button>
@@ -2079,6 +2080,7 @@ route: /styleguide
       <li>
         <button
           type='button'
+          onClick={() => false }
         >
           Button
         </button>
@@ -2449,7 +2451,7 @@ route: /styleguide
             <th scope="col" class='border-pink'>Social Network</th>
             <th scope="col" class='border-pink'>Customer</th>
             <th scope="col" class='border-pink'>Responsable</th>
-            <th scope="col" class='border-pink'>Status</th>
+            <th scope="col" class='border-pink last-col'>Status</th>
             <th scope="col" class='border-pink display-lg-none'>Actions</th>
           </tr>
         </thead>
@@ -2473,7 +2475,7 @@ route: /styleguide
                   >
                     Campaign 1
                     <span
-                      class='gray-dark display-block'
+                      class='display-block'
                       style='font-size: 11px;'
                     >
                       28/01/2021 - 29/10/2021
@@ -2556,7 +2558,7 @@ route: /styleguide
                   >
                     Campaign 2
                     <span
-                      class='gray-dark display-block'
+                      class='display-block'
                       style='font-size: 11px;'
                     >
                       28/01/2021 - 29/10/2021
@@ -2639,7 +2641,7 @@ route: /styleguide
                   >
                     Campaign 3
                     <span
-                      class='gray-dark display-block'
+                      class='display-block'
                       style='font-size: 11px;'
                     >
                       28/01/2021 - 29/10/2021
@@ -2732,7 +2734,7 @@ route: /styleguide
             <th scope="col" class='border-pink'>Social Network</th>
             <th scope="col" class='border-pink'>Customer</th>
             <th scope="col" class='border-pink'>Responsable</th>
-            <th scope="col" class='border-pink'>Status</th>
+            <th scope="col" class='border-pink last-col'>Status</th>
             <th scope="col" class='border-pink display-lg-none'>Actions</th>
           </tr>
         </thead>
@@ -2756,7 +2758,7 @@ route: /styleguide
                   >
                     Campaign 1
                     <span
-                      class='gray-dark display-block'
+                      class='display-block'
                       style='font-size: 11px;'
                     >
                       28/01/2021 - 29/10/2021
@@ -2839,7 +2841,7 @@ route: /styleguide
                   >
                     Campaign 2
                     <span
-                      class='gray-dark display-block'
+                      class='display-block'
                       style='font-size: 11px;'
                     >
                       28/01/2021 - 29/10/2021
@@ -2922,7 +2924,7 @@ route: /styleguide
                   >
                     Campaign 3
                     <span
-                      class='gray-dark display-block'
+                      class='display-block'
                       style='font-size: 11px;'
                     >
                       28/01/2021 - 29/10/2021
