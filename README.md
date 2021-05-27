@@ -117,7 +117,7 @@ Soon
 
 ### Write Documentation
 
-See Intructions [here](https://github.com/squidit/css/src/docs/README.md)
+See Intructions [here](https://github.com/squidit/css/blob/master/src/docs/README.md)
 
 ## Production
 
