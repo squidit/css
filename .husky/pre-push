@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run dist
+cd src/docs
+npm run build
+cd ../..
+git add .
+git commit -m "Build generated"
