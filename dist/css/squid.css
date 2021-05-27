@@ -16861,7 +16861,8 @@ body, html {
   line-height: 16px;
   max-width: 100%;
   display: block;
-  position: relative; }
+  position: relative;
+  color: var(--black); }
 
 body.block {
   overflow: hidden;
@@ -16889,7 +16890,6 @@ caption {
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
-  color: var(--black);
   font-weight: 400;
   margin: 0; }
   p:hover,
@@ -17013,7 +17013,7 @@ i {
 .text-black {
   font-weight: 900 !important; }
 
-.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select, .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .tag.disabled, .collapse.collapse-disabled .collapse-title, .dropdown li button.disabled, .dropdown li a.disabled, .tabs-header li.disabled {
+.disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select, .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .tag-box.disabled, .collapse.collapse-disabled .collapse-title, .dropdown li button.disabled, .dropdown li a.disabled, .tabs-header li.disabled {
   cursor: not-allowed !important;
   color: var(--gray) !important;
   border-color: var(--gray_light) !important;
@@ -17029,7 +17029,7 @@ i {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.box-shadow, .tag:hover, .box, .card, .dropdown, .modal-content, .tabs-header li.active, .toast {
+.box-shadow, .tag-box:hover, .box, .card, .dropdown, .modal-content, .tabs-header li.active, .toast {
   box-shadow: 0px 4px 12px -5px var(--gray); }
 
 .box-shadow-none {
@@ -21072,7 +21072,7 @@ i {
       background: var(--gray);
       cursor: not-allowed; }
 
-.tag {
+.tag-box {
   border: 1px solid var(--gray_light);
   transition: all 0.3s ease;
   cursor: pointer;
@@ -21082,23 +21082,23 @@ i {
   border-radius: 5px;
   position: relative;
   display: inline-block; }
-  .tag::after {
+  .tag-box::after {
     font-family: 'Font Awesome 5 Pro';
     font-weight: 700;
     content: '\f057';
     right: 0.66667rem;
     position: absolute;
     font-size: 16px; }
-  .tag.readonly-tag {
+  .tag-box.readonly-tag {
     cursor: default;
     background: var(--white) !important; }
-    .tag.readonly-tag::after {
+    .tag-box.readonly-tag::after {
       color: var(--black) !important; }
-    .tag.readonly-tag:hover {
+    .tag-box.readonly-tag:hover {
       box-shadow: none; }
-  .tag.button:hover[disabled], .tag.input:hover[disabled], .tag.textarea:hover[disabled], .tag.select:hover[disabled], .wrapper-selectors input[disabled] + label.tag.checkbox:hover, .wrapper-selectors input.disabled + label.tag.checkbox:hover, .tag.disabled:hover, .collapse.collapse-disabled .tag.collapse-title:hover {
+  .tag-box.button:hover[disabled], .tag-box.input:hover[disabled], .tag-box.textarea:hover[disabled], .tag-box.select:hover[disabled], .wrapper-selectors input[disabled] + label.tag-box.checkbox:hover, .wrapper-selectors input.disabled + label.tag-box.checkbox:hover, .tag-box.disabled:hover, .collapse.collapse-disabled .tag-box.collapse-title:hover {
     box-shadow: none; }
-  .tag.rounded {
+  .tag-box.rounded {
     border-radius: 50px !important; }
 
 .badge {

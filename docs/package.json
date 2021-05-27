@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "docz": "latest",
+    "docz-plugin-github-page": "^1.0.4",
     "dotenv": "^10.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
