@@ -66,8 +66,35 @@ const themeConfig = {
 const Theme = ({ children }) => {
   const config = useConfig()
   const style = `
+    div[class$="-Header"{
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+    }
+    div[data-testid="layout"] main{
+      padding-top: 80px;
+    }
     .img-fluid {
       margin: 0 !important;
+    }
+    .pagination li {
+      margin: 0 !important;
+    }
+    .table p {
+      margin: 0 !important;
+    }
+    .table th {
+      text-align: center !important;
+    }
+    .breadcrumb,
+    .tabs-header,
+    .pagination,
+    .dropdown,
+    .box p {
+      margin-left: 0 !important;
+    }
+    label, .box-validation {
+      color: var(--theme-ui-colors-text);
     }
   `
   return (

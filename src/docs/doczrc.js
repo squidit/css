@@ -9,7 +9,8 @@ export default {
     'Components',
     'Utilities',
     'Styleguide',
-    'About'
+    'About',
+    'Documentation'
   ],
   dest: '../../docs'
 }

@@ -1,3 +1,8 @@
+---
+name: Documentation
+route: /documentation
+---
+
 # Documentation
 
 ## Install
