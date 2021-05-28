@@ -5,9 +5,14 @@ route: /documentation
 
 # Documentation
 
+## Writing
+
+To write the documentation, just edit (or create a new) `.mdx` files inside the src folders.
+
+To create a new menu add to the file `doczrc.js`
 ## Install
 
-1. Navigate to `src/docs`
+1. Navigate to `src/docs` (Implying that you are at the base of the repository)
 
 2. Run `npm install docz -g`
 
@@ -15,7 +20,7 @@ route: /documentation
 
 ## Development
 
-Run `npm run dev`
+1. Run `npm run dev`
 
 ## Build
 
@@ -26,7 +31,6 @@ Run `npm run dev`
 ## Deploy on GitHub Pages
 
 The project is configured to generate a documentation build file for all commits generated. So as soon as the commit is plunged into the master the deployment is done automatically to GitHub pages
-
 ## Docz
 
 > This documentation is generated with [Docz](https://www.docz.site/)
