@@ -108,10 +108,11 @@ Soon
 
 2. Install Husky, Eslint, Sass, Gulp and Uglifyjs Globally
     1. `npm install husky -g`
-    2. `npm install eslint -g`
-    3. `npm install sass -g`
-    4. `npm install gulp -g`
-    5. `npm install uglifyjs -g`
+    2. `husyke install`
+    3. `npm install eslint -g`
+    4. `npm install sass -g`
+    5. `npm install gulp -g`
+    6. `npm install uglifyjs -g`
 
 3. Run `npm start` to watch `.scss` and `.js` files
 
