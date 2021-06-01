@@ -17799,6 +17799,30 @@ i {
   .background-dashed.animated-dashed {
     animation: move-bg 1.5s linear infinite; }
 
+.opacity-default {
+  opacity: 1 !important; }
+
+.opacity-light {
+  opacity: 0.5 !important; }
+
+.opacity-lighter {
+  opacity: 0.75 !important; }
+
+.opacity-zero {
+  opacity: 0 !important; }
+
+.z-index-override {
+  z-index: 1102 !important; }
+
+.z-index-onTop {
+  z-index: 1101 !important; }
+
+.z-index-default {
+  z-index: 0 !important; }
+
+.z-index-onBottom {
+  z-index: -1 !important; }
+
 .container-fluid, .container, .modal .modal-dialog.modal-container {
   width: 100%;
   padding-right: 1rem;
@@ -20507,6 +20531,9 @@ i {
 .border-radius, .badge, .toast {
   border-radius: 5px !important; }
 
+.border-radius-medium, .input, .textarea, .select, .wrapper-input .input-group-text {
+  border-radius: 8px !important; }
+
 .progress {
   width: 100%;
   background-color: var(--gray_light);
@@ -20580,10 +20607,10 @@ i {
     .button:hover:before, .button:focus:before {
       border-color: inherit; }
   .button.inverted {
-    background-color: white;
+    background-color: var(--white-html);
     color: var(--black); }
     .button.inverted:hover {
-      color: white;
+      color: var(--white-html);
       background-color: var(--black);
       border-color: var(--black); }
   .button.button-black {
@@ -20596,12 +20623,12 @@ i {
       border-color: var(--gray_dark); }
   .button.button-black.inverted {
     color: var(--black);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--black); }
     .button.button-black.inverted:hover, .button.button-black.inverted:focus {
       background-color: var(--black);
       border-color: var(--black);
-      color: white; }
+      color: var(--white-html); }
   .button.button-white {
     background-color: var(--white);
     border-color: var(--white);
@@ -20611,12 +20638,12 @@ i {
       border-color: var(--white_dark); }
   .button.button-white.inverted {
     color: var(--white);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--white); }
     .button.button-white.inverted:hover, .button.button-white.inverted:focus {
       background-color: var(--white);
       border-color: var(--white);
-      color: white;
+      color: var(--white-html);
       color: var(--black); }
   .button.button-black-html {
     background-color: var(--black-html);
@@ -20626,12 +20653,12 @@ i {
       border-color: var(--black-html_dark); }
   .button.button-black-html.inverted {
     color: var(--black-html);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--black-html); }
     .button.button-black-html.inverted:hover, .button.button-black-html.inverted:focus {
       background-color: var(--black-html);
       border-color: var(--black-html);
-      color: white; }
+      color: var(--white-html); }
   .button.button-white-html {
     background-color: var(--white-html);
     border-color: var(--white-html); }
@@ -20640,12 +20667,12 @@ i {
       border-color: var(--white-html_dark); }
   .button.button-white-html.inverted {
     color: var(--white-html);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--white-html); }
     .button.button-white-html.inverted:hover, .button.button-white-html.inverted:focus {
       background-color: var(--white-html);
       border-color: var(--white-html);
-      color: white; }
+      color: var(--white-html); }
   .button.button-transparent {
     background-color: var(--transparent);
     border-color: var(--transparent); }
@@ -20654,12 +20681,12 @@ i {
       border-color: var(--transparent_dark); }
   .button.button-transparent.inverted {
     color: var(--transparent);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--transparent); }
     .button.button-transparent.inverted:hover, .button.button-transparent.inverted:focus {
       background-color: var(--transparent);
       border-color: var(--transparent);
-      color: white; }
+      color: var(--white-html); }
   .button.button-gray {
     background-color: var(--gray);
     border-color: var(--gray); }
@@ -20668,12 +20695,12 @@ i {
       border-color: var(--gray_dark); }
   .button.button-gray.inverted {
     color: var(--gray);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--gray); }
     .button.button-gray.inverted:hover, .button.button-gray.inverted:focus {
       background-color: var(--gray);
       border-color: var(--gray);
-      color: white; }
+      color: var(--white-html); }
   .button.button-pink {
     background-color: var(--pink);
     border-color: var(--pink); }
@@ -20682,12 +20709,12 @@ i {
       border-color: var(--pink_dark); }
   .button.button-pink.inverted {
     color: var(--pink);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--pink); }
     .button.button-pink.inverted:hover, .button.button-pink.inverted:focus {
       background-color: var(--pink);
       border-color: var(--pink);
-      color: white; }
+      color: var(--white-html); }
   .button.button-lilac {
     background-color: var(--lilac);
     border-color: var(--lilac); }
@@ -20696,12 +20723,12 @@ i {
       border-color: var(--lilac_dark); }
   .button.button-lilac.inverted {
     color: var(--lilac);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--lilac); }
     .button.button-lilac.inverted:hover, .button.button-lilac.inverted:focus {
       background-color: var(--lilac);
       border-color: var(--lilac);
-      color: white; }
+      color: var(--white-html); }
   .button.button-cian {
     background-color: var(--cian);
     border-color: var(--cian);
@@ -20711,12 +20738,12 @@ i {
       border-color: var(--cian_dark); }
   .button.button-cian.inverted {
     color: var(--cian);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--cian); }
     .button.button-cian.inverted:hover, .button.button-cian.inverted:focus {
       background-color: var(--cian);
       border-color: var(--cian);
-      color: white;
+      color: var(--white-html);
       color: var(--black); }
   .button.button-green {
     background-color: var(--green);
@@ -20726,12 +20753,12 @@ i {
       border-color: var(--green_dark); }
   .button.button-green.inverted {
     color: var(--green);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--green); }
     .button.button-green.inverted:hover, .button.button-green.inverted:focus {
       background-color: var(--green);
       border-color: var(--green);
-      color: white; }
+      color: var(--white-html); }
   .button.button-yellow {
     background-color: var(--yellow);
     border-color: var(--yellow);
@@ -20741,12 +20768,12 @@ i {
       border-color: var(--yellow_dark); }
   .button.button-yellow.inverted {
     color: var(--yellow);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--yellow); }
     .button.button-yellow.inverted:hover, .button.button-yellow.inverted:focus {
       background-color: var(--yellow);
       border-color: var(--yellow);
-      color: white;
+      color: var(--white-html);
       color: var(--black); }
   .button.button-red {
     background-color: var(--red);
@@ -20756,12 +20783,12 @@ i {
       border-color: var(--red_dark); }
   .button.button-red.inverted {
     color: var(--red);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--red); }
     .button.button-red.inverted:hover, .button.button-red.inverted:focus {
       background-color: var(--red);
       border-color: var(--red);
-      color: white; }
+      color: var(--white-html); }
   .button.button-blue {
     background-color: var(--blue);
     border-color: var(--blue); }
@@ -20770,12 +20797,12 @@ i {
       border-color: var(--blue_dark); }
   .button.button-blue.inverted {
     color: var(--blue);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--blue); }
     .button.button-blue.inverted:hover, .button.button-blue.inverted:focus {
       background-color: var(--blue);
       border-color: var(--blue);
-      color: white; }
+      color: var(--white-html); }
   .button.button-instagram {
     background-color: var(--instagram);
     border-color: var(--instagram); }
@@ -20784,12 +20811,12 @@ i {
       border-color: var(--instagram_dark); }
   .button.button-instagram.inverted {
     color: var(--instagram);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--instagram); }
     .button.button-instagram.inverted:hover, .button.button-instagram.inverted:focus {
       background-color: var(--instagram);
       border-color: var(--instagram);
-      color: white; }
+      color: var(--white-html); }
   .button.button-twitter {
     background-color: var(--twitter);
     border-color: var(--twitter); }
@@ -20798,12 +20825,12 @@ i {
       border-color: var(--twitter_dark); }
   .button.button-twitter.inverted {
     color: var(--twitter);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--twitter); }
     .button.button-twitter.inverted:hover, .button.button-twitter.inverted:focus {
       background-color: var(--twitter);
       border-color: var(--twitter);
-      color: white; }
+      color: var(--white-html); }
   .button.button-youtube {
     background-color: var(--youtube);
     border-color: var(--youtube); }
@@ -20812,12 +20839,12 @@ i {
       border-color: var(--youtube_dark); }
   .button.button-youtube.inverted {
     color: var(--youtube);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--youtube); }
     .button.button-youtube.inverted:hover, .button.button-youtube.inverted:focus {
       background-color: var(--youtube);
       border-color: var(--youtube);
-      color: white; }
+      color: var(--white-html); }
   .button.button-pinterest {
     background-color: var(--pinterest);
     border-color: var(--pinterest); }
@@ -20826,12 +20853,12 @@ i {
       border-color: var(--pinterest_dark); }
   .button.button-pinterest.inverted {
     color: var(--pinterest);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--pinterest); }
     .button.button-pinterest.inverted:hover, .button.button-pinterest.inverted:focus {
       background-color: var(--pinterest);
       border-color: var(--pinterest);
-      color: white; }
+      color: var(--white-html); }
   .button.button-facebook {
     background-color: var(--facebook);
     border-color: var(--facebook); }
@@ -20840,12 +20867,12 @@ i {
       border-color: var(--facebook_dark); }
   .button.button-facebook.inverted {
     color: var(--facebook);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--facebook); }
     .button.button-facebook.inverted:hover, .button.button-facebook.inverted:focus {
       background-color: var(--facebook);
       border-color: var(--facebook);
-      color: white; }
+      color: var(--white-html); }
   .button.button-google {
     background-color: var(--google);
     border-color: var(--google); }
@@ -20854,18 +20881,17 @@ i {
       border-color: var(--google_dark); }
   .button.button-google.inverted {
     color: var(--google);
-    background-color: white;
+    background-color: var(--white-html);
     border-color: var(--google); }
     .button.button-google.inverted:hover, .button.button-google.inverted:focus {
       background-color: var(--google);
       border-color: var(--google);
-      color: white; }
+      color: var(--white-html); }
 
 .input, .textarea, .select {
-  border-radius: 8px;
   min-height: 40px;
   border: 1px solid var(--gray);
-  background: white;
+  background: var(--white-html);
   padding: 0.5rem;
   transition: all 0.3s ease; }
   .input:focus, .textarea:focus, .select:focus {
@@ -20900,8 +20926,7 @@ i {
     padding: 0.5rem 1rem;
     text-align: center;
     white-space: nowrap;
-    border: 1px solid var(--gray);
-    border-radius: 8px; }
+    border: 1px solid var(--gray); }
     .wrapper-input .input-group-text:not(button):not(.loader) {
       font-weight: 400;
       line-height: 1.5;
@@ -20972,7 +20997,7 @@ i {
       .wrapper-selectors input + label.checkbox::after {
         transition: all 0.3s ease;
         content: "\2713";
-        color: white;
+        color: var(--white-html);
         font-weight: 700;
         font-size: 16px;
         height: 24px;
@@ -20989,7 +21014,7 @@ i {
         height: 10px;
         width: 10px;
         border-radius: 50%;
-        background: white;
+        background: var(--white-html);
         left: 7px;
         top: 7px;
         opacity: 0;
@@ -21010,7 +21035,7 @@ i {
       height: 18px;
       width: 18px;
       border-radius: 50%;
-      background: white;
+      background: var(--white-html);
       left: 4px;
       top: 3px; }
   .wrapper-selectors.toggle input:checked + label.checkbox::after {
@@ -21104,7 +21129,7 @@ i {
 .badge {
   padding: 0 0.25rem;
   background-color: var(--red);
-  color: white;
+  color: var(--white-html);
   font-size: 8px;
   font-weight: 500;
   display: inline-block;
@@ -21138,7 +21163,7 @@ i {
       right: initial; }
 
 .box, .card {
-  background: white;
+  background: var(--white-html);
   padding: 1rem;
   border-radius: 5px;
   margin: 0 0 1rem;
@@ -21216,7 +21241,7 @@ i {
       right: 1rem;
       top: 1rem;
       margin-left: 0.5rem;
-      font-size: 14px;
+      font-size: 1rem;
       line-height: 16px;
       transition: all 0.3s ease;
       text-align: center; }
@@ -21251,7 +21276,7 @@ i {
   list-style: none;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: white;
+  background-color: var(--white-html);
   border: 1px solid var(--gray_light);
   border-radius: 5px;
   padding: 0;
@@ -21276,7 +21301,7 @@ i {
       padding: 1rem;
       border: none;
       box-shadow: none;
-      background-color: white;
+      background-color: var(--white-html);
       transition: all 0.3s ease;
       color: inherit;
       text-align: left; }
@@ -21365,7 +21390,7 @@ i {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: white;
+  background-color: var(--white-html);
   background-clip: padding-box;
   border: 1px solid var(--gray_light);
   border-radius: 5px;
@@ -21455,16 +21480,16 @@ i {
     .tabs-header li.active {
       flex-shrink: 0;
       width: auto;
-      background: white;
+      background: var(--white-html);
       color: var(--black);
       font-weight: 700; }
   .tabs-header.line-style {
-    background: white;
+    background: var(--white-html);
     border-radius: 5px;
     padding: 0; }
     .tabs-header.line-style li {
       border-bottom: 2px solid transparent;
-      background: white;
+      background: var(--white-html);
       border-radius: 0;
       color: var(--gray); }
       .tabs-header.line-style li.active {
@@ -21525,7 +21550,7 @@ i {
   padding: 1rem;
   margin: 1rem;
   color: var(--black);
-  background-color: white;
+  background-color: var(--white-html);
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr;
@@ -21536,19 +21561,19 @@ i {
     width: 95%; }
   .toast.success {
     background: var(--green);
-    color: white; }
+    color: var(--white-html); }
   .toast.inverted {
     background: var(--black);
-    color: white; }
+    color: var(--white-html); }
   .toast.info {
     background: var(--blue);
-    color: white; }
+    color: var(--white-html); }
   .toast.warning {
     background: var(--yellow);
     color: var(--black); }
   .toast.error {
     background: var(--red);
-    color: white; }
+    color: var(--white-html); }
   .toast.grayscale {
     background: var(--white);
     color: var(--black); }
@@ -21633,7 +21658,7 @@ i {
 
 .tooltip-dark {
   background: var(--black);
-  color: white; }
+  color: var(--white-html); }
   .tooltip-dark[class$="-top"] .tooltip-arrow::before {
     border-top-color: var(--black); }
   .tooltip-dark[class$="-bottom"] .tooltip-arrow::before {
@@ -21692,7 +21717,7 @@ i {
     top: 5px;
     padding: 0 0.5rem;
     height: calc(100% - 8px);
-    background-color: white;
+    background-color: var(--white-html);
     border: none;
     box-shadow: inset 1px 0 0 var(--gray), inset -1px 0 0 var(--gray), -3px 0 3px 0px var(--gray); }
     @media (max-width: 992px) {
@@ -21733,7 +21758,7 @@ i {
     position: relative;
     color: var(--black); }
     .table > tbody > tr {
-      background-color: white;
+      background-color: var(--white-html);
       border-bottom: 1px solid var(--gray_light);
       transition: all 0.3s ease; }
       .table > tbody > tr:hover {
@@ -21749,7 +21774,7 @@ i {
     vertical-align: middle;
     position: relative; }
     .table > tfoot tr {
-      background-color: white;
+      background-color: var(--white-html);
       border-bottom: 1px solid var(--gray_light); }
       .table > tfoot tr td, .table > tfoot tr th {
         padding: 1rem 0.5rem; }

@@ -1,3 +1,6 @@
+$animate-width-linear: width-100 3s linear infinite;
+$animate-bg-linear: move-bg 1.5s linear infinite;
+
 .progress {
   width: 100%;
   background-color: var(--gray_light);
@@ -17,13 +20,13 @@
     transition: width 0.6s ease;
     &.background-dashed {
       background-size: 50px 50px;
-      animation: move-bg 1.5s linear infinite;
+      animation: $animate-bg-linear;
     }
   }
   .animate-bar {
-    animation: width-100 3s linear infinite;
+    animation: $animate-width-linear;
     &.background-dashed {
-      animation: width-100 3s linear infinite, move-bg 1.5s linear infinite;
+      animation: #{$animate-width-linear}, #{$animate-bg-linear};
     }
   }
 }

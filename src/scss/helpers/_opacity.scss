@@ -1,0 +1,12 @@
+$opacity: (
+  "default": 1,
+  "light": 0.5,
+  "lighter": 0.75,
+  "zero": 0
+) !default;
+
+@each $opacityName, $opacityValue in $opacity {
+  .opacity-#{$opacityName} {
+    opacity: $opacityValue !important;
+  }
+}

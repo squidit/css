@@ -1,0 +1,12 @@
+$zIndex: (
+  "override": 1102,
+  "onTop": 1101,
+  "default": 0,
+  "onBottom": -1
+) !default;
+
+@each $zIndexName, $zIndexValue in $zIndex {
+  .z-index-#{$zIndexName} {
+    z-index: $zIndexValue !important;
+  }
+}

@@ -38,7 +38,7 @@
   padding: $gutter;
   margin: $gutter;
   color: var(--black);
-  background-color: white;
+  background-color: var(--white-html);
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr;
@@ -49,15 +49,15 @@
   @extend .box-shadow;
   &.success {
     background: var(--green);
-    color: white;
+    color: var(--white-html);
   }
   &.inverted {
     background: var(--black);
-    color: white;
+    color: var(--white-html);
   }
   &.info {
     background: var(--blue);
-    color: white;
+    color: var(--white-html);
   }
   &.warning {
     background: var(--yellow);
@@ -65,7 +65,7 @@
   }
   &.error {
     background: var(--red);
-    color: white;
+    color: var(--white-html);
   }
   &.grayscale {
     background: var(--white);

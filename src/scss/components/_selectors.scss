@@ -30,7 +30,7 @@
       &::after {
         transition: $transition;
         content: "\2713";
-        color: white;
+        color: var(--white-html);
         font-weight: 700;
         font-size: 16px;
         height: 24px;
@@ -50,7 +50,7 @@
           height: 10px;
           width: 10px;
           border-radius: 50%;
-          background: white;
+          background: var(--white-html);
           left: 7px;
           top: 7px;
           opacity: 0;
@@ -86,7 +86,7 @@
           height: 18px;
           width: 18px;
           border-radius: 50%;
-          background: white;
+          background: var(--white-html);
           left: 4px;
           top: 3px;
         }

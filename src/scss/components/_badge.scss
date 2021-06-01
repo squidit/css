@@ -1,7 +1,10 @@
+$badge-vertical-position: calc(100% - 0.5rem) !default;
+$badge-horizontal-position: calc(100% - 0.35rem) !default;
+
 .badge {
   padding: 0 ($gutter / 4);
   background-color: var(--red);
-  color: white;
+  color: var(--white-html);
   font-size: 8px;
   font-weight: 500;
   display: inline-block;
@@ -13,31 +16,31 @@
   }
   &.over-element {
     position: absolute;
-    left: calc(100% - 0.35rem);
-    bottom: calc(100% - 0.35rem);
+    left: $badge-horizontal-position;
+    bottom: $badge-horizontal-position;
     top: initial;
     right: initial;
     &.top-left {
-      right: calc(100% - 0.35rem);
-      bottom: calc(100% - 0.35rem);
+      right: $badge-horizontal-position;
+      bottom: $badge-horizontal-position;
       top: initial;
       left: initial;
     }
     &.top-right {
-      left: calc(100% - 0.35rem);
-      bottom: calc(100% - 0.35rem);
+      left: $badge-horizontal-position;
+      bottom: $badge-horizontal-position;
       top: initial;
       right: initial;
     }
     &.bottom-left {
-      right: calc(100% - 0.35rem);
-      top: calc(100% - 0.5rem);
+      right: $badge-horizontal-position;
+      top: $badge-vertical-position;
       bottom: initial;
       left: initial;
     }
     &.bottom-right {
-      left: calc(100% - 0.35rem);
-      top: calc(100% - 0.5rem);
+      left: $badge-horizontal-position;
+      top: $badge-vertical-position;
       bottom: initial;
       right: initial;
     }

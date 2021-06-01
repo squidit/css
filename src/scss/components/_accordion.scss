@@ -5,6 +5,8 @@
   height: auto;
 }
 
+$icon-box: 16px !default;
+
 .collapse {
   display: flex;
   flex-direction: column;
@@ -32,13 +34,13 @@
     .icon {
       display: block;
       position: absolute;
-      height: 16px;
-      width: 16px;
+      height: $icon-box;
+      width: $icon-box;
       right: $gutter;
       top: $gutter;
       margin-left: ($gutter / 2);
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 1rem;
+      line-height: $icon-box;
       transition: $transition;
       text-align: center;
       &.not-end {

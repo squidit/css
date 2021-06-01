@@ -1,7 +1,17 @@
+$radius: (
+  "default": 5px,
+  "medium": 8px,
+  "round": 50%
+) !default;
+
 .rounded {
-  border-radius: 50% !important;
+  border-radius: map-get($radius, 'round') !important;
 }
 
 .border-radius {
-  border-radius: 5px !important;
+  border-radius: map-get($radius, 'default') !important;
+}
+
+.border-radius-medium {
+  border-radius: map-get($radius, 'medium') !important;
 }

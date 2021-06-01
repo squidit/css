@@ -8,7 +8,7 @@
   list-style: none;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: white;
+  background-color: var(--white-html);
   border: 1px solid var(--gray_light);
   border-radius: 5px;
   padding: 0;
@@ -37,7 +37,7 @@
       padding: $gutter;
       border: none;
       box-shadow: none;
-      background-color: white;
+      background-color: var(--white-html);
       transition: $transition;
       color: inherit;
       text-align: left;

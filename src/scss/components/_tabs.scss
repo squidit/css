@@ -27,7 +27,7 @@
     &.active {
       flex-shrink: 0;
       width: auto;
-      background: white;
+      background: var(--white-html);
       color: var(--black);
       font-weight: 700;
       @extend .box-shadow;
@@ -37,12 +37,12 @@
     }
   }
   &.line-style {
-    background: white;
+    background: var(--white-html);
     border-radius: 5px;
     padding: 0;
     li {
       border-bottom: 2px solid transparent;
-      background: white;
+      background: var(--white-html);
       border-radius: 0;
       color: var(--gray);
       &.active {
