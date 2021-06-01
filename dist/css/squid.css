@@ -20526,13 +20526,13 @@ i {
     background: var(--gray_dark); }
 
 .rounded, .badge.rounded {
-  border-radius: 50% !important; }
+  border-radius: 50%; }
 
 .border-radius, .badge, .toast {
-  border-radius: 5px !important; }
+  border-radius: 5px; }
 
 .border-radius-medium, .input, .textarea, .select, .wrapper-input .input-group-text {
-  border-radius: 8px !important; }
+  border-radius: 8px; }
 
 .progress {
   width: 100%;

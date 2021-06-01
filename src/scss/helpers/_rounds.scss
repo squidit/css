@@ -5,13 +5,13 @@ $radius: (
 ) !default;
 
 .rounded {
-  border-radius: map-get($radius, 'round') !important;
+  border-radius: map-get($radius, 'round');
 }
 
 .border-radius {
-  border-radius: map-get($radius, 'default') !important;
+  border-radius: map-get($radius, 'default');
 }
 
 .border-radius-medium {
-  border-radius: map-get($radius, 'medium') !important;
+  border-radius: map-get($radius, 'medium');
 }
