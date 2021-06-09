@@ -8,9 +8,13 @@
     "serve": "docz serve"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "docz": "latest",
+    "docz-core": "^2.3.0",
     "docz-plugin-github-page": "^1.0.4",
     "dotenv": "^10.0.0",
+    "gatsby-plugin-mdx": "^2.7.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   }
