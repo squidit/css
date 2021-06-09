@@ -6,13 +6,91 @@ route: /content/typography
 
 # Typography
 
+Documentation and examples for typography.
+
 ## Heading
+
+| Heading | Exemple          |
+|---------|------------------|
+| h1      | <h1>Title 1</h1> |
+| h2      | <h2>Title 2</h2> |
+| h3      | <h3>Title 3</h3> |
+| h4      | <h4>Title 4</h4> |
+| h5      | <h5>Title 5</h5> |
+| h6      | <h6>Title 6</h6> |
+
+Code, using Html Tags or using classes:
 
 ```html
 <h1> Heading 1 </h1>
-<h2> Heading 2 <h2>
+<h2> Heading 2 </h2>
 <h3> Heading 3 </h3>
 <h4> Heading 4 </h4>
 <h5> Heading 5 </h5>
 <h6> Heading 6 </h6>
+```
+---
+```html
+<p class='h1'> Heading 1 </p>
+<p class='h2'> Heading 2 </p>
+<p class='h3'> Heading 3 </p>
+<p class='h4'> Heading 4 </p>
+<p class='h5'> Heading 5 </p>
+<p class='h6'> Heading 6 </p>
+```
+
+## Alignment
+
+Text-align are available like:
+
+<p class='text-center'>I`m a centered text</p>
+
+```html
+<p class='text-center'>I`m a centered text</p>
+```
+
+Some values for `text-align` are available with classes:
+
+| Property | Class            |
+|----------|------------------|
+| center   | text-center      |
+| left     | text-left        |
+| right    | text-right       |
+| justify  | text-justify     |
+
+## Weight
+
+Text-weight are available like:
+
+<p class='text-bold'>I`m a bold text</p>
+
+```html
+<p class='text-bold'>I`m a bold text</p>
+```
+
+Some values for `text-weight` are available with classes:
+
+| Value | Class        |
+|-------|--------------|
+| 100   | text-thin    |
+| 300   | text-light   |
+| 400   | text-regular |
+| 500   | text-medium  |
+| 700   | text-bold    |
+| 900   | text-black   |
+
+## Elipsis
+
+To add an ellipsis at the end of the text use the following classes:
+
+<p class='text-ellipsis'>I`m a One line ellipsis</p>
+
+```html
+<p class='text-ellipsis'>I`m a One line ellipsis</p>
+```
+
+<p class='text-ellipsis-more'>I`m a More than line ellipsis</p>
+
+```html
+<p class='text-ellipsis-more'>I`m a More than line ellipsis</p>
 ```
