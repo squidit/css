@@ -23,6 +23,7 @@
 - [Development](#development)
   - [Write Documentation](#write-documentation)
 - [Production](#production)
+  - [Deploy on jsdelivr](#deploy-on-jsdelivr)
 - [Documentation](#documentation)
 - [External Libraries and Inspiration](#external-libraries-and-inspiration)
   - [Animate.css](#animatecss)
@@ -126,6 +127,21 @@ See Intructions [here](https://github.com/squidit/css/blob/master/src/docs/READM
 
 2. Commit and Push to Git Remote
 
+### Deploy on jsdelivr
+
+The official CDN for Squid CSS is jsdelivr, which is even where the framework documentation consumes assets.
+
+1. Run `git checkout production`
+
+2. Run `git pull origin master`
+
+3. Run `rm -rf docs` and resolve the conflicts that remain
+
+4. Do a `git commit` and `git push origin production`
+
+5. On [GitHub Releases](https://github.com/squidit/css/releases) create a new release, with a new tag version** and using `production` branch
+
+**Important to use the same tag as package.json
 ## Documentation
 
 See Docs [here](https://css.squidit.com.br)
