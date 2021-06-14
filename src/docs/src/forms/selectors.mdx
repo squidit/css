@@ -4,15 +4,70 @@ menu: Forms
 route: /forms/selectors
 ---
 
-import { Playground } from 'docz'
-
 # Selectors
 Add `wrapper-selectors` class on parent element to have a custom checkbox or radio input. For toggle, add `toggle` class with `wrapper-selectors`.
 Inside parent element add an input (it's going to be invisible), an empty label with `checkbox` class and another label element to define a label for selectors.
 
 ## Basic usage
 
-<Playground>
+  <div className='row'>
+    <div className='col-md-8'>
+      <div className='wrapper-selectors mb-3'>
+        <input
+          type='checkbox'
+          name='checkbox'
+          id='checkbox'
+        />
+        <label
+          className='checkbox'
+          for='checkbox'
+        ></label>
+        <label
+          for='checkbox'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+    <div className='col-md-8'>
+      <div className='wrapper-selectors mb-3'>
+        <input
+          type='radio'
+          name='radio'
+          id='radio'
+        />
+        <label
+          className='checkbox'
+          for='radio'
+        ></label>
+        <label
+          for='radio'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+    <div className='col-md-8'>
+      <div className='wrapper-selectors toggle mb-3'>
+        <input
+          type='checkbox'
+          name='toggle'
+          id='toggle'
+        />
+        <label
+          className='checkbox'
+          for='toggle'
+        ></label>
+        <label
+          for='toggle'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+  </div>
+
+```
   <div class='row'>
     <div class='col-md-8'>
       <div class='wrapper-selectors mb-3'>
@@ -69,7 +124,7 @@ Inside parent element add an input (it's going to be invisible), an empty label 
       </div>
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -78,7 +133,67 @@ Inside parent element add an input (it's going to be invisible), an empty label 
 ## Disabled
 Input field can show that it is disabled. Add `disabled` attribute on it.
 
-<Playground>
+  <div className='row'>
+    <div className='col-md-8'>
+      <div className='wrapper-selectors mb-3'>
+        <input
+          type='checkbox'
+          name='checkbox'
+          id='checkbox'
+          disabled
+        />
+        <label
+          className='checkbox'
+          for='checkbox'
+        ></label>
+        <label
+          for='checkbox'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+    <div className='col-md-8'>
+      <div className='wrapper-selectors mb-3'>
+        <input
+          type='radio'
+          name='radio'
+          id='radio'
+          disabled
+        />
+        <label
+          className='checkbox'
+          for='radio'
+        ></label>
+        <label
+          for='radio'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+    <div className='col-md-8'>
+      <div className='wrapper-selectors toggle mb-3'>
+        <input
+          type='checkbox'
+          name='toggle'
+          id='toggle'
+          disabled
+        />
+        <label
+          className='checkbox'
+          for='toggle'
+        ></label>
+        <label
+          for='toggle'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+  </div>
+
+```
   <div class='row'>
     <div class='col-md-8'>
       <div class='wrapper-selectors mb-3'>
@@ -138,7 +253,7 @@ Input field can show that it is disabled. Add `disabled` attribute on it.
       </div>
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>

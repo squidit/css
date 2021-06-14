@@ -4,8 +4,6 @@ menu: Forms
 route: /forms/textarea
 ---
 
-import { Playground } from 'docz'
-
 # Textarea
 Textarea and its variations.
 
@@ -13,7 +11,22 @@ Same as input component, basically it's a HTML `textarea` element with `textarea
 
 ## Basic Example
 
-<Playground>
+<div className='col-24'>
+  <label className='display-block' for='textarea-text'>
+    Label
+  </label>
+  <div className='wrapper-input mb-3'>
+    <textarea
+      className='display-block textarea'
+      type='text'
+      name='textarea-text'
+      id='textarea-text'
+      placeholder='Placeholder'
+    ></textarea>
+  </div>
+</div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='textarea-text'>
       Label
@@ -28,16 +41,41 @@ Same as input component, basically it's a HTML `textarea` element with `textarea
       ></textarea>
     </div>
   </div>
-</Playground>
+```
 
-<>
+<pre>
 <br/><br/>
-</>
+</pre>
 
 ## Labeled
 Place a label or button in any side of a textarea. You may also place on both sides. Inside `wrapper-input` just add a label or button with `input-group-text`.
 
-<Playground>
+<div className='col-24'>
+  <label className='display-block' for='textarea-text-icon-3'>
+    Label
+  </label>
+  <div className='wrapper-input mb-3'>
+    <span
+      className='input-group-text'
+    >
+      @
+    </span>
+    <textarea
+      className='display-block textarea'
+      type='number'
+      name='textarea-text-icon-3'
+      id='textarea-text-icon-3'
+      placeholder='Placeholder'
+    ></textarea>
+    <span
+      className='input-group-text'
+    >
+      $
+    </span>
+  </div>
+</div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='textarea-text-icon-3'>
       Label
@@ -62,7 +100,7 @@ Place a label or button in any side of a textarea. You may also place on both si
       </span>
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -71,7 +109,25 @@ Place a label or button in any side of a textarea. You may also place on both si
 ## Error
 Textarea field can show the data contains errors. Add `error` class on input and a element with `box-validation box-invalid` below `wrapper-input` in case of error message is need it.
 
-<Playground>
+<div class='col-24'>
+  <label class='display-block' for='input-text-error'>
+    Label
+  </label>
+  <div class='wrapper-input'>
+    <textarea
+      class='display-block textarea error'
+      type='number'
+      name='textarea-text-icon-3'
+      id='textarea-text-icon-3'
+      placeholder='Placeholder'
+    ></textarea>
+  </div>
+  <div class='box-validation box-invalid show mb-3'>
+    <i class="fas fa-exclamation-triangle"></i>Error
+  </div>
+</div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='input-text-error'>
       Label
@@ -89,7 +145,7 @@ Textarea field can show the data contains errors. Add `error` class on input and
       <i class="fas fa-exclamation-triangle"></i>Error
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -98,7 +154,25 @@ Textarea field can show the data contains errors. Add `error` class on input and
 ## Valid
 Textarea field can show that it is valid. Add `valid` class on input and a element with `box-validation box-valid` below `wrapper-input` in case of a valid message is need it.
 
-<Playground>
+<div className='col-24'>
+  <label className='display-block' for='input-text-valid'>
+    Label
+  </label>
+  <div className='wrapper-input'>
+    <textarea
+      className='display-block textarea valid'
+      type='number'
+      name='textarea-text-icon-3'
+      id='textarea-text-icon-3'
+      placeholder='Placeholder'
+    ></textarea>
+  </div>
+  <div className='box-validation box-valid show mb-3'>
+    <i className="fas fa-check-circle"></i>Valid
+  </div>
+</div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='input-text-valid'>
       Label
@@ -116,7 +190,7 @@ Textarea field can show that it is valid. Add `valid` class on input and a eleme
       <i class="fas fa-check-circle"></i>Valid
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -125,7 +199,24 @@ Textarea field can show that it is valid. Add `valid` class on input and a eleme
 ## Readonly
 Textarea field can show that it is readonly. Add `readonly` attribute on textarea.
 
-<Playground>
+<div className='col-24'>
+  <label className='display-block' for='textarea-text-readonly'>
+    Label
+  </label>
+  <div className='wrapper-input mb-3'>
+    <textarea
+      className='display-block textarea'
+      type='text'
+      name='textarea-text-readonly'
+      id='textarea-text-readonly'
+      value='Readonly field'
+      placeholder='Placeholder'
+      readonly
+    ></textarea>
+  </div>
+</div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='textarea-text-readonly'>
       Label
@@ -142,7 +233,7 @@ Textarea field can show that it is readonly. Add `readonly` attribute on textare
       ></textarea>
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -151,7 +242,23 @@ Textarea field can show that it is readonly. Add `readonly` attribute on textare
 ## Disabled
 Textarea field can show that it is disabled. Add `disabled` attribute on textarea.
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='input-text'>
+      Label
+    </label>
+    <div className='wrapper-input'>
+      <textarea
+        className='display-block textarea'
+        type='number'
+        name='textarea-text-icon-3'
+        id='textarea-text-icon-3'
+        placeholder='Placeholder'
+        disabled
+      ></textarea>
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='input-text'>
       Label
@@ -167,4 +274,4 @@ Textarea field can show that it is disabled. Add `disabled` attribute on textare
       ></textarea>
     </div>
   </div>
-</Playground>
+```

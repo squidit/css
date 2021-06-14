@@ -4,14 +4,31 @@ menu: Forms
 route: /forms/select
 ---
 
-import { Playground } from 'docz'
-
 # Select
 To start using it just add `select` class on select HTML element.
 
 ## Basic usage
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='select'>
+      Label
+    </label>
+    <div className='wrapper-input mb-3'>
+      <select
+        className='select display-block'
+        name='select'
+        id='select'
+        defaultValue=''
+      >
+        <option value="" disabled placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='select'>
       Label
@@ -29,7 +46,7 @@ To start using it just add `select` class on select HTML element.
       </select>
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -38,7 +55,31 @@ To start using it just add `select` class on select HTML element.
 ## Labeled
 Place a label or button in any side of a select. You may also place on both sides. Inside `wrapper-input` just add a label or button with `input-group-text`.
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='select'>
+      Label
+    </label>
+    <div className='wrapper-input mb-3'>
+      <span
+        className='input-group-text'
+      >
+        @
+      </span>
+      <select
+        className='select display-block'
+        name='select'
+        id='select'
+        defaultValue=''
+      >
+        <option value="" disabled placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='select'>
       Label
@@ -61,7 +102,7 @@ Place a label or button in any side of a select. You may also place on both side
       </select>
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -70,7 +111,29 @@ Place a label or button in any side of a select. You may also place on both side
 ## Error
 Select field can show the data contains errors. Add `error` class on input and a element with `box-validation box-invalid` below ``wrapper-input` in case of error message is need it.
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='select'>
+      Label
+    </label>
+    <div className='wrapper-input'>
+      <select
+        className='select display-block error'
+        name='select-error'
+        id='select-error'
+        defaultValue=''
+      >
+        <option value="" disabled placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div className='box-validation box-invalid show mb-3'>
+      <i className="fas fa-exclamation-triangle"></i>Error
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='select'>
       Label
@@ -91,7 +154,7 @@ Select field can show the data contains errors. Add `error` class on input and a
       <i class="fas fa-exclamation-triangle"></i>Error
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -100,7 +163,27 @@ Select field can show the data contains errors. Add `error` class on input and a
 ## Disabled
 Select field can show that it is disabled. Add `disabled` attribute on it.
 
-<Playground>
+<div className='col-24'>
+  <label className='display-block' for='select'>
+    Label
+  </label>
+  <div className='wrapper-input mb-3'>
+    <select
+      className='select display-block'
+      name='select-disabled'
+      id='select-disabled'
+      defaultValue=''
+      disabled
+    >
+      <option value="" disabled placeholder>Select something</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+</div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='select'>
       Label
@@ -119,4 +202,4 @@ Select field can show that it is disabled. Add `disabled` attribute on it.
       </select>
     </div>
   </div>
-</Playground>
+```

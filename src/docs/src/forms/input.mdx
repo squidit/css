@@ -4,8 +4,6 @@ menu: Forms
 route: /forms/input
 ---
 
-import { Playground } from 'docz'
-
 # Input
 The text input and its variations.
 
@@ -13,7 +11,22 @@ Basically it's a HTML `input` element with `input` class. So all attributes it's
 
 ## Basic Example
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='input-text-1'>
+      Label
+    </label>
+    <div className='wrapper-input mb-3'>
+      <input
+        className='display-block input'
+        type='text'
+        name='input-text'
+        id='input-text-1'
+        placeholder='Placeholder'
+      />
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='input-text'>
       Label
@@ -28,7 +41,7 @@ Basically it's a HTML `input` element with `input` class. So all attributes it's
       />
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -37,9 +50,34 @@ Basically it's a HTML `input` element with `input` class. So all attributes it's
 ## Labeled
 Place a label or button in any side of an input. You may also place on both sides. Inside `wrapper-input` just add a label or button with `input-group-text`.
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='input-text-icon-3'>
+      Label
+    </label>
+    <div className='wrapper-input mb-3'>
+      <span
+        className='input-group-text'
+      >
+        R$
+      </span>
+      <input
+        className='display-block input'
+        type='number'
+        name='input-text-icon-3'
+        id='input-text-icon-3'
+        placeholder='XX'
+      />
+      <button
+        className='button button-pink input-group-text'
+      >
+        <i className="fas fa-check"></i>
+      </button>
+    </div>
+  </div>
+
+```
   <div class='col-24'>
-    <label class='display-block' for='input-text-icon-3'>
+    <label class='display-block' for='input-text-icon-4'>
       Label
     </label>
     <div class='wrapper-input mb-3'>
@@ -51,8 +89,8 @@ Place a label or button in any side of an input. You may also place on both side
       <input
         class='display-block input'
         type='number'
-        name='input-text-icon-3'
-        id='input-text-icon-3'
+        name='input-text-icon-4'
+        id='input-text-icon-4'
         placeholder='XX'
       />
       <button
@@ -62,7 +100,7 @@ Place a label or button in any side of an input. You may also place on both side
       </button>
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -71,7 +109,26 @@ Place a label or button in any side of an input. You may also place on both side
 ## Error
 An input field can show the data contains errors. Add `error` class on input and a element with `box-validation box-invalid` below `wrapper-input` in case of error message is need it.
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='input-text-error'>
+      Label
+    </label>
+    <div className='wrapper-input'>
+      <input
+        className='display-block input error'
+        type='text'
+        name='input-text-error'
+        id='input-text-error'
+        placeholder='Placeholder'
+        required
+      />
+    </div>
+    <div className='box-validation box-invalid show mb-3'>
+      <i className="fas fa-exclamation-triangle"></i>Error
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='input-text-error'>
       Label
@@ -90,7 +147,7 @@ An input field can show the data contains errors. Add `error` class on input and
       <i class="fas fa-exclamation-triangle"></i>Error
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -99,7 +156,25 @@ An input field can show the data contains errors. Add `error` class on input and
 ## Valid
 An input field can show that it is valid. Add `valid` class on input and a element with `box-validation box-valid` below `wrapper-input` in case of a valid message is need it.
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='input-text-valid'>
+      Label
+    </label>
+    <div className='wrapper-input'>
+      <input
+        className='display-block input valid'
+        type='text'
+        name='input-text-valid'
+        id='input-text-valid'
+        placeholder='Placeholder'
+      />
+    </div>
+    <div className='box-validation box-valid show mb-3'>
+      <i className="fas fa-check-circle"></i>Valid
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='input-text-valid'>
       Label
@@ -117,7 +192,7 @@ An input field can show that it is valid. Add `valid` class on input and a eleme
       <i class="fas fa-check-circle"></i>Valid
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -126,7 +201,24 @@ An input field can show that it is valid. Add `valid` class on input and a eleme
 ## Readonly
 An input field can show that it is readonly. Add `readonly` attribute on input.
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='input-text-readonly'>
+      Label
+    </label>
+    <div className='wrapper-input'>
+      <input
+        type="text"
+        className="display-block input"
+        name="input-text-readonly"
+        id="input-text-readonly"
+        value="Readonly field"
+        placeholder="Placeholder"
+        readonly
+      />
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='input-text'>
       Label
@@ -143,7 +235,7 @@ An input field can show that it is readonly. Add `readonly` attribute on input.
       />
     </div>
   </div>
-</Playground>
+```
 
 <>
 <br/><br/>
@@ -152,7 +244,23 @@ An input field can show that it is readonly. Add `readonly` attribute on input.
 ## Disabled
 An input field can show that it is disabled. Add `disabled` attribute on input.
 
-<Playground>
+  <div className='col-24'>
+    <label className='display-block' for='input-text-disabled'>
+      Label
+    </label>
+    <div className='wrapper-input'>
+      <input
+        className='display-block input'
+        type='text'
+        name='input-text-disabled'
+        id='input-text-disabled'
+        placeholder='Placeholder'
+        disabled
+      />
+    </div>
+  </div>
+
+```
   <div class='col-24'>
     <label class='display-block' for='input-text'>
       Label
@@ -168,4 +276,4 @@ An input field can show that it is disabled. Add `disabled` attribute on input.
       />
     </div>
   </div>
-</Playground>
+```
