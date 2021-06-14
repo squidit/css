@@ -4,4 +4,142 @@ menu: Forms
 route: /forms/selectors
 ---
 
+import { Playground } from 'docz'
+
 # Selectors
+Add `wrapper-selectors` class on parent element to have a custom checkbox or radio input. For toggle, add `toggle` class with `wrapper-selectors`.
+Inside parent element add an input (it's going to be invisible), an empty label with `checkbox` class and another label element to define a label for selectors.
+
+## Basic usage
+
+<Playground>
+  <div class='row'>
+    <div class='col-md-8'>
+      <div class='wrapper-selectors mb-3'>
+        <input
+          type='checkbox'
+          name='checkbox'
+          id='checkbox'
+        />
+        <label
+          class='checkbox'
+          for='checkbox'
+        ></label>
+        <label
+          for='checkbox'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+    <div class='col-md-8'>
+      <div class='wrapper-selectors mb-3'>
+        <input
+          type='radio'
+          name='radio'
+          id='radio'
+        />
+        <label
+          class='checkbox'
+          for='radio'
+        ></label>
+        <label
+          for='radio'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+    <div class='col-md-8'>
+      <div class='wrapper-selectors toggle mb-3'>
+        <input
+          type='checkbox'
+          name='toggle'
+          id='toggle'
+        />
+        <label
+          class='checkbox'
+          for='toggle'
+        ></label>
+        <label
+          for='toggle'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+  </div>
+</Playground>
+
+<>
+<br/><br/>
+</>
+
+## Disabled
+Input field can show that it is disabled. Add `disabled` attribute on it.
+
+<Playground>
+  <div class='row'>
+    <div class='col-md-8'>
+      <div class='wrapper-selectors mb-3'>
+        <input
+          type='checkbox'
+          name='checkbox'
+          id='checkbox'
+          disabled
+        />
+        <label
+          class='checkbox'
+          for='checkbox'
+        ></label>
+        <label
+          for='checkbox'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+    <div class='col-md-8'>
+      <div class='wrapper-selectors mb-3'>
+        <input
+          type='radio'
+          name='radio'
+          id='radio'
+          disabled
+        />
+        <label
+          class='checkbox'
+          for='radio'
+        ></label>
+        <label
+          for='radio'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+    <div class='col-md-8'>
+      <div class='wrapper-selectors toggle mb-3'>
+        <input
+          type='checkbox'
+          name='toggle'
+          id='toggle'
+          disabled
+        />
+        <label
+          class='checkbox'
+          for='toggle'
+        ></label>
+        <label
+          for='toggle'
+        >
+          Label
+        </label>
+      </div>
+    </div>
+  </div>
+</Playground>
+
+<>
+<br/><br/>
+</>

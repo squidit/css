@@ -4,4 +4,54 @@ menu: Forms
 route: /forms/range
 ---
 
+import { Playground } from 'docz'
+
 # Range
+
+Create `<input type="range" />` with `range` class to start to using it. You can add a `min` and `max` to work only with values between and `step` attribute to specifies the granularity that the value must adhere to.
+
+## Basic Example
+
+<Playground>
+  <div class='col-24'>
+    <label
+      for='range'
+      class='display-block'
+    >
+      Label
+    </label>
+    <input
+      min='50'
+      max='80'
+      type="range"
+      class='range mb-3'
+      id='range'
+      name='range'
+    />
+  </div>
+</Playground>
+
+<>
+<br/><br/>
+</>
+
+## Disabled
+An input field can show that it is disabled. Add `disabled` attribute on input.
+
+<Playground>
+  <div class='col-24'>
+    <label
+      for='range-disabled'
+      class='display-block'
+    >
+      Label
+    </label>
+    <input
+      type="range"
+      class='range mb-3'
+      id='range-disabled'
+      name='range-disabled'
+      disabled
+    />
+  </div>
+</Playground>
