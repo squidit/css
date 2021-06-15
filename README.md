@@ -93,6 +93,9 @@ $fontsFolderPath: '/assets/fonts'; // Overwrite default font path
 @import '~@squidit/css/src/scss/squid.scss'; // Import all Framework Styles
 ```
 
+Obs: Probably components that need javascript will not work as they are loaded in onload event. They need some implementation within Angular.
+A library for Angular will be developed soon.
+
 #### React.js Install
 
 Soon
