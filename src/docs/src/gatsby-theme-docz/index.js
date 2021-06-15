@@ -109,7 +109,7 @@ const Theme = ({ children }) => {
       background: var(--gray_dark);
     }
     .img-fluid {
-      margin: 0 !important;
+      margin: 0;
     }
     .pagination li {
       margin: 0 !important;

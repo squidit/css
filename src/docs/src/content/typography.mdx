@@ -10,7 +10,9 @@ Documentation and examples for typography.
 
 ## Font style
 
-The default font is <a class='pink' href='https://fonts.google.com/specimen/Roboto' target='_blank'>Google Fonts Roboto</a>
+<p class='mb-3'>
+    The default font is <a class='pink' href='https://fonts.google.com/specimen/Roboto' target='_blank'>Google Fonts Roboto</a>
+</p>
 
 ## Heading
 
@@ -241,8 +243,12 @@ To add an ellipsis at the end of the text use the following classes:
 <p class='text-ellipsis' style='max-width: 90px;'>I`m a One line ellipsis</p>
 ```
 
+If the text has more than one line use:
+
 <p class='text-ellipsis-more background-white black border-radius p-2' style='max-width: 50px; max-height: 57px'>I`m a More than line ellipsis</p>
 
 ```html
 <p class='text-ellipsis-more' style='max-width: 50px; max-height: 57px'>I`m a More than line ellipsis</p>
 ```
+
+This classe use `-webkit-line-clamp: 3` to change the clip on more lines change this prop on your element

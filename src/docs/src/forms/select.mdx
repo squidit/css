@@ -5,3 +5,189 @@ route: /forms/select
 ---
 
 # Select
+To start using it just add `select` class on select HTML element.
+
+## Basic usage
+
+  <div className='col-sm-24 col-md-12 col-lg-8'>
+    <label className='display-block' for='select'>
+      Label
+    </label>
+    <div className='wrapper-input mb-3'>
+      <select
+        className='select display-block'
+        name='select'
+        id='select'
+        defaultValue=''
+      >
+        <option value="" disabled placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+
+```html
+  <div class='col-24'>
+    <label class='display-block' for='select'>
+      Label
+    </label>
+    <div class='wrapper-input mb-3'>
+      <select
+        class='select display-block'
+        name='select'
+        id='select'
+      >
+        <option value="" disabled selected placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+```
+
+## Labeled
+Place a label or button in any side of a select. You may also place on both sides. Inside `wrapper-input` just add a label or button with `input-group-text`.
+
+  <div className='col-sm-24 col-md-12 col-lg-8'>
+    <label className='display-block' for='select'>
+      Label
+    </label>
+    <div className='wrapper-input mb-3'>
+      <span
+        className='input-group-text'
+      >
+        @
+      </span>
+      <select
+        className='select display-block'
+        name='select'
+        id='select'
+        defaultValue=''
+      >
+        <option value="" disabled placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+
+```html
+  <div class='col-24'>
+    <label class='display-block' for='select'>
+      Label
+    </label>
+    <div class='wrapper-input mb-3'>
+      <span
+        class='input-group-text'
+      >
+        @
+      </span>
+      <select
+        class='select display-block'
+        name='select'
+        id='select'
+      >
+        <option value="" disabled selected placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+```
+
+## Error
+Select field can show the data contains errors. Add `error` class on input and a element with `box-validation box-invalid` below ``wrapper-input` in case of error message is need it.
+
+  <div className='col-sm-24 col-md-12 col-lg-8'>
+    <label className='display-block' for='select'>
+      Label
+    </label>
+    <div className='wrapper-input'>
+      <select
+        className='select display-block error'
+        name='select-error'
+        id='select-error'
+        defaultValue=''
+      >
+        <option value="" disabled placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div className='box-validation box-invalid show mb-3'>
+      <i className="fas fa-exclamation-triangle"></i>Error
+    </div>
+  </div>
+
+```html
+  <div class='col-24'>
+    <label class='display-block' for='select'>
+      Label
+    </label>
+    <div class='wrapper-input'>
+      <select
+        class='select display-block error'
+        name='select-error'
+        id='select-error'
+      >
+        <option value="" disabled selected placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class='box-validation box-invalid show mb-3'>
+      <i class="fas fa-exclamation-triangle"></i>Error
+    </div>
+  </div>
+```
+
+## Disabled
+Select field can show that it is disabled. Add `disabled` attribute/class on it.
+
+<div className='col-sm-24 col-md-12 col-lg-8'>
+  <label className='display-block' for='select'>
+    Label
+  </label>
+  <div className='wrapper-input mb-3'>
+    <select
+      className='select display-block'
+      name='select-disabled'
+      id='select-disabled'
+      defaultValue=''
+      disabled
+    >
+      <option value="" disabled placeholder>Select something</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+</div>
+
+```html
+  <div class='col-24'>
+    <label class='display-block' for='select'>
+      Label
+    </label>
+    <div class='wrapper-input mb-3'>
+      <select
+        class='select display-block'
+        name='select-disabled'
+        id='select-disabled'
+        disabled
+      >
+        <option value="" disabled selected placeholder>Select something</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+```
