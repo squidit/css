@@ -21809,7 +21809,7 @@ i {
       .table.table-responsive td {
         border: none;
         position: relative;
-        padding-left: 50%;
+        padding-left: 50% !important;
         text-align: left; }
       .table.table-responsive td:before {
         content: attr(data-label);
