@@ -16915,7 +16915,6 @@ caption {
 
 .img-fluid {
   max-width: 100%;
-  display: block;
   height: auto; }
 
 .small {
@@ -17038,7 +17037,8 @@ i {
 .text-ellipsis-more {
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical; }
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
 
 .box-shadow, .tag-box:hover, .box, .card, .dropdown, .modal-content, .tabs-header li.active, .toast {
   box-shadow: 0px 4px 12px -5px var(--gray); }

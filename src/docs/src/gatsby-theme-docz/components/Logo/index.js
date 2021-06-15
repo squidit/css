@@ -12,7 +12,7 @@ export const Logo = () => {
           src='http://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg'
           alt='Squid Logo'
           title='Squid Logo'
-          className='mr-3'
+          className='mr-3 img-fluid'
         />
         {config.title}
       </Link>
