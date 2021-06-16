@@ -15,7 +15,12 @@ $cian:       #5ACAED !default;
 $green:      #01ED6E !default;
 $yellow:     #FED708 !default;
 $red:        #EE3030 !default;
+$red-bl:     #FF4F33 !default;
 $blue:       #5E9BFF !default;
+$pomegranate:#ee7177 !default;
+$lemon:      #fcff05 !default;
+$gold:       #fccc0a !default;
+$pastry:     #fdef72 !default;
 $instagram:  #F42A9C !default;
 $twitter:    #1DA1F2 !default;
 $youtube:    #FF0000 !default;
@@ -74,10 +79,35 @@ $colors: (
     light: lighten($red, $amoutLigthen),
     dark: darken($red, $amountDarken)
   ),
+  red-bl: (
+    base: $red-bl,
+    light: lighten($red-bl, $amoutLigthen),
+    dark: darken($red-bl, $amountDarken)
+  ),
   blue: (
     base: $blue,
     light: lighten($blue, $amoutLigthen),
     dark: darken($blue, $amountDarken)
+  ),
+  pomegranate: (
+    base: $pomegranate,
+    light: lighten($pomegranate, $amoutLigthen),
+    dark: darken($pomegranate, $amountDarken)
+  ),
+  lemon: (
+    base: $lemon,
+    light: lighten($lemon, $amoutLigthen),
+    dark: darken($lemon, $amountDarken)
+  ),
+  gold: (
+    base: $gold,
+    light: lighten($gold, $amoutLigthen),
+    dark: darken($gold, $amountDarken)
+  ),
+  pastry: (
+    base: $pastry,
+    light: lighten($pastry, $amoutLigthen),
+    dark: darken($pastry, $amountDarken)
   ),
   instagram: (
     base: $instagram,

@@ -42,7 +42,14 @@
     &.button-#{"" + $colorName} {
       background-color: var(--#{"" + $colorName});
       border-color: var(--#{"" + $colorName});
-      @if ($colorName == yellow or $colorName == cian or $colorName == white) {
+      @if (
+          $colorName == yellow or
+          $colorName == cian or
+          $colorName == white or
+          $colorName == lemon or
+          $colorName == gold or
+          $colorName == pastry
+      ) {
         color: var(--black);
       }
       &:hover, &:focus {
@@ -65,7 +72,14 @@
         background-color: var(--#{"" + $colorName});
         border-color: var(--#{"" + $colorName});
         color: var(--white-html);
-        @if ($colorName == yellow or $colorName == cian or $colorName == white) {
+        @if (
+          $colorName == yellow or
+          $colorName == cian or
+          $colorName == white or
+          $colorName == lemon or
+          $colorName == gold or
+          $colorName == pastry
+        ) {
           color: var(--black);
         }
       }
