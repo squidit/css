@@ -7,6 +7,7 @@ gulp.task('sass', function(done){
   gulp.src('src/scss/squid.scss')
     .pipe(sass())
     .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('src/docs/public/css'))
     done()
 })
 
@@ -14,6 +15,7 @@ gulp.task('concat', function(done){
   gulp.src('src/js/**/*.js')
     .pipe(concat('squid.js'))
     .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('src/docs/public/js'))
     done()
 })
 
@@ -22,6 +24,7 @@ gulp.task('scripts', function(done){
     .pipe(concat('squid.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('src/docs/public/js'))
     done()
 })
 

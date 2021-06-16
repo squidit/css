@@ -10,16 +10,17 @@ const liveDom = new MutationObserver((mutations) => {
           initAccordion(node)
         }
         if (node.hasAttribute('data-modal')) {
-          node.addEventListener('click', (event) => createModal(event, trigger))
+          node.addEventListener('click', (event) => createModal(event, node))
         }
       }
     })
   })
 });
 
-liveDom.observe((document.documentElement || document.body), {
-  attributes: true,
-  childList: true,
-  subtree: true,
-  characterData: true
-});
+// To use live Realod Components
+// liveDom.observe((document.documentElement || document.body), {
+//   attributes: true,
+//   childList: true,
+//   subtree: true,
+//   characterData: true
+// });
