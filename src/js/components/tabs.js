@@ -1,6 +1,6 @@
 function tabify (element) {
-  const header = element.querySelector('.tabs-header')
-  const content = element.querySelector('.tabs-wrapper-content')
+  const header = element.querySelector('.tabs-header') || { children: [] }
+  const content = element.querySelector('.tabs-wrapper-content') || { children: [] }
   const tabHeaders = [...header.children]
   const tabContents = [...content.children]
   let currentTabIndex = -1
@@ -9,13 +9,21 @@ function tabify (element) {
     if (index < 0) {
       return
     }
-    if (!tabHeaders[index].classList.contains('disabled')) {
+    if (tabHeaders[index] && !tabHeaders[index].classList.contains('disabled')) {
       if (currentTabIndex > -1) {
-        tabHeaders[currentTabIndex].classList.remove('active')
-        tabContents[currentTabIndex].classList.remove('active')
+        if (tabHeaders[currentTabIndex]) {
+          tabHeaders[currentTabIndex].classList.remove('active')
+        }
+        if (tabContents[currentTabIndex]) {
+          tabContents[currentTabIndex].classList.remove('active')
+        }
       }
-      tabContents[index].classList.add('active')
-      tabHeaders[index].classList.add('active')
+      if (tabContents[index]) {
+        tabContents[index].classList.add('active')
+      }
+      if (tabHeaders[index]) {
+        tabHeaders[index].classList.add('active')
+      }
       currentTabIndex = index
     }
   }
