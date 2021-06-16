@@ -82,7 +82,8 @@ const Theme = ({ children }) => {
         position: fixed;
         top: 80px;
         left: 0;
-        min-height: 100vh;
+        min-height: calc(100vh - 80px);
+        padding-bottom: 112px;
       }
       div[data-testid="main-container"] {
         grid-column: 2;

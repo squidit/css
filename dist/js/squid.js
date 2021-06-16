@@ -7,7 +7,7 @@ function initAccordion (element) {
     if (index < 0) {
       return
     }
-    if (!collapses[index].classList.contains('collapse-disabled')) {
+    if (collapses[index] && !collapses[index].classList.contains('collapse-disabled')) {
       if (currentTabIndex > -1) {
         if (element.classList.contains('only-one') && index !== currentTabIndex) {
           collapses[currentTabIndex].classList.remove('active')
@@ -165,39 +165,40 @@ function initAccordion (element) {
 
 const modals = document.querySelectorAll('[data-modal]')
 modals.forEach(function (trigger) {
-  trigger.addEventListener('click', function (event) {
-    event.preventDefault()
-    const modal = document.getElementById(trigger.dataset.modal)
-    const backdrop = document.createElement('div')
-    backdrop.setAttribute('id', 'modal-backdrop')
-    backdrop.setAttribute('class', 'modal-backdrop show')
-    document.body.appendChild(backdrop)
-    const body = document.getElementsByTagName('body')[0]
-    body.classList.add('block')
-    modal.style.display = 'flex'
-    setTimeout(() => {
-      modal.classList.add('open')
-    }, 100)
-    const exits = modal.querySelectorAll('.modal-exit')
-    exits.forEach(function (exit) {
-      exit.addEventListener('click', function (event) {
-        event.preventDefault()
-        if (backdrop.parentNode) {
-          backdrop.parentNode.removeChild(backdrop)
-        }
-        modal.classList.remove('open')
-        setTimeout(() => {
-          modal.style.display = 'none'
-          body.classList.remove('block')
-        }, 500)
-      })
-    })
-  })
+  trigger.addEventListener('click', (event) => createModal(event, trigger))
 });
 
+function createModal(event, trigger) {
+  event.preventDefault()
+  const modal = document.getElementById(trigger.dataset.modal)
+  const backdrop = document.createElement('div')
+  backdrop.setAttribute('id', 'modal-backdrop')
+  backdrop.setAttribute('class', 'modal-backdrop show')
+  document.body.appendChild(backdrop)
+  const body = document.getElementsByTagName('body')[0]
+  body.classList.add('block')
+  modal.style.display = 'flex'
+  setTimeout(() => {
+    modal.classList.add('open')
+  }, 100)
+  const exits = modal.querySelectorAll('.modal-exit')
+  exits.forEach(function (exit) {
+    exit.addEventListener('click', function (event) {
+      event.preventDefault()
+      if (backdrop.parentNode) {
+        backdrop.parentNode.removeChild(backdrop)
+      }
+      modal.classList.remove('open')
+      setTimeout(() => {
+        modal.style.display = 'none'
+        body.classList.remove('block')
+      }, 500)
+    })
+  })
+};
 function tabify (element) {
-  const header = element.querySelector('.tabs-header')
-  const content = element.querySelector('.tabs-wrapper-content')
+  const header = element.querySelector('.tabs-header') || { children: [] }
+  const content = element.querySelector('.tabs-wrapper-content') || { children: [] }
   const tabHeaders = [...header.children]
   const tabContents = [...content.children]
   let currentTabIndex = -1
@@ -206,13 +207,21 @@ function tabify (element) {
     if (index < 0) {
       return
     }
-    if (!tabHeaders[index].classList.contains('disabled')) {
+    if (tabHeaders[index] && !tabHeaders[index].classList.contains('disabled')) {
       if (currentTabIndex > -1) {
-        tabHeaders[currentTabIndex].classList.remove('active')
-        tabContents[currentTabIndex].classList.remove('active')
+        if (tabHeaders[currentTabIndex]) {
+          tabHeaders[currentTabIndex].classList.remove('active')
+        }
+        if (tabContents[currentTabIndex]) {
+          tabContents[currentTabIndex].classList.remove('active')
+        }
       }
-      tabContents[index].classList.add('active')
-      tabHeaders[index].classList.add('active')
+      if (tabContents[index]) {
+        tabContents[index].classList.add('active')
+      }
+      if (tabHeaders[index]) {
+        tabHeaders[index].classList.add('active')
+      }
       currentTabIndex = index
     }
   }
@@ -622,6 +631,36 @@ function tabify (element) {
   }
 })();
 
+// // Listen all events on document/window
+const liveDom = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    mutation.addedNodes.forEach((node) => {
+      if (node.hasAttribute) {
+        if (node.hasAttribute('data-tabs')) {
+          tabify(node)
+        }
+        if (node.hasAttribute('data-accordion')) {
+          initAccordion(node)
+        }
+        if (node.hasAttribute('data-modal')) {
+          node.addEventListener('click', (event) => createModal(event, trigger))
+        }
+      }
+    })
+  })
+});
+
+liveDom.observe((document.documentElement || document.body), {
+  attributes: true,
+  childList: true,
+  subtree: true,
+  characterData: true
+});
+
+// var dummy = document.createElement("div");
+// dummy.setAttribute('data-modal', 'true');
+// document.body.appendChild(dummy);
+// document.body.removeChild(dummy);
 function loadScript (file) {
   const script = document.createElement('script')
   script.type = 'text/javascript'
