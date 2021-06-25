@@ -20695,6 +20695,9 @@ i {
 .border-radius-medium, .input, .textarea, .select, .wrapper-input .input-group-text {
   border-radius: 8px; }
 
+.border-radius-none {
+  border-radius: none; }
+
 .progress {
   width: 100%;
   background-color: var(--gray_light);
