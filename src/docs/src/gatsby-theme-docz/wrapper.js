@@ -12,12 +12,12 @@ const Wrapper = ({ children, doc }) => <React.Fragment>
     {/* Dev */}
     {/* <link
       rel="stylesheet"
-      href="../public/css/squid.css"
+      href="/public/css/squid.css"
     /> */}
     {/* Production */}
     <link
       rel="stylesheet"
-      href="../public/css/squid.min.css"
+      href="/public/css/squid.min.css"
     />
     {/* CDN */}
     {/* <link
@@ -27,9 +27,9 @@ const Wrapper = ({ children, doc }) => <React.Fragment>
   </Helmet>
   {children}
   {/* Dev */}
-  {/* <script src='../public/js/squid.js'></script> */}
+  {/* <script src='/public/js/squid.js'></script> */}
   {/* Production */}
-  <script src='../public/js/squid.min.js'></script>
+  <script src='/public/js/squid.min.js'></script>
   {/* CDN */}
   {/* <script src='https://cdn.jsdelivr.net/gh/squidit/css@latest/dist/js/squid.min.js'></script> */}
 </React.Fragment>
