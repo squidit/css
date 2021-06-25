@@ -24,6 +24,7 @@ $alignAll:
   center,
   start,
   end,
+  baseline,
   flex-start,
   flex-end,
   unset !default;
@@ -34,6 +35,9 @@ $justifyAll:
   end,
   flex-start,
   flex-end,
+  space-between,
+  space-evenly,
+  space-around,
   left,
   right,
   unset, !default;

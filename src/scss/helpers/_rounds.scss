@@ -15,3 +15,7 @@ $radius: (
 .border-radius-medium {
   border-radius: map-get($radius, 'medium');
 }
+
+.border-radius-none {
+  border-radius: none;
+}

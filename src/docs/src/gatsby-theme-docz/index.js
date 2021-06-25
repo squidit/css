@@ -72,6 +72,12 @@ const Theme = ({ children }) => {
     }
   }
   const style = `
+    .grid-box {
+      border: 1px solid var(--gray);
+      padding: 1rem;
+      background: var(--white);
+      border-radius: 5px;
+    }
     @media (min-width: 921px) {
       div[data-testid="header"]{
         position: fixed;
