@@ -21,7 +21,7 @@ export const Sidebar = forwardRef(function Sidebar(props, ref) {
     if (ref.current && currentDocRef.current) {
       ref.current.scrollTo(0, currentDocRef.current.offsetTop)
     }
-  }, [])
+  }, [ref])
   return (
     <Fragment>
       <Box onClick={props.onClick} sx={styles.overlay(props)}>
