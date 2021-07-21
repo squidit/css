@@ -21832,8 +21832,7 @@ i {
       font-weight: 700; }
   .tabs-header.line-style {
     background: var(--white-html);
-    border-radius: 5px;
-    padding: 0; }
+    border-radius: 5px; }
     .tabs-header.line-style li {
       background: var(--white-html);
       border-radius: 0;
@@ -21841,6 +21840,7 @@ i {
       position: relative;
       display: flex;
       align-items: center;
+      padding: 1rem 1rem 0;
       justify-content: center;
       flex-direction: column-reverse; }
       .tabs-header.line-style li::before {
@@ -21851,7 +21851,7 @@ i {
         max-width: 100px;
         display: block;
         position: relative;
-        margin-top: 0.5rem;
+        margin-top: calc(1rem - 4px);
         transition: all 0.3s ease; }
       .tabs-header.line-style li:hover {
         color: var(--gray_dark); }

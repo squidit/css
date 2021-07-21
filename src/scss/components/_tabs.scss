@@ -43,7 +43,6 @@
   &.line-style {
     background: var(--white-html);
     border-radius: 5px;
-    padding: 0;
     li {
       background: var(--white-html);
       border-radius: 0;
@@ -51,6 +50,7 @@
       position: relative;
       display: flex;
       align-items: center;
+      padding: $gutter $gutter 0;
       justify-content: center;
       flex-direction: column-reverse;
       &::before {
@@ -61,7 +61,7 @@
         max-width: 100px;
         display: block;
         position: relative;
-        margin-top: 0.5rem;
+        margin-top: calc(1rem - 4px);
         transition: $transition;
       }
       &:hover {
