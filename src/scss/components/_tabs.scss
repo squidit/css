@@ -24,6 +24,10 @@
       background-color 0.3s ease,
       box-shadow 0.3s ease,
       border 0.3s ease;
+    &:hover {
+      background: var(--gray_light);
+      color: var(--gray_dark);
+    }
     &.active {
       flex-shrink: 0;
       width: auto;
@@ -41,15 +45,39 @@
     border-radius: 5px;
     padding: 0;
     li {
-      border-bottom: 2px solid transparent;
       background: var(--white-html);
       border-radius: 0;
       color: var(--gray);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      &::before {
+        content: " ";
+        border-radius: 5px 5px 0 0;
+        height: 4px;
+        width: 75%;
+        max-width: 100px;
+        display: block;
+        position: relative;
+        margin-top: 0.5rem;
+        transition: $transition;
+      }
+      &:hover {
+        color: var(--gray_dark);
+        &::before {
+          background: var(--white);
+        }
+      }
       &.active {
         color: var(--pink);
         border-color: var(--pink);
         font-weight: 500;
         box-shadow: none;
+        &::before {
+          background: var(--pink);
+        }
       }
     }
   }
