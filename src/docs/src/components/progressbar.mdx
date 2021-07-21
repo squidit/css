@@ -1,7 +1,80 @@
 ---
-name: Prograss Bar
+name: Progress Bar
 menu: Components
 route: /components/progress-bar
 ---
 
 # Progress Bar
+To change color just change `background-` class to color that you need.
+<p>To see all the colors and their variations go to the <a className='pink' href='/styleguide'>Styleguide page</a></p>
+
+<div class="progress mb-3">
+  <div
+    class="progress-bar"
+    role="progressbar"
+    style="width: 25%"
+    aria-valuenow="25"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+<div class="progress mb-3">
+  <div
+    class="progress-bar background-lilac"
+    role="progressbar"
+    style="width: 75%"
+    aria-valuenow="75"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+
+```html
+<div class="progress">
+  <div
+    class="progress-bar"
+    role="progressbar"
+    style="width: 25%"
+    aria-valuenow="25"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+<div class="progress">
+  <div
+    class="progress-bar background-lilac"
+    role="progressbar"
+    style="width: 75%"
+    aria-valuenow="75"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+```
+
+## Dashed
+To dashe the bar use the class `.background-dashed`
+
+<div class="progress mb-3">
+  <div
+    class="progress-bar background-dashed"
+    role="progressbar"
+    style="width: 50%"
+    aria-valuenow="50"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+
+```html
+<div class="progress">
+  <div
+    class="progress-bar background-dashed"
+    role="progressbar"
+    style="width: 50%"
+    aria-valuenow="50"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+```

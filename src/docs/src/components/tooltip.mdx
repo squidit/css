@@ -5,3 +5,75 @@ route: /components/tooltip
 ---
 
 # Tooltip
+
+Documentation and examples for adding custom tooltips with CSS and JavaScript using CSS3 for animations.
+
+<div class='box black'>
+  <strong>Attention</strong>: the use of the components needs the <span class='pink'>squid.js</span> included in the project
+</div>
+
+<div class='box black'>
+  <strong>Attention + 1</strong>: Probably the interaction via Javascript should not work well in SPA applications (independent of the framework React, Angular, Vuejs, etc). For now we have no implementation but we will create in the future, for now just use the styles and create your own implementation
+</div>
+
+## Light
+
+<div
+  class='button button-pink display-inline-block'
+  data-tooltip-theme='light'
+  data-tooltip='Hello World!'
+>
+  Mouse Over Here
+</div>
+
+```html
+<div
+  data-tooltip='Some Text'
+  data-tooltip-theme='light'
+>
+  <!-- HTML CONTENT -->
+</div>
+```
+
+## Dark
+
+<div
+  class='button button-pink display-inline-block'
+  data-tooltip='Hello World!'
+>
+  Mouse Over Here
+</div>
+
+```html
+<div
+  data-tooltip='Some Text'
+>
+  <!-- HTML CONTENT -->
+</div>
+```
+
+### Attributes
+
+## Trigger
+
+The attribute `data-tooltip-trigger` accept `click` value. To use mouseover just leave it empty
+
+## Position
+
+The attribute `data-tooltip-position` accept:
+
+```
+right top
+right center
+right bottom
+center top
+center center
+center bottom
+left top
+left center
+left bottom
+```
+
+## Theme
+
+The attribute `data-tooltip-theme` accept `dark` (or empty) and `light` values

@@ -5,3 +5,162 @@ route: /components/accordion-collapse
 ---
 
 # Accordion | Collapse
+
+Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.
+
+<div class='box black'>
+  <strong>Attention</strong>: the use of the components needs the <span class='pink'>squid.js</span> included in the project
+</div>
+
+<div class='box black'>
+  <strong>Attention + 1</strong>: Probably the interaction via Javascript should not work well in SPA applications (independent of the framework React, Angular, Vuejs, etc). For now we have no implementation but we will create in the future, for now just use the styles and create your own implementation
+</div>
+
+## Default
+To change default color use `background-:color` on `collapse-title`
+
+<div class='box'>
+  <div class="accordion" data-accordion>
+    <div class="collapse"> 
+      <p class="collapse-title background-pink">
+        Title 1
+        <span class='icon'>
+          <i class="far fa-chevron-down"></i>
+        </span>
+      </p>
+      <div class="collapse-body black">
+        Content 1
+      </div>
+    </div>
+    <div class="collapse"> 
+      <p class="collapse-title background-blue">
+        Title 2
+        <span class='icon'>
+          <i class="far fa-chevron-down"></i>
+        </span>
+      </p>
+      <div class="collapse-body black">
+        Content 2
+      </div>
+    </div>
+    <div class="collapse"> 
+      <p class="collapse-title">
+        Title 3
+        <span class='icon'>
+          <i class="far fa-chevron-down"></i>
+        </span>
+      </p>
+      <div class="collapse-body black">
+        Content 3
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="accordion" data-accordion>
+  <div class="collapse"> 
+    <p class="collapse-title">
+      <!-- Text Title or HTML -->
+      <span class='icon'>
+        <!-- Icon Optinal -->
+      </span>
+    </p>
+    <div class="collapse-body">
+      <!-- HTML Content -->
+    </div>
+  </div>
+</div>
+```
+
+## Open Only One per time
+Just add `only-one` to accordion container
+
+<div class='box'>
+  <div class="accordion only-one" data-accordion>
+    <div class="collapse"> 
+      <p class="collapse-title background-pink">
+        Title 1
+        <span class='icon'>
+          <i class="far fa-chevron-down"></i>
+        </span>
+      </p>
+      <div class="collapse-body black">
+        Content 1
+      </div>
+    </div>
+    <div class="collapse"> 
+      <p class="collapse-title background-blue">
+        Title 2
+        <span class='icon'>
+          <i class="far fa-chevron-down"></i>
+        </span>
+      </p>
+      <div class="collapse-body black">
+        Content 2
+      </div>
+    </div>
+    <div class="collapse"> 
+      <p class="collapse-title">
+        Title 3
+        <span class='icon'>
+          <i class="far fa-chevron-down"></i>
+        </span>
+      </p>
+      <div class="collapse-body black">
+        Content 3
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="accordion only-one" data-accordion>
+  <div class="collapse"> 
+    <p class="collapse-title">
+      <!-- Text Title or HTML -->
+      <span class='icon'>
+        <!-- Icon Optinal -->
+      </span>
+    </p>
+    <div class="collapse-body">
+      <!-- HTML Content -->
+    </div>
+  </div>
+</div>
+```
+
+## Disabled
+Just add `collapse-disabled` to collapse container
+
+<div class='box'>
+  <div class="accordion only-one" data-accordion>
+    <div class="collapse collapse-disabled"> 
+      <p class="collapse-title background-pink">
+        Title 1
+        <span class='icon'>
+          <i class="far fa-chevron-down"></i>
+        </span>
+      </p>
+      <div class="collapse-body black">
+        Content 1
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="accordion" data-accordion>
+  <div class="collapse collapse-disabled"> 
+    <p class="collapse-title">
+      <!-- Text Title or HTML -->
+      <span class='icon'>
+        <!-- Icon Optinal -->
+      </span>
+    </p>
+    <div class="collapse-body">
+      <!-- HTML Content -->
+    </div>
+  </div>
+</div>
+```

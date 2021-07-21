@@ -78,12 +78,15 @@ const Theme = ({ children }) => {
       background: var(--white);
       border-radius: 5px;
     }
+    div[data-testid="header"]{
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+    }
+    div[data-testid="main-container"] {
+      padding-top: 112px;
+    }
     @media (min-width: 921px) {
-      div[data-testid="header"]{
-        position: fixed;
-        width: 100%;
-        z-index: 2;
-      }
       div[data-testid="sidebar"] {
         position: fixed;
         top: 80px;

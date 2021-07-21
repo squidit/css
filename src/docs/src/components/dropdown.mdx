@@ -5,3 +5,95 @@ route: /components/dropdown
 ---
 
 # Dropdown
+
+Toggle contextual overlays for displaying lists of links and more. To change the opening direction, just add the attribute ```data-dropdown-position``` like ```data-dropdown-position='left top'```
+
+<div class='box black'>
+  <strong>Attention</strong>: the use of the components needs the <span class='pink'>squid.js</span> included in the project
+</div>
+
+<div class='box black'>
+  <strong>Attention + 1</strong>: Probably the interaction via Javascript should not work well in SPA applications (independent of the framework React, Angular, Vuejs, etc). For now we have no implementation but we will create in the future, for now just use the styles and create your own implementation
+</div>
+
+<button
+  class="button button-pink mb-3 display-block"
+  style='width: 200px;'
+  type="button"
+  data-dropdown
+>
+  Click Here <i class="far fa-chevron-down"></i>
+</button>
+<ul class="dropdown">
+  <li>
+    <a
+      href="#"
+      onClick={() => false }
+    >
+      Link
+    </a>
+  </li>
+  <li class='px-3 mb-3'>
+    Sample Text
+  </li>
+  <li class='px-3'>
+    <label
+      for='input-text-dropdown'
+    >
+      Label
+    </label>
+    <input
+      style='width: 100%'
+      class='display-block input'
+      type='text'
+      name='input-text-dropdown'
+      id='input-text-dropdown'
+      placeholder='Placeholder'
+    />
+  </li>
+  <li>
+    <hr class="dropdown-divider" />
+  </li>
+  <li>
+    <button
+      type='button'
+      onClick={() => false }
+    >
+      Button
+    </button>
+  </li>
+  <li>
+    <div class='dropdown-plain'>
+      <h6>
+        I`m a plain dropdown
+      </h6>
+      <p>
+        This is a paragraph
+      </p>
+    </div>
+  </li>
+</ul>
+
+```html
+<button
+  type="button"
+  data-dropdown
+>
+  <!-- Button content data-dropdown is required -->
+  <!-- data-dropdown-position to change where dropdown if opened. Values: right bottom, right top, left bottom, left top -->
+</button>
+<ul class="dropdown">
+  <li>
+    <!-- Common Item Like <a> or <button> or forms -->
+  </li>
+  <li>
+    <!-- Custom HR -->
+    <hr class="dropdown-divider" />
+  </li>
+  <li>
+    <div class='dropdown-plain'>
+      <!-- Plain HTML -->
+    </div>
+  </li>
+</ul>
+```

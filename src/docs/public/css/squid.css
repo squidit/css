@@ -17286,6 +17286,12 @@ i {
 .align-self-end {
   align-self: end !important; }
 
+.align-items-baseline {
+  align-items: baseline !important; }
+
+.align-self-baseline {
+  align-self: baseline !important; }
+
 .align-items-flex-start {
   align-items: flex-start !important; }
 
@@ -17333,6 +17339,24 @@ i {
 
 .justify-self-flex-end {
   justify-self: flex-end !important; }
+
+.justify-content-space-between {
+  justify-content: space-between !important; }
+
+.justify-self-space-between {
+  justify-self: space-between !important; }
+
+.justify-content-space-evenly {
+  justify-content: space-evenly !important; }
+
+.justify-self-space-evenly {
+  justify-self: space-evenly !important; }
+
+.justify-content-space-around {
+  justify-content: space-around !important; }
+
+.justify-self-space-around {
+  justify-self: space-around !important; }
 
 .justify-content-left {
   justify-content: left !important; }
@@ -17405,6 +17429,10 @@ i {
     align-items: end !important; }
   .align-self-sm-end {
     align-self: end !important; }
+  .align-items-sm-baseline {
+    align-items: baseline !important; }
+  .align-self-sm-baseline {
+    align-self: baseline !important; }
   .align-items-sm-flex-start {
     align-items: flex-start !important; }
   .align-self-sm-flex-start {
@@ -17437,6 +17465,18 @@ i {
     justify-content: flex-end !important; }
   .justify-self-sm-flex-end {
     justify-self: flex-end !important; }
+  .justify-content-sm-space-between {
+    justify-content: space-between !important; }
+  .justify-self-sm-space-between {
+    justify-self: space-between !important; }
+  .justify-content-sm-space-evenly {
+    justify-content: space-evenly !important; }
+  .justify-self-sm-space-evenly {
+    justify-self: space-evenly !important; }
+  .justify-content-sm-space-around {
+    justify-content: space-around !important; }
+  .justify-self-sm-space-around {
+    justify-self: space-around !important; }
   .justify-content-sm-left {
     justify-content: left !important; }
   .justify-self-sm-left {
@@ -17503,6 +17543,10 @@ i {
     align-items: end !important; }
   .align-self-md-end {
     align-self: end !important; }
+  .align-items-md-baseline {
+    align-items: baseline !important; }
+  .align-self-md-baseline {
+    align-self: baseline !important; }
   .align-items-md-flex-start {
     align-items: flex-start !important; }
   .align-self-md-flex-start {
@@ -17535,6 +17579,18 @@ i {
     justify-content: flex-end !important; }
   .justify-self-md-flex-end {
     justify-self: flex-end !important; }
+  .justify-content-md-space-between {
+    justify-content: space-between !important; }
+  .justify-self-md-space-between {
+    justify-self: space-between !important; }
+  .justify-content-md-space-evenly {
+    justify-content: space-evenly !important; }
+  .justify-self-md-space-evenly {
+    justify-self: space-evenly !important; }
+  .justify-content-md-space-around {
+    justify-content: space-around !important; }
+  .justify-self-md-space-around {
+    justify-self: space-around !important; }
   .justify-content-md-left {
     justify-content: left !important; }
   .justify-self-md-left {
@@ -17601,6 +17657,10 @@ i {
     align-items: end !important; }
   .align-self-lg-end {
     align-self: end !important; }
+  .align-items-lg-baseline {
+    align-items: baseline !important; }
+  .align-self-lg-baseline {
+    align-self: baseline !important; }
   .align-items-lg-flex-start {
     align-items: flex-start !important; }
   .align-self-lg-flex-start {
@@ -17633,6 +17693,18 @@ i {
     justify-content: flex-end !important; }
   .justify-self-lg-flex-end {
     justify-self: flex-end !important; }
+  .justify-content-lg-space-between {
+    justify-content: space-between !important; }
+  .justify-self-lg-space-between {
+    justify-self: space-between !important; }
+  .justify-content-lg-space-evenly {
+    justify-content: space-evenly !important; }
+  .justify-self-lg-space-evenly {
+    justify-self: space-evenly !important; }
+  .justify-content-lg-space-around {
+    justify-content: space-around !important; }
+  .justify-self-lg-space-around {
+    justify-self: space-around !important; }
   .justify-content-lg-left {
     justify-content: left !important; }
   .justify-self-lg-left {
@@ -17699,6 +17771,10 @@ i {
     align-items: end !important; }
   .align-self-xl-end {
     align-self: end !important; }
+  .align-items-xl-baseline {
+    align-items: baseline !important; }
+  .align-self-xl-baseline {
+    align-self: baseline !important; }
   .align-items-xl-flex-start {
     align-items: flex-start !important; }
   .align-self-xl-flex-start {
@@ -17731,6 +17807,18 @@ i {
     justify-content: flex-end !important; }
   .justify-self-xl-flex-end {
     justify-self: flex-end !important; }
+  .justify-content-xl-space-between {
+    justify-content: space-between !important; }
+  .justify-self-xl-space-between {
+    justify-self: space-between !important; }
+  .justify-content-xl-space-evenly {
+    justify-content: space-evenly !important; }
+  .justify-self-xl-space-evenly {
+    justify-self: space-evenly !important; }
+  .justify-content-xl-space-around {
+    justify-content: space-around !important; }
+  .justify-self-xl-space-around {
+    justify-self: space-around !important; }
   .justify-content-xl-left {
     justify-content: left !important; }
   .justify-self-xl-left {
@@ -17797,6 +17885,10 @@ i {
     align-items: end !important; }
   .align-self-xxl-end {
     align-self: end !important; }
+  .align-items-xxl-baseline {
+    align-items: baseline !important; }
+  .align-self-xxl-baseline {
+    align-self: baseline !important; }
   .align-items-xxl-flex-start {
     align-items: flex-start !important; }
   .align-self-xxl-flex-start {
@@ -17829,6 +17921,18 @@ i {
     justify-content: flex-end !important; }
   .justify-self-xxl-flex-end {
     justify-self: flex-end !important; }
+  .justify-content-xxl-space-between {
+    justify-content: space-between !important; }
+  .justify-self-xxl-space-between {
+    justify-self: space-between !important; }
+  .justify-content-xxl-space-evenly {
+    justify-content: space-evenly !important; }
+  .justify-self-xxl-space-evenly {
+    justify-self: space-evenly !important; }
+  .justify-content-xxl-space-around {
+    justify-content: space-around !important; }
+  .justify-self-xxl-space-around {
+    justify-self: space-around !important; }
   .justify-content-xxl-left {
     justify-content: left !important; }
   .justify-self-xxl-left {
@@ -21510,7 +21614,7 @@ i {
   position: absolute;
   z-index: 1079;
   display: none;
-  min-width: 10rem;
+  min-width: 300px;
   max-width: 100vw;
   margin: 0;
   list-style: none;
@@ -21717,6 +21821,9 @@ i {
     color: var(--gray);
     cursor: pointer;
     transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; }
+    .tabs-header li:hover {
+      background: var(--gray_light);
+      color: var(--gray_dark); }
     .tabs-header li.active {
       flex-shrink: 0;
       width: auto;
@@ -21728,15 +21835,35 @@ i {
     border-radius: 5px;
     padding: 0; }
     .tabs-header.line-style li {
-      border-bottom: 2px solid transparent;
       background: var(--white-html);
       border-radius: 0;
-      color: var(--gray); }
+      color: var(--gray);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse; }
+      .tabs-header.line-style li::before {
+        content: " ";
+        border-radius: 5px 5px 0 0;
+        height: 4px;
+        width: 75%;
+        max-width: 100px;
+        display: block;
+        position: relative;
+        margin-top: 0.5rem;
+        transition: all 0.3s ease; }
+      .tabs-header.line-style li:hover {
+        color: var(--gray_dark); }
+        .tabs-header.line-style li:hover::before {
+          background: var(--white); }
       .tabs-header.line-style li.active {
         color: var(--pink);
         border-color: var(--pink);
         font-weight: 500;
         box-shadow: none; }
+        .tabs-header.line-style li.active::before {
+          background: var(--pink); }
   .tabs-header.tabs-center {
     width: 100%;
     justify-content: center; }

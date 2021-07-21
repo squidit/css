@@ -5,3 +5,70 @@ route: /components/toast
 ---
 
 # Toast
+
+Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.
+Toast works as a reactive service
+
+<div class='box black'>
+  <strong>Attention</strong>: the use of the components needs the <span class='pink'>squid.js</span> included in the project
+</div>
+
+<div class='box black'>
+  <strong>Attention + 1</strong>: Probably the interaction via Javascript should not work well in SPA applications needs some implementation to acess Toast on window element
+</div>
+
+## Exemple
+
+<button
+  type='button'
+  class='button inverted button-black '
+  onClick={() => Toast.show("Hello world", { closeButton: true, position: "top right", className: "" })}
+>
+  Click here
+</button>
+
+```html
+<button
+  type='button'
+  on-click='() => Toast.show("Hello world", { closeButton: true, position: "top right", className: "" })'
+>
+  Click here
+</button>
+```
+
+## Types
+
+Toast has standard types, to call like `Toast.success(...)`, `Toast.error(...)`, etc... They are:
+
+```
+show
+inverted
+success
+warning
+error
+grayscale
+custom
+```
+
+## Position
+
+Combine these values on `position` attribute
+
+```
+top
+bottom
+left
+right
+```
+
+## ClassName
+
+```className``` accepet a string that add a class to tooltip container on show it
+
+## CloseButton
+
+Boolean value to show or not close button. Default `closeButton: true`
+
+## Full
+
+To Toast use `100vw` add `full` to `className` attribute

@@ -5,3 +5,59 @@ route: /components/loader
 ---
 
 # Loader
+Indicate the loading state of a component or page, built entirely with HTML and CSS.
+<p>To see all the colors and their variations go to the <a className='pink' href='/styleguide'>Styleguide page</a></p>
+
+## Default | Spinner
+To change color just change the `border` classes and to change size use `small`, `big` or `bigger`. Without size classes the size is default `2rem`.
+
+<div class="loader small mb-3 display-block" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="loader mb-3 display-block" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="loader big border-lilac mb-3 display-block" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="loader bigger border-lilac mb-3 display-block" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+```html
+<div class="loader small" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="loader" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="loader big border-lilac" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="loader bigger border-lilac" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+```
+
+## Progress Bar
+To make the correct animation of the progress bar the ideal is to use some Javascript for progress control. Here we are using an `animate-bar` class just for demonstration
+
+<div class="progress">
+  <div
+    class="progress-bar background-dashed animate-bar"
+    role="progressbar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+
+```html
+<div class="progress">
+  <div
+    class="progress-bar background-dashed animate-bar"
+    role="progressbar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+```
