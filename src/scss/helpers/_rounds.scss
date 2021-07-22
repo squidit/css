@@ -1,4 +1,5 @@
 $radius: (
+  "minor": 2px,
   "default": 5px,
   "medium": 8px,
   "round": 50%
@@ -6,6 +7,10 @@ $radius: (
 
 .rounded {
   border-radius: map-get($radius, 'round');
+}
+
+.border-radius-minor {
+  border-radius: map-get($radius, 'minor');
 }
 
 .border-radius {
