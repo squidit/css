@@ -21277,7 +21277,7 @@ i {
     .wrapper-input .input-group-text:not(button):not(.loader) {
       font-weight: 400;
       line-height: 1.5;
-      color: var(--gray);
+      color: var(--gray_dark);
       background-color: var(--white); }
   .wrapper-input > :not(:first-child):not(.box-validation):not(.tooltip) {
     margin-left: -1px;
