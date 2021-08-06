@@ -94,28 +94,32 @@ $tooltip-arrow-height: 0.4rem !default;
 .tooltip-dark {
   background: var(--black);
   color: var(--white-html);
-  &[class$="-top"] {
+  &.tooltip-left-top,
+  &.tooltip-right-top,
+  &.tooltip-center-top {
     .tooltip-arrow {
       &::before {
         border-top-color: var(--black);
       }
     }
   }
-  &[class$="-bottom"] {
+  &.tooltip-left-bottom,
+  &.tooltip-right-bottom,
+  &.tooltip-center-bottom {
     .tooltip-arrow {
       &::before {
         border-bottom-color: var(--black);
       }
     }
   }
-  &[class$="left-center"] {
+  &.tooltip-left-center {
     .tooltip-arrow {
       &::before {
         border-left-color: var(--black);
       }
     }
   }
-  &[class$="right-center"] {
+  &.tooltip-right-center {
     .tooltip-arrow {
       &::before {
         border-right-color: var(--black);
@@ -127,28 +131,32 @@ $tooltip-arrow-height: 0.4rem !default;
 .tooltip-light {
   background-color: var(--gray_light);
   color: var(--black);
-  &[class$="-top"] {
+  &.tooltip-left-top,
+  &.tooltip-right-top,
+  &.tooltip-center-top {
     .tooltip-arrow {
       &::before {
         border-top-color: var(--gray_light);
       }
     }
   }
-  &[class$="-bottom"] {
+  &.tooltip-left-bottom,
+  &.tooltip-right-bottom,
+  &.tooltip-center-bottom {
     .tooltip-arrow {
       &::before {
         border-bottom-color: var(--gray_light);
       }
     }
   }
-  &[class$="left-center"] {
+  &.tooltip-left-center {
     .tooltip-arrow {
       &::before {
         border-left-color: var(--gray_light);
       }
     }
   }
-  &[class$="right-center"] {
+  &.tooltip-right-center {
     .tooltip-arrow {
       &::before {
         border-right-color: var(--gray_light);

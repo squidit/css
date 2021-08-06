@@ -22030,25 +22030,25 @@ i {
 .tooltip-dark {
   background: var(--black);
   color: var(--white-html); }
-  .tooltip-dark[class$="-top"] .tooltip-arrow::before {
+  .tooltip-dark.tooltip-left-top .tooltip-arrow::before, .tooltip-dark.tooltip-right-top .tooltip-arrow::before, .tooltip-dark.tooltip-center-top .tooltip-arrow::before {
     border-top-color: var(--black); }
-  .tooltip-dark[class$="-bottom"] .tooltip-arrow::before {
+  .tooltip-dark.tooltip-left-bottom .tooltip-arrow::before, .tooltip-dark.tooltip-right-bottom .tooltip-arrow::before, .tooltip-dark.tooltip-center-bottom .tooltip-arrow::before {
     border-bottom-color: var(--black); }
-  .tooltip-dark[class$="left-center"] .tooltip-arrow::before {
+  .tooltip-dark.tooltip-left-center .tooltip-arrow::before {
     border-left-color: var(--black); }
-  .tooltip-dark[class$="right-center"] .tooltip-arrow::before {
+  .tooltip-dark.tooltip-right-center .tooltip-arrow::before {
     border-right-color: var(--black); }
 
 .tooltip-light {
   background-color: var(--gray_light);
   color: var(--black); }
-  .tooltip-light[class$="-top"] .tooltip-arrow::before {
+  .tooltip-light.tooltip-left-top .tooltip-arrow::before, .tooltip-light.tooltip-right-top .tooltip-arrow::before, .tooltip-light.tooltip-center-top .tooltip-arrow::before {
     border-top-color: var(--gray_light); }
-  .tooltip-light[class$="-bottom"] .tooltip-arrow::before {
+  .tooltip-light.tooltip-left-bottom .tooltip-arrow::before, .tooltip-light.tooltip-right-bottom .tooltip-arrow::before, .tooltip-light.tooltip-center-bottom .tooltip-arrow::before {
     border-bottom-color: var(--gray_light); }
-  .tooltip-light[class$="left-center"] .tooltip-arrow::before {
+  .tooltip-light.tooltip-left-center .tooltip-arrow::before {
     border-left-color: var(--gray_light); }
-  .tooltip-light[class$="right-center"] .tooltip-arrow::before {
+  .tooltip-light.tooltip-right-center .tooltip-arrow::before {
     border-right-color: var(--gray_light); }
 
 .table-overflow {
