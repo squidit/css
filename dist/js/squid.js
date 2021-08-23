@@ -628,7 +628,7 @@ function tabify (element) {
     top = (top < 0) ? parseInt(parentCoords.bottom) + distance : top
 
     tooltip.style.left = left + 'px'
-    tooltip.style.top = top + pageYOffset + 'px'
+    tooltip.style.top = top + scrollY + 'px'
   }
 })();
 
