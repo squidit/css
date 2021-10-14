@@ -87,7 +87,7 @@
   background-clip: padding-box;
   border: 1px solid var(--gray_light);
   border-radius: 5px;
-  padding: $gutter;
+  padding: $gutter $gutter * 2;
   color: var(--black);
   outline: 0;
   @extend .box-shadow;

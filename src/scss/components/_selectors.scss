@@ -60,7 +60,7 @@
     }
     &:checked {
       & + label.checkbox {
-        background-color: var(--pink);
+        background-color: var(--green_dark);
         &::after {
           opacity: 1;
         }

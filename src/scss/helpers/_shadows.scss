@@ -1,7 +1,7 @@
 
 $configShadow: 0px 4px 12px;
 .box-shadow {
-  box-shadow: $configShadow -5px var(--gray);
+  box-shadow: $configShadow -5px rgba(212, 212, 219, 0.5);
 }
 
 .box-shadow-none {
@@ -9,7 +9,7 @@ $configShadow: 0px 4px 12px;
 }
 
 .text-shadow {
-  text-shadow: $configShadow var(--gray);
+  text-shadow: $configShadow rgba(212, 212, 219, 0.5);
 }
 
 .text-shadow-none {
@@ -17,7 +17,7 @@ $configShadow: 0px 4px 12px;
 }
 
 .drop-shadow {
-  filter: drop-shadow($configShadow var(--gray));
+  filter: drop-shadow($configShadow rgba(212, 212, 219, 0.5));
 }
 
 .drop-shadow-none {

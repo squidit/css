@@ -18,7 +18,7 @@ $icon-box: 16px !default;
   .collapse-title {
     margin: 0;
     position: relative;
-    padding: $gutter ($gutter * 2);
+    padding: $gutter $gutter * 2;
     width: 100%;
     color: var(--black);
     font-size: 16px;
@@ -64,7 +64,7 @@ $icon-box: 16px !default;
       }
     }
     .collapse-body {               
-      padding: $gutter;
+      padding: $gutter $gutter * 2;
       opacity: 1;
       max-height: 9999px;           
     }

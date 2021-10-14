@@ -31,10 +31,17 @@
     button, a {
       width: calc(100% + #{($gutter * 2)});
     }
+    >* {
+      padding: $gutter $gutter * 2;
+    }
+    input, select, textarea {
+      margin: 0 $gutter * 2;
+      width: 100%;
+      max-width: calc(100% - 4rem);
+    }
     button, a {
       display: block;
       cursor: pointer;
-      padding: $gutter;
       width: 100%;
       border: none;
       box-shadow: none;
@@ -61,5 +68,5 @@
 .dropdown-plain {
   width: 100%;
   display: block;
-  padding: $gutter;
+  padding: $gutter $gutter * 2;
 }

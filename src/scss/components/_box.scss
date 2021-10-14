@@ -1,7 +1,6 @@
 .box {
   background: var(--white-html);
-  padding: $gutter;
-  border-radius: 5px;
+  padding: $gutter $gutter * 2;
   margin: 0 0 $gutter;
   overflow: hidden;
   @extend .box-shadow;
