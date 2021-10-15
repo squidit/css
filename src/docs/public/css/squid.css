@@ -16996,7 +16996,9 @@ template {
   box-sizing: border-box; }
 
 * {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  min-width: 0;
+  min-height: 0; }
 
 hr {
   border-color: var(--gray_light);
