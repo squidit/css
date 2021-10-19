@@ -24,16 +24,16 @@ jobs:
             "https://api.github.com/repos/$GITHUB_REPOSITORY/statuses/$GITHUB_SHA?access_token=$GITHUB_TOKEN"
         env:
           access_token: ${{ steps.githubAppAuth.outputs.token }}
-      - name: setup git auth
+      - name: Setup Auth ENV
         env:
-          email: 'engenharia@squidit.com.br'
+          email: 'developers@squidit.com.br'
           username: 'squidit'
         run: |
           git config --global credential.helper store
           echo "https://${access_token}:x-oauth-basic@github.com" > ~/.git-credentials
           git config --global user.email $email
           git config --global user.name $username
-      - name: deploy to gh-pages
+      - name: Deploy to gh-pages
         run: |
           npm install docz -g
           npm install gatsby -g
@@ -47,5 +47,5 @@ jobs:
           cd ../..
           git init
           git add -A
-          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:gh-pages
+          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}" --no-verify
+          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" HEAD:gh-pages
