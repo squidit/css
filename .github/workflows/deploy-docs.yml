@@ -42,6 +42,7 @@ jobs:
           cp -r dist/css src/docs/public
           cp -r dist/js src/docs/public
           cd src/docs
+          npm install
           NODE_ENV=production npm run build
           cd ../..
           git init
