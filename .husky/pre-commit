@@ -3,9 +3,9 @@
 
 npm run lint
 npm run dist
-cp -r dist/css src/docs/public
-cp -r dist/js src/docs/public
-cd src/docs
-npm run build
-cd ../..
+# cp -r dist/css src/docs/public
+# cp -r dist/js src/docs/public
+# cd src/docs
+# npm run build
+# cd ../..
 git add .

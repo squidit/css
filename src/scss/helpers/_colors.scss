@@ -2,13 +2,14 @@
 $amoutLigthen: 23%;
 $amountDarken: 15%;
 
-$black:      #31353B !default;
+$black:      #212529 !default;
+$blackLight: #495057 !default;
 $blackHtml:  #000000 !default;
-$white:      #ECEFF4 !default;
+$white:      #F6F6F8 !default;
 $whiteHtml:  #FFFFFF !default;
-$gray:       #ACB5BD !default;
-$grayLight:  #DDE2E5 !default;
-$grayDark:   #495057 !default;
+$gray:       #98A0A8 !default;
+$grayLight:  #E9EBF0 !default;
+$grayDark:   #707981 !default;
 $pink:       #E94589 !default;
 $lilac:      #7C70D1 !default;
 $cian:       #5ACAED !default;
@@ -30,7 +31,8 @@ $google:     #0F9D58 !default;
 
 $colors: (
   black: (
-    base: $black
+    base: $black,
+    light: $blackLight,
   ),
   white: (
     base: $white

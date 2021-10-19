@@ -1,0 +1,31 @@
+# name: Deploy to GitHub Pages on merge
+# 'on':
+#   push:
+#     branches:
+#       - master
+# jobs:
+#   build_and_deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout 🛎️
+#         uses: actions/checkout@v2.3.1
+
+#       - name: Install and Build 🔧
+#         run: |
+#           npm run dist
+#           cp -r dist/css src/docs/public
+#           cp -r dist/js src/docs/public
+#           cd src/docs
+#           npm run build
+#       # - uses: FirebaseExtended/action-hosting-deploy@v0
+#       #   with:
+#       #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
+#       #     firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SCHOOL_FRONTEND_ALPHA }}'
+#       #     channelId: live
+#       #     projectId: school-frontend-alpha
+
+#       - name: Deploy 🚀
+#         uses: squidit/css
+#         with:
+#           branch: gh-pages
+#           folder: docs

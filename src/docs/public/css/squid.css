@@ -12927,14 +12927,15 @@ readers do not read off random characters that represent icons */
 /* Sass Vars */
 /* CSS Vars */
 :root {
-  --black: #31353B;
-  --white: #ECEFF4;
+  --black: #212529;
+  --black_light: #495057;
+  --white: #F6F6F8;
   --black-html: #000000;
   --white-html: #FFFFFF;
   --transparent: transparent;
-  --gray: #ACB5BD;
-  --gray_light: #DDE2E5;
-  --gray_dark: #495057;
+  --gray: #98A0A8;
+  --gray_light: #E9EBF0;
+  --gray_dark: #707981;
   --pink: #E94589;
   --pink_light: #f5aecc;
   --pink_dark: #ca1862;
@@ -12993,22 +12994,31 @@ readers do not read off random characters that represent icons */
 /* CSS Vars */
 /* Classes */
 .black {
-  color: #31353B !important; }
+  color: #212529 !important; }
 
 .background-black {
-  background-color: #31353B !important; }
+  background-color: #212529 !important; }
 
 .border-black {
-  border-color: #31353B !important; }
+  border-color: #212529 !important; }
+
+.black-light {
+  color: #495057 !important; }
+
+.background-black-light {
+  background-color: #495057 !important; }
+
+.border-black-light {
+  border-color: #495057 !important; }
 
 .white {
-  color: #ECEFF4 !important; }
+  color: #F6F6F8 !important; }
 
 .background-white {
-  background-color: #ECEFF4 !important; }
+  background-color: #F6F6F8 !important; }
 
 .border-white {
-  border-color: #ECEFF4 !important; }
+  border-color: #F6F6F8 !important; }
 
 .black-html {
   color: #000000 !important; }
@@ -13038,31 +13048,31 @@ readers do not read off random characters that represent icons */
   border-color: transparent !important; }
 
 .gray {
-  color: #ACB5BD !important; }
+  color: #98A0A8 !important; }
 
 .background-gray {
-  background-color: #ACB5BD !important; }
+  background-color: #98A0A8 !important; }
 
 .border-gray {
-  border-color: #ACB5BD !important; }
+  border-color: #98A0A8 !important; }
 
 .gray-light {
-  color: #DDE2E5 !important; }
+  color: #E9EBF0 !important; }
 
 .background-gray-light {
-  background-color: #DDE2E5 !important; }
+  background-color: #E9EBF0 !important; }
 
 .border-gray-light {
-  border-color: #DDE2E5 !important; }
+  border-color: #E9EBF0 !important; }
 
 .gray-dark {
-  color: #495057 !important; }
+  color: #707981 !important; }
 
 .background-gray-dark {
-  background-color: #495057 !important; }
+  background-color: #707981 !important; }
 
 .border-gray-dark {
-  border-color: #495057 !important; }
+  border-color: #707981 !important; }
 
 .pink {
   color: #E94589 !important; }
@@ -21248,7 +21258,7 @@ i {
   .input:focus, .textarea:focus, .select:focus {
     outline: none;
     box-shadow: 0px 0px 0px 1px var(--gray);
-    border-color: #ACB5BD; }
+    border-color: #98A0A8; }
   .input.error, .error.textarea, .error.select {
     border-width: 1px;
     border-color: var(--red); }
