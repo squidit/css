@@ -7,6 +7,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
       - name: Obtain GitHub App Installation Access Token
         id: githubAppAuth
         run: |
@@ -20,10 +24,6 @@ jobs:
             "https://api.github.com/repos/$GITHUB_REPOSITORY/statuses/$GITHUB_SHA?access_token=$GITHUB_TOKEN"
         env:
           access_token: ${{ steps.githubAppAuth.outputs.token }}
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '14'
       - name: setup git auth
         env:
           email: 'engenharia@squidit.com.br'
