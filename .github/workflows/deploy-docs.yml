@@ -1,31 +1,48 @@
-# name: Deploy to GitHub Pages on merge
-# 'on':
-#   push:
-#     branches:
-#       - master
-# jobs:
-#   build_and_deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout 🛎️
-#         uses: actions/checkout@v2.3.1
-
-#       - name: Install and Build 🔧
-#         run: |
-#           npm run dist
-#           cp -r dist/css src/docs/public
-#           cp -r dist/js src/docs/public
-#           cd src/docs
-#           npm run build
-#       # - uses: FirebaseExtended/action-hosting-deploy@v0
-#       #   with:
-#       #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
-#       #     firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SCHOOL_FRONTEND_ALPHA }}'
-#       #     channelId: live
-#       #     projectId: school-frontend-alpha
-
-#       - name: Deploy 🚀
-#         uses: squidit/css
-#         with:
-#           branch: gh-pages
-#           folder: docs
+name: Deploy to GitHub Pages on merge Master
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtain GitHub App Installation Access Token
+        id: githubAppAuth
+        run: |
+          TOKEN="$(npx obtain-github-app-installation-access-token ci ${{ secrets.GH_APP_CREDENTIALS_TOKEN }})"
+          echo "::add-mask::$TOKEN"
+          echo "::set-output name=token::$TOKEN"
+      - name: Use the obtained token
+        run: |
+          curl -X POST -H 'Content-Type: application/json' \
+            -d '{"context":"test","state":"success"}' \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/statuses/$GITHUB_SHA?access_token=$GITHUB_TOKEN"
+        env:
+          access_token: ${{ steps.githubAppAuth.outputs.token }}
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      - name: setup git auth
+        env:
+          email: 'engenharia@squidit.com.br'
+          username: 'squidit'
+        run: |
+          git config --global credential.helper store
+          echo "https://${access_token}:x-oauth-basic@github.com" > ~/.git-credentials
+          git config --global user.email $email
+          git config --global user.name $username
+      - name: deploy to gh-pages
+        run: |
+          npm i
+          npm run dist
+          cp -r dist/css src/docs/public
+          cp -r dist/js src/docs/public
+          cd src/docs
+          NODE_ENV=production npm run build
+          cd ../..
+          git init
+          git add -A
+          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
+          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:gh-pages
