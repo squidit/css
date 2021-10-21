@@ -21525,7 +21525,7 @@ i {
 .box, .card {
   background: var(--white-html);
   padding: 1rem 2rem;
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
   overflow: hidden; }
   .box .borded, .card .borded {
     border: 1px solid transparent; }
