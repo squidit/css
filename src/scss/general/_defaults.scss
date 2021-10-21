@@ -97,6 +97,11 @@ label {
   color: var(--black_light);
   margin-bottom: 0.5rem;
   text-align: left;
+  &.small {
+    font-size: 12px;
+    margin-bottom: 0.25rem;
+    color: var(--gray_dark);
+  }
 }
 
 h1,

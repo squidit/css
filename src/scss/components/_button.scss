@@ -11,6 +11,9 @@
   background-color: var(--black);
   border: 2px solid var(--black);
   transition: $transition;
+  &.rounded {
+    border-radius: 4rem;
+  }
   &.button-xl {
     padding: 1rem;
   }

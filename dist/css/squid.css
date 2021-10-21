@@ -12992,7 +12992,10 @@ readers do not read off random characters that represent icons */
   --google_dark: #085731;
   --linkedin: #2867B2;
   --linkedin_light: #70a3df;
-  --linkedin_dark: #1a4374; }
+  --linkedin_dark: #1a4374;
+  --whatsapp: #25D366;
+  --whatsapp_light: #84e9aa;
+  --whatsapp_dark: #1a9247; }
 
 /* CSS Vars */
 /* Classes */
@@ -13589,6 +13592,33 @@ readers do not read off random characters that represent icons */
 
 .border-linkedin-dark {
   border-color: #1a4374 !important; }
+
+.whatsapp {
+  color: #25D366 !important; }
+
+.background-whatsapp {
+  background-color: #25D366 !important; }
+
+.border-whatsapp {
+  border-color: #25D366 !important; }
+
+.whatsapp-light {
+  color: #84e9aa !important; }
+
+.background-whatsapp-light {
+  background-color: #84e9aa !important; }
+
+.border-whatsapp-light {
+  border-color: #84e9aa !important; }
+
+.whatsapp-dark {
+  color: #1a9247 !important; }
+
+.background-whatsapp-dark {
+  background-color: #1a9247 !important; }
+
+.border-whatsapp-dark {
+  border-color: #1a9247 !important; }
 
 /* Classes */
 :root {
@@ -17133,6 +17163,10 @@ label {
   color: var(--black_light);
   margin-bottom: 0.5rem;
   text-align: left; }
+  label.small {
+    font-size: 12px;
+    margin-bottom: 0.25rem;
+    color: var(--gray_dark); }
 
 h1,
 h2,
@@ -20909,6 +20943,8 @@ i {
   background-color: var(--black);
   border: 2px solid var(--black);
   transition: all 0.3s ease; }
+  .button.rounded {
+    border-radius: 4rem; }
   .button.button-xl {
     padding: 1rem; }
   .button.button-lg {
@@ -21293,6 +21329,20 @@ i {
       background-color: var(--linkedin);
       border-color: var(--linkedin);
       color: var(--white-html); }
+  .button.button-whatsapp {
+    background-color: var(--whatsapp);
+    border-color: var(--whatsapp); }
+    .button.button-whatsapp:hover, .button.button-whatsapp:focus {
+      background-color: var(--whatsapp_dark);
+      border-color: var(--whatsapp_dark); }
+  .button.button-whatsapp.inverted {
+    color: var(--whatsapp);
+    background-color: var(--white-html);
+    border-color: var(--whatsapp); }
+    .button.button-whatsapp.inverted:hover, .button.button-whatsapp.inverted:focus {
+      background-color: var(--whatsapp);
+      border-color: var(--whatsapp);
+      color: var(--white-html); }
 
 .input, .textarea, .select {
   min-height: 40px;
@@ -21300,10 +21350,17 @@ i {
   background: var(--white-html);
   padding: 0.75rem 1rem;
   transition: all 0.3s ease; }
+  .input.small, .small.textarea, .small.select {
+    min-height: 25px;
+    padding: 0.25rem 1rem;
+    background-color: transparent;
+    border-radius: 30px;
+    color: var(--gray_dark);
+    border-color: var(--gray_dark); }
   .input:focus, .textarea:focus, .select:focus {
     outline: none;
     box-shadow: 0px 0px 0px 1px var(--gray);
-    border-color: #98A0A8; }
+    border-color: var(--gray); }
   .input.error, .error.textarea, .error.select {
     border-width: 1px;
     border-color: var(--red); }

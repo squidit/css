@@ -29,6 +29,7 @@ $pinterest:  #E60023 !default;
 $facebook:   #4267B2 !default;
 $google:     #0F9D58 !default;
 $linkedin:   #2867B2 !default;
+$whatsapp:   #25D366 !default;
 
 $colors: (
   black: (
@@ -146,6 +147,11 @@ $colors: (
     base: $linkedin,
     light: lighten($linkedin, $amoutLigthen),
     dark: darken($linkedin, $amountDarken)
+  ),
+  whatsapp: (
+    base: $whatsapp,
+    light: lighten($whatsapp, $amoutLigthen),
+    dark: darken($whatsapp, $amountDarken)
   )
 ) !default;
 /* Sass Vars */
