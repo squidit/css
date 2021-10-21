@@ -28,6 +28,7 @@ $youtube:    #FF0000 !default;
 $pinterest:  #E60023 !default;
 $facebook:   #4267B2 !default;
 $google:     #0F9D58 !default;
+$linkedin:   #2867B2 !default;
 
 $colors: (
   black: (
@@ -140,6 +141,11 @@ $colors: (
     base: $google,
     light: lighten($google, $amoutLigthen),
     dark: darken($google, $amountDarken)
+  ),
+  linkedin: (
+    base: $linkedin,
+    light: lighten($linkedin, $amoutLigthen),
+    dark: darken($linkedin, $amountDarken)
   )
 ) !default;
 /* Sass Vars */

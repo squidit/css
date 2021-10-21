@@ -12989,7 +12989,10 @@ readers do not read off random characters that represent icons */
   --facebook_dark: #2d477a;
   --google: #0F9D58;
   --google_light: #36ec93;
-  --google_dark: #085731; }
+  --google_dark: #085731;
+  --linkedin: #2867B2;
+  --linkedin_light: #70a3df;
+  --linkedin_dark: #1a4374; }
 
 /* CSS Vars */
 /* Classes */
@@ -13559,6 +13562,33 @@ readers do not read off random characters that represent icons */
 
 .border-google-dark {
   border-color: #085731 !important; }
+
+.linkedin {
+  color: #2867B2 !important; }
+
+.background-linkedin {
+  background-color: #2867B2 !important; }
+
+.border-linkedin {
+  border-color: #2867B2 !important; }
+
+.linkedin-light {
+  color: #70a3df !important; }
+
+.background-linkedin-light {
+  background-color: #70a3df !important; }
+
+.border-linkedin-light {
+  border-color: #70a3df !important; }
+
+.linkedin-dark {
+  color: #1a4374 !important; }
+
+.background-linkedin-dark {
+  background-color: #1a4374 !important; }
+
+.border-linkedin-dark {
+  border-color: #1a4374 !important; }
 
 /* Classes */
 :root {
@@ -17100,7 +17130,7 @@ a {
 label {
   display: block;
   font-weight: 500;
-  color: var(--gray_dark);
+  color: var(--black_light);
   margin-bottom: 0.5rem;
   text-align: left; }
 
@@ -21248,12 +21278,26 @@ i {
       background-color: var(--google);
       border-color: var(--google);
       color: var(--white-html); }
+  .button.button-linkedin {
+    background-color: var(--linkedin);
+    border-color: var(--linkedin); }
+    .button.button-linkedin:hover, .button.button-linkedin:focus {
+      background-color: var(--linkedin_dark);
+      border-color: var(--linkedin_dark); }
+  .button.button-linkedin.inverted {
+    color: var(--linkedin);
+    background-color: var(--white-html);
+    border-color: var(--linkedin); }
+    .button.button-linkedin.inverted:hover, .button.button-linkedin.inverted:focus {
+      background-color: var(--linkedin);
+      border-color: var(--linkedin);
+      color: var(--white-html); }
 
 .input, .textarea, .select {
   min-height: 40px;
   border: 1px solid var(--gray);
   background: var(--white-html);
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   transition: all 0.3s ease; }
   .input:focus, .textarea:focus, .select:focus {
     outline: none;
@@ -21823,7 +21867,7 @@ i {
 .tabs-header {
   display: inline-flex;
   border-radius: 10px;
-  padding: 0;
+  padding: 0.5rem;
   background: var(--white);
   list-style: none;
   align-items: center;
@@ -21839,7 +21883,8 @@ i {
     border-radius: 10px;
     background: transparent;
     text-align: center;
-    color: var(--gray);
+    color: var(--black_light);
+    background: var(--white);
     cursor: pointer;
     transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; }
     .tabs-header li:hover {

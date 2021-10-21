@@ -2,7 +2,7 @@
   min-height: 40px;
   border: 1px solid var(--gray);
   background: var(--white-html);
-  padding: ($gutter / 2) $gutter;
+  padding: 0.75rem $gutter;
   transition: $transition;
   @extend .border-radius;
   &:focus {
