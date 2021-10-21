@@ -17212,9 +17212,10 @@ i {
 
 .disabled, .button[disabled], .input[disabled], .textarea[disabled], .select[disabled], .input.disabled, .disabled.textarea, .disabled.select, .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .tag-box.disabled, .collapse.collapse-disabled .collapse-title, .dropdown li button.disabled, .dropdown li a.disabled, .tabs-header li.disabled {
   cursor: not-allowed !important;
-  color: var(--gray) !important;
-  border-color: var(--gray_light) !important;
-  background: var(--gray_light) !important; }
+  color: var(--gray_light) !important;
+  border-color: var(--gray) !important;
+  background: var(--gray_dark) !important;
+  opacity: 0.3; }
 
 .readonly, .input[readonly], .textarea[readonly], .select[readonly], .input.readonly, .readonly.textarea, .readonly.select {
   color: var(--black) !important;
@@ -21392,7 +21393,7 @@ i {
       text-align: center;
       border-radius: 5px;
       border: 1px solid var(--gray);
-      background: var(--white);
+      background: var(--gray_light);
       color: var(--white);
       font-size: 16px;
       transition: all 0.3s ease;
