@@ -43,6 +43,8 @@ jobs:
           cd src/docs
           npm install
           NODE_ENV=production npm run build
+          touch CNAME
+          echo 'css.squidit.com.br' > CNAME
           cd ../..
           git init
           git add -A
