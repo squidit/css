@@ -7,4 +7,8 @@
   .borded {
     border: 1px solid transparent;
   }
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    padding: $gutter;
+    margin: 0 0 $gutter;
+  }
 }

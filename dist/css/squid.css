@@ -21345,7 +21345,7 @@ i {
       color: var(--white-html); }
 
 .input, .textarea, .select {
-  min-height: 40px;
+  min-height: 44px;
   border: 1px solid var(--gray);
   background: var(--white-html);
   padding: 0.75rem 1rem;
@@ -21631,6 +21631,10 @@ i {
   overflow: hidden; }
   .box .borded, .card .borded {
     border: 1px solid transparent; }
+  @media (max-width: 992px) {
+    .box, .card {
+      padding: 1rem;
+      margin: 0 0 1rem; } }
 
 .card {
   border-left: 0.5rem solid var(--pink); }
