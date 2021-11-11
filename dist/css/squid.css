@@ -21743,7 +21743,7 @@ i {
   overflow-y: auto;
   background-color: var(--white-html);
   border: 1px solid var(--gray_light);
-  border-radius: 5px;
+  border-radius: 0;
   padding: 0;
   background-clip: padding-box;
   flex-direction: column;
@@ -21864,7 +21864,7 @@ i {
   background-color: var(--white-html);
   background-clip: padding-box;
   border: 1px solid var(--gray_light);
-  border-radius: 5px;
+  border-radius: 0;
   padding: 1rem 2rem;
   color: var(--black);
   outline: 0; }
