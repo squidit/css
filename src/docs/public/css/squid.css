@@ -12995,7 +12995,10 @@ readers do not read off random characters that represent icons */
   --linkedin_dark: #1a4374;
   --whatsapp: #25D366;
   --whatsapp_light: #84e9aa;
-  --whatsapp_dark: #1a9247; }
+  --whatsapp_dark: #1a9247;
+  --tiktok: #000000;
+  --tiktok_light: #3b3b3b;
+  --tiktok_dark: black; }
 
 /* CSS Vars */
 /* Classes */
@@ -13619,6 +13622,33 @@ readers do not read off random characters that represent icons */
 
 .border-whatsapp-dark {
   border-color: #1a9247 !important; }
+
+.tiktok {
+  color: #000000 !important; }
+
+.background-tiktok {
+  background-color: #000000 !important; }
+
+.border-tiktok {
+  border-color: #000000 !important; }
+
+.tiktok-light {
+  color: #3b3b3b !important; }
+
+.background-tiktok-light {
+  background-color: #3b3b3b !important; }
+
+.border-tiktok-light {
+  border-color: #3b3b3b !important; }
+
+.tiktok-dark {
+  color: black !important; }
+
+.background-tiktok-dark {
+  background-color: black !important; }
+
+.border-tiktok-dark {
+  border-color: black !important; }
 
 /* Classes */
 :root {
@@ -21342,6 +21372,20 @@ i {
     .button.button-whatsapp.inverted:hover, .button.button-whatsapp.inverted:focus {
       background-color: var(--whatsapp);
       border-color: var(--whatsapp);
+      color: var(--white-html); }
+  .button.button-tiktok {
+    background-color: var(--tiktok);
+    border-color: var(--tiktok); }
+    .button.button-tiktok:hover, .button.button-tiktok:focus {
+      background-color: var(--tiktok_dark);
+      border-color: var(--tiktok_dark); }
+  .button.button-tiktok.inverted {
+    color: var(--tiktok);
+    background-color: var(--white-html);
+    border-color: var(--tiktok); }
+    .button.button-tiktok.inverted:hover, .button.button-tiktok.inverted:focus {
+      background-color: var(--tiktok);
+      border-color: var(--tiktok);
       color: var(--white-html); }
 
 .input, .textarea, .select {

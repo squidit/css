@@ -30,6 +30,7 @@ $facebook:   #4267B2 !default;
 $google:     #0F9D58 !default;
 $linkedin:   #2867B2 !default;
 $whatsapp:   #25D366 !default;
+$tiktok:     #000000 !default;
 
 $colors: (
   black: (
@@ -152,6 +153,11 @@ $colors: (
     base: $whatsapp,
     light: lighten($whatsapp, $amoutLigthen),
     dark: darken($whatsapp, $amountDarken)
+  ),
+  tiktok: (
+    base: $tiktok,
+    light: lighten($tiktok, $amoutLigthen),
+    dark: darken($tiktok, $amountDarken)
   )
 ) !default;
 /* Sass Vars */
