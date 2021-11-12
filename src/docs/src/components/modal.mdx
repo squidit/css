@@ -8,75 +8,60 @@ route: /components/modal
 
 JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
 
-<div class='box black'>
-  <strong>Attention</strong>: the use of the components needs the <span class='pink'>squid.js</span> included in the project
+<div class="box black">
+  <strong>Attention</strong>: the use of the components needs the{" "}
+  <span class="pink">squid.js</span> included in the project
 </div>
-
-<div class='box black'>
-  <strong>Attention + 1</strong>: Probably the interaction via Javascript should not work well in SPA applications (independent of the framework React, Angular, Vuejs, etc). For now we have no implementation but we will create in the future, for now just use the styles and create your own implementation
+<div class="box black">
+  <strong>Attention + 1</strong>: Probably the interaction via Javascript should
+  not work well in SPA applications (independent of the framework React,
+  Angular, Vuejs, etc). For now we have no implementation but we will create in
+  the future, for now just use the styles and create your own implementation
 </div>
-
 <button
-  type='button'
-  class='button button-pink mb-3'
+  type="button"
+  class="button button-pink mb-3"
   data-modal="modal-exemple"
 >
   Open
 </button>
 <div class="modal align-items-center" id="modal-exemple" data-backdrop="static">
   <div class="modal-dialog modal-md">
-    <div class='modal-content'>
-      <div class='modal-header'>
-        <h5 class='m-0'>Modal Title</h5>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="m-0">Modal Title</h5>
         <button class="button-close modal-exit">
           <i class="far fa-times"></i>
         </button>
       </div>
-      <div class='modal-body'>
-        <p>
-          Content Modal
-        </p>
+      <div class="modal-body">
+        <p>Content Modal</p>
       </div>
-      <div class='modal-footer'>
-        <button
-          class='button button-white black mr-3 modal-exit'
-        >
-          Close
-        </button>
-        <button
-          class='button button-pink'
-        >
-          Button
-        </button>
+      <div class="modal-footer">
+        <button class="button button-white black mr-3 modal-exit">Close</button>
+        <button class="button button-pink">Button</button>
       </div>
     </div>
   </div>
 </div>
 
 ```html
-<button
-  type='button'
-  data-modal="modal-id"
->
+<button type="button" data-modal="modal-id">
   <!-- Button content, data-modal must reference the `id` attribute of the modal -->
 </button>
-<div
-  class="modal"
-  id="modal-id"
-  data-backdrop="static"
->
+<div class="modal" id="modal-id" data-backdrop="static">
   <div class="modal-dialog">
-    <div class='modal-content'>
-      <div class='modal-header'>
+    <div class="modal-content">
+      <div class="modal-header">
         <!-- Modal Title -->
         <button class="button-close modal-exit">
           <i class="far fa-times"></i>
         </button>
       </div>
-      <div class='modal-body'>
+      <div class="modal-body">
         <!-- Modal Content -->
       </div>
-      <div class='modal-footer'>
+      <div class="modal-footer">
         <!-- Modal Footer -->
       </div>
     </div>
@@ -84,9 +69,19 @@ JavaScript modal plugin to add dialogs to your site for lightboxes, user notific
 </div>
 ```
 
+## Modal backdrop Close
+
+To close modal when the backdrop is clicked, just remove the `data-backdrop="static"` attribute to the modal.
+
+```html
+<div class="modal" id="modal-id">
+  <!-- Content -->
+</div>
+```
+
 ## Modal Sizes
 
-Just add one of the classes below to `.modal-dialog`. 
+Just add one of the classes below to `.modal-dialog`.
 If no size class is passed, the modal will be the full size of the screen.
 Where value is one of:
 
