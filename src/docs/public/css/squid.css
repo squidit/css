@@ -22048,7 +22048,7 @@ i {
           background: var(--pink); }
   .tabs-header.tabs-center {
     width: 100%;
-    justify-content: center; }
+    justify-content: space-evenly; }
     .tabs-header.tabs-center li {
       width: initial; }
   .tabs-header.tabs-width li {
