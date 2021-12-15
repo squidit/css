@@ -8,8 +8,18 @@
   margin: 0;
   flex-wrap: wrap;
   color: var(--black);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (max-width: 991px) {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
   li {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -19,6 +29,7 @@
     text-align: center;
     color: var(--black_light);
     background: var(--white);
+    display: inline-flex;
     cursor: pointer;
     transition:
       color 0.3s ease,
@@ -50,7 +61,6 @@
       border-radius: 0;
       color: var(--gray);
       position: relative;
-      display: flex;
       align-items: center;
       padding: $gutter $gutter 0;
       justify-content: center;
@@ -93,6 +103,9 @@
   &.tabs-width {
     li {
       flex: 1 0 0;
+      @media (max-width: 991px) {
+        flex: 0 0 auto;
+      }
     }
   }
 }
