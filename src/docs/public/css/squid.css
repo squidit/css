@@ -22001,6 +22001,7 @@ i {
     color: var(--black_light);
     background: var(--white);
     display: inline-flex;
+    justify-content: center;
     cursor: pointer;
     transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; }
     .tabs-header li:hover {
