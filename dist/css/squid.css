@@ -1,6 +1,7 @@
 /* Roboto thin */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
@@ -9,6 +10,7 @@
 /* Roboto thin italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Thin-Italic.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin-Italic.woff") format("woff"), url("../fonts/roboto/Roboto-Thin-Italic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic; }
@@ -17,6 +19,7 @@
 /* Roboto light */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
@@ -25,6 +28,7 @@
 /* Roboto light italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Light-Italic.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light-Italic.woff") format("woff"), url("../fonts/roboto/Roboto-Light-Italic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
@@ -33,6 +37,7 @@
 /* Roboto regular */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
@@ -41,6 +46,7 @@
 /* Roboto regular italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Regular-Italic.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular-Italic.woff") format("woff"), url("../fonts/roboto/Roboto-Regular-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic; }
@@ -49,6 +55,7 @@
 /* Roboto medium */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
@@ -57,6 +64,7 @@
 /* Roboto medium italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Medium-Italic.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium-Italic.woff") format("woff"), url("../fonts/roboto/Roboto-Medium-Italic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic; }
@@ -65,6 +73,7 @@
 /* Roboto bold */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
@@ -73,6 +82,7 @@
 /* Roboto bold italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Bold-Italic.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold-Italic.woff") format("woff"), url("../fonts/roboto/Roboto-Bold-Italic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic; }
@@ -81,6 +91,7 @@
 /* Roboto black */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/roboto/Roboto-Black.woff") format("woff"), url("../fonts/roboto/Roboto-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
@@ -89,6 +100,7 @@
 /* Roboto black italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto/Roboto-Black-Italic.woff2") format("woff2"), url("../fonts/roboto/Roboto-Black-Italic.woff") format("woff"), url("../fonts/roboto/Roboto-Black-Italic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic; }
@@ -7229,7 +7241,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
-  font-display: block;
   src: url("../fonts/fontawesome/fa-brands-400.eot");
   src: url("../fonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-brands-400.woff") format("woff"), url("../fonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg"); }
 
@@ -7241,7 +7252,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Duotone';
   font-style: normal;
   font-weight: 900;
-  font-display: block;
   src: url("../fonts/fontawesome/fa-duotone-900.eot");
   src: url("../fonts/fontawesome/fa-duotone-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-duotone-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-duotone-900.woff") format("woff"), url("../fonts/fontawesome/fa-duotone-900.ttf") format("truetype"), url("../fonts/fontawesome/fa-duotone-900.svg#fontawesome") format("svg"); }
 
@@ -12845,33 +12855,35 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-style: normal;
   font-weight: 300;
-  font-display: block;
   src: url("../fonts/fontawesome/fa-light-300.eot");
   src: url("../fonts/fontawesome/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-light-300.woff2") format("woff2"), url("../fonts/fontawesome/fa-light-300.woff") format("woff"), url("../fonts/fontawesome/fa-light-300.ttf") format("truetype"), url("../fonts/fontawesome/fa-light-300.svg#fontawesome") format("svg"); }
 
 .fal {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-weight: 300; }
 
 @font-face {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
-  font-display: block;
   src: url("../fonts/fontawesome/fa-regular-400.eot");
   src: url("../fonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-regular-400.woff") format("woff"), url("../fonts/fontawesome/fa-regular-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-weight: 400; }
 
 @font-face {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
-  font-display: block;
   src: url("../fonts/fontawesome/fa-solid-900.eot");
   src: url("../fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
 
@@ -12883,7 +12895,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Squid';
   font-style: normal;
   font-weight: 400;
-  font-display: block;
   src: url("../fonts/squid/squid.eot");
   src: url("../fonts/squid/squid.eot?#iefix") format("embedded-opentype"), url("../fonts/squid/squid.woff") format("woff"), url("../fonts/squid/squid.ttf") format("truetype"), url("../fonts/squid/squid.svg#fontawesome") format("svg"); }
 
@@ -12893,6 +12904,7 @@ readers do not read off random characters that represent icons */
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-weight: 900; }
 
 /* Sass Vars */

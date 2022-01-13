@@ -1,6 +1,7 @@
 /* Roboto thin */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("#{$fontsFolderPath}/roboto/Roboto-Thin.woff2") format('woff2'),
        url("#{$fontsFolderPath}/roboto/Roboto-Thin.woff") format('woff'),
        url("#{$fontsFolderPath}/roboto/Roboto-Thin.ttf") format('truetype');
@@ -12,6 +13,7 @@
 /* Roboto thin italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url('#{$fontsFolderPath}/roboto/Roboto-Thin-Italic.woff2') format('woff2'),
        url('#{$fontsFolderPath}/roboto/Roboto-Thin-Italic.woff') format('woff'),
        url('#{$fontsFolderPath}/roboto/Roboto-Thin-Italic.ttf') format('truetype');
@@ -23,6 +25,7 @@
 /* Roboto light */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("#{$fontsFolderPath}/roboto/Roboto-Light.woff2") format('woff2'),
        url("#{$fontsFolderPath}/roboto/Roboto-Light.woff") format('woff'),
        url("#{$fontsFolderPath}/roboto/Roboto-Light.ttf") format('truetype');
@@ -34,6 +37,7 @@
 /* Roboto light italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url('#{$fontsFolderPath}/roboto/Roboto-Light-Italic.woff2') format('woff2'),
        url('#{$fontsFolderPath}/roboto/Roboto-Light-Italic.woff') format('woff'),
        url('#{$fontsFolderPath}/roboto/Roboto-Light-Italic.ttf') format('truetype');
@@ -45,6 +49,7 @@
 /* Roboto regular */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("#{$fontsFolderPath}/roboto/Roboto-Regular.woff2") format('woff2'),
        url("#{$fontsFolderPath}/roboto/Roboto-Regular.woff") format('woff'),
        url("#{$fontsFolderPath}/roboto/Roboto-Regular.ttf") format('truetype');
@@ -56,6 +61,7 @@
 /* Roboto regular italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url('#{$fontsFolderPath}/roboto/Roboto-Regular-Italic.woff2') format('woff2'),
        url('#{$fontsFolderPath}/roboto/Roboto-Regular-Italic.woff') format('woff'),
        url('#{$fontsFolderPath}/roboto/Roboto-Regular-Italic.ttf') format('truetype');
@@ -67,6 +73,7 @@
 /* Roboto medium */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("#{$fontsFolderPath}/roboto/Roboto-Medium.woff2") format('woff2'),
        url("#{$fontsFolderPath}/roboto/Roboto-Medium.woff") format('woff'),
        url("#{$fontsFolderPath}/roboto/Roboto-Medium.ttf") format('truetype');
@@ -78,6 +85,7 @@
 /* Roboto medium italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url('#{$fontsFolderPath}/roboto/Roboto-Medium-Italic.woff2') format('woff2'),
        url('#{$fontsFolderPath}/roboto/Roboto-Medium-Italic.woff') format('woff'),
        url('#{$fontsFolderPath}/roboto/Roboto-Medium-Italic.ttf') format('truetype');
@@ -89,6 +97,7 @@
 /* Roboto bold */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url('#{$fontsFolderPath}/roboto/Roboto-Bold.woff2') format('woff2'),
        url('#{$fontsFolderPath}/roboto/Roboto-Bold.woff') format('woff'),
        url('#{$fontsFolderPath}/roboto/Roboto-Bold.ttf') format('truetype');
@@ -100,6 +109,7 @@
 /* Roboto bold italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url('#{$fontsFolderPath}/roboto/Roboto-Bold-Italic.woff2') format('woff2'),
        url('#{$fontsFolderPath}/roboto/Roboto-Bold-Italic.woff') format('woff'),
        url('#{$fontsFolderPath}/roboto/Roboto-Bold-Italic.ttf') format('truetype');
@@ -111,6 +121,7 @@
 /* Roboto black */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url('#{$fontsFolderPath}/roboto/Roboto-Black.woff2') format('woff2'),
        url('#{$fontsFolderPath}/roboto/Roboto-Black.woff') format('woff'),
        url('#{$fontsFolderPath}/roboto/Roboto-Black.ttf') format('truetype');
@@ -122,6 +133,7 @@
 /* Roboto black italic */
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url('#{$fontsFolderPath}/roboto/Roboto-Black-Italic.woff2') format('woff2'),
        url('#{$fontsFolderPath}/roboto/Roboto-Black-Italic.woff') format('woff'),
        url('#{$fontsFolderPath}/roboto/Roboto-Black-Italic.ttf') format('truetype');

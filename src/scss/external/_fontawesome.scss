@@ -7131,7 +7131,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
-  font-display: block;
   src: url("#{$fontsFolderPath}/fontawesome/fa-brands-400.eot");
   src:
     url("#{$fontsFolderPath}/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"),
@@ -7148,7 +7147,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Duotone';
   font-style: normal;
   font-weight: 900;
-  font-display: block;
   src: url("#{$fontsFolderPath}/fontawesome/fa-duotone-900.eot");
   src:
     url("#{$fontsFolderPath}/fontawesome/fa-duotone-900.eot?#iefix") format("embedded-opentype"),
@@ -12758,9 +12756,9 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-style: normal;
   font-weight: 300;
-  font-display: block;
   src: url("#{$fontsFolderPath}/fontawesome/fa-light-300.eot");
   src: 
     url("#{$fontsFolderPath}/fontawesome/fa-light-300.eot?#iefix") format("embedded-opentype"),
@@ -12772,12 +12770,13 @@ readers do not read off random characters that represent icons */
 
 .fal {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-weight: 300; }
 @font-face {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
-  font-display: block;
   src: url("#{$fontsFolderPath}/fontawesome/fa-regular-400.eot");
   src:
     url("#{$fontsFolderPath}/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"),
@@ -12789,12 +12788,13 @@ readers do not read off random characters that represent icons */
 
 .far {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-weight: 400; }
 @font-face {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
-  font-display: block;
   src: url("#{$fontsFolderPath}/fontawesome/fa-solid-900.eot");
   src: 
     url("#{$fontsFolderPath}/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"),
@@ -12812,7 +12812,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Squid';
   font-style: normal;
   font-weight: 400;
-  font-display: block;
   src: url("#{$fontsFolderPath}/squid/squid.eot");
   src: 
     url("#{$fontsFolderPath}/squid/squid.eot?#iefix") format("embedded-opentype"),
@@ -12828,4 +12827,5 @@ readers do not read off random characters that represent icons */
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Pro';
+  font-display: swap;
   font-weight: 900; }
