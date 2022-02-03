@@ -24,6 +24,9 @@ $tooltip-arrow-height: 0.4rem !default;
       border-color: transparent;
       border-style: solid;
     }
+    &.tooltip-not-arrow {
+      display: none;
+    }
   }
 }
 .tooltip-left-center {

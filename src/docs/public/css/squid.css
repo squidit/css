@@ -7241,15 +7241,18 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/fontawesome/fa-brands-400.eot");
   src: url("../fonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-brands-400.woff") format("woff"), url("../fonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands';
+  font-display: swap;
   font-weight: 400; }
 
 @font-face {
   font-family: 'Font Awesome 5 Duotone';
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/fontawesome/fa-duotone-900.eot");
@@ -7258,6 +7261,7 @@ readers do not read off random characters that represent icons */
 .fad {
   position: relative;
   font-family: 'Font Awesome 5 Duotone';
+  font-display: swap;
   font-weight: 900; }
 
 .fad:before {
@@ -12889,11 +12893,13 @@ readers do not read off random characters that represent icons */
 
 .fasq {
   font-family: 'Font Squid';
+  font-display: swap;
   font-weight: 400; }
 
 @font-face {
   font-family: 'Font Squid';
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url("../fonts/squid/squid.eot");
   src: url("../fonts/squid/squid.eot?#iefix") format("embedded-opentype"), url("../fonts/squid/squid.woff") format("woff"), url("../fonts/squid/squid.ttf") format("truetype"), url("../fonts/squid/squid.svg#fontawesome") format("svg"); }
@@ -22179,6 +22185,8 @@ i {
       content: "";
       border-color: transparent;
       border-style: solid; }
+    .tooltip .tooltip-arrow.tooltip-not-arrow {
+      display: none; }
 
 .tooltip-left-center .tooltip-arrow {
   right: -0.4rem; }
