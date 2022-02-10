@@ -34020,18 +34020,9 @@ i {
   font-weight: 700;
   position: relative;
   display: inline-block; }
-  .tag-box::after {
-    font-family: 'Font Awesome 5 Pro';
-    font-weight: 700;
-    content: '\f057';
-    right: 0.66667rem;
-    position: absolute;
-    font-size: 16px; }
   .tag-box.readonly-tag {
     cursor: default;
     background: var(--white) !important; }
-    .tag-box.readonly-tag::after {
-      color: var(--black) !important; }
     .tag-box.readonly-tag:hover {
       box-shadow: none; }
   .tag-box.button:hover[disabled], .tag-box.input:hover[disabled], .tag-box.textarea:hover[disabled], .tag-box.select:hover[disabled], .wrapper-selectors input[disabled] + label.tag-box.checkbox:hover, .wrapper-selectors input.disabled + label.tag-box.checkbox:hover, .tag-box.disabled:hover, .collapse.collapse-disabled .tag-box.collapse-title:hover {
