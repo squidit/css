@@ -25087,7 +25087,7 @@ readers do not read off random characters that represent icons */
 .fal,
 .fa-light {
   font-family: 'Font Awesome 6 Pro';
-  font-weight: 300; }
+  font-weight: 300; } 
 :root, :host {
   --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Pro"; }
 .far,
@@ -25141,9 +25141,7 @@ readers do not read off random characters that represent icons */
   src: 
     url("#{$fontsFolderPath}/fontawesome/fa-light-300.eot?#iefix") format("embedded-opentype"),
     url("#{$fontsFolderPath}/fontawesome/fa-light-300.woff2") format("woff2"),
-    url("#{$fontsFolderPath}/fontawesome/fa-light-300.woff") format("woff"),
-    url("#{$fontsFolderPath}/fontawesome/fa-light-300.ttf") format("truetype"),
-    url("#{$fontsFolderPath}/fontawesome/fa-light-300.svg#fontawesome") format("svg");
+    url("#{$fontsFolderPath}/fontawesome/fa-light-300.ttf") format("truetype");
 }
 
 @font-face {
@@ -25155,9 +25153,7 @@ readers do not read off random characters that represent icons */
   src:
     url("#{$fontsFolderPath}/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"),
     url("#{$fontsFolderPath}/fontawesome/fa-brands-400.woff2") format("woff2"),
-    url("#{$fontsFolderPath}/fontawesome/fa-brands-400.woff") format("woff"),
-    url("#{$fontsFolderPath}/fontawesome/fa-brands-400.ttf") format("truetype"),
-    url("#{$fontsFolderPath}/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
+    url("#{$fontsFolderPath}/fontawesome/fa-brands-400.ttf") format("truetype");
 }
 
 @font-face {
@@ -25169,9 +25165,7 @@ readers do not read off random characters that represent icons */
   src:
     url("#{$fontsFolderPath}/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"),
     url("#{$fontsFolderPath}/fontawesome/fa-regular-400.woff2") format("woff2"),
-    url("#{$fontsFolderPath}/fontawesome/fa-regular-400.woff") format("woff"),
-    url("#{$fontsFolderPath}/fontawesome/fa-regular-400.ttf") format("truetype"),
-    url("#{$fontsFolderPath}/fontawesome/fa-regular-400.svg#fontawesome") format("svg");
+    url("#{$fontsFolderPath}/fontawesome/fa-regular-400.ttf") format("truetype");
   }
 
 @font-face {
@@ -25183,9 +25177,7 @@ readers do not read off random characters that represent icons */
   src:
     url("#{$fontsFolderPath}/fontawesome/fa-duotone-900.eot?#iefix") format("embedded-opentype"),
     url("#{$fontsFolderPath}/fontawesome/fa-duotone-900.woff2") format("woff2"),
-    url("#{$fontsFolderPath}/fontawesome/fa-duotone-900.woff") format("woff"),
-    url("#{$fontsFolderPath}/fontawesome/fa-duotone-900.ttf") format("truetype"),
-    url("#{$fontsFolderPath}/fontawesome/fa-duotone-900.svg#fontawesome") format("svg");
+    url("#{$fontsFolderPath}/fontawesome/fa-duotone-900.ttf") format("truetype");
 }
 
 @font-face {
@@ -25197,9 +25189,7 @@ readers do not read off random characters that represent icons */
   src: 
     url("#{$fontsFolderPath}/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"),
     url("#{$fontsFolderPath}/fontawesome/fa-solid-900.woff2") format("woff2"),
-    url("#{$fontsFolderPath}/fontawesome/fa-solid-900.woff") format("woff"),
-    url("#{$fontsFolderPath}/fontawesome/fa-solid-900.ttf") format("truetype"),
-    url("#{$fontsFolderPath}/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+    url("#{$fontsFolderPath}/fontawesome/fa-solid-900.ttf") format("truetype");
 }
 
 @font-face {
