@@ -33892,6 +33892,7 @@ i {
     .wrapper-selectors input + label.checkbox {
       width: 24px;
       height: 24px;
+      flex-shrink: 0;
       line-height: 24px;
       text-align: center;
       border-radius: 5px;
