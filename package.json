@@ -1,6 +1,6 @@
 {
   "name": "@squidit/css",
-  "version": "1.2.95",
+  "version": "1.2.96",
   "scripts": {
     "postinstall": "npm install -g husky eslint sass gulp uglifyjs && husky install",
     "start": "gulp watch",
