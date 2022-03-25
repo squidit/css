@@ -3,7 +3,6 @@
   "version": "1.0.2",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npm install -g gatsby",
     "dev": "npx docz dev",
     "build": "npx docz build",
     "serve": "npx docz serve"
