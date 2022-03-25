@@ -34,7 +34,8 @@ jobs:
           git config --global user.name $username
       - name: Deploy to gh-pages
         run: |
-          npm install docz@2.3.0 gatsby@2.13.27 -g
+          npm install docz@2.3.0 gatsby@2.13.27 typescript -g
+          npm link typescript
           npm install
           npm run dist
           cp -r dist/css src/docs/public
