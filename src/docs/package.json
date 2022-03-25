@@ -3,16 +3,16 @@
   "version": "1.0.2",
   "license": "MIT",
   "scripts": {
-    "dev": "npx docz dev",
-    "build": "npx docz build",
-    "serve": "npx docz serve"
+    "dev": "node --max_old_space_size=8192 ./node_modules/docz/bin/index.js dev",
+    "build": "node --max_old_space_size=8192 ./node_modules/docz/bin/index.js build",
+    "serve": "node --max_old_space_size=8192 ./node_modules/docz/bin/index.js serve"
   },
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "docz": "^2.3.0",
-    "docz-core": "^2.3.0",
+    "docz": "^2.4.0",
+    "docz-core": "^2.4.0",
     "docz-plugin-github-page": "^1.0.4",
     "dotenv": "^10.0.0",
     "gatsby-plugin-mdx": "^2.7.0",
