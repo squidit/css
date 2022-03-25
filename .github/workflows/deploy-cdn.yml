@@ -1,4 +1,4 @@
-name: Deploy to Hub CDN on merge Release
+name: Deploy to Hub CDN on merge Master
 on:
   push:
     branches:
