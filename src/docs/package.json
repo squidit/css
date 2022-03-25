@@ -8,6 +8,7 @@
     "serve": "node --max_old_space_size=8192 ./node_modules/docz/bin/index.js serve"
   },
   "dependencies": {
+    "@emotion/core": "^10.1.1",
     "@emotion/react": "^11.4.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
