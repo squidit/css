@@ -128,15 +128,7 @@ Soon
 
 `npm install`
 
-2. Install Husky, Eslint, Sass, Gulp and Uglifyjs Globally
-    1. `npm install husky -g`
-    2. `husky install`
-    3. `npm install eslint -g`
-    4. `npm install sass -g`
-    5. `npm install gulp -g`
-    6. `npm install uglifyjs -g`
-
-3. Run `npm start` to watch `.scss` and `.js` files
+2. Run `npm start` to watch `.scss` and `.js` files
 
 ### Write Documentation
 
@@ -147,6 +139,16 @@ See Intructions [here](https://github.com/squidit/css/blob/master/src/docs/READM
 The official CDN for Squid CSS is jsdelivr, which is even where the framework documentation consumes assets.
 
 On [GitHub Releases](https://github.com/squidit/css/releases) create a new release, with a new tag version** and using `master` branch
+
+
+### jsdelivr usage
+
+```html
+...
+<link src="https://cdn.jsdelivr.net/gh/squidit/css@latest/dist/css/squid.min.css" rel=stylesheet>
+...
+<script src='https://cdn.jsdelivr.net/gh/squidit/css@latest/dist/js/squid.min.js'></script>
+```
 
 **Important to use the same tag as package.json
 ## Documentation
