@@ -1,3 +1,4 @@
+@use "sass:math";
 .dropdown {
   position: absolute;
   z-index: 1079;
@@ -17,7 +18,7 @@
   @extend .scrollbar;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: ($gutter / 4) 0;
+  padding: math.div($gutter, 4) 0;
   color: var(--black);
   font-size: 0;
   &.open {
@@ -61,7 +62,7 @@
 
 .dropdown-divider {
   padding: 0 !important;
-  margin: ($gutter / 2) 0;
+  margin: math.div($gutter, 2) 0;
   overflow: hidden;
 }
 

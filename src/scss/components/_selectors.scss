@@ -1,3 +1,4 @@
+@use "sass:math";
 .wrapper-selectors {
   position: relative;
   display: flex;
@@ -27,7 +28,7 @@
       transition: $transition;
       font-weight: 700;
       display: inline-block;
-      margin-right: ($gutter / 2);
+      margin-right: math.div($gutter, 2);
       &::after {
         transition: $transition;
         content: "\2713";

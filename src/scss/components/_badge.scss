@@ -1,8 +1,10 @@
+@use "sass:math";
+
 $badge-vertical-position: calc(100% - 0.5rem) !default;
 $badge-horizontal-position: calc(100% - 0.35rem) !default;
 
 .badge {
-  padding: 0 ($gutter / 4);
+  padding: 0 math.div($gutter, 4);
   background-color: var(--red);
   color: var(--white-html);
   font-size: 8px;

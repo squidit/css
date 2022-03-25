@@ -1,3 +1,4 @@
+@use "sass:math";
 .pagination {
   display: inline-flex;
   align-items: center;
@@ -26,7 +27,7 @@
       color: inherit;
       font-size: inherit;
       cursor: inherit;
-      padding: ($gutter / 2) $gutter;
+      padding: math.div($gutter, 2) $gutter;
       i {
         font-size: 12px;
       }

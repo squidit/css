@@ -1,3 +1,4 @@
+@use "sass:math";
 $tooltip-arrow-width: 0.8rem !default;
 $tooltip-arrow-height: 0.4rem !default;
 .tooltip {
@@ -6,7 +7,7 @@ $tooltip-arrow-height: 0.4rem !default;
   display: inline-block;
   word-wrap: break-word;
   border-radius: 5px;
-  padding: ($gutter / 2);
+  padding: math.div($gutter, 2);
   text-align: center;
   font-size: 12px;
   font-weight: 300;
@@ -35,7 +36,7 @@ $tooltip-arrow-height: 0.4rem !default;
     &::before {
       
       left: 5px;
-      border-width: ($tooltip-arrow-width / 2) 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
+      border-width: math.div($tooltip-arrow-width, 2) 0 math.div($tooltip-arrow-width, 2) $tooltip-arrow-height;
     }
   }
 }
@@ -54,7 +55,7 @@ $tooltip-arrow-height: 0.4rem !default;
     left: -$tooltip-arrow-height;
     &::before {
       right: 5px;
-      border-width: ($tooltip-arrow-width / 2) $tooltip-arrow-height ($tooltip-arrow-width / 2) 0;
+      border-width: math.div($tooltip-arrow-width, 2) $tooltip-arrow-height math.div($tooltip-arrow-width, 2) 0;
     }
   }
 }
@@ -79,7 +80,7 @@ $tooltip-arrow-height: 0.4rem !default;
     left: calc(50% - 0.8rem);
     &::before {
       bottom: -1px;
-      border-width: 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
+      border-width: 0 math.div($tooltip-arrow-width, 2) $tooltip-arrow-height;
     }
   }
 }
@@ -89,7 +90,7 @@ $tooltip-arrow-height: 0.4rem !default;
     left: calc(50% - 0.8rem);
     &::before {
       top: -1px;
-      border-width: $tooltip-arrow-height ($tooltip-arrow-width / 2) 0;
+      border-width: $tooltip-arrow-height math.div($tooltip-arrow-width, 2) 0;
     }
   }
 }

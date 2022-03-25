@@ -1,3 +1,4 @@
+@use "sass:math";
 .modal {
   position: fixed;
   top: 0;
@@ -62,7 +63,7 @@
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  padding: ($gutter / 4);
+  padding: math.div($gutter, 4);
   border: none;
   border-radius: 50%;
   background-color: transparent;
@@ -70,8 +71,8 @@
   height: 25px;
   cursor: pointer;
   position: absolute;
-  top: ($gutter / 2);
-  right: ($gutter / 2);
+  top: math.div($gutter, 2);
+  right: math.div($gutter, 2);
   &:hover {
     background-color: var(--white);
   }
