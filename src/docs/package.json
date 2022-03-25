@@ -3,9 +3,9 @@
   "version": "1.0.2",
   "license": "MIT",
   "scripts": {
-    "dev": "node --max_old_space_size=8192 ./node_modules/docz/bin/index.js dev",
-    "build": "node --max_old_space_size=8192 ./node_modules/docz/bin/index.js build",
-    "serve": "node --max_old_space_size=8192 ./node_modules/docz/bin/index.js serve"
+    "dev": "node --max_old_space_size=8192 ./node_modules/docz/dist/index.js dev",
+    "build": "node --max_old_space_size=8192 ./node_modules/docz/dist/index.js build",
+    "serve": "node --max_old_space_size=8192 ./node_modules/docz/dist/index.js serve"
   },
   "dependencies": {
     "@emotion/react": "^11.4.0",
@@ -18,6 +18,7 @@
     "gatsby-plugin-mdx": "^2.7.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-feather": "^2.0.9"
+    "react-feather": "^2.0.9",
+    "typescript": "^4.6.3"
   }
 }
