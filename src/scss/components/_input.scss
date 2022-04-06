@@ -96,17 +96,17 @@
   font-size: 12px;
   color: var(--gray);
   text-align: left;
-  i {
+  i, svg  {
     font-size: 11px;
     margin: 0 math.div($gutter, 4) 0 0;
   }
   &.box-invalid {
-    i {
+    i, svg {
       color: var(--red);
     }
   }
   &.box-valid {
-    i {
+    i, svg {
       color: var(--green);
     }
   }
