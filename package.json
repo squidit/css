@@ -1,8 +1,8 @@
 {
   "name": "@squidit/css",
-  "version": "1.2.98",
+  "version": "1.2.99",
   "scripts": {
-    "postinstall": "npm install -g husky eslint sass gulp uglify-js && husky install",
+    "prepare": "npm install -g husky eslint sass gulp uglify-js && husky install",
     "start": "gulp watch",
     "css": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed && sass src/scss/squid-minor.scss:dist/css/squid-minor.min.css --style compressed",
     "css:watch": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed --watch",
