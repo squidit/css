@@ -38628,7 +38628,7 @@ figure {
 
 body, html {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2rem;
   max-width: 100%;
   display: block;
   position: relative;
@@ -38659,8 +38659,8 @@ select,
 div,
 output,
 caption {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1rem;
+  line-height: 1.2rem;
   text-decoration: none;
   font-weight: 400;
   margin: 0;
@@ -38718,7 +38718,7 @@ a:hover {
 label {
   display: block;
   font-weight: 500;
-  color: var(--black_light);
+  color: var(--gray);
   margin-bottom: 0.5rem;
   text-align: left;
 }
@@ -38745,33 +38745,33 @@ h6,
 }
 
 h1, .h1 {
-  font-size: 26px;
-  line-height: 28px;
+  font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 h2, .h2 {
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 h3, .h3 {
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 h4, .h4 {
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
 }
 
 h5, .h5 {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 h6, .h6 {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 
 a,
@@ -45588,7 +45588,7 @@ i {
   width: 100%;
   margin-top: 0.25rem;
   font-size: 12px;
-  color: var(--gray_dark);
+  color: var(--gray);
   text-align: left;
 }
 .box-validation i {
