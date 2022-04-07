@@ -48,7 +48,6 @@
       background: var(--white-html);
       color: var(--gray);
       font-weight: 700;
-      @extend .box-shadow;
     }
     &.disabled {
       @extend .disabled;
