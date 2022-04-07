@@ -30,6 +30,7 @@
       display: inline-block;
       margin-right: math.div($gutter, 2);
       &::after {
+        display: block;
         transition: $transition;
         content: "\2713";
         color: var(--white-html);
@@ -42,6 +43,7 @@
         top: 0;
         opacity: 0;
         position: relative;
+        margin: 0;
       }
     }
     &[type='radio'] {
@@ -53,8 +55,8 @@
           width: 10px;
           border-radius: 50%;
           background: var(--white-html);
-          left: 7px;
-          top: 7px;
+          left: 6px;
+          top: 6px;
           opacity: 0;
           position: relative;
         }
