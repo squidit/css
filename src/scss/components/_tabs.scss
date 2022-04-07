@@ -2,7 +2,7 @@
   display: inline-flex;
   border-radius: 10px;
   padding: 0.5rem;
-  background: var(--white);
+  background: var(--gray_light);
   list-style: none;
   align-items: center;
   margin: 0;
@@ -28,7 +28,7 @@
     background: transparent;
     text-align: center;
     color: var(--gray);
-    background: var(--white);
+    background: var(--gray_light);
     display: inline-flex;
     justify-content: center;
     border: 1px solid transparent;
@@ -67,6 +67,7 @@
       padding: $gutter $gutter 0;
       justify-content: center;
       flex-direction: column-reverse;
+      border: none;
       &::before {
         content: " ";
         border-radius: 5px 5px 0 0;
