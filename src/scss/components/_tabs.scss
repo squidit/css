@@ -27,10 +27,11 @@
     border-radius: 10px;
     background: transparent;
     text-align: center;
-    color: var(--black_light);
+    color: var(--gray);
     background: var(--white);
     display: inline-flex;
     justify-content: center;
+    border: 1px solid transparent;
     cursor: pointer;
     transition:
       color 0.3s ease,
@@ -38,14 +39,14 @@
       box-shadow 0.3s ease,
       border 0.3s ease;
     &:hover {
-      background: var(--gray_light);
+      border-color: var(--white-html);
       color: var(--gray_dark);
     }
     &.active {
       flex-shrink: 0;
       width: auto;
       background: var(--white-html);
-      color: var(--black);
+      color: var(--gray);
       font-weight: 700;
       @extend .box-shadow;
     }
@@ -104,9 +105,9 @@
   &.tabs-width {
     li {
       flex: 1 0 0;
-      @media (max-width: 991px) {
-        flex: 0 0 auto;
-      }
+      // @media (max-width: 991px) {
+      //   flex: 0 0 auto;
+      // }
     }
   }
 }

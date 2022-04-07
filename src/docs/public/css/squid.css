@@ -45591,14 +45591,14 @@ i {
   color: var(--gray);
   text-align: left;
 }
-.box-validation i {
+.box-validation i, .box-validation svg {
   font-size: 11px;
   margin: 0 0.25rem 0 0;
 }
-.box-validation.box-invalid i {
+.box-validation.box-invalid i, .box-validation.box-invalid svg {
   color: var(--red);
 }
-.box-validation.box-valid i {
+.box-validation.box-valid i, .box-validation.box-valid svg {
   color: var(--green);
 }
 .box-validation.show {
@@ -46221,22 +46221,23 @@ i {
   border-radius: 10px;
   background: transparent;
   text-align: center;
-  color: var(--black_light);
+  color: var(--gray);
   background: var(--white);
   display: inline-flex;
   justify-content: center;
+  border: 1px solid transparent;
   cursor: pointer;
   transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 .tabs-header li:hover {
-  background: var(--gray_light);
+  border-color: var(--white-html);
   color: var(--gray_dark);
 }
 .tabs-header li.active {
   flex-shrink: 0;
   width: auto;
   background: var(--white-html);
-  color: var(--black);
+  color: var(--gray);
   font-weight: 700;
 }
 .tabs-header.line-style {
@@ -46289,11 +46290,6 @@ i {
 }
 .tabs-header.tabs-width li {
   flex: 1 0 0;
-}
-@media (max-width: 991px) {
-  .tabs-header.tabs-width li {
-    flex: 0 0 auto;
-  }
 }
 
 .tabs-wrapper-content {
