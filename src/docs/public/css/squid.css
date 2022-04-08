@@ -38849,7 +38849,7 @@ i {
   overflow: hidden;
 }
 
-.box-shadow, .toast, .tabs-header li.active, .modal-content, .dropdown, .box, .card, .tag-box:hover {
+.box-shadow, .toast, .modal-content, .dropdown, .box, .card, .tag-box:hover {
   box-shadow: 0px 4px 12px -5px rgba(212, 212, 219, 0.5);
 }
 
@@ -45633,7 +45633,7 @@ i {
   flex-shrink: 0;
   line-height: 24px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 2px;
   border: 1px solid var(--gray);
   background: var(--gray_light);
   color: var(--white);
@@ -45644,6 +45644,7 @@ i {
   margin-right: 0.5rem;
 }
 .wrapper-selectors input + label.checkbox::after {
+  display: block;
   transition: all 0.3s ease;
   content: "✓";
   color: var(--white-html);
@@ -45655,7 +45656,8 @@ i {
   left: 0;
   top: 0;
   opacity: 0;
-  position: absolute;
+  position: relative;
+  margin: 0;
 }
 .wrapper-selectors input[type=radio] + label.checkbox {
   border-radius: 50%;
@@ -45666,10 +45668,10 @@ i {
   width: 10px;
   border-radius: 50%;
   background: var(--white-html);
-  left: 7px;
-  top: 7px;
+  left: 6px;
+  top: 6px;
   opacity: 0;
-  position: absolute;
+  position: relative;
 }
 .wrapper-selectors input:checked + label.checkbox {
   background-color: var(--green_dark);
@@ -45693,7 +45695,7 @@ i {
   border-radius: 50%;
   background: var(--white-html);
   left: 4px;
-  top: 3px;
+  top: 2px;
 }
 .wrapper-selectors.toggle input:checked + label.checkbox::after {
   left: 26px;

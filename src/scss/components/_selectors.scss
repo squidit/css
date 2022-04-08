@@ -20,7 +20,7 @@
       flex-shrink: 0;
       line-height: 24px;
       text-align: center;
-      // border-radius: 5px;
+      border-radius: 2px;
       border: 1px solid var(--gray);
       background: var(--gray_light);
       color: var(--white);
@@ -64,7 +64,7 @@
     }
     &:checked {
       & + label.checkbox {
-        background-color: var(--gray);
+        background-color: var(--green_dark);
         &::after {
           opacity: 1;
         }
@@ -92,7 +92,7 @@
           border-radius: 50%;
           background: var(--white-html);
           left: 4px;
-          top: 3px;
+          top: 2px;
         }
       }
       &:checked {
