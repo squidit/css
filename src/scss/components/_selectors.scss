@@ -15,12 +15,12 @@
     height: 0;
     width: 0;
     & + label.checkbox {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       flex-shrink: 0;
-      line-height: 24px;
+      line-height: 20px;
       text-align: center;
-      border-radius: 2px;
+      border-radius: 5px;
       border: 1px solid var(--gray);
       background: var(--gray_light);
       color: var(--white);
@@ -35,9 +35,10 @@
         content: "\2713";
         color: var(--white-html);
         font-weight: 700;
-        font-size: 16px;
-        height: 24px;
-        width: 24px;
+        font-size: 12px;
+        line-height: 18px;
+        height: 20px;
+        width: 20px;
         text-align: center;
         left: 0;
         top: 0;
@@ -55,8 +56,8 @@
           width: 10px;
           border-radius: 50%;
           background: var(--white-html);
-          left: 6px;
-          top: 6px;
+          left: 4px;
+          top: 4px;
           opacity: 0;
           position: relative;
         }
