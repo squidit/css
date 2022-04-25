@@ -46358,6 +46358,9 @@ i {
   flex-grow: 1;
   font-size: 1rem;
 }
+.toast.not-click {
+  cursor: initial;
+}
 .toast.full {
   width: 100vw;
   margin: 0;
@@ -46393,9 +46396,12 @@ i {
   display: inline-block;
   margin: 0;
   color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 .toast-close-button {
+  cursor: pointer;
   display: none;
   justify-self: flex-end;
   font-size: 1rem;

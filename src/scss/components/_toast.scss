@@ -44,6 +44,9 @@
   font-size: 1rem;
   @extend .border-radius;
   @extend .box-shadow;
+  &.not-click {
+    cursor: initial;
+  }
   &.full {
     width: 100vw;
     margin: 0;
@@ -80,9 +83,12 @@
   display: inline-block;
   margin: 0;
   color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 .toast-close-button {
+  cursor: pointer;
   display: none;
   justify-self: flex-end;
   font-size: 1rem;

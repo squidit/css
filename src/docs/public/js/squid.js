@@ -272,7 +272,8 @@ function tabify (element) {
         fadeInterval: 16,
         duration: 2000,
         closeButton: false,
-        immediately: false
+        immediately: false,
+        notOverClick: false
       },
       success: {
         className: ''
@@ -396,7 +397,11 @@ function tabify (element) {
         }
 
         _fade(s, fadeStep, fadeInterval, cancellationToken, function () {
-          self.element.toastBox.addEventListener('click', cancelHandler)
+          if (!option.notOverClick && !constants.default.notOverClick) {
+            self.element.toastBox.addEventListener('click', cancelHandler)
+          } else {
+            self.element.closeButton.addEventListener('click', cancelHandler)
+          }
           if (cancellationToken.isCancellationRequested) {
             timeoutCallback()
           } else {
@@ -430,7 +435,7 @@ function tabify (element) {
     }
 
     function _setStyle (self, preset, option) {
-      self.element.toastBox.className = `toast ${preset || 'default'} ${option.className || constants.default.className}`
+      self.element.toastBox.className = `toast ${preset || 'default'} ${(option.notOverClick || constants.default.notOverClick) ? 'not-click' : ''} ${option.className || constants.default.className}`
     }
 
     function _hide (self, option, cancellationToken, callback) {
