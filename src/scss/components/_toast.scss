@@ -29,9 +29,6 @@
 }
 
 .toast {
-  &.full {
-    width: 95%;
-  }
   position: relative;
   display: none;
   cursor: pointer;
@@ -47,6 +44,12 @@
   font-size: 1rem;
   @extend .border-radius;
   @extend .box-shadow;
+  &.full {
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+    padding: 1.5rem;
+  }
   &.success {
     background: var(--green);
     color: var(--white-html);

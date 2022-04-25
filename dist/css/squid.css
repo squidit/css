@@ -45633,7 +45633,7 @@ i {
   flex-shrink: 0;
   line-height: 20px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 2px;
   border: 1px solid var(--gray);
   background: var(--gray_light);
   color: var(--white);
@@ -45651,8 +45651,8 @@ i {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   text-align: center;
   left: 0;
   top: 0;
@@ -46359,7 +46359,10 @@ i {
   font-size: 1rem;
 }
 .toast.full {
-  width: 95%;
+  width: 100vw;
+  margin: 0;
+  border-radius: 0;
+  padding: 1.5rem;
 }
 .toast.success {
   background: var(--green);
