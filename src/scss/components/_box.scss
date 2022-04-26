@@ -11,4 +11,28 @@
     padding: $gutter;
     margin: 0 0 $gutter;
   }
+  &.success {
+    background: var(--green_light);
+    color: var(--green_dark);
+  }
+  &.inverted {
+    background: var(--black);
+    color: var(--white-html);
+  }
+  &.info {
+    background: var(--blue_light);
+    color: var(--blue_dark);
+  }
+  &.warning {
+    background: var(--yellow_light);
+    color: var(--yellow_dark);
+  }
+  &.error {
+    background: var(--red_light);
+    color: var(--red_dark);
+  }
+  &.grayscale {
+    background: var(--white);
+    color: var(--black);
+  }
 }
