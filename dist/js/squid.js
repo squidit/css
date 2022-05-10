@@ -383,11 +383,11 @@ function tabify (element) {
 
         const timeoutCallback = function () {
           timeoutId = null
+          if (option.onClick && typeof option.onClick === 'function') {
+            self.element.text.replaceWith(self.element.text.cloneNode(true));
+          }
           self.element.toastBox.removeEventListener('click', cancelHandler)
           self.element.text.classList = 'toast-text'
-          if (option.onClick && typeof option.onClick === 'function') {
-            self.element.text.removeEventListener('click', option.onClick)
-          }
           _hide(self, option, cancellationToken, function () {
             if (callback) callback()
             self.cancellationTokens.shift().dispose()
