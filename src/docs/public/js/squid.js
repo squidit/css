@@ -273,7 +273,8 @@ function tabify (element) {
         duration: 2000,
         closeButton: false,
         immediately: false,
-        notOverClick: false
+        notOverClick: false,
+        onClick: null
       },
       success: {
         className: ''
@@ -383,6 +384,9 @@ function tabify (element) {
         const timeoutCallback = function () {
           timeoutId = null
           self.element.toastBox.removeEventListener('click', cancelHandler)
+          if (option.onClick && typeof option.onClick === 'function') {
+            self.element.closeButton.removeEventListener('click', option.onClick)
+          }
           _hide(self, option, cancellationToken, function () {
             if (callback) callback()
             self.cancellationTokens.shift().dispose()
@@ -401,6 +405,9 @@ function tabify (element) {
             self.element.toastBox.addEventListener('click', cancelHandler)
           } else {
             self.element.closeButton.addEventListener('click', cancelHandler)
+            if (option.onClick && typeof option.onClick === 'function') {
+              self.element.toastBox.addEventListener('click', () => option.onClick())
+            }
           }
           if (cancellationToken.isCancellationRequested) {
             timeoutCallback()
