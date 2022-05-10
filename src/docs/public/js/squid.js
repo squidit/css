@@ -383,9 +383,7 @@ function tabify (element) {
 
         const timeoutCallback = function () {
           timeoutId = null
-          if (option.onClick && typeof option.onClick === 'function') {
-            self.element.text.replaceWith(self.element.text.cloneNode(true));
-          }
+          self.element.text.removeEventListener('click', executeFunction)
           self.element.toastBox.removeEventListener('click', cancelHandler)
           self.element.text.classList = 'toast-text'
           _hide(self, option, cancellationToken, function () {
@@ -401,6 +399,10 @@ function tabify (element) {
           timeoutCallback()
         }
 
+        const executeFunction = function () {
+          return option.onClick()
+        }
+
         _fade(s, fadeStep, fadeInterval, cancellationToken, function () {
           if (!option.notOverClick && !constants.default.notOverClick) {
             self.element.toastBox.addEventListener('click', cancelHandler)
@@ -408,7 +410,7 @@ function tabify (element) {
             self.element.closeButton.addEventListener('click', cancelHandler)
             if (option.onClick && typeof option.onClick === 'function') {
               self.element.text.classList = 'toast-text clickable'
-              self.element.text.addEventListener('click', () => option.onClick())
+              self.element.text.addEventListener('click', executeFunction)
             }
           }
           if (cancellationToken.isCancellationRequested) {
