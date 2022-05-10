@@ -85,6 +85,9 @@
   color: inherit;
   font-weight: inherit;
   font-size: inherit;
+  &.clickable {
+    cursor: pointer;
+  }
 }
 
 .toast-close-button {

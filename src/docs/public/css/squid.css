@@ -46423,6 +46423,9 @@ i {
   font-weight: inherit;
   font-size: inherit;
 }
+.toast-text.clickable {
+  cursor: pointer;
+}
 
 .toast-close-button {
   cursor: pointer;

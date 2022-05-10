@@ -127,8 +127,9 @@
         const timeoutCallback = function () {
           timeoutId = null
           self.element.toastBox.removeEventListener('click', cancelHandler)
+          self.element.text.classList = 'toast-text'
           if (option.onClick && typeof option.onClick === 'function') {
-            self.element.closeButton.removeEventListener('click', option.onClick)
+            self.element.text.removeEventListener('click', option.onClick)
           }
           _hide(self, option, cancellationToken, function () {
             if (callback) callback()
@@ -149,7 +150,8 @@
           } else {
             self.element.closeButton.addEventListener('click', cancelHandler)
             if (option.onClick && typeof option.onClick === 'function') {
-              self.element.toastBox.addEventListener('click', () => option.onClick())
+              self.element.text.classList = 'toast-text clickable'
+              self.element.text.addEventListener('click', () => option.onClick())
             }
           }
           if (cancellationToken.isCancellationRequested) {
