@@ -159,3 +159,7 @@ ol,
 i {
   transition: $transition;
 }
+
+*::placeholder {
+  color: --var(--gray);
+}
