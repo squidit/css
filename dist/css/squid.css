@@ -38782,6 +38782,10 @@ i {
   transition: all 0.3s ease;
 }
 
+*::placeholder {
+  color: var(--gray);
+}
+
 .text-center {
   text-align: center !important;
 }
