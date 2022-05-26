@@ -46405,7 +46405,7 @@ i {
   width: 100vw;
   margin: 0;
   border-radius: 0;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 .toast.success {
   background: var(--green_light);
