@@ -12,8 +12,8 @@
     display: block;
     color: var(--gray);
     border-left: 1px solid var(--gray);
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
     cursor: pointer;
     transition: $transition;
     &:hover {

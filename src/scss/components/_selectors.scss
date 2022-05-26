@@ -18,7 +18,7 @@
       width: 20px;
       height: 20px;
       flex-shrink: 0;
-      line-height: 20px;
+      line-height: 1.5;
       text-align: center;
       border-radius: 2px;
       border: 1px solid var(--gray);
@@ -36,7 +36,7 @@
         color: var(--white-html);
         font-weight: 700;
         font-size: 12px;
-        line-height: 18px;
+        line-height: 1.5;
         height: 18px;
         width: 18px;
         text-align: center;
@@ -65,7 +65,7 @@
     }
     &:checked {
       & + label.checkbox {
-        background-color: var(--green_dark);
+        background-color: var(--green);
         &::after {
           opacity: 1;
         }
