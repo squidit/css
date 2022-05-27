@@ -274,7 +274,8 @@ function tabify (element) {
         closeButton: false,
         immediately: false,
         notOverClick: false,
-        onClick: null
+        onClick: null,
+        persistent: false
       },
       success: {
         className: ''
@@ -301,7 +302,7 @@ function tabify (element) {
       }
     }
 
-    Toast.prototype.initElement = function (selector) {
+    Toast.prototype.initElement = function (option = {}, selector) {
       const container = document.createElement('div')
       const toastBox = document.createElement('div')
       const text = document.createElement('div')
@@ -334,7 +335,8 @@ function tabify (element) {
         container: container,
         toastBox: toastBox,
         text: text,
-        closeButton: closeButton
+        closeButton: closeButton,
+        persistent: option ? option.persistent : false
       }
 
       _setStyle(this, 'default', constants.default)
@@ -355,7 +357,7 @@ function tabify (element) {
 
     Toast.prototype.show = function (text, option, preset, callback) {
       const self = this
-      if (!self.element) self.initElement()
+      if (!self.element) self.initElement(option)
       if (!option) option = {}
       if (option.immediately) self.cancelAll()
 
