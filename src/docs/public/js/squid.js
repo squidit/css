@@ -270,7 +270,7 @@ function tabify (element) {
         className: '',
         fadeDuration: 400,
         fadeInterval: 16,
-        duration: 2000,
+        duration: 10000,
         closeButton: false,
         immediately: false,
         notOverClick: false,
@@ -297,7 +297,7 @@ function tabify (element) {
       },
       error: {
         className: '',
-        duration: 3000,
+        duration: 10000,
         closeButton: true
       }
     }
