@@ -45610,12 +45610,6 @@ i {
 }
 
 .select {
-  appearance: none;
-  background-repeat: no-repeat;
-  background-image: url(https://hub-cdn.squidit.com.br/arrow_down.png);
-  background-position-x: calc(101% - 1rem);
-  background-position-y: center;
-  background-size: 12px;
   padding-right: 2rem;
 }
 .select option[placeholder],
