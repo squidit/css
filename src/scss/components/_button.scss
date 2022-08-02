@@ -4,7 +4,7 @@
   padding: 0.5rem 1rem;
   margin: 0;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 5px; 
   overflow: hidden;
   box-shadow: none;
   color: var(--white);
@@ -22,6 +22,7 @@
   }
   &.button-sm {
     padding: 0.25rem 1rem;
+    font-size: 0.85rem;
   }
   &:hover, &:focus {
     outline: none;
