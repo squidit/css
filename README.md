@@ -140,7 +140,6 @@ The official CDN for Squid CSS is jsdelivr, which is even where the framework do
 
 On [GitHub Releases](https://github.com/squidit/css/releases) create a new release, with a new tag version** and using `master` branch
 
-
 ### jsdelivr usage
 
 ```html
@@ -149,6 +148,10 @@ On [GitHub Releases](https://github.com/squidit/css/releases) create a new relea
 ...
 <script src='https://cdn.jsdelivr.net/gh/squidit/css@latest/dist/js/squid.min.js'></script>
 ```
+
+### Deploy yo NPM
+
+> Just draft a new release here on Github and an actions will starts
 
 **Important to use the same tag as package.json
 ## Documentation
