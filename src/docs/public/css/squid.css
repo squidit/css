@@ -38760,12 +38760,12 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 1.4rem;
+  font-size: 1.28rem;
   line-height: 1.5;
 }
 
 h5, .h5 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.5;
 }
 
@@ -44990,6 +44990,7 @@ i {
 }
 .button.button-sm {
   padding: 0.25rem 1rem;
+  font-size: 0.85rem;
 }
 .button:hover, .button:focus {
   outline: none;
@@ -46136,7 +46137,7 @@ i {
   height: 25px;
   cursor: pointer;
   position: absolute;
-  top: 0.5rem;
+  top: 0.85rem;
   right: 0.5rem;
 }
 .button-close:hover {
@@ -46153,21 +46154,25 @@ i {
   background-clip: padding-box;
   border: 1px solid var(--gray_light);
   border-radius: 0;
-  padding: 1rem 2rem;
+  padding: 0;
   color: var(--black);
   outline: 0;
 }
 .modal-content .modal-header {
-  padding: 0 1rem 0 0;
+  border-bottom: 1px solid var(--gray_light);
+  padding: 1rem;
   display: block;
   width: 100%;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
 }
 .modal-content .modal-body {
   width: 100%;
+  padding: 0 1rem;
 }
 .modal-content .modal-footer {
-  margin: 1rem auto 0;
+  border-top: 1px solid var(--gray_light);
+  margin: 0;
+  padding: 1rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
