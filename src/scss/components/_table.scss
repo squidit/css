@@ -8,11 +8,12 @@
 .table {
   width: 100%;
   overflow: auto;
-  border-color: var(--gray_light);
+  border-color: var(--border_color);
   vertical-align: top;
   position: relative;
   border-collapse: collapse;
   @extend .scrollbar;
+  color: var(--text_color);
   caption {
     caption-side: top;
     text-align: left;
@@ -41,12 +42,8 @@
     top: 5px;
     padding: 0 math.div($gutter, 2);
     height: calc(100% - 8px);
-    background-color: var(--white-html);
+    background-color: var(--background);
     border: none;
-    box-shadow:
-      inset 1px 0 0 var(--gray),
-      inset -1px 0 0 var(--gray),
-      -3px 0 3px 0px var(--gray); 
     @media (max-width: map-get($grid-breakpoints, lg)) {
       position: initial;
       top: initial;
@@ -76,14 +73,14 @@
     position: relative;
     overflow: hidden;
     th, td {
-      background-color: var(--white);
+      background-color: var(--background);
       font-size: 14px;
       line-height: 1.5;
-      color: var(--black);
+      color: var(--text_color);
       font-weight: 700;
       padding: $gutter math.div($gutter, 2);
       border: none;
-      border-bottom: 4px solid var(--white);
+      border-bottom: 4px solid var(--background);
       &:first-child {
         border-radius: 5px 0 0 0;
       }
@@ -95,17 +92,12 @@
   > tbody {
     vertical-align: middle;
     position: relative;
-    color: var(--black);
+    color: var(--text_color);
     &> tr {
-      background-color: var(--white-html);
-      border-bottom: 1px solid var(--gray_light);
+      background-color: var(--background);
+      border-bottom: 1px solid var(--border_color);
       transition: $transition;
       &:hover {
-        box-shadow:
-          inset 1px 0 0 var(--gray_light),
-          inset -1px 0 0 var(--gray_light),
-          0 0 4px 0 var(--gray_light),
-          0 0 6px 2px var(--gray_light); 
         .wrapper-buttons {
           opacity: 1;
         }
@@ -115,7 +107,7 @@
         padding: $gutter math.div($gutter, 2);
       }
       &:last-child {
-        border-bottom: 1px solid var(--gray);
+        border-bottom: 1px solid var(--border-color);
       }
     }
   }
@@ -123,8 +115,8 @@
     vertical-align: middle;
     position: relative;
     tr {
-      background-color: var(--white-html);
-      border-bottom: 1px solid var(--gray_light);
+      background-color: var(--background);
+      border-bottom: 1px solid var(--border_color);
       td, th {
         padding: $gutter math.div($gutter, 2);
       }
@@ -142,12 +134,12 @@
         left: -9999px;
       }
       tr {
-        border: 1px solid var(--gray_light);
+        border: 1px solid var(--border_color);
         &:hover {
           background-color: inherit;
         }
         &:last-child {
-          border-bottom: 1px solid var(--gray_light); 
+          border-bottom: 1px solid var(--border_color); 
         }
       }
       tr:nth-of-type(odd) { 

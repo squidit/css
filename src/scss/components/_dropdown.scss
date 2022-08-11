@@ -9,8 +9,8 @@
   list-style: none;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: var(--white-html);
-  border: 1px solid var(--gray_light);
+  background-color: var(--background_secondary);
+  border: 1px solid var(--border_color);
   border-radius: 0;
   padding: 0;
   background-clip: padding-box;
@@ -19,7 +19,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: math.div($gutter, 4) 0;
-  color: var(--black);
+  color: var(--text_color);
   font-size: 0;
   &.open {
     display: flex;
@@ -46,12 +46,12 @@
       width: 100%;
       border: none;
       box-shadow: none;
-      background-color: var(--white-html);
+      background-color: var(--background_secondary);
       transition: $transition;
       color: inherit;
       text-align: left;
       &:hover {
-        background-color: var(--white);
+        background-color: var(--background);
       }
       &.disabled {
         @extend .disabled;

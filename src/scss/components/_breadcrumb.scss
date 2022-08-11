@@ -6,7 +6,7 @@
   display: inline-flex;
   align-items: center;
   li {
-    color: var(--black);
+    color: var(--text_color);
     display: block;
     margin: 0 math.div($gutter, 2);
     padding: math.div($gutter, 2);

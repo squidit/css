@@ -5,7 +5,7 @@
   height: 2rem;
   vertical-align: -.125em;
   border: .25rem solid var(--pink);
-  border-right-color: var(--gray_light) !important;
+  border-right-color: var(--background) !important;
   border-radius: 50%;
   animation: 1s linear infinite rotate360;
   &.small {

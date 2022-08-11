@@ -1,6 +1,6 @@
 @use "sass:math";
 .tag-box {
-  border: 1px solid var(--gray_light);
+  border: 1px solid var(--border_color);
   transition: $transition;
   cursor: pointer;
   padding: math.div($gutter, 1.5);
@@ -8,6 +8,7 @@
   font-weight: 700;
   position: relative;
   display: inline-block;
+  background-color: var(--background);
   &:hover {
     @extend .box-shadow;
   }

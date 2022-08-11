@@ -18,7 +18,7 @@
   padding: $gutter 0;
   flex-wrap: wrap;
   @extend .scrollbar;
-  color: var(--black);
+  color: var(--text_color);
   &.open {
     opacity: 1;
     .modal-dialog {
@@ -59,7 +59,7 @@
 }
 
 .button-close {
-  color: var(--gray_dark);
+  color: var(--text_color);
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -74,7 +74,7 @@
   top: 0.85rem;
   right: math.div($gutter, 2);
   &:hover {
-    background-color: var(--white);
+    background-color: var(--background);
   }
 }
 
@@ -84,16 +84,16 @@
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: var(--white-html);
+  background-color: var(--background_secondary);
   background-clip: padding-box;
-  border: 1px solid var(--gray_light);
+  border: 1px solid var(--border_color);
   border-radius: 0;
   padding: 0;
-  color: var(--black);
+  color: var(--text_color);
   outline: 0;
   @extend .box-shadow;
   .modal-header {
-    border-bottom: 1px solid var(--gray_light);
+    border-bottom: 1px solid var(--border_color);
     padding: $gutter;
     display: block;
     width: 100%;
@@ -104,7 +104,7 @@
     padding: 0 $gutter;
   }
   .modal-footer {
-    border-top: 1px solid var(--gray_light);
+    border-top: 1px solid var(--border_color);
     margin: 0;
     padding: $gutter;
     width: 100%;
@@ -123,7 +123,7 @@
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: var(--black_html);
   opacity: 0;
   &.show {
     opacity: 0.5;

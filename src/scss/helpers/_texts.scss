@@ -29,9 +29,10 @@ $weights: (
 }
 
 .readonly {
-  color: var(--black) !important;
-  border-color: var(--gray_light) !important;
-  background: var(--white) !important;
+  color: var(--text_color) !important;
+  border-color: var(--gray_dark) !important;
+  background: var(--background) !important;
+  
 }
 
 .text-ellipsis {

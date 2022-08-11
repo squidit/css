@@ -4,6 +4,7 @@ $amountDarken: 25%;
 
 $black:      #212529 !default;
 $blackLight: #495057 !default;
+$blackMedium:#212529 !default;
 $blackHtml:  #000000 !default;
 $white:      #F6F6F8 !default;
 $whiteHtml:  #FFFFFF !default;
@@ -36,6 +37,7 @@ $colors: (
   black: (
     base: $black,
     light: $blackLight,
+    medium: $blackMedium,
   ),
   white: (
     base: $white
@@ -173,6 +175,64 @@ $colors: (
       }
     }
   }
+  --border_color: var(--gray_light, #98a0a8);
+  --black_background: #3b3b3b;
+  --black_text: var(--white-html, #ffffff);
+  --black_secondary: var(--black, #212529);
+  --black_border: var(--gray_dark, #707981);
+  --white_background: var(--white, #f6f6f8);
+  --white_text: var(--gray_dark, #707981);
+  --white_secondary: var(--white-html, #ffffff);
+  --white_border: var(--gray_light, #98a0a8);
+  --background: var(--white);
+  --background_secondary: var(--white_background);
+  --text_color: var(--white_text);
+  --background_third: var(--white_background);
+  --shadow_color: #64647680;
+  --box_shadow: 0px 4px 12px -5px var(--shadow_color);
+  --border_color: var(--gray_light, #98a0a8);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--white);
+    --background_secondary: var(--white_secondary);
+    --text_color: var(--white_text);
+    --background_third: var(--white_background);
+    --shadow_color: #64647680;
+    --box_shadow: 0px 4px 12px -5px var(--shadow_color);
+    --border_color: var(--white_border);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--black_background);
+    --background_secondary: var(--black_secondary);
+    --text_color: var(--black_text);
+    --background_third: var(--black_light, #495057);
+    --shadow_color: #00000040;
+    --box_shadow: 0px 4px 20px 0px var(--shadow_color);
+    --border_color: var(--black_border);
+  }
+}
+
+body.dark {
+  --background: var(--black_background) !important;
+  --background_secondary: var(--black_secondary) !important;
+  --text_color: var(--black_text) !important;
+  --background_third: var(--black_light, #495057) !important;
+  --shadow_color: #00000040;
+  --box_shadow: 0px 4px 20px 0px var(--shadow_color) !important;
+  --border_color: var(--black_border) !important;
+}
+body.light {
+  --background: var(--white) !important;
+  --background_secondary: var(--white_secondary) !important;
+  --text_color: var(--white_text) !important;
+  --background_third: var(--white_background) !important;
+  --shadow_color: #64647680 !important;
+  --box_shadow: 0px 4px 12px -5px var(--shadow_color) !important;
+  --border_color: var(--white_border) !important;
 }
 /* CSS Vars */
 
