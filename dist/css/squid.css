@@ -45724,9 +45724,9 @@ a {
   line-height: 1.5;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid var(--border-color);
-  background: var(--gray_light);
-  color: var(--white);
+  border: 1px solid var(--border_color);
+  background: var(--background);
+  color: var(--text_color);
   font-size: 16px;
   transition: all 0.3s ease;
   font-weight: 700;
@@ -45741,8 +45741,8 @@ a {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.5;
-  height: 21px;
-  width: 21px;
+  height: 20px;
+  width: 20px;
   text-align: center;
   left: 0;
   top: 0;
@@ -45759,8 +45759,8 @@ a {
   width: 10px;
   border-radius: 50%;
   background: var(--white-html);
-  left: 5px;
-  top: 5px;
+  left: 4px;
+  top: 4px;
   opacity: 0;
   position: relative;
 }
@@ -45770,8 +45770,11 @@ a {
 .wrapper-selectors input:checked + label.checkbox::after {
   opacity: 1;
 }
+.wrapper-selectors input:checked[disabled] + label.checkbox, .wrapper-selectors input:checked[disabled] + label.radio, .wrapper-selectors input:checked.disabled + label.checkbox, .wrapper-selectors .collapse.collapse-disabled input.collapse-title:checked + label.checkbox, .collapse.collapse-disabled .wrapper-selectors input.collapse-title:checked + label.checkbox, .wrapper-selectors input:checked.disabled + label.radio, .wrapper-selectors .collapse.collapse-disabled input.collapse-title:checked + label.radio, .collapse.collapse-disabled .wrapper-selectors input.collapse-title:checked + label.radio {
+  background-color: var(--green_light) !important;
+}
 .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .wrapper-selectors .collapse.collapse-disabled input.collapse-title + label.checkbox, .collapse.collapse-disabled .wrapper-selectors input.collapse-title + label.checkbox {
-  cursor: not-allowed;
+  cursor: not-allowed !important;
 }
 .wrapper-selectors.toggle input + label.checkbox {
   width: 48px;
@@ -45786,7 +45789,7 @@ a {
   border-radius: 50%;
   background: var(--white-html);
   left: 4px;
-  top: 3px;
+  top: 2px;
 }
 .wrapper-selectors.toggle input:checked + label.checkbox::after {
   left: 26px;
@@ -46269,7 +46272,7 @@ a {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: var(--black_html);
+  background-color: var(--black-html);
   opacity: 0;
 }
 .modal-backdrop.show {
