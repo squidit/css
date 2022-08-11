@@ -45079,8 +45079,8 @@ a {
   border-color: inherit;
 }
 .button.inverted {
-  background-color: var(--white-html);
-  color: var(--black);
+  background-color: var(--background);
+  color: var(--text_color);
 }
 .button.inverted:hover {
   color: var(--white-html);
@@ -45099,13 +45099,13 @@ a {
 }
 .button.button-black.inverted {
   color: var(--black);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--black);
 }
 .button.button-black.inverted:hover, .button.button-black.inverted:focus {
   background-color: var(--black);
   border-color: var(--black);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-white {
   background-color: var(--white);
@@ -45118,13 +45118,13 @@ a {
 }
 .button.button-white.inverted {
   color: var(--white);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--white);
 }
 .button.button-white.inverted:hover, .button.button-white.inverted:focus {
   background-color: var(--white);
   border-color: var(--white);
-  color: var(--white-html);
+  color: var(--background);
   color: var(--black);
 }
 .button.button-black-html {
@@ -45137,13 +45137,13 @@ a {
 }
 .button.button-black-html.inverted {
   color: var(--black-html);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--black-html);
 }
 .button.button-black-html.inverted:hover, .button.button-black-html.inverted:focus {
   background-color: var(--black-html);
   border-color: var(--black-html);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-white-html {
   background-color: var(--white-html);
@@ -45155,13 +45155,13 @@ a {
 }
 .button.button-white-html.inverted {
   color: var(--white-html);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--white-html);
 }
 .button.button-white-html.inverted:hover, .button.button-white-html.inverted:focus {
   background-color: var(--white-html);
   border-color: var(--white-html);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-transparent {
   background-color: var(--transparent);
@@ -45173,13 +45173,13 @@ a {
 }
 .button.button-transparent.inverted {
   color: var(--transparent);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--transparent);
 }
 .button.button-transparent.inverted:hover, .button.button-transparent.inverted:focus {
   background-color: var(--transparent);
   border-color: var(--transparent);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-gray {
   background-color: var(--gray);
@@ -45191,13 +45191,13 @@ a {
 }
 .button.button-gray.inverted {
   color: var(--gray);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--gray);
 }
 .button.button-gray.inverted:hover, .button.button-gray.inverted:focus {
   background-color: var(--gray);
   border-color: var(--gray);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-pink {
   background-color: var(--pink);
@@ -45209,13 +45209,13 @@ a {
 }
 .button.button-pink.inverted {
   color: var(--pink);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--pink);
 }
 .button.button-pink.inverted:hover, .button.button-pink.inverted:focus {
   background-color: var(--pink);
   border-color: var(--pink);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-lilac {
   background-color: var(--lilac);
@@ -45227,13 +45227,13 @@ a {
 }
 .button.button-lilac.inverted {
   color: var(--lilac);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--lilac);
 }
 .button.button-lilac.inverted:hover, .button.button-lilac.inverted:focus {
   background-color: var(--lilac);
   border-color: var(--lilac);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-cian {
   background-color: var(--cian);
@@ -45246,13 +45246,13 @@ a {
 }
 .button.button-cian.inverted {
   color: var(--cian);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--cian);
 }
 .button.button-cian.inverted:hover, .button.button-cian.inverted:focus {
   background-color: var(--cian);
   border-color: var(--cian);
-  color: var(--white-html);
+  color: var(--background);
   color: var(--black);
 }
 .button.button-green {
@@ -45265,13 +45265,13 @@ a {
 }
 .button.button-green.inverted {
   color: var(--green);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--green);
 }
 .button.button-green.inverted:hover, .button.button-green.inverted:focus {
   background-color: var(--green);
   border-color: var(--green);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-yellow {
   background-color: var(--yellow);
@@ -45284,13 +45284,13 @@ a {
 }
 .button.button-yellow.inverted {
   color: var(--yellow);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--yellow);
 }
 .button.button-yellow.inverted:hover, .button.button-yellow.inverted:focus {
   background-color: var(--yellow);
   border-color: var(--yellow);
-  color: var(--white-html);
+  color: var(--background);
   color: var(--black);
 }
 .button.button-red {
@@ -45303,13 +45303,13 @@ a {
 }
 .button.button-red.inverted {
   color: var(--red);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--red);
 }
 .button.button-red.inverted:hover, .button.button-red.inverted:focus {
   background-color: var(--red);
   border-color: var(--red);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-red-bl {
   background-color: var(--red-bl);
@@ -45321,13 +45321,13 @@ a {
 }
 .button.button-red-bl.inverted {
   color: var(--red-bl);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--red-bl);
 }
 .button.button-red-bl.inverted:hover, .button.button-red-bl.inverted:focus {
   background-color: var(--red-bl);
   border-color: var(--red-bl);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-blue {
   background-color: var(--blue);
@@ -45339,13 +45339,13 @@ a {
 }
 .button.button-blue.inverted {
   color: var(--blue);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--blue);
 }
 .button.button-blue.inverted:hover, .button.button-blue.inverted:focus {
   background-color: var(--blue);
   border-color: var(--blue);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-pomegranate {
   background-color: var(--pomegranate);
@@ -45357,13 +45357,13 @@ a {
 }
 .button.button-pomegranate.inverted {
   color: var(--pomegranate);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--pomegranate);
 }
 .button.button-pomegranate.inverted:hover, .button.button-pomegranate.inverted:focus {
   background-color: var(--pomegranate);
   border-color: var(--pomegranate);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-lemon {
   background-color: var(--lemon);
@@ -45376,13 +45376,13 @@ a {
 }
 .button.button-lemon.inverted {
   color: var(--lemon);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--lemon);
 }
 .button.button-lemon.inverted:hover, .button.button-lemon.inverted:focus {
   background-color: var(--lemon);
   border-color: var(--lemon);
-  color: var(--white-html);
+  color: var(--background);
   color: var(--black);
 }
 .button.button-gold {
@@ -45396,13 +45396,13 @@ a {
 }
 .button.button-gold.inverted {
   color: var(--gold);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--gold);
 }
 .button.button-gold.inverted:hover, .button.button-gold.inverted:focus {
   background-color: var(--gold);
   border-color: var(--gold);
-  color: var(--white-html);
+  color: var(--background);
   color: var(--black);
 }
 .button.button-pastry {
@@ -45416,13 +45416,13 @@ a {
 }
 .button.button-pastry.inverted {
   color: var(--pastry);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--pastry);
 }
 .button.button-pastry.inverted:hover, .button.button-pastry.inverted:focus {
   background-color: var(--pastry);
   border-color: var(--pastry);
-  color: var(--white-html);
+  color: var(--background);
   color: var(--black);
 }
 .button.button-instagram {
@@ -45435,13 +45435,13 @@ a {
 }
 .button.button-instagram.inverted {
   color: var(--instagram);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--instagram);
 }
 .button.button-instagram.inverted:hover, .button.button-instagram.inverted:focus {
   background-color: var(--instagram);
   border-color: var(--instagram);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-twitter {
   background-color: var(--twitter);
@@ -45453,13 +45453,13 @@ a {
 }
 .button.button-twitter.inverted {
   color: var(--twitter);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--twitter);
 }
 .button.button-twitter.inverted:hover, .button.button-twitter.inverted:focus {
   background-color: var(--twitter);
   border-color: var(--twitter);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-youtube {
   background-color: var(--youtube);
@@ -45471,13 +45471,13 @@ a {
 }
 .button.button-youtube.inverted {
   color: var(--youtube);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--youtube);
 }
 .button.button-youtube.inverted:hover, .button.button-youtube.inverted:focus {
   background-color: var(--youtube);
   border-color: var(--youtube);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-pinterest {
   background-color: var(--pinterest);
@@ -45489,13 +45489,13 @@ a {
 }
 .button.button-pinterest.inverted {
   color: var(--pinterest);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--pinterest);
 }
 .button.button-pinterest.inverted:hover, .button.button-pinterest.inverted:focus {
   background-color: var(--pinterest);
   border-color: var(--pinterest);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-facebook {
   background-color: var(--facebook);
@@ -45507,13 +45507,13 @@ a {
 }
 .button.button-facebook.inverted {
   color: var(--facebook);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--facebook);
 }
 .button.button-facebook.inverted:hover, .button.button-facebook.inverted:focus {
   background-color: var(--facebook);
   border-color: var(--facebook);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-google {
   background-color: var(--google);
@@ -45525,13 +45525,13 @@ a {
 }
 .button.button-google.inverted {
   color: var(--google);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--google);
 }
 .button.button-google.inverted:hover, .button.button-google.inverted:focus {
   background-color: var(--google);
   border-color: var(--google);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-linkedin {
   background-color: var(--linkedin);
@@ -45543,13 +45543,13 @@ a {
 }
 .button.button-linkedin.inverted {
   color: var(--linkedin);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--linkedin);
 }
 .button.button-linkedin.inverted:hover, .button.button-linkedin.inverted:focus {
   background-color: var(--linkedin);
   border-color: var(--linkedin);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-whatsapp {
   background-color: var(--whatsapp);
@@ -45561,13 +45561,13 @@ a {
 }
 .button.button-whatsapp.inverted {
   color: var(--whatsapp);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--whatsapp);
 }
 .button.button-whatsapp.inverted:hover, .button.button-whatsapp.inverted:focus {
   background-color: var(--whatsapp);
   border-color: var(--whatsapp);
-  color: var(--white-html);
+  color: var(--background);
 }
 .button.button-tiktok {
   background-color: var(--tiktok);
@@ -45579,34 +45579,35 @@ a {
 }
 .button.button-tiktok.inverted {
   color: var(--tiktok);
-  background-color: var(--white-html);
+  background-color: var(--background);
   border-color: var(--tiktok);
 }
 .button.button-tiktok.inverted:hover, .button.button-tiktok.inverted:focus {
   background-color: var(--tiktok);
   border-color: var(--tiktok);
-  color: var(--white-html);
+  color: var(--background);
 }
 
 .input, .select, .textarea {
   min-height: 44px;
-  border: 1px solid var(--gray);
-  background: var(--white-html);
+  border: 1px solid var(--border_color);
+  background: var(--background);
   padding: 0.75rem 1rem;
   transition: all 0.3s ease;
+  color: var(--text_color);
 }
 .input.small, .small.select, .small.textarea {
   min-height: 25px;
   padding: 0.25rem 1rem;
-  background-color: transparent;
+  background-color: var(--background);
   border-radius: 30px;
-  color: var(--gray_dark);
-  border-color: var(--gray_dark);
+  color: var(--text_color);
+  border-color: var(--text_color);
 }
 .input:focus, .select:focus, .textarea:focus {
   outline: none;
-  box-shadow: 0px 0px 0px 1px var(--gray);
-  border-color: var(--gray);
+  box-shadow: 0px 0px 0px 1px var(--shadow_color);
+  border-color: var(--border_color);
 }
 .input.error, .error.select, .error.textarea {
   border-width: 1px;
@@ -45626,6 +45627,7 @@ a {
   min-height: 80px;
   resize: none;
   overflow: auto;
+  color: var(--text_color);
 }
 
 .wrapper-input {
@@ -45641,13 +45643,13 @@ a {
   padding: 0.5rem 1rem;
   text-align: center;
   white-space: nowrap;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--border_color);
 }
 .wrapper-input .input-group-text:not(button):not(.loader) {
   font-weight: 400;
   line-height: 1.5;
-  color: var(--gray_dark);
-  background-color: var(--white);
+  color: var(--text_color);
+  background-color: var(--background_secondary);
 }
 .wrapper-input > :not(:first-child):not(.box-validation):not(.tooltip) {
   margin-left: -1px;
@@ -45739,8 +45741,8 @@ a {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.5;
-  height: 18px;
-  width: 18px;
+  height: 21px;
+  width: 21px;
   text-align: center;
   left: 0;
   top: 0;
@@ -45757,8 +45759,8 @@ a {
   width: 10px;
   border-radius: 50%;
   background: var(--white-html);
-  left: 4px;
-  top: 4px;
+  left: 5px;
+  top: 5px;
   opacity: 0;
   position: relative;
 }
