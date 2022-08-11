@@ -45786,7 +45786,7 @@ a {
   border-radius: 50%;
   background: var(--white-html);
   left: 4px;
-  top: 2px;
+  top: 3px;
 }
 .wrapper-selectors.toggle input:checked + label.checkbox::after {
   left: 26px;
