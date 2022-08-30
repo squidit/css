@@ -33629,7 +33629,7 @@ readers do not read off random characters that represent icons */
 :root {
   --black: #212529;
   --black_light: #495057;
-  --black_medium: #212529;
+  --black_medium: #3b3b3b;
   --white: #F6F6F8;
   --black-html: #000000;
   --white-html: #FFFFFF;
@@ -33701,7 +33701,7 @@ readers do not read off random characters that represent icons */
   --tiktok_light: #404040;
   --tiktok_dark: black;
   --border_color: var(--gray_light, #98a0a8);
-  --black_background: #3b3b3b;
+  --black_background: var(--black_medium, #3b3b3b);
   --black_text: var(--white-html, #ffffff);
   --black_secondary: var(--black, #212529);
   --black_border: var(--gray_dark, #707981);
@@ -33787,15 +33787,15 @@ body.light {
 }
 
 .black-medium {
-  color: #212529 !important;
+  color: #3b3b3b !important;
 }
 
 .background-black-medium {
-  background-color: #212529 !important;
+  background-color: #3b3b3b !important;
 }
 
 .border-black-medium {
-  border-color: #212529 !important;
+  border-color: #3b3b3b !important;
 }
 
 .white {
