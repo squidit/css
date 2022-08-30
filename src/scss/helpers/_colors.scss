@@ -4,7 +4,7 @@ $amountDarken: 25%;
 
 $black:      #212529 !default;
 $blackLight: #495057 !default;
-$blackMedium:#212529 !default;
+$blackMedium:#3b3b3b !default;
 $blackHtml:  #000000 !default;
 $white:      #F6F6F8 !default;
 $whiteHtml:  #FFFFFF !default;
@@ -176,7 +176,7 @@ $colors: (
     }
   }
   --border_color: var(--gray_light, #98a0a8);
-  --black_background: #3b3b3b;
+  --black_background: var(--black_medium, #3b3b3b);
   --black_text: var(--white-html, #ffffff);
   --black_secondary: var(--black, #212529);
   --black_border: var(--gray_dark, #707981);
