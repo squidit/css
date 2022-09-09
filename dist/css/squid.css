@@ -33623,6 +33623,10 @@ readers do not read off random characters that represent icons */
     background-position: 50px 50px;
   }
 }
+:root {
+  --transition: all 0.3s ease;
+}
+
 /* Sass Vars */
 /* Sass Vars */
 /* CSS Vars */
