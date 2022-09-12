@@ -3,12 +3,13 @@
   border: 1px solid var(--border_color);
   transition: $transition;
   cursor: pointer;
-  padding: math.div($gutter, 1.5);
-  // padding-right: ($gutter * 2.5);
+  padding: 0.25rem 0.5rem;
   font-weight: 700;
   position: relative;
   display: inline-block;
   background-color: var(--background);
+  font-size: 0.9rem;
+  line-height: 1;
   &:hover {
     @extend .box-shadow;
   }

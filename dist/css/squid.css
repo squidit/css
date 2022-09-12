@@ -45868,11 +45868,13 @@ a {
   border: 1px solid var(--border_color);
   transition: all 0.3s ease;
   cursor: pointer;
-  padding: 0.6666666667rem;
+  padding: 0.25rem 0.5rem;
   font-weight: 700;
   position: relative;
   display: inline-block;
   background-color: var(--background);
+  font-size: 0.9rem;
+  line-height: 1;
 }
 .tag-box.readonly-tag {
   cursor: default;
