@@ -66,10 +66,12 @@ const themeConfig = {
 const Theme = ({ children }) => {
   const config = useConfig()
   if (typeof document !== `undefined`) {
-    const body = document.getElementsByTagName('body')[0]
-    if (body) {
-      body.classList.add('scrollbar')
+    let colorMode = 'light'
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      colorMode = 'dark'
     }
+    document.body.classList.add('scrollbar')
+    document.body.classList.add(colorMode)
   }
   const style = `
     .grid-box {

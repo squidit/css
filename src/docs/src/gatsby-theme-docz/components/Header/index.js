@@ -4,6 +4,7 @@ import { useConfig, useCurrentDoc } from 'docz'
 
 import * as styles from './styles'
 import { Logo } from '../Logo'
+import { useEffect } from 'react'
 
 export const Header = props => {
   const { onOpen } = props
@@ -14,7 +15,16 @@ export const Header = props => {
   const { edit = true, ...doc } = useCurrentDoc()
   const [colorMode, setColorMode] = useColorMode()
 
+  useEffect(() => {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setColorMode('dark')
+    } else {
+      setColorMode('light')
+    }
+  }, [])
+
   const toggleColorMode = () => {
+    document.body.classList.value = `scrollbar ${colorMode === 'light' ? 'dark' : 'light'}`
     setColorMode(colorMode === 'light' ? 'dark' : 'light')
   }
 
