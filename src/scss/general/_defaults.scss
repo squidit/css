@@ -156,6 +156,10 @@ i {
   color: var(--gray);
 }
 
+.disabled::placeholder {
+  color: var(--white) !important;
+}
+
 body {
   background-color: var(--background);
   color: var(--text_color);

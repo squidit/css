@@ -38853,6 +38853,10 @@ i {
   color: var(--gray);
 }
 
+.disabled::placeholder, .tabs-header li.disabled::placeholder, .dropdown li button.disabled::placeholder, .dropdown li button.button[disabled]::placeholder, .dropdown li button.input[disabled]::placeholder, .dropdown li button[disabled].textarea::placeholder, .dropdown li button[disabled].select::placeholder, .dropdown li a.disabled::placeholder, .dropdown li a.button[disabled]::placeholder, .dropdown li a.input[disabled]::placeholder, .dropdown li a[disabled].textarea::placeholder, .dropdown li a[disabled].select::placeholder, .collapse.collapse-disabled .collapse-title::placeholder, .wrapper-selectors .collapse.collapse-disabled input.collapse-title + label.checkbox::placeholder, .collapse.collapse-disabled .wrapper-selectors input.collapse-title + label.checkbox::placeholder, .tag-box.disabled::placeholder, .wrapper-selectors input[disabled] + label.checkbox::placeholder, .wrapper-selectors input.disabled + label.checkbox::placeholder, .input[disabled]::placeholder, [disabled].select::placeholder, [disabled].textarea::placeholder, .input.disabled::placeholder, .disabled.select::placeholder, .disabled.textarea::placeholder, .button[disabled]::placeholder {
+  color: var(--white) !important;
+}
+
 body {
   background-color: var(--background);
   color: var(--text_color);
@@ -38917,8 +38921,11 @@ a {
 
 .readonly, .input[readonly], [readonly].select, [readonly].textarea, .input.readonly, .readonly.select, .readonly.textarea {
   color: var(--text_color) !important;
-  border-color: var(--gray_dark) !important;
+  cursor: initial !important;
+}
+.readonlyselect, .readonlyinput, .readonlytextarea, .readonlybutton {
   background: var(--background) !important;
+  border-color: var(--gray_dark) !important;
 }
 
 .text-ellipsis {

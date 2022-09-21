@@ -30,10 +30,14 @@ $weights: (
 
 .readonly {
   color: var(--text_color) !important;
-  border-color: var(--gray_dark) !important;
-  background: var(--background) !important;
-  
+  cursor: initial !important;
+  &select, &input, &textarea, &button {
+    background: var(--background) !important;
+    border-color: var(--gray_dark) !important;
+  }
 }
+
+
 
 .text-ellipsis {
   overflow: hidden;
