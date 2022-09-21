@@ -38922,10 +38922,17 @@ a {
 .readonly, .input[readonly], [readonly].select, [readonly].textarea, .input.readonly, .readonly.select, .readonly.textarea {
   color: var(--text_color) !important;
   cursor: initial !important;
+  opacity: 1 !important;
 }
-.readonlyselect, .readonlyinput, .readonlytextarea, .readonlybutton {
+
+select.readonly, select.input[readonly], select[readonly].select, select[readonly].textarea, select.input.readonly, select.readonly.select, select.readonly.textarea, input.readonly, input.input[readonly], input[readonly].select, input[readonly].textarea, input.input.readonly, input.readonly.select, input.readonly.textarea, textarea.readonly, textarea.input[readonly], textarea[readonly].select, textarea[readonly].textarea, textarea.input.readonly, textarea.readonly.select, textarea.readonly.textarea, button.readonly, button.input[readonly], button[readonly].select, button[readonly].textarea, button.input.readonly, button.readonly.select, button.readonly.textarea, label.checkbox.readonly, label.checkbox.input[readonly], label.checkbox[readonly].select, label.checkbox[readonly].textarea {
   background: var(--background) !important;
   border-color: var(--gray_dark) !important;
+}
+
+label.checkbox.readonly::after, label.checkbox.input[readonly]::after, label.checkbox[readonly].select::after, label.checkbox[readonly].textarea::after {
+  background-color: var(--gray_dark);
+  opacity: 0.7;
 }
 
 .text-ellipsis {

@@ -31,13 +31,24 @@ $weights: (
 .readonly {
   color: var(--text_color) !important;
   cursor: initial !important;
-  &select, &input, &textarea, &button {
+  opacity: 1 !important;
+}
+
+select, input, textarea, button, label.checkbox {
+  &.readonly {
     background: var(--background) !important;
     border-color: var(--gray_dark) !important;
   }
 }
 
-
+label.checkbox {
+  &.readonly {
+    &::after {
+      background-color: var(--gray_dark);
+      opacity: 0.7;
+    }
+  }
+}
 
 .text-ellipsis {
   overflow: hidden;
