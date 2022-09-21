@@ -38919,20 +38919,15 @@ a {
   opacity: 0.3;
 }
 
-.readonly, .input[readonly], [readonly].select, [readonly].textarea, .input.readonly, .readonly.select, .readonly.textarea {
+.readonly, .wrapper-selectors input[readonly] + label.checkbox, .wrapper-selectors input.readonly + label.checkbox, .input[readonly], [readonly].select, [readonly].textarea, .input.readonly, .readonly.select, .readonly.textarea {
   color: var(--text_color) !important;
   cursor: initial !important;
   opacity: 1 !important;
 }
 
-select.readonly, select.input[readonly], select[readonly].select, select[readonly].textarea, select.input.readonly, select.readonly.select, select.readonly.textarea, input.readonly, input.input[readonly], input[readonly].select, input[readonly].textarea, input.input.readonly, input.readonly.select, input.readonly.textarea, textarea.readonly, textarea.input[readonly], textarea[readonly].select, textarea[readonly].textarea, textarea.input.readonly, textarea.readonly.select, textarea.readonly.textarea, button.readonly, button.input[readonly], button[readonly].select, button[readonly].textarea, button.input.readonly, button.readonly.select, button.readonly.textarea, label.checkbox.readonly, label.checkbox.input[readonly], label.checkbox[readonly].select, label.checkbox[readonly].textarea {
+select.readonly, select.input[readonly], select[readonly].select, select[readonly].textarea, select.input.readonly, select.readonly.select, select.readonly.textarea, input.readonly, input.input[readonly], input[readonly].select, input[readonly].textarea, input.input.readonly, input.readonly.select, input.readonly.textarea, textarea.readonly, textarea.input[readonly], textarea[readonly].select, textarea[readonly].textarea, textarea.input.readonly, textarea.readonly.select, textarea.readonly.textarea, button.readonly, button.input[readonly], button[readonly].select, button[readonly].textarea, button.input.readonly, button.readonly.select, button.readonly.textarea {
   background: var(--background) !important;
   border-color: var(--gray_dark) !important;
-}
-
-label.checkbox.readonly::after, label.checkbox.input[readonly]::after, label.checkbox[readonly].select::after, label.checkbox[readonly].textarea::after {
-  background-color: var(--gray_dark);
-  opacity: 0.7;
 }
 
 .text-ellipsis {
@@ -45791,8 +45786,15 @@ label.checkbox.readonly::after, label.checkbox.input[readonly]::after, label.che
 .wrapper-selectors input:checked[disabled] + label.checkbox, .wrapper-selectors input:checked[disabled] + label.radio, .wrapper-selectors input:checked.disabled + label.checkbox, .wrapper-selectors .collapse.collapse-disabled input.collapse-title:checked + label.checkbox, .collapse.collapse-disabled .wrapper-selectors input.collapse-title:checked + label.checkbox, .wrapper-selectors input:checked.disabled + label.radio, .wrapper-selectors .collapse.collapse-disabled input.collapse-title:checked + label.radio, .collapse.collapse-disabled .wrapper-selectors input.collapse-title:checked + label.radio {
   background-color: var(--green_light) !important;
 }
+.wrapper-selectors input:checked[readonly] + label.checkbox, .wrapper-selectors input:checked[readonly] + label.radio, .wrapper-selectors input:checked.readonly + label.checkbox, .wrapper-selectors input:checked.readonly + label.radio {
+  background-color: var(--green_light) !important;
+}
 .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .wrapper-selectors .collapse.collapse-disabled input.collapse-title + label.checkbox, .collapse.collapse-disabled .wrapper-selectors input.collapse-title + label.checkbox {
   cursor: not-allowed !important;
+}
+.wrapper-selectors input[readonly] + label.checkbox, .wrapper-selectors input.readonly + label.checkbox {
+  pointer-events: none;
+  cursor: default !important;
 }
 .wrapper-selectors.toggle input + label.checkbox {
   width: 48px;

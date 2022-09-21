@@ -76,12 +76,26 @@
           background-color: var(--green_light) !important;
         }
       }
+      &[readonly],
+      &.readonly {
+        & + label.checkbox,  + label.radio {
+          background-color: var(--green_light) !important;
+        }
+      }
     }
     &[disabled],
     &.disabled {
       & + label.checkbox {
         cursor: not-allowed !important;
         @extend .disabled; 
+      }
+    }
+    &[readonly],
+    &.readonly {
+      & + label.checkbox {
+        @extend .readonly;
+        pointer-events: none;
+        cursor: default !important;
       }
     }
   }
