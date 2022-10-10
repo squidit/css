@@ -38861,6 +38861,7 @@ body {
   background-color: var(--background);
   color: var(--text_color);
   overflow-x: hidden;
+  min-height: -webkit-fill-available;
 }
 
 a {
@@ -38869,6 +38870,29 @@ a {
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
+}
+
+:root {
+  --safe-area-inset-top: env(safe-area-inset-top);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --arrow_url: url("https://hub-cdn.squidit.com.br/arrow_down.png");
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --arrow_url: url("https://hub-cdn.squidit.com.br/arrow_down_white.png");
+  }
+}
+body.dark {
+  --arrow_url: url("https://hub-cdn.squidit.com.br/arrow_down_white.png") !important;
+}
+
+body.light {
+  --arrow_url: url("https://hub-cdn.squidit.com.br/arrow_down.png") !important;
 }
 
 .text-center {
