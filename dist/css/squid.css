@@ -33742,7 +33742,7 @@ readers do not read off random characters that represent icons */
     --text_color: var(--black_text);
     --background_third: var(--black_light, #495057);
     --shadow_color: #00000040;
-    --background_reset: var(--black-html);
+    --background_reset: #101010;
     --box_shadow: 0px 4px 20px 0px var(--shadow_color);
     --border_color: var(--black_border);
   }
@@ -33753,7 +33753,7 @@ body.dark {
   --text_color: var(--black_text) !important;
   --background_third: var(--black_light, #495057) !important;
   --shadow_color: #00000040 !important;
-  --background_reset: var(--black-html) !important;
+  --background_reset: #101010 !important;
   --box_shadow: 0px 4px 20px 0px var(--shadow_color) !important;
   --border_color: var(--black_border) !important;
 }
