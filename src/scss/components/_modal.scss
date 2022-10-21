@@ -19,6 +19,9 @@
   flex-wrap: wrap;
   @extend .scrollbar;
   color: var(--text_color);
+  @media(max-width: 767px) {
+    padding: 0;
+  }
   &.open {
     opacity: 1;
     .modal-dialog {

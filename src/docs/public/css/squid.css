@@ -46218,6 +46218,11 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   flex-wrap: wrap;
   color: var(--text_color);
 }
+@media (max-width: 767px) {
+  .modal {
+    padding: 0;
+  }
+}
 .modal.open {
   opacity: 1;
 }
