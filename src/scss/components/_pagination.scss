@@ -23,11 +23,15 @@
       color: var(--pink);
       font-weight: 700;
     }
-    a {
+    a, button {
       color: inherit;
       font-size: inherit;
       cursor: inherit;
       padding: math.div($gutter, 2) $gutter;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: 0;
       i {
         font-size: 12px;
       }
