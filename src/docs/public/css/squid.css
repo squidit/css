@@ -46579,6 +46579,9 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background: var(--white);
   color: var(--black);
 }
+.toast * {
+  color: inherit;
+}
 
 .toast-text {
   display: inline-block;
@@ -46589,6 +46592,9 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .toast-text.clickable {
   cursor: pointer;
+}
+.toast-text * {
+  color: inherit;
 }
 
 .toast-close-button {

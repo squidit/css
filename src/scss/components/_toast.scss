@@ -77,6 +77,9 @@
     background: var(--white);
     color: var(--black);
   }
+  * {
+    color: inherit;
+  }
 }
 
 .toast-text {
@@ -87,6 +90,9 @@
   font-size: inherit;
   &.clickable {
     cursor: pointer;
+  }
+  * {
+    color: inherit;
   }
 }
 
