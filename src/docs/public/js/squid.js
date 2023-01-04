@@ -557,6 +557,12 @@ function tabify (element) {
   }
 }.call(this));
 
+window.onpopstate = (e) => {
+  if (window.Toast && window.Toast.element && !window.Toast.element.persistent && window.Toast.element.closeButton) {
+    window.Toast.element.closeButton.click()
+  }
+};
+
 (function () {
   'use strict'
   document.body.addEventListener('click', function (e) {

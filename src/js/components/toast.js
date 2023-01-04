@@ -299,3 +299,9 @@
     this.Toast = new Toast()
   }
 }.call(this));
+
+window.onpopstate = (e) => {
+  if (window.Toast && window.Toast.element && !window.Toast.element.persistent && window.Toast.element.closeButton) {
+    window.Toast.element.closeButton.click()
+  }
+};
