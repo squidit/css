@@ -38718,6 +38718,7 @@ body, html {
   display: block;
   position: relative;
   color: var(--text_color);
+  scroll-behavior: smooth;
 }
 
 body.block {
