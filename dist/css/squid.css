@@ -45116,7 +45116,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 0.75rem 1rem;
 }
 .button.button-sm {
-  padding: 0.25rem 1rem;
+  padding: 0.2rem 1rem;
   font-size: 0.85rem;
 }
 .button:hover, .button:focus {
