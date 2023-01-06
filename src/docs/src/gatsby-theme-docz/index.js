@@ -10,23 +10,23 @@ const themeConfig = {
     ...defaultTheme.colors,
     white: '#fff',
     primary: 'var(--pink)',
-    text: 'var(--black)',
+    text: 'var(--text_color)',
     muted: 'var(--gray)',
     link: 'var(--pink)',
-    background: '#FFF',
-    border: 'var(--gray_light)',
+    background: 'var(--background_secondary)',
+    border: 'var(--border_color)',
     sidebar: {
-      bg: '#fff',
-      navGroup: 'var(--black)',
-      navLink: 'var(--gray_dark)',
+      bg: 'var(--background_secondary)',
+      navGroup: 'var(--text_color)',
+      navLink: 'var(--text_color)',
       navLinkActive: 'var(--pink)',
-      tocLink: 'var(--gray_dark)',
+      tocLink: 'var(--text_color)',
       tocLinkActive: 'var(--pink)',
     },
     header: {
-      bg:  'var(--white)',
-      text: 'var(--black)',
-      border: 'var(--gray_light)',
+      bg:  'var(--background_secondary)',
+      text: 'var(--text_color)',
+      border: 'var(--border_color)',
       button: {
         bg: 'var(--black)',
         color: 'var(--white)',
@@ -37,22 +37,22 @@ const themeConfig = {
         ...defaultTheme.colors.modes.dark,
         primary: 'var(--pink)',
         link: 'var(--pink)',
-        text: 'var(--gray_light)',
+        text: 'var(--text_color)',
         muted: 'var(--gray)',
-        border: 'var(--gray_dark)',
-        background: 'var(--gray_dark)',
+        border: 'var(--border_color)',
+        background: 'var(--background_secondary)',
         sidebar: {
-          bg: 'var(--black)',
-          navGroup: 'var(--white)',
-          navLink: '#fff',
+          bg: 'var(--background_secondary)',
+          navGroup: 'var(--text_color)',
+          navLink: 'var(--text_color)',
           navLinkActive: 'var(--pink)',
-          tocLink: 'var(--white)',
+          tocLink: 'var(--text_color)',
           tocLinkActive: 'var(--pink)',
         },
         header: {
-          bg:  'var(--black)',
-          text: '#fff',
-          border: 'var(--gray_dark)',
+          bg:  'var(--background_secondary)',
+          text: 'var(--text_color)',
+          border: 'var(--border_color)',
           button: {
             bg: 'var(--white)',
             color: 'var(--black)',
@@ -75,9 +75,9 @@ const Theme = ({ children }) => {
   }
   const style = `
     .grid-box {
-      border: 1px solid var(--gray);
+      border: 1px solid var(--border_color);
       padding: 1rem;
-      background: var(--white);
+      background: var(--background_secondary);
       border-radius: 5px;
     }
     div[data-testid="header"]{
@@ -162,12 +162,12 @@ const Theme = ({ children }) => {
     }
     .dropdown-divider {
       margin: .5rem 0 !important;
-      border-color: var(--gray_light);
+      border-color: var(--border-color);
     }
     .table>tfoot tr td,
     .table>tfoot tr th {
       padding: 1rem .5rem !important;
-      color: var(--black);
+      color: var(--text_color);
     }
     .dropdown li:last-child {
       margin: 0 0 -15px 0;

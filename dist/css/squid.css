@@ -46133,6 +46133,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   opacity: 1;
   max-height: 9999px;
 }
+.collapse.collapse-loading .collapse-body {
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  padding: 0;
+}
 .collapse.collapse-disabled .collapse-body {
   opacity: 0;
   height: auto;
