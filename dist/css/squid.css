@@ -33706,11 +33706,13 @@ readers do not read off random characters that represent icons */
   --tiktok_dark: black;
   --border_color: var(--gray_light, #98a0a8);
   --black_background: var(--black_medium, #3b3b3b);
-  --black_text: var(--white-html, #ffffff);
+  --black_text: var(--white, #F6F6F8);
+  --black_title: var(--white-html, #FFFFFF);
   --black_secondary: var(--black, #212529);
   --black_border: var(--gray_dark, #707981);
   --white_background: var(--white, #f6f6f8);
   --white_text: var(--gray_dark, #707981);
+  --white_title: var(--black_medium, #3b3b3b);
   --white_secondary: var(--white-html, #ffffff);
   --white_border: var(--gray_light, #98a0a8);
   --background: var(--white);
@@ -33729,7 +33731,7 @@ readers do not read off random characters that represent icons */
     --background: var(--white);
     --background_secondary: var(--white_secondary);
     --text_color: var(--white_text);
-    --title_color: var(--black_medium);
+    --title_color: var(--white_title);
     --background_third: var(--white_background);
     --background_reset: var(--white-html);
     --shadow_color: #64647680;
@@ -33742,7 +33744,7 @@ readers do not read off random characters that represent icons */
     --background: var(--black_background);
     --background_secondary: var(--black_secondary);
     --text_color: var(--black_text);
-    --title_color: var(--black_text);
+    --title_color: var(--black_title);
     --background_third: var(--black_light, #495057);
     --shadow_color: #00000040;
     --background_reset: #101010;
@@ -33754,7 +33756,7 @@ body.dark {
   --background: var(--black_background) !important;
   --background_secondary: var(--black_secondary) !important;
   --text_color: var(--black_text) !important;
-  --title_color: var(--black_text) !important;
+  --title_color: var(--black_title) !important;
   --background_third: var(--black_light, #495057) !important;
   --shadow_color: #00000040 !important;
   --background_reset: #101010 !important;
@@ -33766,7 +33768,7 @@ body.light {
   --background: var(--white) !important;
   --background_secondary: var(--white_secondary) !important;
   --text_color: var(--white_text) !important;
-  --title_color: var(--black_medium) !important;
+  --title_color: var(--white_title) !important;
   --background_third: var(--white_background) !important;
   --background_reset: var(--white-html) !important;
   --shadow_color: #64647680 !important;
