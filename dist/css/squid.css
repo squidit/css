@@ -46216,6 +46216,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 
 .modal {
+  min-height: fit-content;
+  min-width: initial;
   position: fixed;
   top: 0;
   left: 0;
