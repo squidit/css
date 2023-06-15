@@ -33653,6 +33653,9 @@ readers do not read off random characters that represent icons */
   --green: #299C39;
   --green_light: #6cd87b;
   --green_dark: #0e3714;
+  --aqua: #12ACA2;
+  --aqua_light: #51ede3;
+  --aqua_dark: #063935;
   --yellow: #F6AB2F;
   --yellow_light: #fbdca9;
   --yellow_dark: #9f6507;
@@ -33711,8 +33714,8 @@ readers do not read off random characters that represent icons */
   --black_secondary: var(--black, #212529);
   --black_border: var(--gray_dark, #707981);
   --white_background: var(--white, #f6f6f8);
-  --white_text: var(--gray_dark, #707981);
-  --white_title: var(--black_medium, #3b3b3b);
+  --white_text: var(--black_medium, #3b3b3b);
+  --white_title: var(--black, #212529);
   --white_secondary: var(--white-html, #ffffff);
   --white_border: var(--gray_light, #98a0a8);
   --background: var(--white);
@@ -34040,6 +34043,42 @@ body.light {
 
 .border-green-dark {
   border-color: #0e3714 !important;
+}
+
+.aqua {
+  color: #12ACA2 !important;
+}
+
+.background-aqua {
+  background-color: #12ACA2 !important;
+}
+
+.border-aqua {
+  border-color: #12ACA2 !important;
+}
+
+.aqua-light {
+  color: #51ede3 !important;
+}
+
+.background-aqua-light {
+  background-color: #51ede3 !important;
+}
+
+.border-aqua-light {
+  border-color: #51ede3 !important;
+}
+
+.aqua-dark {
+  color: #063935 !important;
+}
+
+.background-aqua-dark {
+  background-color: #063935 !important;
+}
+
+.border-aqua-dark {
+  border-color: #063935 !important;
 }
 
 .yellow {
@@ -45324,6 +45363,24 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .button.button-green.inverted:hover, .button.button-green.inverted:focus {
   background-color: var(--green);
   border-color: var(--green);
+  color: var(--background);
+}
+.button.button-aqua {
+  background-color: var(--aqua);
+  border-color: var(--aqua);
+}
+.button.button-aqua:hover, .button.button-aqua:focus {
+  background-color: var(--aqua_dark);
+  border-color: var(--aqua_dark);
+}
+.button.button-aqua.inverted {
+  color: var(--aqua);
+  background-color: var(--background);
+  border-color: var(--aqua);
+}
+.button.button-aqua.inverted:hover, .button.button-aqua.inverted:focus {
+  background-color: var(--aqua);
+  border-color: var(--aqua);
   color: var(--background);
 }
 .button.button-yellow {

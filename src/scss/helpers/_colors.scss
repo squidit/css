@@ -15,6 +15,7 @@ $pink:       #E94589 !default;
 $lilac:      #7C70D1 !default;
 $cian:       #5ACAED !default;
 $green:      #299C39 !default;
+$aqua:       #12ACA2 !default;
 $yellow:     #F6AB2F !default;
 $red:        #E02D2D !default;
 $red-bl:     #FF4F33 !default;
@@ -75,6 +76,11 @@ $colors: (
     base: $green,
     light: lighten($green, $amoutLigthen),
     dark: darken($green, $amountDarken)
+  ),
+  aqua: (
+    base: $aqua,
+    light: lighten($aqua, $amoutLigthen),
+    dark: darken($aqua, $amountDarken)
   ),
   yellow: (
     base: $yellow,
@@ -182,8 +188,8 @@ $colors: (
   --black_secondary: var(--black, #212529);
   --black_border: var(--gray_dark, #707981);
   --white_background: var(--white, #f6f6f8);
-  --white_text: var(--gray_dark, #707981);
-  --white_title: var(--black_medium, #3b3b3b);
+  --white_text: var(--black_medium, #3b3b3b);
+  --white_title: var(--black, #212529);
   --white_secondary: var(--white-html, #ffffff);
   --white_border: var(--gray_light, #98a0a8);
   --background: var(--white);
