@@ -46707,6 +46707,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 
 .tooltip-left-center .tooltip-arrow {
   right: -0.4rem;
+  top: calc(50% - 0.25rem);
 }
 .tooltip-left-center .tooltip-arrow::before {
   left: 5px;
@@ -46723,6 +46724,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 
 .tooltip-right-center .tooltip-arrow {
   left: -0.4rem;
+  top: calc(50% - 0.25rem);
 }
 .tooltip-right-center .tooltip-arrow::before {
   right: 5px;
