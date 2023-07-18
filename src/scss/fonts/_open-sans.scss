@@ -1,0 +1,323 @@
+/* Open Sans Condensed Light */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Open Sans Condensed Regular */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Open Sans Condensed Medium */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Open Sans Condensed SemiBold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Open Sans Condensed Bold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Open Sans Condensed ExtraBold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Open Sans SemiCondensed Light */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Open Sans SemiCondensed Regular */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Open Sans SemiCondensed Medium */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Open Sans SemiCondensed SemiBold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Open Sans SemiCondensed Bold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Open Sans SemiCondensed ExtraBold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Open Sans Light */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Open Sans Regular */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Open Sans Medium */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Open Sans SemiBold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Open Sans Bold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Open Sans ExtraBold */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Open Sans Condensed Light Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Open Sans Condensed Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Open Sans Condensed Medium Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Open Sans Condensed SemiBold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Open Sans Condensed Bold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Open Sans Condensed ExtraBold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_Condensed-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Open Sans SemiCondensed Light Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Open Sans SemiCondensed Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Open Sans SemiCondensed Medium Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Open Sans SemiCondensed SemiBold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Open Sans SemiCondensed Bold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Open Sans SemiCondensed ExtraBold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans_SemiCondensed-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Open Sans Light Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Open Sans Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Open Sans Medium Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Open Sans SemiBold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Open Sans Bold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Open Sans ExtraBold Italic */
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url('#{$fontsFolderPath}/open-sans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
