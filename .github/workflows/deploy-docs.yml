@@ -5,12 +5,13 @@ on:
       - master
 jobs:
   deploy:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: "14"
       - name: Obtain GitHub App Installation Access Token
         id: githubAppAuth
         run: |
@@ -25,8 +26,8 @@ jobs:
             "https://api.github.com/repos/$GITHUB_REPOSITORY/statuses/$GITHUB_SHA?access_token=$GITHUB_TOKEN"
       - name: Setup Auth ENV
         env:
-          email: 'developers@squidit.com.br'
-          username: 'squidit'
+          email: "developers@squidit.com.br"
+          username: "squidit"
         run: |
           git config --global credential.helper store
           echo "https://${{ steps.githubAppAuth.outputs.token }}:x-oauth-basic@github.com" > ~/.git-credentials

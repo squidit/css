@@ -4,6 +4,7 @@ on:
     types: [created]
 jobs:
   build:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -11,8 +12,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "16"
+          registry-url: "https://registry.npmjs.org"
       - name: Install dependencies and build 🔧
         run: npm install && npm run dist
       - name: Publish package on NPM 📦
