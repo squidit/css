@@ -46517,6 +46517,17 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
     margin: 0 1rem;
   }
 }
+.modal .modal-dialog.modal-xl {
+  width: calc(100vw - 120px);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .modal .modal-dialog.modal-xl {
+    width: auto;
+    margin: 0 1rem;
+  }
+}
 
 .button-close {
   color: var(--text_color);

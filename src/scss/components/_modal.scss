@@ -58,6 +58,15 @@
         margin: 0 $gutter;
       }
     }
+    &.modal-xl {
+      width: calc(100vw - 120px);
+      max-width: 1300px;
+      margin: 0 auto;
+      @media (max-width: 991px) {
+        width: auto;
+        margin: 0 $gutter;
+      }
+    }
   }
 }
 
