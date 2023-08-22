@@ -45335,7 +45335,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 1rem;
 }
 .button.button-lg {
-  padding: calc(0.75rem - 0.5px) 1rem;
+  padding: 0.75rem 1rem;
 }
 .button.button-sm {
   padding: 0.2rem 1rem;
