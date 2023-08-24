@@ -1,4 +1,5 @@
 // Global Variables or functions here
+
 function initAccordion (element) {
   const collapses = [...element.children]
   let currentTabIndex = 0
@@ -293,6 +294,9 @@ function tabify (element) {
         className: ''
       },
       custom: {
+        className: ''
+      },
+      theme: {
         className: ''
       },
       error: {

@@ -38,6 +38,9 @@
       custom: {
         className: ''
       },
+      theme: {
+        className: ''
+      },
       error: {
         className: '',
         duration: 10000,

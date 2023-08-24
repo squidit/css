@@ -77,6 +77,13 @@
     background: var(--white);
     color: var(--black);
   }
+  &.theme {
+    background: var(--text_color);
+    color: var(--background_secondary);
+    * {
+      color: inherit;
+    }
+  }
   * {
     color: inherit;
   }
