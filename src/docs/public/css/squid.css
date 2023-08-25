@@ -46716,7 +46716,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   margin-top: calc(1rem - 4px);
   transition: all 0.3s ease;
-  background: var(--gray_light);
+  background: var(--border_color);
 }
 .tabs-header.line-style li:hover {
   color: var(--border_color);

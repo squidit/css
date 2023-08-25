@@ -76,7 +76,7 @@
         position: relative;
         margin-top: calc(1rem - 4px);
         transition: $transition;
-        background: var(--gray_light);
+        background: var(--border_color);
       }
       &:hover {
         color: var(--border_color);
