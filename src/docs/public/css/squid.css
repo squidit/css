@@ -46705,7 +46705,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   justify-content: center;
   flex-direction: column-reverse;
   border: none;
-  border-color: var(--gray_light);
 }
 .tabs-header.line-style li::before {
   content: " ";
@@ -46717,6 +46716,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   margin-top: calc(1rem - 4px);
   transition: all 0.3s ease;
+  background: var(--border_color);
 }
 .tabs-header.line-style li:hover {
   color: var(--border_color);

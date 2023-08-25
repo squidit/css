@@ -66,7 +66,6 @@
       justify-content: center;
       flex-direction: column-reverse;
       border: none;
-      border-color: var(--gray_light);
       &::before {
         content: " ";
         border-radius: 5px 5px 0 0;
@@ -77,6 +76,7 @@
         position: relative;
         margin-top: calc(1rem - 4px);
         transition: $transition;
+        background: var(--border_color);
       }
       &:hover {
         color: var(--border_color);
