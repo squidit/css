@@ -46691,12 +46691,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   font-weight: 700;
 }
 .tabs-header.line-style {
-  background: var(--background);
+  background: var(--transparent);
   border-radius: 5px;
   padding: 0;
 }
 .tabs-header.line-style li {
-  background: var(--background);
+  background: var(--transparent);
   border-radius: 0;
   color: var(--gray);
   position: relative;
@@ -46705,6 +46705,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   justify-content: center;
   flex-direction: column-reverse;
   border: none;
+  border-color: var(--gray_light);
 }
 .tabs-header.line-style li::before {
   content: " ";
@@ -46718,7 +46719,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   transition: all 0.3s ease;
 }
 .tabs-header.line-style li:hover {
-  color: var(--border-color);
+  color: var(--border_color);
 }
 .tabs-header.line-style li:hover::before {
   background: var(--background_secondary);
