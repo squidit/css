@@ -53,11 +53,11 @@
     }
   }
   &.line-style {
-    background: var(--background);
+    background: var(--transparent);
     border-radius: 5px;
     padding: 0;
     li {
-      background: var(--background);
+      background: var(--transparent);
       border-radius: 0;
       color: var(--gray);
       position: relative;
@@ -66,6 +66,7 @@
       justify-content: center;
       flex-direction: column-reverse;
       border: none;
+      border-color: var(--gray_light);
       &::before {
         content: " ";
         border-radius: 5px 5px 0 0;
@@ -78,7 +79,7 @@
         transition: $transition;
       }
       &:hover {
-        color: var(--border-color);
+        color: var(--border_color);
         &::before {
           background: var(--background_secondary);
         }

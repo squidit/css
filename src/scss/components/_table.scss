@@ -1,10 +1,12 @@
 @use "sass:math";
+
 .table-overflow {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   @extend .scrollbar;
 }
+
 .table {
   width: 100%;
   overflow: auto;
@@ -14,22 +16,26 @@
   border-collapse: collapse;
   @extend .scrollbar;
   color: var(--text_color);
+
   caption {
     caption-side: top;
     text-align: left;
     margin-bottom: math.div($gutter, 2);
+
     &.caption-bottom {
       caption-side: bottom;
       margin-bottom: 0;
       margin-top: math.div($gutter, 2);
     }
   }
+
   tr {
     position: relative;
     border-spacing: 0;
     border: none;
     transform: scale(1);
   }
+
   .wrapper-buttons {
     transition: $transition;
     position: absolute;
@@ -44,6 +50,7 @@
     height: calc(100% - 8px);
     background-color: var(--background);
     border: none;
+
     @media (max-width: map-get($grid-breakpoints, lg)) {
       position: initial;
       top: initial;
@@ -57,22 +64,28 @@
       padding-bottom: $gutter;
     }
   }
+
   &.header-stick {
-    > thead {
+    >thead {
       tr {
-        th, td {
+
+        th,
+        td {
           position: sticky;
           top: 0;
         }
       }
     }
   }
-  > thead {
+
+  >thead {
     vertical-align: middle;
     border: none;
     position: relative;
     overflow: hidden;
-    th, td {
+
+    th,
+    td {
       background-color: var(--background);
       font-size: 14px;
       line-height: 1.5;
@@ -81,76 +94,102 @@
       padding: $gutter math.div($gutter, 2);
       border: none;
       border-bottom: 4px solid var(--background);
+
       &:first-child {
         border-radius: 5px 0 0 0;
       }
-      &:last-child, &.last-col {
+
+      &:last-child,
+      &.last-col {
         border-radius: 0 5px 0 0;
       }
     }
   }
-  > tbody {
+
+  >tbody {
     vertical-align: middle;
     position: relative;
     color: var(--text_color);
-    &> tr {
+
+    &>tr {
       background-color: var(--background);
       border-bottom: 1px solid var(--border_color);
       transition: $transition;
+
       &:hover {
         .wrapper-buttons {
           opacity: 1;
         }
       }
-      td, th {
+
+      td,
+      th {
         text-align: center;
         padding: $gutter math.div($gutter, 2);
       }
+
       &:last-child {
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border_color);
       }
     }
   }
-  > tfoot {
+
+  >tfoot {
     vertical-align: middle;
     position: relative;
+
     tr {
       background-color: var(--background);
       border-bottom: 1px solid var(--border_color);
-      td, th {
+
+      td,
+      th {
         padding: $gutter math.div($gutter, 2);
       }
     }
   }
+
   &.table-responsive {
-    @media (max-width: map-get($grid-breakpoints, lg))  {
+    @media (max-width: map-get($grid-breakpoints, lg)) {
       display: block;
-      thead, tbody, th, td, tr { 
-        display: block; 
+
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
       }
-      thead tr { 
+
+      thead tr {
         position: absolute;
         top: -9999px;
         left: -9999px;
       }
+
       tr {
         border: 1px solid var(--border_color);
+
         &:hover {
           background-color: inherit;
         }
+
         &:last-child {
-          border-bottom: 1px solid var(--border_color); 
+          border-bottom: 1px solid var(--border_color);
         }
       }
-      tr:nth-of-type(odd) { 
-        background: var(--white); 
+
+      tr:nth-of-type(odd) {
+        background: var(--white);
       }
-      td { 
+
+      td {
         border: none;
         position: relative;
         padding-left: 50% !important;
         text-align: left;
       }
+
       td:before {
         content: attr(data-label);
         position: absolute;
@@ -167,11 +206,14 @@
         white-space: nowrap;
         font-weight: 700;
       }
-      > tfoot {
+
+      >tfoot {
         display: none;
       }
+
       caption {
         display: block;
+
         &.caption-bottom {
           display: none;
         }
