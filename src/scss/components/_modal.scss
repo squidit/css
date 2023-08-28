@@ -85,6 +85,9 @@
   position: absolute;
   top: 0.85rem;
   right: math.div($gutter, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background-color: var(--background);
   }

@@ -46544,6 +46544,9 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: absolute;
   top: 0.85rem;
   right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .button-close:hover {
   background-color: var(--background);
@@ -47229,4 +47232,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   height: 6px;
   border-radius: 50%;
   overflow: hidden;
+}
+.steps ul li span.pointer {
+  cursor: pointer;
 }
