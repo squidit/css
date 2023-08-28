@@ -1,0 +1,95 @@
+---
+name: Steps
+menu: Components
+route: /components/steps
+---
+
+# Steps
+
+Documentation for the Steps component.
+
+<div className="steps">
+  <ul>
+    <li className="old">
+      <span></span>
+    </li>
+    <li className="active">
+      <span></span>
+    </li>
+    <li>
+      <span></span>
+    </li>
+  </ul>
+</div>
+
+```html
+<div class="steps">
+  <ul>
+    <li class="old">
+      <span></span>
+    </li>
+    <li class="active">
+      <span></span>
+    </li>
+    <li>
+      <span></span>
+    </li>
+  </ul>
+</div>
+```
+
+## Change Color
+
+To change the color of the steps, you can use the `background-color` property on the `li` element with `old` class and `active` class with linear-gradient.
+
+<style type="text/css">
+  {`
+.steps.custom-color ul li.old {
+  background-color: black;
+}
+.steps.custom-color ul li.active {
+  background: linear-gradient(90deg, black 0%, black 50%, transparent 51%);
+}`}
+</style>
+<div className="steps custom-color">
+  <ul>
+    <li className="old">
+      <span></span>
+    </li>
+    <li className="active">
+      <span></span>
+    </li>
+    <li>
+      <span></span>
+    </li>
+  </ul>
+</div>
+
+```css
+.steps.custom-color ul li.old {
+  background-color: black;
+}
+.steps.custom-color ul li.active {
+  background: linear-gradient(90deg, black 0%, black 50%, transparent 51%);
+}
+```
+
+```scss
+.steps.custom-color {
+  ul {
+    li {
+      &.old {
+        background-color: black;
+      }
+      &.active {
+        background: linear-gradient(
+          90deg,
+          black 0%,
+          black 50%,
+          transparent 51%
+        );
+      }
+    }
+  }
+}
+```

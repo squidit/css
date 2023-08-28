@@ -46691,12 +46691,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   font-weight: 700;
 }
 .tabs-header.line-style {
-  background: var(--background);
+  background: var(--transparent);
   border-radius: 5px;
   padding: 0;
 }
 .tabs-header.line-style li {
-  background: var(--background);
+  background: var(--transparent);
   border-radius: 0;
   color: var(--gray);
   position: relative;
@@ -46716,9 +46716,10 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   margin-top: calc(1rem - 4px);
   transition: all 0.3s ease;
+  background: var(--border_color);
 }
 .tabs-header.line-style li:hover {
-  color: var(--border-color);
+  color: var(--border_color);
 }
 .tabs-header.line-style li:hover::before {
   background: var(--background_secondary);
@@ -47053,7 +47054,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
     padding-bottom: 1rem;
   }
 }
-.table.header-stick > thead tr th, .table.header-stick > thead tr td {
+.table.header-stick > thead tr th,
+.table.header-stick > thead tr td {
   position: sticky;
   top: 0;
 }
@@ -47063,7 +47065,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   overflow: hidden;
 }
-.table > thead th, .table > thead td {
+.table > thead th,
+.table > thead td {
   background-color: var(--background);
   font-size: 14px;
   line-height: 1.5;
@@ -47073,10 +47076,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   border: none;
   border-bottom: 4px solid var(--background);
 }
-.table > thead th:first-child, .table > thead td:first-child {
+.table > thead th:first-child,
+.table > thead td:first-child {
   border-radius: 5px 0 0 0;
 }
-.table > thead th:last-child, .table > thead th.last-col, .table > thead td:last-child, .table > thead td.last-col {
+.table > thead th:last-child, .table > thead th.last-col,
+.table > thead td:last-child,
+.table > thead td.last-col {
   border-radius: 0 5px 0 0;
 }
 .table > tbody {
@@ -47092,12 +47098,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .table > tbody > tr:hover .wrapper-buttons {
   opacity: 1;
 }
-.table > tbody > tr td, .table > tbody > tr th {
+.table > tbody > tr td,
+.table > tbody > tr th {
   text-align: center;
   padding: 1rem 0.5rem;
 }
 .table > tbody > tr:last-child {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border_color);
 }
 .table > tfoot {
   vertical-align: middle;
@@ -47107,14 +47114,19 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--background);
   border-bottom: 1px solid var(--border_color);
 }
-.table > tfoot tr td, .table > tfoot tr th {
+.table > tfoot tr td,
+.table > tfoot tr th {
   padding: 1rem 0.5rem;
 }
 @media (max-width: 992px) {
   .table.table-responsive {
     display: block;
   }
-  .table.table-responsive thead, .table.table-responsive tbody, .table.table-responsive th, .table.table-responsive td, .table.table-responsive tr {
+  .table.table-responsive thead,
+.table.table-responsive tbody,
+.table.table-responsive th,
+.table.table-responsive td,
+.table.table-responsive tr {
     display: block;
   }
   .table.table-responsive thead tr {
@@ -47165,4 +47177,56 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   .table.table-responsive caption.caption-bottom {
     display: none;
   }
+}
+
+.steps {
+  padding: 1rem;
+  background: var(--background);
+}
+.steps ul {
+  padding: 0;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--border_color);
+  position: relative;
+  padding: 0.2rem;
+}
+.steps ul li {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  overflow: hidden;
+}
+.steps ul li:first-child {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.steps ul li:last-child {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.steps ul li.active {
+  background: linear-gradient(90deg, var(--pink) 0%, var(--pink) 50%, transparent 51%);
+}
+.steps ul li.old {
+  background: var(--pink);
+}
+.steps ul li span {
+  display: block;
+  margin: 0;
+  background: var(--background);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  overflow: hidden;
 }
