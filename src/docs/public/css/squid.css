@@ -40588,6 +40588,10 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   border: 0 !important;
 }
 
+.visibility-hidden-force {
+  visibility: hidden !important;
+}
+
 .position-static {
   position: static !important;
 }
