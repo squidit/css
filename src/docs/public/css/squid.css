@@ -46084,6 +46084,15 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .wrapper-selectors input:checked[readonly] + label.checkbox, .wrapper-selectors input:checked[readonly] + label.radio, .wrapper-selectors input:checked.readonly + label.checkbox, .wrapper-selectors input:checked.readonly + label.radio {
   background-color: var(--green_light) !important;
 }
+.wrapper-selectors input[indeterminate] + label.checkbox {
+  background-color: var(--green);
+}
+.wrapper-selectors input[indeterminate] + label.checkbox::after {
+  line-height: 16px;
+  content: "—";
+  font-weight: 900;
+  opacity: 1;
+}
 .wrapper-selectors input[disabled] + label.checkbox, .wrapper-selectors input.disabled + label.checkbox, .wrapper-selectors .collapse.collapse-disabled input.collapse-title + label.checkbox, .collapse.collapse-disabled .wrapper-selectors input.collapse-title + label.checkbox {
   cursor: not-allowed !important;
 }

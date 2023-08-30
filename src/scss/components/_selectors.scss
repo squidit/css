@@ -83,6 +83,17 @@
         }
       }
     }
+    &[indeterminate] {
+      & + label.checkbox {
+        background-color: var(--green);
+        &::after {
+          line-height: 16px;
+          content: "\2014";
+          font-weight: 900;
+          opacity: 1;
+        }
+      }
+    }
     &[disabled],
     &.disabled {
       & + label.checkbox {
