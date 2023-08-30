@@ -42,6 +42,19 @@
   &.disabled {
     @extend .disabled;
   }
+  &::-webkit-calendar-picker-indicator {
+    background-color: var(--gray_light);
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    transition: var(--transition);
+    color: var(--black);
+    &:hover {
+      background-color: var(--white);
+    }
+  }
 }
 
 .textarea {

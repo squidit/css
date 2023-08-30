@@ -45917,6 +45917,20 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .input.valid:focus, .valid.select:focus, .valid.textarea:focus {
   box-shadow: 0px 0px 0px 1px var(--green);
 }
+.input::-webkit-calendar-picker-indicator, .select::-webkit-calendar-picker-indicator, .textarea::-webkit-calendar-picker-indicator {
+  background-color: var(--gray_light);
+  border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  transition: var(--transition);
+  color: var(--black);
+}
+.input::-webkit-calendar-picker-indicator:hover, .select::-webkit-calendar-picker-indicator:hover, .textarea::-webkit-calendar-picker-indicator:hover {
+  background-color: var(--white);
+}
+
 .textarea {
   min-height: 80px;
   resize: none;
