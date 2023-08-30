@@ -83,7 +83,8 @@
         }
       }
     }
-    &[indeterminate] {
+    &[indeterminate],
+    &.indeterminate {
       & + label.checkbox {
         background-color: var(--green);
         &::after {
