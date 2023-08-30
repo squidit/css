@@ -1,6 +1,6 @@
 {
   "name": "@squidit/css",
-  "version": "1.4.56",
+  "version": "1.4.57",
   "scripts": {
     "prepare": "npm install -g husky eslint sass gulp uglify-js && husky install",
     "start": "gulp watch",

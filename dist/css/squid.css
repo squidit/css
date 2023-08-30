@@ -46114,7 +46114,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   appearance: none;
   width: 100%;
   height: 10px;
-  background: var(--background);
+  background: var(--border_color);
   outline: none;
   opacity: 0.9;
   border-radius: 12px;
