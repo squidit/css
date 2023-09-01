@@ -1,12 +1,13 @@
 {
   "name": "@squidit/css",
-  "version": "1.4.59",
+  "version": "1.4.60",
   "scripts": {
     "prepare": "npm install -g husky eslint sass gulp uglify-js && husky install",
     "start": "gulp watch",
-    "css": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed && sass src/scss/squid-minor.scss:dist/css/squid-minor.min.css --style compressed",
+    "css": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed && sass src/scss/squid-minor.scss:dist/css/squid-minor.min.css --style compressed && sass src/scss/squid-components.scss:dist/css/squid-components.min.css --style compressed",
     "css:watch": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed --watch",
     "css:minor:watch": "sass src/scss/squid-minor.scss:dist/css/squid-minor.min.css --style compressed --watch",
+    "css:components:watch": "sass src/scss/squid-components.scss:dist/css/squid-components.min.css --style compressed --watch",
     "js": "uglifyjs src/js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
     "js:watch": "gulp watch-js",
     "dist": "npm-run-all --parallel css js",

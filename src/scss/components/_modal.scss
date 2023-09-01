@@ -35,7 +35,7 @@
     margin: 0 $gutter;
     transform: translate(0,-50px);
     &.modal-container {
-      @extend .container;
+      @extend .container !optional;
     }
     &.modal-sm {
       margin: 0 auto;
