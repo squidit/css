@@ -13,9 +13,9 @@ $icon-box: 16px !default;
   display: flex;
   flex-direction: column;
   width: 100%;
-  @extend .mb-2;
+  @extend .mb-2 !optional;
   &:last-child {
-    @extend .mb-0;
+    @extend .mb-0 !optional;
   }
   .collapse-title {
     margin: 0;
