@@ -28,6 +28,13 @@ export const NavLink = forwardRef(function NavLink({ item, ...props }, ref) {
     return null
   }
 
+  const click = (href) => {
+    if (typeof window === 'undefined') {
+      return ''
+    }
+    return window.location.href = href
+  }
+
   const to = item.route
   const headings = docs && getHeadings(to, docs)
   const isCurrent = item.route === current.route
@@ -36,12 +43,15 @@ export const NavLink = forwardRef(function NavLink({ item, ...props }, ref) {
 
   return (
     <Fragment>
-      <a
+      <span
         {...props}
-        href={to}
         sx={styles.link}
         className={isCurrent ? 'active' : ''}
+        onClick={() => click(to)}
+        onKeyDown={() => click(to)}
+        tabIndex={0}
         ref={ref}
+        role='button'
       />
       {showHeadings &&
         headings.map(heading => (

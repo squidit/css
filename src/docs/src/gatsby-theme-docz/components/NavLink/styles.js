@@ -3,6 +3,7 @@ export const link = {
   display: 'block',
   color: 'sidebar.navGroup',
   textDecoration: 'none',
+  cursor: 'pointer',
   fontSize: 2,
   '&.active': {
     color: 'sidebar.navLinkActive',
