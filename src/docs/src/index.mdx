@@ -7,12 +7,20 @@ route: /
 
 ## Install
 
+<p>You can easily install with npm</p>
 <p>
-  You can easily install with npm or download{" "}
+  or download{" "}
   <a href="https://github.com/squidit/css/releases" target="_blank">
     here
   </a>
 </p>
+
+or or use CDN `https://www.jsdelivr.com/package/gh/squidit/css`\*
+
+or use `https://css-cdn.squidit.com.br`\*
+
+-> Use the path from references above on CDN's to find the files. Exemple:
+`https://css-cdn.squidit.com.br/dist/css/squid.min.css`
 
 ```shell
 npm install @squidit/css --save
@@ -44,9 +52,9 @@ After install, import CSS into your global style:
 
 ```scss
 // Overwrite default font path
-$fontsFolderPath: "~@squidit/css/dist/fonts";
+$fontsFolderPath: "@squidit/css/dist/fonts";
 // Import all Framework Styles
-@import "~@squidit/css/src/scss/squid.scss";
+@import "@squidit/css/src/scss/squid.scss";
 ```
 
 And in your `index.{jsx,tsx}` on root just add:

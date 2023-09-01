@@ -40,7 +40,15 @@ See an exemple of all components [here](https://squidit.github.io/css/)
 
 ### Install
 
-You can easily install with npm or download [here](https://github.com/squidit/css/releases)
+You can easily install with npm
+
+or download [here](https://github.com/squidit/css/releases)
+
+or use CDN`https://www.jsdelivr.com/package/gh/squidit/css`*
+
+or use `https://css-cdn.squidit.com.br`*
+
+-> Use the path from references above on CDN's to find the files. Exemple: `https://css-cdn.squidit.com.br/dist/css/squid.min.css`
 
 `npm install @squidit/css --save`
 
