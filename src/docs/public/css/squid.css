@@ -33765,8 +33765,8 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.fasq.fa-squid:after {
-  content: "\eaeb";
+.fasq.fa-squid:before {
+  content: "\eaeb" !important;
 }
 
 /* Sass Vars */
@@ -38918,8 +38918,6 @@ template {
 
 * {
   font-family: "Open Sans", sans-serif;
-  min-width: 0;
-  min-height: 0;
 }
 
 hr {
@@ -38933,11 +38931,6 @@ figure {
 }
 
 body, html {
-  font-size: 14px;
-  line-height: 1.5;
-  max-width: 100%;
-  display: block;
-  position: relative;
   color: var(--text_color);
   scroll-behavior: smooth;
 }
@@ -39042,6 +39035,7 @@ h6,
   color: var(--title_color);
   margin: 0 auto 1rem;
   font-weight: 700;
+  width: 100%;
 }
 
 h1, .h1 {
@@ -39128,6 +39122,19 @@ body.dark {
 
 body.light {
   --arrow_url: url("https://hub-cdn.squidit.com.br/arrow_down.png") !important;
+}
+
+body, html {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+* {
+  min-width: 0;
+  min-height: 0;
 }
 
 .text-center {
