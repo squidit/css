@@ -62,39 +62,7 @@ If necessary remember to declare the fonts contained in the `/dist/fonts` folder
 
 #### Angular Install
 
-After using the `npm install` command, do the following:
-
-1. Add `css` and `js` files to your `angular.json`
-```js
-{
-  ...,
-  "assets": [
-    // This object inside assets Array
-    {
-      "glob": "**/*",
-      "input": "./node_modules/@squidit/css/dist/fonts",
-      "output": "./assets/fonts" // Output fonts
-    },
-    "src/assets" // Default assets
-  ],
-  "styles": [
-    "src/styles.scss"
-  ],
-  "scripts": [
-    "node_modules/@squidit/css/dist/js/squid.min.js" // JS includes
-  ]
-  ...
-}
-```
-
-2. Add to your `style.scss` main file
-```scss
-$fontsFolderPath: '/assets/fonts'; // Overwrite default font path
-@import '~@squidit/css/src/scss/squid.scss'; // Import all Framework Styles
-```
-
-Obs: Probably components that need javascript will not work as they are loaded in onload event. They need some implementation within Angular.
-A library for Angular will be developed soon.
+Use [NGX-CSS](https://github.com/squidit/ngx-css)
 
 #### React.js Install
 
