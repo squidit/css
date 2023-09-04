@@ -46793,7 +46793,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   transition: all 0.3s ease;
   padding: 1rem;
   width: 100%;
-  color: var(--black);
 }
 .tab-content.active {
   display: block;

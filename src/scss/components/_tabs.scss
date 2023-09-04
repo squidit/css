@@ -105,9 +105,6 @@
   &.tabs-width {
     li {
       flex: 1 0 0;
-      // @media (max-width: 991px) {
-      //   flex: 0 0 auto;
-      // }
     }
   }
 }
@@ -124,7 +121,6 @@
   transition: $transition;
   padding: $gutter;
   width: 100%;
-  color: var(--black);
   &.active {
     display: block;
     opacity: 1;
