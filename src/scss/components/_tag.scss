@@ -2,7 +2,6 @@
 .tag-box {
   border: 1px solid var(--border_color);
   transition: $transition;
-  cursor: pointer;
   padding: 0.25rem 0.5rem;
   font-weight: 700;
   position: relative;
@@ -12,6 +11,9 @@
   line-height: 1;
   &:hover {
     @extend .box-shadow;
+  }
+  &.pointer {
+    cursor: pointer;
   }
   &.readonly-tag {
     cursor: default;

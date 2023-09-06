@@ -46194,7 +46194,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tag-box {
   border: 1px solid var(--border_color);
   transition: all 0.3s ease;
-  cursor: pointer;
   padding: 0.25rem 0.5rem;
   font-weight: 700;
   position: relative;
@@ -46202,6 +46201,9 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--background);
   font-size: 0.9rem;
   line-height: 1;
+}
+.tag-box.pointer {
+  cursor: pointer;
 }
 .tag-box.readonly-tag {
   cursor: default;
