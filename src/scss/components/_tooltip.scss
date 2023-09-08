@@ -1,6 +1,6 @@
 @use "sass:math";
-$tooltip-arrow-width: 0.8rem !default;
-$tooltip-arrow-height: 0.4rem !default;
+$tooltip-arrow-width: 12px !default;
+$tooltip-arrow-height: 6px !default;
 .tooltip {
   z-index: 1080;
   position: absolute;
@@ -79,7 +79,7 @@ $tooltip-arrow-height: 0.4rem !default;
 .tooltip-center-bottom {
   .tooltip-arrow {
     top: -7px;
-    left: calc(50% - 0.8rem);
+    left: calc(50% - $tooltip-arrow-width);
     &::before {
       bottom: -1px;
       border-width: 0 math.div($tooltip-arrow-width, 2) $tooltip-arrow-height;
@@ -89,7 +89,7 @@ $tooltip-arrow-height: 0.4rem !default;
 .tooltip-center-top {
   .tooltip-arrow {
     bottom: -7px;
-    left: calc(50% - 0.8rem);
+    left: calc(50% - $tooltip-arrow-width);
     &::before {
       top: -1px;
       border-width: $tooltip-arrow-height math.div($tooltip-arrow-width, 2) 0;

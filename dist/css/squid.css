@@ -46718,6 +46718,9 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   cursor: pointer;
   transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
+.tabs-header li.sm {
+  padding: 0.35rem 1rem;
+}
 .tabs-header li:hover {
   color: var(--gray_dark);
   border-color: var(--background_third);
@@ -46744,6 +46747,9 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   justify-content: center;
   flex-direction: column-reverse;
   border: none;
+}
+.tabs-header.line-style li.sm {
+  padding: 0.35rem 1rem 0 1rem;
 }
 .tabs-header.line-style li::before {
   content: " ";
@@ -46929,8 +46935,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tooltip .tooltip-arrow {
   position: absolute;
   display: block;
-  width: 0.8rem;
-  height: 0.4rem;
+  width: 12px;
+  height: 6px;
 }
 .tooltip .tooltip-arrow::before {
   position: absolute;
@@ -46943,12 +46949,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 
 .tooltip-left-center .tooltip-arrow {
-  right: -0.4rem;
+  right: -6px;
   top: calc(50% - 0.25rem);
 }
 .tooltip-left-center .tooltip-arrow::before {
   left: 5px;
-  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-width: 6px 0 6px 6px;
 }
 
 .tooltip-left-bottom .tooltip-arrow {
@@ -46960,12 +46966,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 
 .tooltip-right-center .tooltip-arrow {
-  left: -0.4rem;
+  left: -6px;
   top: calc(50% - 0.25rem);
 }
 .tooltip-right-center .tooltip-arrow::before {
   right: 5px;
-  border-width: 0.4rem 0.4rem 0.4rem 0;
+  border-width: 6px 6px 6px 0;
 }
 
 .tooltip-right-bottom .tooltip-arrow {
@@ -46982,20 +46988,20 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 
 .tooltip-center-bottom .tooltip-arrow {
   top: -7px;
-  left: calc(50% - 0.8rem);
+  left: calc(50% - 12px);
 }
 .tooltip-center-bottom .tooltip-arrow::before {
   bottom: -1px;
-  border-width: 0 0.4rem 0.4rem;
+  border-width: 0 6px 6px;
 }
 
 .tooltip-center-top .tooltip-arrow {
   bottom: -7px;
-  left: calc(50% - 0.8rem);
+  left: calc(50% - 12px);
 }
 .tooltip-center-top .tooltip-arrow::before {
   top: -1px;
-  border-width: 0.4rem 0.4rem 0;
+  border-width: 6px 6px 0;
 }
 
 .tooltip-dark {
