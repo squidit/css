@@ -17,7 +17,6 @@ $tooltip-arrow-height: 6px !default;
   .tooltip-arrow {
     position: absolute;
     display: block;
-    height: $tooltip-arrow-height;
     &::before {
       position: absolute;
       content: "";
@@ -31,8 +30,9 @@ $tooltip-arrow-height: 6px !default;
 }
 .tooltip-left-center {
   .tooltip-arrow {
+    width: $tooltip-arrow-width;
     right: -$tooltip-arrow-height;
-    top: calc(50% - 0.25rem);
+    top: calc(50% - $tooltip-arrow-height);
     &::before {
       left: 5px;
       border-width: math.div($tooltip-arrow-width, 2) 0 math.div($tooltip-arrow-width, 2) $tooltip-arrow-height;
@@ -51,8 +51,9 @@ $tooltip-arrow-height: 6px !default;
 }
 .tooltip-right-center {
   .tooltip-arrow {
+    width: $tooltip-arrow-width;
     left: -$tooltip-arrow-height;
-    top: calc(50% - 0.25rem);
+    top: calc(50% - $tooltip-arrow-height);
     &::before {
       right: 5px;
       border-width: math.div($tooltip-arrow-width, 2) $tooltip-arrow-height math.div($tooltip-arrow-width, 2) 0;
@@ -76,6 +77,7 @@ $tooltip-arrow-height: 6px !default;
 }
 .tooltip-center-bottom {
   .tooltip-arrow {
+    height: $tooltip-arrow-height;
     top: -7px;
     left: calc(50% - math.div($tooltip-arrow-width, 2));
     &::before {
@@ -86,6 +88,7 @@ $tooltip-arrow-height: 6px !default;
 }
 .tooltip-center-top {
   .tooltip-arrow {
+    height: $tooltip-arrow-height;
     bottom: -7px;
     left: calc(50% - math.div($tooltip-arrow-width, 2));
     &::before {
