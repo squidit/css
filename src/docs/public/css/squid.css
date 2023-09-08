@@ -46935,7 +46935,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tooltip .tooltip-arrow {
   position: absolute;
   display: block;
-  width: 12px;
   height: 6px;
 }
 .tooltip .tooltip-arrow::before {
@@ -46988,7 +46987,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 
 .tooltip-center-bottom .tooltip-arrow {
   top: -7px;
-  left: calc(50% - 12px);
+  left: calc(50% - 6px);
 }
 .tooltip-center-bottom .tooltip-arrow::before {
   bottom: -1px;
@@ -46997,7 +46996,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 
 .tooltip-center-top .tooltip-arrow {
   bottom: -7px;
-  left: calc(50% - 12px);
+  left: calc(50% - 6px);
 }
 .tooltip-center-top .tooltip-arrow::before {
   top: -1px;
