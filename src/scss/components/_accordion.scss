@@ -65,10 +65,12 @@ $icon-box: 16px !default;
         transform: rotate(180deg);
       }
     }
-    .collapse-body {               
+    .collapse-body {
+      @extend .scrollbar;    
       padding: $gutter $gutter * 2;
       opacity: 1;
-      max-height: 9999px;           
+      max-height: 9999px;
+      overflow-y: auto;        
     }
   }
   &.collapse-loading {

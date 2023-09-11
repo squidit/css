@@ -45228,23 +45228,23 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
     padding-left: 3rem !important;
   }
 }
-.scrollbar, .table, .table-overflow, .modal, .dropdown, .textarea {
+.scrollbar, .table, .table-overflow, .modal, .dropdown, .collapse.active .collapse-body, .textarea {
   scrollbar-color: var(--background) var(--gray_dark);
   scrollbar-width: thin;
 }
-.scrollbar::-webkit-scrollbar, .table::-webkit-scrollbar, .table-overflow::-webkit-scrollbar, .modal::-webkit-scrollbar, .dropdown::-webkit-scrollbar, .textarea::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar, .table::-webkit-scrollbar, .table-overflow::-webkit-scrollbar, .modal::-webkit-scrollbar, .dropdown::-webkit-scrollbar, .collapse.active .collapse-body::-webkit-scrollbar, .textarea::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
-.scrollbar::-webkit-scrollbar-track, .table::-webkit-scrollbar-track, .table-overflow::-webkit-scrollbar-track, .modal::-webkit-scrollbar-track, .dropdown::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track, .table::-webkit-scrollbar-track, .table-overflow::-webkit-scrollbar-track, .modal::-webkit-scrollbar-track, .dropdown::-webkit-scrollbar-track, .collapse.active .collapse-body::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track {
   background: var(--background);
   border-radius: 7px;
 }
-.scrollbar::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb, .table-overflow::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb, .dropdown::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb, .table-overflow::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb, .dropdown::-webkit-scrollbar-thumb, .collapse.active .collapse-body::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb {
   background: var(--text_color);
   border-radius: 7px;
 }
-.scrollbar::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover, .table-overflow::-webkit-scrollbar-thumb:hover, .modal::-webkit-scrollbar-thumb:hover, .dropdown::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
+.scrollbar::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover, .table-overflow::-webkit-scrollbar-thumb:hover, .modal::-webkit-scrollbar-thumb:hover, .dropdown::-webkit-scrollbar-thumb:hover, .collapse.active .collapse-body::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
   background: var(--background_secondary);
 }
 
@@ -46407,6 +46407,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 1rem 2rem;
   opacity: 1;
   max-height: 9999px;
+  overflow-y: auto;
 }
 .collapse.collapse-loading .collapse-body {
   opacity: 0;
