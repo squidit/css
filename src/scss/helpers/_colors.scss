@@ -19,13 +19,14 @@ $aqua:       #12ACA2 !default;
 $yellow:     #F6AB2F !default;
 $red:        #E02D2D !default;
 $red-bl:     #FF4F33 !default;
-$blue:       #5E9BFF !default;
+$blue:       #5E9BFF !default; 
 $pomegranate:#ee7177 !default;
 $lemon:      #fcff05 !default;
 $gold:       #fccc0a !default;
 $pastry:     #fdef72 !default;
 $instagram:  #F42A9C !default;
 $twitter:    #1DA1F2 !default;
+$twitter-x:  #14171A !default;
 $youtube:    #FF0000 !default;
 $pinterest:  #E60023 !default;
 $facebook:   #4267B2 !default;
@@ -131,6 +132,11 @@ $colors: (
     base: $twitter,
     light: lighten($twitter, $amoutLigthen),
     dark: darken($twitter, $amountDarken)
+  ),
+  twitter-x: (
+    base: $twitter-x,
+    light: lighten($twitter-x, $amoutLigthen),
+    dark: darken($twitter-x, $amountDarken)
   ),
   youtube: (
     base: $youtube,
