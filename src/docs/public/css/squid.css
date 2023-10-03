@@ -19829,6 +19829,9 @@ readers do not read off random characters that represent icons */
   --twitter: #1DA1F2;
   --twitter_light: #96d3f9;
   --twitter_dark: #085788;
+  --twitter-x: #14171A;
+  --twitter-x_light: #4b5762;
+  --twitter-x_dark: black;
   --youtube: #FF0000;
   --youtube_light: #ff8080;
   --youtube_dark: maroon;
@@ -20582,6 +20585,42 @@ body.light {
 
 .border-twitter-dark {
   border-color: #085788 !important;
+}
+
+.twitter-x {
+  color: #14171A !important;
+}
+
+.background-twitter-x {
+  background-color: #14171A !important;
+}
+
+.border-twitter-x {
+  border-color: #14171A !important;
+}
+
+.twitter-x-light {
+  color: #4b5762 !important;
+}
+
+.background-twitter-x-light {
+  background-color: #4b5762 !important;
+}
+
+.border-twitter-x-light {
+  border-color: #4b5762 !important;
+}
+
+.twitter-x-dark {
+  color: black !important;
+}
+
+.background-twitter-x-dark {
+  background-color: black !important;
+}
+
+.border-twitter-x-dark {
+  border-color: black !important;
 }
 
 .youtube {
@@ -31723,6 +31762,24 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .button.button-twitter.inverted:hover, .button.button-twitter.inverted:focus {
   background-color: var(--twitter);
   border-color: var(--twitter);
+  color: var(--background);
+}
+.button.button-twitter-x {
+  background-color: var(--twitter-x);
+  border-color: var(--twitter-x);
+}
+.button.button-twitter-x:hover, .button.button-twitter-x:focus {
+  background-color: var(--twitter-x_dark);
+  border-color: var(--twitter-x_dark);
+}
+.button.button-twitter-x.inverted {
+  color: var(--twitter-x);
+  background-color: var(--background);
+  border-color: var(--twitter-x);
+}
+.button.button-twitter-x.inverted:hover, .button.button-twitter-x.inverted:focus {
+  background-color: var(--twitter-x);
+  border-color: var(--twitter-x);
   color: var(--background);
 }
 .button.button-youtube {
