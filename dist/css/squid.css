@@ -32784,7 +32784,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background: var(--border_color);
 }
 .tabs-header.line-style li:hover {
-  color: var(--border_color);
+  color: var(--gray);
 }
 .tabs-header.line-style li:hover::before {
   background: var(--background_secondary);

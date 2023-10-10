@@ -46399,7 +46399,7 @@ a {
   transition: all 0.3s ease;
 }
 .tabs-header.line-style li:hover {
-  color: var(--border-color);
+  color: var(--gray);
 }
 .tabs-header.line-style li:hover::before {
   background: var(--background_secondary);
