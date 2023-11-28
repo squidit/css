@@ -9247,11 +9247,11 @@ body.light {
   --color_bg_box_neutral_primary: var(--neutral-100);
   --color_bg_box_neutral_primary_hover: var(--neutral-90);
   --color_bg_box_neutral_primary_inverse: var(--neutral-10);
-  --color_bg_box_neutral_primary_inverse_hover: var(--neutral-20);
+  --color_bg_box_neutral_primary_inverse-hover: var(--neutral-20);
   --color_bg_box_neutral_secondary: var(--neutral-90);
   --color_bg_box_neutral_secondary_hover: var(--neutral-80);
   --color_bg_box_neutral_secondary_inverse: var(--neutral-20);
-  --color_bg_box_neutral_secondary_inverse_hover: var(--neutral-30);
+  --color_bg_box_neutral_secondary_inverse-hover: var(--neutral-30);
   --color_bg_box_neutral_disabled: var(--neutral-85);
   --color_bg_box_system_danger: var(--red-95);
   --color_bg_box_system_warning: var(--yellow-95);
@@ -9286,9 +9286,9 @@ body.light {
   --color_bg_box_social_facebook_hover: var(--facebook-85);
   --color_bg_box_social_twitch_hover: var(--twitch-85);
   --color_text-icon_neutral_placeholder: var(--neutral-50);
-  --color_text-icon_universal_black_primary: var(--black-10);
-  --color_text-icon_universal_black_secondary: var(--black-30);
-  --color_text-icon_universal_black_tertiary: var(--black-40);
+  --color_text-icon_universal_black_primary: var(--neutral-10);
+  --color_text-icon_universal_black_secondary: var(--neutral-30);
+  --color_text-icon_universal_black_tertiary: var(--neutral-40);
   --color_text-icon_universal_black_disabled: var(--neutral-70);
   --color_text-icon_universal_white_primary: var(--neutral-100);
   --color_text-icon_universal_white_secondary: var(--neutral-70);
@@ -9296,8 +9296,8 @@ body.light {
   --color_text-icon_universal_white_disabled: var(--neutral-40);
   --color_text-icon_universal_brand_wake: var(--purple-70);
   --color_text-icon_universal_brand_squid: var(--pink-70);
-  --color_text-icon_social_x: var(--x-0);
-  --color_text-icon_social_tiktok: var(--tiktok-0);
+  --color_text-icon_universal_social_x: var(--x-0);
+  --color_text-icon_universal_social_tiktok: var(--tiktok-0);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

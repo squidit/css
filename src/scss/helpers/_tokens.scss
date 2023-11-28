@@ -1,9 +1,13 @@
-@mixin generate-variables($list, $scale, $prefix, $suffix: "") {
+@mixin generate-by-list($list, $scale, $prefix, $suffix: "") {
   @each $name, $color in $list {
-    $suffixParsed: if($suffix != "", #{"_" + $suffix}, '');
-
-    --#{"" + $prefix + "_" + $name + $suffixParsed}: var(--#{$color}-#{$scale});
+    @include generate-variable($name, $color, $scale, $prefix, $suffix);
   }  
+}
+
+@mixin generate-variable($name, $color, $scale, $prefix, $suffix: "") {
+  $suffixParsed: if($suffix != "", #{"_" + $suffix}, '');
+
+  --#{"" + $prefix + "_" + $name + $suffixParsed}: var(--#{$color}-#{$scale});
 }
 
 $brands: (
@@ -38,91 +42,89 @@ $social: (
 
 @mixin theme-light {
   // TEXT ICON
-  --color_text-icon_neutral_primary: var(--neutral-10);
-  --color_text-icon_neutral_secondary: var(--neutral-30);
-  --color_text-icon_neutral_tertiary: var(--neutral-40);
-  --color_text-icon_neutral_disabled: var(--neutral-95);
-  --color_text-icon_neutral_inverse: var(--neutral-100);
+  @include generate-variable('neutral_primary', 'neutral', 10, 'color_text-icon');
+  @include generate-variable('neutral_secondary', 'neutral', 30, 'color_text-icon');
+  @include generate-variable('neutral_tertiary', 'neutral', 40, 'color_text-icon');
+  @include generate-variable('neutral_disabled', 'neutral', 95, 'color_text-icon');
+  @include generate-variable('neutral_inverse', 'neutral', 100, 'color_text-icon');
+  @include generate-variable('link', 'instagram', 30, 'color_text-icon');
 
-  --color_text-icon_link: var(--instagram-30);
-
-  @include generate-variables($system, 40, 'color_text-icon_brand');
-  @include generate-variables($system, 30, 'color_text-icon_system');
-  @include generate-variables($highlight, 30, 'color_text-icon_highlight');
-  @include generate-variables($social, 30, 'color_text-icon_social');
+  @include generate-by-list($system, 40, 'color_text-icon_brand');
+  @include generate-by-list($system, 30, 'color_text-icon_system');
+  @include generate-by-list($highlight, 30, 'color_text-icon_highlight');
+  @include generate-by-list($social, 30, 'color_text-icon_social');
 
   // BOX
-  --color_bg_box_neutral_primary: var(--neutral-100);
-  --color_bg_box_neutral_primary_hover: var(--neutral-90);
-  --color_bg_box_neutral_primary_inverse: var(--neutral-10);
-  --color_bg_box_neutral_primary_inverse_hover: var(--neutral-20);
-  --color_bg_box_neutral_secondary: var(--neutral-90);
-  --color_bg_box_neutral_secondary_hover: var(--neutral-80);
-  --color_bg_box_neutral_secondary_inverse: var(--neutral-20);
-  --color_bg_box_neutral_secondary_inverse_hover: var(--neutral-30);
-  --color_bg_box_neutral_disabled: var(--neutral-85);
+  @include generate-variable('neutral_primary', 'neutral', 100, 'color_bg_box');
+  @include generate-variable('neutral_primary', 'neutral', 90, 'color_bg_box', 'hover');
+  @include generate-variable('neutral_primary', 'neutral', 10, 'color_bg_box', 'inverse');
+  @include generate-variable('neutral_primary', 'neutral', 20, 'color_bg_box', 'inverse-hover');
+  @include generate-variable('neutral_secondary', 'neutral', 90, 'color_bg_box');
+  @include generate-variable('neutral_secondary', 'neutral', 80, 'color_bg_box', 'hover');
+  @include generate-variable('neutral_secondary', 'neutral', 20, 'color_bg_box', 'inverse');
+  @include generate-variable('neutral_secondary', 'neutral', 30, 'color_bg_box', 'inverse-hover');
+  @include generate-variable('neutral_disabled', 'neutral', 85, 'color_bg_box');
 
-  @include generate-variables($system, 95, 'color_bg_box_system');
-  @include generate-variables($system, 85, 'color_bg_box_system', 'hover');
-  @include generate-variables($highlight, 95, 'color_bg_box_highlight');
-  @include generate-variables($highlight, 85, 'color_bg_box_highlight', 'hover');
-  @include generate-variables($social, 95, 'color_bg_box_social');
-  @include generate-variables($social, 85, 'color_bg_box_social', 'hover');
+  @include generate-by-list($system, 95, 'color_bg_box_system');
+  @include generate-by-list($system, 85, 'color_bg_box_system', 'hover');
+  @include generate-by-list($highlight, 95, 'color_bg_box_highlight');
+  @include generate-by-list($highlight, 85, 'color_bg_box_highlight', 'hover');
+  @include generate-by-list($social, 95, 'color_bg_box_social');
+  @include generate-by-list($social, 85, 'color_bg_box_social', 'hover');
 }
 
 @mixin theme-dark {
   // TEXT ICON
-  --color_text-icon_neutral_primary: var(--neutral-100);
-  --color_text-icon_neutral_secondary: var(--neutral-70);
-  --color_text-icon_neutral_tertiary: var(--neutral-60);
-  --color_text-icon_neutral_disabled: var(--neutral-05);
-  --color_text-icon_neutral_inverse: var(--neutral-10);
+  @include generate-variable('neutral_primary', 'neutral', 100, 'color_text-icon');
+  @include generate-variable('neutral_secondary', 'neutral', 70, 'color_text-icon');
+  @include generate-variable('neutral_tertiary', 'neutral', 60, 'color_text-icon');
+  @include generate-variable('neutral_disabled', 'neutral', 5, 'color_text-icon');
+  @include generate-variable('neutral_inverse', 'neutral', 10, 'color_text-icon');
+  @include generate-variable('link', 'instagram', 70, 'color_text-icon');
 
-  --color_text-icon_link: var(--instagram-70);
-
-  @include generate-variables($system, 70, 'color_text-icon_brand');
-  @include generate-variables($system, 70, 'color_text-icon_system');
-  @include generate-variables($highlight, 70, 'color_text-icon_highlight');
-  @include generate-variables($social, 70, 'color_text-icon_social');
+  @include generate-by-list($system, 70, 'color_text-icon_brand');
+  @include generate-by-list($system, 70, 'color_text-icon_system');
+  @include generate-by-list($highlight, 70, 'color_text-icon_highlight');
+  @include generate-by-list($social, 70, 'color_text-icon_social');
 
   // BOX
-  --color_bg_box_neutral_primary: var(--neutral-10);
-  --color_bg_box_neutral_primary_hover: var(--neutral-20);
-  --color_bg_box_neutral_primary_inverse: var(--neutral-100);
-  --color_bg_box_neutral_primary_inverse_hover: var(--neutral-90);
-  --color_bg_box_neutral_secondary: var(--neutral-20);
-  --color_bg_box_neutral_secondary_hover: var(--neutral-30);
-  --color_bg_box_neutral_secondary_inverse: var(--neutral-90);
-  --color_bg_box_neutral_secondary_inverse_hover: var(--neutral-80);
-  --color_bg_box_neutral_disabled: var(--neutral-25);
+  @include generate-variable('neutral_primary', 'neutral', 10, 'color_bg_box');
+  @include generate-variable('neutral_primary', 'neutral', 20, 'color_bg_box', 'hover');
+  @include generate-variable('neutral_primary', 'neutral', 100, 'color_bg_box', 'inverse');
+  @include generate-variable('neutral_primary', 'neutral', 90, 'color_bg_box', 'inverse-hover');
+  @include generate-variable('neutral_secondary', 'neutral', 20, 'color_bg_box');
+  @include generate-variable('neutral_secondary', 'neutral', 30, 'color_bg_box', 'hover');
+  @include generate-variable('neutral_secondary', 'neutral', 90, 'color_bg_box', 'inverse');
+  @include generate-variable('neutral_secondary', 'neutral', 80, 'color_bg_box', 'inverse-hover');
+  @include generate-variable('neutral_disabled', 'neutral', 25, 'color_bg_box');
 
-  @include generate-variables($system, 10, 'color_bg_box_system');
-  @include generate-variables($system, 20, 'color_bg_box_system', 'hover');
-  @include generate-variables($highlight, 10, 'color_bg_box_highlight');
-  @include generate-variables($highlight, 20, 'color_bg_box_highlight', 'hover');
-  @include generate-variables($social, 10, 'color_bg_box_social');
-  @include generate-variables($social, 20, 'color_bg_box_social', 'hover');
+  @include generate-by-list($system, 10, 'color_bg_box_system');
+  @include generate-by-list($system, 20, 'color_bg_box_system', 'hover');
+  @include generate-by-list($highlight, 10, 'color_bg_box_highlight');
+  @include generate-by-list($highlight, 20, 'color_bg_box_highlight', 'hover');
+  @include generate-by-list($social, 10, 'color_bg_box_social');
+  @include generate-by-list($social, 20, 'color_bg_box_social', 'hover');
 }
 
 @mixin theme-global {
   // TEXT ICON
-  --color_text-icon_neutral_placeholder: var(--neutral-50);
+  @include generate-variable('neutral_placeholder', 'neutral', 50, 'color_text-icon');
 
-  --color_text-icon_universal_black_primary: var(--black-10);
-  --color_text-icon_universal_black_secondary: var(--black-30);
-  --color_text-icon_universal_black_tertiary: var(--black-40);
-  --color_text-icon_universal_black_disabled: var(--neutral-70);
+  @include generate-variable('universal_black_primary', 'neutral', 10, 'color_text-icon');
+  @include generate-variable('universal_black_secondary', 'neutral', 30, 'color_text-icon');
+  @include generate-variable('universal_black_tertiary', 'neutral', 40, 'color_text-icon');
+  @include generate-variable('universal_black_disabled', 'neutral', 70, 'color_text-icon');
 
-  --color_text-icon_universal_white_primary: var(--neutral-100);
-  --color_text-icon_universal_white_secondary: var(--neutral-70);
-  --color_text-icon_universal_white_tertiary: var(--neutral-60);
-  --color_text-icon_universal_white_disabled: var(--neutral-40);
-  
-  --color_text-icon_universal_brand_wake: var(--purple-70);
-  --color_text-icon_universal_brand_squid: var(--pink-70);
+  @include generate-variable('universal_white_primary', 'neutral', 100, 'color_text-icon');
+  @include generate-variable('universal_white_secondary', 'neutral', 70, 'color_text-icon');
+  @include generate-variable('universal_white_tertiary', 'neutral', 60, 'color_text-icon');
+  @include generate-variable('universal_white_disabled', 'neutral', 40, 'color_text-icon');
 
-  --color_text-icon_social_x: var(--x-0);
-  --color_text-icon_social_tiktok: var(--tiktok-0);
+  @include generate-variable('universal_brand_wake', 'purple', 70, 'color_text-icon');
+  @include generate-variable('universal_brand_squid', 'pink', 70, 'color_text-icon');
+
+  @include generate-variable('universal_social_x', 'x', 0, 'color_text-icon');
+  @include generate-variable('universal_social_tiktok', 'tiktok', 0, 'color_text-icon');
 }
 
 :root {
