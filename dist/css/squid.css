@@ -3737,9 +3737,9 @@
 }
 
 :root {
+  --neutral-0: black;
   --purple-0: black;
   --pink-0: black;
-  --gray-0: black;
   --red-0: black;
   --orange-0: black;
   --yellow-0: black;
@@ -3756,10 +3756,11 @@
   --linkedin-0: black;
   --facebook-0: black;
   --x-0: black;
+  --tiktok-0: black;
   --twitch-0: black;
+  --neutral-5: #0b0d0e;
   --purple-5: #140119;
   --pink-5: #17030b;
-  --gray-5: #0b0d0e;
   --red-5: #160404;
   --orange-5: #170e03;
   --yellow-5: #171403;
@@ -3776,10 +3777,11 @@
   --linkedin-5: #050c15;
   --facebook-5: #070b13;
   --x-5: black;
+  --tiktok-5: black;
   --twitch-5: #070b13;
+  --neutral-10: #171a1c;
   --purple-10: #290132;
   --pink-10: #2e0516;
-  --gray-10: #171a1c;
   --red-10: #2b0808;
   --orange-10: #2e1c05;
   --yellow-10: #2e2705;
@@ -3796,10 +3798,11 @@
   --linkedin-10: #09182a;
   --facebook-10: #0e1625;
   --x-10: black;
+  --tiktok-10: black;
   --twitch-10: #0e1625;
+  --neutral-15: #22262a;
   --purple-15: #3d024b;
   --pink-15: #440821;
-  --gray-15: #22262a;
   --red-15: #410b0b;
   --orange-15: #452908;
   --yellow-15: #453b08;
@@ -3816,10 +3819,11 @@
   --linkedin-15: #0e243f;
   --facebook-15: #152038;
   --x-15: black;
+  --tiktok-15: black;
   --twitch-15: #152038;
+  --neutral-20: #2e3338;
   --purple-20: #510264;
   --pink-20: #5b0b2c;
-  --gray-20: #2e3338;
   --red-20: #570f0f;
   --orange-20: #5c370a;
   --yellow-20: #5c4e0a;
@@ -3836,10 +3840,11 @@
   --linkedin-20: #123054;
   --facebook-20: #1c2b4a;
   --x-20: black;
+  --tiktok-20: black;
   --twitch-20: #1c2b4a;
+  --neutral-25: #394047;
   --purple-25: #66037d;
   --pink-25: #720e37;
-  --gray-25: #394047;
   --red-25: #6d1313;
   --orange-25: #73450d;
   --yellow-25: #73620d;
@@ -3856,10 +3861,11 @@
   --linkedin-25: #173c69;
   --facebook-25: #23365d;
   --x-25: black;
+  --tiktok-25: black;
   --twitch-25: #23365d;
+  --neutral-30: #444d55;
   --purple-30: #7a0396;
   --pink-30: #891042;
-  --gray-30: #444d55;
   --red-30: #821717;
   --orange-30: #89530f;
   --yellow-30: #897510;
@@ -3876,10 +3882,11 @@
   --linkedin-30: #1c487d;
   --facebook-30: #294170;
   --x-30: black;
+  --tiktok-30: black;
   --twitch-30: #294170;
+  --neutral-35: #505a63;
   --purple-35: #8e04af;
   --pink-35: #a0134d;
-  --gray-35: #505a63;
   --red-35: #981b1b;
   --orange-35: #a06112;
   --yellow-35: #a08912;
@@ -3896,10 +3903,11 @@
   --linkedin-35: #205492;
   --facebook-35: #304c82;
   --x-35: black;
+  --tiktok-35: black;
   --twitch-35: #304c82;
+  --neutral-40: #5b6671;
   --purple-40: #a204c8;
   --pink-40: #b61658;
-  --gray-40: #5b6671;
   --red-40: #ae1e1e;
   --orange-40: #b76e14;
   --yellow-40: #b79c15;
@@ -3916,10 +3924,11 @@
   --linkedin-40: #2560a7;
   --facebook-40: #375695;
   --x-40: black;
+  --tiktok-40: black;
   --twitch-40: #375695;
+  --neutral-45: #67737f;
   --purple-45: #b705e1;
   --pink-45: #cd1863;
-  --gray-45: #67737f;
   --red-45: #c32222;
   --orange-45: #ce7c17;
   --yellow-45: #ceb017;
@@ -3936,10 +3945,11 @@
   --linkedin-45: #296cbc;
   --facebook-45: #3e61a7;
   --x-45: black;
+  --tiktok-45: black;
   --twitch-45: #3e61a7;
+  --neutral-50: #72808d;
   --purple-50: #cb05fa;
   --pink-50: #e41b6e;
-  --gray-50: #72808d;
   --red-50: #d92626;
   --orange-50: #e58a19;
   --yellow-50: #e5c31a;
@@ -3956,10 +3966,11 @@
   --linkedin-50: #2e78d1;
   --facebook-50: #456cba;
   --x-50: black;
+  --tiktok-50: black;
   --twitch-50: #456cba;
+  --neutral-55: #808d98;
   --purple-55: #d01efb;
   --pink-55: #e7327d;
-  --gray-55: #808d98;
   --red-55: #dd3c3c;
   --orange-55: #e89630;
   --yellow-55: #e8c931;
@@ -3976,10 +3987,11 @@
   --linkedin-55: #4386d6;
   --facebook-55: #587bc1;
   --x-55: #1a1a1a;
+  --tiktok-55: #1a1a1a;
   --twitch-55: #587bc1;
+  --neutral-60: #8e99a4;
   --purple-60: #d537fb;
   --pink-60: #e9498b;
-  --gray-60: #8e99a4;
   --red-60: #e15151;
   --orange-60: #eaa147;
   --yellow-60: #eacf48;
@@ -3996,10 +4008,11 @@
   --linkedin-60: #5893da;
   --facebook-60: #6a89c8;
   --x-60: #333333;
+  --tiktok-60: #333333;
   --twitch-60: #6a89c8;
+  --neutral-65: #9ca6af;
   --purple-65: #db50fc;
   --pink-65: #ec5f9a;
-  --gray-65: #9ca6af;
   --red-65: #e46767;
   --orange-65: #edad5e;
   --yellow-65: #edd55f;
@@ -4016,10 +4029,11 @@
   --linkedin-65: #6da1df;
   --facebook-65: #7d98cf;
   --x-65: #4d4d4d;
+  --tiktok-65: #4d4d4d;
   --twitch-65: #7d98cf;
+  --neutral-70: #aab3bb;
   --purple-70: #e069fc;
   --pink-70: #ef76a8;
-  --gray-70: #aab3bb;
   --red-70: #e87d7d;
   --orange-70: #efb975;
   --yellow-70: #efdb76;
@@ -4036,10 +4050,11 @@
   --linkedin-70: #82aee3;
   --facebook-70: #8fa7d6;
   --x-70: #666666;
+  --tiktok-70: #666666;
   --twitch-70: #8fa7d6;
+  --neutral-75: #b9c0c6;
   --purple-75: #e582fd;
   --pink-75: #f28db7;
-  --gray-75: #b9c0c6;
   --red-75: #ec9393;
   --orange-75: #f2c58c;
   --yellow-75: #f2e18d;
@@ -4056,10 +4071,11 @@
   --linkedin-75: #97bce8;
   --facebook-75: #a2b6dd;
   --x-75: gray;
+  --tiktok-75: gray;
   --twitch-75: #a2b6dd;
+  --neutral-80: #c7ccd1;
   --purple-80: #ea9bfd;
   --pink-80: #f4a4c5;
-  --gray-80: #c7ccd1;
   --red-80: #f0a8a8;
   --orange-80: #f5d0a3;
   --yellow-80: #f5e7a3;
@@ -4076,10 +4092,11 @@
   --linkedin-80: #abc9ed;
   --facebook-80: #b5c4e3;
   --x-80: #999999;
+  --tiktok-80: #999999;
   --twitch-80: #b5c4e3;
+  --neutral-85: #d5d9dd;
   --purple-85: #efb4fe;
   --pink-85: #f7bbd4;
-  --gray-85: #d5d9dd;
   --red-85: #f4bebe;
   --orange-85: #f7dcba;
   --yellow-85: #f7edba;
@@ -4096,10 +4113,11 @@
   --linkedin-85: #c0d7f1;
   --facebook-85: #c7d3ea;
   --x-85: #b3b3b3;
+  --tiktok-85: #b3b3b3;
   --twitch-85: #c7d3ea;
+  --neutral-90: #e3e6e8;
   --purple-90: #f5cdfe;
   --pink-90: #fad1e2;
-  --gray-90: #e3e6e8;
   --red-90: #f7d4d4;
   --orange-90: #fae8d1;
   --yellow-90: #faf3d1;
@@ -4116,10 +4134,11 @@
   --linkedin-90: #d5e4f6;
   --facebook-90: #dae2f1;
   --x-90: #cccccc;
+  --tiktok-90: #cccccc;
   --twitch-90: #dae2f1;
+  --neutral-95: #f1f2f4;
   --purple-95: #fae6ff;
   --pink-95: #fce8f1;
-  --gray-95: #f1f2f4;
   --red-95: #fbe9e9;
   --orange-95: #fcf3e8;
   --yellow-95: #fcf9e8;
@@ -4136,10 +4155,11 @@
   --linkedin-95: #eaf2fa;
   --facebook-95: #ecf0f8;
   --x-95: #e6e6e6;
+  --tiktok-95: #e6e6e6;
   --twitch-95: #ecf0f8;
+  --neutral-100: white;
   --purple-100: white;
   --pink-100: white;
-  --gray-100: white;
   --red-100: white;
   --orange-100: white;
   --yellow-100: white;
@@ -4156,7 +4176,17 @@
   --linkedin-100: white;
   --facebook-100: white;
   --x-100: white;
+  --tiktok-100: white;
   --twitch-100: white;
+}
+:root .neutral-0 {
+  color: var(--neutral-0) !important;
+}
+:root .background-neutral-0 {
+  background-color: var(--neutral-0) !important;
+}
+:root .border-neutral-0 {
+  border-color: var(--neutral-0) !important;
 }
 :root .purple-0 {
   color: var(--purple-0) !important;
@@ -4175,15 +4205,6 @@
 }
 :root .border-pink-0 {
   border-color: var(--pink-0) !important;
-}
-:root .gray-0 {
-  color: var(--gray-0) !important;
-}
-:root .background-gray-0 {
-  background-color: var(--gray-0) !important;
-}
-:root .border-gray-0 {
-  border-color: var(--gray-0) !important;
 }
 :root .red-0 {
   color: var(--red-0) !important;
@@ -4329,6 +4350,15 @@
 :root .border-x-0 {
   border-color: var(--x-0) !important;
 }
+:root .tiktok-0 {
+  color: var(--tiktok-0) !important;
+}
+:root .background-tiktok-0 {
+  background-color: var(--tiktok-0) !important;
+}
+:root .border-tiktok-0 {
+  border-color: var(--tiktok-0) !important;
+}
 :root .twitch-0 {
   color: var(--twitch-0) !important;
 }
@@ -4337,6 +4367,15 @@
 }
 :root .border-twitch-0 {
   border-color: var(--twitch-0) !important;
+}
+:root .neutral-5 {
+  color: var(--neutral-5) !important;
+}
+:root .background-neutral-5 {
+  background-color: var(--neutral-5) !important;
+}
+:root .border-neutral-5 {
+  border-color: var(--neutral-5) !important;
 }
 :root .purple-5 {
   color: var(--purple-5) !important;
@@ -4355,15 +4394,6 @@
 }
 :root .border-pink-5 {
   border-color: var(--pink-5) !important;
-}
-:root .gray-5 {
-  color: var(--gray-5) !important;
-}
-:root .background-gray-5 {
-  background-color: var(--gray-5) !important;
-}
-:root .border-gray-5 {
-  border-color: var(--gray-5) !important;
 }
 :root .red-5 {
   color: var(--red-5) !important;
@@ -4509,6 +4539,15 @@
 :root .border-x-5 {
   border-color: var(--x-5) !important;
 }
+:root .tiktok-5 {
+  color: var(--tiktok-5) !important;
+}
+:root .background-tiktok-5 {
+  background-color: var(--tiktok-5) !important;
+}
+:root .border-tiktok-5 {
+  border-color: var(--tiktok-5) !important;
+}
 :root .twitch-5 {
   color: var(--twitch-5) !important;
 }
@@ -4517,6 +4556,15 @@
 }
 :root .border-twitch-5 {
   border-color: var(--twitch-5) !important;
+}
+:root .neutral-10 {
+  color: var(--neutral-10) !important;
+}
+:root .background-neutral-10 {
+  background-color: var(--neutral-10) !important;
+}
+:root .border-neutral-10 {
+  border-color: var(--neutral-10) !important;
 }
 :root .purple-10 {
   color: var(--purple-10) !important;
@@ -4535,15 +4583,6 @@
 }
 :root .border-pink-10 {
   border-color: var(--pink-10) !important;
-}
-:root .gray-10 {
-  color: var(--gray-10) !important;
-}
-:root .background-gray-10 {
-  background-color: var(--gray-10) !important;
-}
-:root .border-gray-10 {
-  border-color: var(--gray-10) !important;
 }
 :root .red-10 {
   color: var(--red-10) !important;
@@ -4689,6 +4728,15 @@
 :root .border-x-10 {
   border-color: var(--x-10) !important;
 }
+:root .tiktok-10 {
+  color: var(--tiktok-10) !important;
+}
+:root .background-tiktok-10 {
+  background-color: var(--tiktok-10) !important;
+}
+:root .border-tiktok-10 {
+  border-color: var(--tiktok-10) !important;
+}
 :root .twitch-10 {
   color: var(--twitch-10) !important;
 }
@@ -4697,6 +4745,15 @@
 }
 :root .border-twitch-10 {
   border-color: var(--twitch-10) !important;
+}
+:root .neutral-15 {
+  color: var(--neutral-15) !important;
+}
+:root .background-neutral-15 {
+  background-color: var(--neutral-15) !important;
+}
+:root .border-neutral-15 {
+  border-color: var(--neutral-15) !important;
 }
 :root .purple-15 {
   color: var(--purple-15) !important;
@@ -4715,15 +4772,6 @@
 }
 :root .border-pink-15 {
   border-color: var(--pink-15) !important;
-}
-:root .gray-15 {
-  color: var(--gray-15) !important;
-}
-:root .background-gray-15 {
-  background-color: var(--gray-15) !important;
-}
-:root .border-gray-15 {
-  border-color: var(--gray-15) !important;
 }
 :root .red-15 {
   color: var(--red-15) !important;
@@ -4869,6 +4917,15 @@
 :root .border-x-15 {
   border-color: var(--x-15) !important;
 }
+:root .tiktok-15 {
+  color: var(--tiktok-15) !important;
+}
+:root .background-tiktok-15 {
+  background-color: var(--tiktok-15) !important;
+}
+:root .border-tiktok-15 {
+  border-color: var(--tiktok-15) !important;
+}
 :root .twitch-15 {
   color: var(--twitch-15) !important;
 }
@@ -4877,6 +4934,15 @@
 }
 :root .border-twitch-15 {
   border-color: var(--twitch-15) !important;
+}
+:root .neutral-20 {
+  color: var(--neutral-20) !important;
+}
+:root .background-neutral-20 {
+  background-color: var(--neutral-20) !important;
+}
+:root .border-neutral-20 {
+  border-color: var(--neutral-20) !important;
 }
 :root .purple-20 {
   color: var(--purple-20) !important;
@@ -4895,15 +4961,6 @@
 }
 :root .border-pink-20 {
   border-color: var(--pink-20) !important;
-}
-:root .gray-20 {
-  color: var(--gray-20) !important;
-}
-:root .background-gray-20 {
-  background-color: var(--gray-20) !important;
-}
-:root .border-gray-20 {
-  border-color: var(--gray-20) !important;
 }
 :root .red-20 {
   color: var(--red-20) !important;
@@ -5049,6 +5106,15 @@
 :root .border-x-20 {
   border-color: var(--x-20) !important;
 }
+:root .tiktok-20 {
+  color: var(--tiktok-20) !important;
+}
+:root .background-tiktok-20 {
+  background-color: var(--tiktok-20) !important;
+}
+:root .border-tiktok-20 {
+  border-color: var(--tiktok-20) !important;
+}
 :root .twitch-20 {
   color: var(--twitch-20) !important;
 }
@@ -5057,6 +5123,15 @@
 }
 :root .border-twitch-20 {
   border-color: var(--twitch-20) !important;
+}
+:root .neutral-25 {
+  color: var(--neutral-25) !important;
+}
+:root .background-neutral-25 {
+  background-color: var(--neutral-25) !important;
+}
+:root .border-neutral-25 {
+  border-color: var(--neutral-25) !important;
 }
 :root .purple-25 {
   color: var(--purple-25) !important;
@@ -5075,15 +5150,6 @@
 }
 :root .border-pink-25 {
   border-color: var(--pink-25) !important;
-}
-:root .gray-25 {
-  color: var(--gray-25) !important;
-}
-:root .background-gray-25 {
-  background-color: var(--gray-25) !important;
-}
-:root .border-gray-25 {
-  border-color: var(--gray-25) !important;
 }
 :root .red-25 {
   color: var(--red-25) !important;
@@ -5229,6 +5295,15 @@
 :root .border-x-25 {
   border-color: var(--x-25) !important;
 }
+:root .tiktok-25 {
+  color: var(--tiktok-25) !important;
+}
+:root .background-tiktok-25 {
+  background-color: var(--tiktok-25) !important;
+}
+:root .border-tiktok-25 {
+  border-color: var(--tiktok-25) !important;
+}
 :root .twitch-25 {
   color: var(--twitch-25) !important;
 }
@@ -5237,6 +5312,15 @@
 }
 :root .border-twitch-25 {
   border-color: var(--twitch-25) !important;
+}
+:root .neutral-30 {
+  color: var(--neutral-30) !important;
+}
+:root .background-neutral-30 {
+  background-color: var(--neutral-30) !important;
+}
+:root .border-neutral-30 {
+  border-color: var(--neutral-30) !important;
 }
 :root .purple-30 {
   color: var(--purple-30) !important;
@@ -5255,15 +5339,6 @@
 }
 :root .border-pink-30 {
   border-color: var(--pink-30) !important;
-}
-:root .gray-30 {
-  color: var(--gray-30) !important;
-}
-:root .background-gray-30 {
-  background-color: var(--gray-30) !important;
-}
-:root .border-gray-30 {
-  border-color: var(--gray-30) !important;
 }
 :root .red-30 {
   color: var(--red-30) !important;
@@ -5409,6 +5484,15 @@
 :root .border-x-30 {
   border-color: var(--x-30) !important;
 }
+:root .tiktok-30 {
+  color: var(--tiktok-30) !important;
+}
+:root .background-tiktok-30 {
+  background-color: var(--tiktok-30) !important;
+}
+:root .border-tiktok-30 {
+  border-color: var(--tiktok-30) !important;
+}
 :root .twitch-30 {
   color: var(--twitch-30) !important;
 }
@@ -5417,6 +5501,15 @@
 }
 :root .border-twitch-30 {
   border-color: var(--twitch-30) !important;
+}
+:root .neutral-35 {
+  color: var(--neutral-35) !important;
+}
+:root .background-neutral-35 {
+  background-color: var(--neutral-35) !important;
+}
+:root .border-neutral-35 {
+  border-color: var(--neutral-35) !important;
 }
 :root .purple-35 {
   color: var(--purple-35) !important;
@@ -5435,15 +5528,6 @@
 }
 :root .border-pink-35 {
   border-color: var(--pink-35) !important;
-}
-:root .gray-35 {
-  color: var(--gray-35) !important;
-}
-:root .background-gray-35 {
-  background-color: var(--gray-35) !important;
-}
-:root .border-gray-35 {
-  border-color: var(--gray-35) !important;
 }
 :root .red-35 {
   color: var(--red-35) !important;
@@ -5589,6 +5673,15 @@
 :root .border-x-35 {
   border-color: var(--x-35) !important;
 }
+:root .tiktok-35 {
+  color: var(--tiktok-35) !important;
+}
+:root .background-tiktok-35 {
+  background-color: var(--tiktok-35) !important;
+}
+:root .border-tiktok-35 {
+  border-color: var(--tiktok-35) !important;
+}
 :root .twitch-35 {
   color: var(--twitch-35) !important;
 }
@@ -5597,6 +5690,15 @@
 }
 :root .border-twitch-35 {
   border-color: var(--twitch-35) !important;
+}
+:root .neutral-40 {
+  color: var(--neutral-40) !important;
+}
+:root .background-neutral-40 {
+  background-color: var(--neutral-40) !important;
+}
+:root .border-neutral-40 {
+  border-color: var(--neutral-40) !important;
 }
 :root .purple-40 {
   color: var(--purple-40) !important;
@@ -5615,15 +5717,6 @@
 }
 :root .border-pink-40 {
   border-color: var(--pink-40) !important;
-}
-:root .gray-40 {
-  color: var(--gray-40) !important;
-}
-:root .background-gray-40 {
-  background-color: var(--gray-40) !important;
-}
-:root .border-gray-40 {
-  border-color: var(--gray-40) !important;
 }
 :root .red-40 {
   color: var(--red-40) !important;
@@ -5769,6 +5862,15 @@
 :root .border-x-40 {
   border-color: var(--x-40) !important;
 }
+:root .tiktok-40 {
+  color: var(--tiktok-40) !important;
+}
+:root .background-tiktok-40 {
+  background-color: var(--tiktok-40) !important;
+}
+:root .border-tiktok-40 {
+  border-color: var(--tiktok-40) !important;
+}
 :root .twitch-40 {
   color: var(--twitch-40) !important;
 }
@@ -5777,6 +5879,15 @@
 }
 :root .border-twitch-40 {
   border-color: var(--twitch-40) !important;
+}
+:root .neutral-45 {
+  color: var(--neutral-45) !important;
+}
+:root .background-neutral-45 {
+  background-color: var(--neutral-45) !important;
+}
+:root .border-neutral-45 {
+  border-color: var(--neutral-45) !important;
 }
 :root .purple-45 {
   color: var(--purple-45) !important;
@@ -5795,15 +5906,6 @@
 }
 :root .border-pink-45 {
   border-color: var(--pink-45) !important;
-}
-:root .gray-45 {
-  color: var(--gray-45) !important;
-}
-:root .background-gray-45 {
-  background-color: var(--gray-45) !important;
-}
-:root .border-gray-45 {
-  border-color: var(--gray-45) !important;
 }
 :root .red-45 {
   color: var(--red-45) !important;
@@ -5949,6 +6051,15 @@
 :root .border-x-45 {
   border-color: var(--x-45) !important;
 }
+:root .tiktok-45 {
+  color: var(--tiktok-45) !important;
+}
+:root .background-tiktok-45 {
+  background-color: var(--tiktok-45) !important;
+}
+:root .border-tiktok-45 {
+  border-color: var(--tiktok-45) !important;
+}
 :root .twitch-45 {
   color: var(--twitch-45) !important;
 }
@@ -5957,6 +6068,15 @@
 }
 :root .border-twitch-45 {
   border-color: var(--twitch-45) !important;
+}
+:root .neutral-50 {
+  color: var(--neutral-50) !important;
+}
+:root .background-neutral-50 {
+  background-color: var(--neutral-50) !important;
+}
+:root .border-neutral-50 {
+  border-color: var(--neutral-50) !important;
 }
 :root .purple-50 {
   color: var(--purple-50) !important;
@@ -5975,15 +6095,6 @@
 }
 :root .border-pink-50 {
   border-color: var(--pink-50) !important;
-}
-:root .gray-50 {
-  color: var(--gray-50) !important;
-}
-:root .background-gray-50 {
-  background-color: var(--gray-50) !important;
-}
-:root .border-gray-50 {
-  border-color: var(--gray-50) !important;
 }
 :root .red-50 {
   color: var(--red-50) !important;
@@ -6129,6 +6240,15 @@
 :root .border-x-50 {
   border-color: var(--x-50) !important;
 }
+:root .tiktok-50 {
+  color: var(--tiktok-50) !important;
+}
+:root .background-tiktok-50 {
+  background-color: var(--tiktok-50) !important;
+}
+:root .border-tiktok-50 {
+  border-color: var(--tiktok-50) !important;
+}
 :root .twitch-50 {
   color: var(--twitch-50) !important;
 }
@@ -6137,6 +6257,15 @@
 }
 :root .border-twitch-50 {
   border-color: var(--twitch-50) !important;
+}
+:root .neutral-55 {
+  color: var(--neutral-55) !important;
+}
+:root .background-neutral-55 {
+  background-color: var(--neutral-55) !important;
+}
+:root .border-neutral-55 {
+  border-color: var(--neutral-55) !important;
 }
 :root .purple-55 {
   color: var(--purple-55) !important;
@@ -6155,15 +6284,6 @@
 }
 :root .border-pink-55 {
   border-color: var(--pink-55) !important;
-}
-:root .gray-55 {
-  color: var(--gray-55) !important;
-}
-:root .background-gray-55 {
-  background-color: var(--gray-55) !important;
-}
-:root .border-gray-55 {
-  border-color: var(--gray-55) !important;
 }
 :root .red-55 {
   color: var(--red-55) !important;
@@ -6309,6 +6429,15 @@
 :root .border-x-55 {
   border-color: var(--x-55) !important;
 }
+:root .tiktok-55 {
+  color: var(--tiktok-55) !important;
+}
+:root .background-tiktok-55 {
+  background-color: var(--tiktok-55) !important;
+}
+:root .border-tiktok-55 {
+  border-color: var(--tiktok-55) !important;
+}
 :root .twitch-55 {
   color: var(--twitch-55) !important;
 }
@@ -6317,6 +6446,15 @@
 }
 :root .border-twitch-55 {
   border-color: var(--twitch-55) !important;
+}
+:root .neutral-60 {
+  color: var(--neutral-60) !important;
+}
+:root .background-neutral-60 {
+  background-color: var(--neutral-60) !important;
+}
+:root .border-neutral-60 {
+  border-color: var(--neutral-60) !important;
 }
 :root .purple-60 {
   color: var(--purple-60) !important;
@@ -6335,15 +6473,6 @@
 }
 :root .border-pink-60 {
   border-color: var(--pink-60) !important;
-}
-:root .gray-60 {
-  color: var(--gray-60) !important;
-}
-:root .background-gray-60 {
-  background-color: var(--gray-60) !important;
-}
-:root .border-gray-60 {
-  border-color: var(--gray-60) !important;
 }
 :root .red-60 {
   color: var(--red-60) !important;
@@ -6489,6 +6618,15 @@
 :root .border-x-60 {
   border-color: var(--x-60) !important;
 }
+:root .tiktok-60 {
+  color: var(--tiktok-60) !important;
+}
+:root .background-tiktok-60 {
+  background-color: var(--tiktok-60) !important;
+}
+:root .border-tiktok-60 {
+  border-color: var(--tiktok-60) !important;
+}
 :root .twitch-60 {
   color: var(--twitch-60) !important;
 }
@@ -6497,6 +6635,15 @@
 }
 :root .border-twitch-60 {
   border-color: var(--twitch-60) !important;
+}
+:root .neutral-65 {
+  color: var(--neutral-65) !important;
+}
+:root .background-neutral-65 {
+  background-color: var(--neutral-65) !important;
+}
+:root .border-neutral-65 {
+  border-color: var(--neutral-65) !important;
 }
 :root .purple-65 {
   color: var(--purple-65) !important;
@@ -6515,15 +6662,6 @@
 }
 :root .border-pink-65 {
   border-color: var(--pink-65) !important;
-}
-:root .gray-65 {
-  color: var(--gray-65) !important;
-}
-:root .background-gray-65 {
-  background-color: var(--gray-65) !important;
-}
-:root .border-gray-65 {
-  border-color: var(--gray-65) !important;
 }
 :root .red-65 {
   color: var(--red-65) !important;
@@ -6669,6 +6807,15 @@
 :root .border-x-65 {
   border-color: var(--x-65) !important;
 }
+:root .tiktok-65 {
+  color: var(--tiktok-65) !important;
+}
+:root .background-tiktok-65 {
+  background-color: var(--tiktok-65) !important;
+}
+:root .border-tiktok-65 {
+  border-color: var(--tiktok-65) !important;
+}
 :root .twitch-65 {
   color: var(--twitch-65) !important;
 }
@@ -6677,6 +6824,15 @@
 }
 :root .border-twitch-65 {
   border-color: var(--twitch-65) !important;
+}
+:root .neutral-70 {
+  color: var(--neutral-70) !important;
+}
+:root .background-neutral-70 {
+  background-color: var(--neutral-70) !important;
+}
+:root .border-neutral-70 {
+  border-color: var(--neutral-70) !important;
 }
 :root .purple-70 {
   color: var(--purple-70) !important;
@@ -6695,15 +6851,6 @@
 }
 :root .border-pink-70 {
   border-color: var(--pink-70) !important;
-}
-:root .gray-70 {
-  color: var(--gray-70) !important;
-}
-:root .background-gray-70 {
-  background-color: var(--gray-70) !important;
-}
-:root .border-gray-70 {
-  border-color: var(--gray-70) !important;
 }
 :root .red-70 {
   color: var(--red-70) !important;
@@ -6849,6 +6996,15 @@
 :root .border-x-70 {
   border-color: var(--x-70) !important;
 }
+:root .tiktok-70 {
+  color: var(--tiktok-70) !important;
+}
+:root .background-tiktok-70 {
+  background-color: var(--tiktok-70) !important;
+}
+:root .border-tiktok-70 {
+  border-color: var(--tiktok-70) !important;
+}
 :root .twitch-70 {
   color: var(--twitch-70) !important;
 }
@@ -6857,6 +7013,15 @@
 }
 :root .border-twitch-70 {
   border-color: var(--twitch-70) !important;
+}
+:root .neutral-75 {
+  color: var(--neutral-75) !important;
+}
+:root .background-neutral-75 {
+  background-color: var(--neutral-75) !important;
+}
+:root .border-neutral-75 {
+  border-color: var(--neutral-75) !important;
 }
 :root .purple-75 {
   color: var(--purple-75) !important;
@@ -6875,15 +7040,6 @@
 }
 :root .border-pink-75 {
   border-color: var(--pink-75) !important;
-}
-:root .gray-75 {
-  color: var(--gray-75) !important;
-}
-:root .background-gray-75 {
-  background-color: var(--gray-75) !important;
-}
-:root .border-gray-75 {
-  border-color: var(--gray-75) !important;
 }
 :root .red-75 {
   color: var(--red-75) !important;
@@ -7029,6 +7185,15 @@
 :root .border-x-75 {
   border-color: var(--x-75) !important;
 }
+:root .tiktok-75 {
+  color: var(--tiktok-75) !important;
+}
+:root .background-tiktok-75 {
+  background-color: var(--tiktok-75) !important;
+}
+:root .border-tiktok-75 {
+  border-color: var(--tiktok-75) !important;
+}
 :root .twitch-75 {
   color: var(--twitch-75) !important;
 }
@@ -7037,6 +7202,15 @@
 }
 :root .border-twitch-75 {
   border-color: var(--twitch-75) !important;
+}
+:root .neutral-80 {
+  color: var(--neutral-80) !important;
+}
+:root .background-neutral-80 {
+  background-color: var(--neutral-80) !important;
+}
+:root .border-neutral-80 {
+  border-color: var(--neutral-80) !important;
 }
 :root .purple-80 {
   color: var(--purple-80) !important;
@@ -7055,15 +7229,6 @@
 }
 :root .border-pink-80 {
   border-color: var(--pink-80) !important;
-}
-:root .gray-80 {
-  color: var(--gray-80) !important;
-}
-:root .background-gray-80 {
-  background-color: var(--gray-80) !important;
-}
-:root .border-gray-80 {
-  border-color: var(--gray-80) !important;
 }
 :root .red-80 {
   color: var(--red-80) !important;
@@ -7209,6 +7374,15 @@
 :root .border-x-80 {
   border-color: var(--x-80) !important;
 }
+:root .tiktok-80 {
+  color: var(--tiktok-80) !important;
+}
+:root .background-tiktok-80 {
+  background-color: var(--tiktok-80) !important;
+}
+:root .border-tiktok-80 {
+  border-color: var(--tiktok-80) !important;
+}
 :root .twitch-80 {
   color: var(--twitch-80) !important;
 }
@@ -7217,6 +7391,15 @@
 }
 :root .border-twitch-80 {
   border-color: var(--twitch-80) !important;
+}
+:root .neutral-85 {
+  color: var(--neutral-85) !important;
+}
+:root .background-neutral-85 {
+  background-color: var(--neutral-85) !important;
+}
+:root .border-neutral-85 {
+  border-color: var(--neutral-85) !important;
 }
 :root .purple-85 {
   color: var(--purple-85) !important;
@@ -7235,15 +7418,6 @@
 }
 :root .border-pink-85 {
   border-color: var(--pink-85) !important;
-}
-:root .gray-85 {
-  color: var(--gray-85) !important;
-}
-:root .background-gray-85 {
-  background-color: var(--gray-85) !important;
-}
-:root .border-gray-85 {
-  border-color: var(--gray-85) !important;
 }
 :root .red-85 {
   color: var(--red-85) !important;
@@ -7389,6 +7563,15 @@
 :root .border-x-85 {
   border-color: var(--x-85) !important;
 }
+:root .tiktok-85 {
+  color: var(--tiktok-85) !important;
+}
+:root .background-tiktok-85 {
+  background-color: var(--tiktok-85) !important;
+}
+:root .border-tiktok-85 {
+  border-color: var(--tiktok-85) !important;
+}
 :root .twitch-85 {
   color: var(--twitch-85) !important;
 }
@@ -7397,6 +7580,15 @@
 }
 :root .border-twitch-85 {
   border-color: var(--twitch-85) !important;
+}
+:root .neutral-90 {
+  color: var(--neutral-90) !important;
+}
+:root .background-neutral-90 {
+  background-color: var(--neutral-90) !important;
+}
+:root .border-neutral-90 {
+  border-color: var(--neutral-90) !important;
 }
 :root .purple-90 {
   color: var(--purple-90) !important;
@@ -7415,15 +7607,6 @@
 }
 :root .border-pink-90 {
   border-color: var(--pink-90) !important;
-}
-:root .gray-90 {
-  color: var(--gray-90) !important;
-}
-:root .background-gray-90 {
-  background-color: var(--gray-90) !important;
-}
-:root .border-gray-90 {
-  border-color: var(--gray-90) !important;
 }
 :root .red-90 {
   color: var(--red-90) !important;
@@ -7569,6 +7752,15 @@
 :root .border-x-90 {
   border-color: var(--x-90) !important;
 }
+:root .tiktok-90 {
+  color: var(--tiktok-90) !important;
+}
+:root .background-tiktok-90 {
+  background-color: var(--tiktok-90) !important;
+}
+:root .border-tiktok-90 {
+  border-color: var(--tiktok-90) !important;
+}
 :root .twitch-90 {
   color: var(--twitch-90) !important;
 }
@@ -7577,6 +7769,15 @@
 }
 :root .border-twitch-90 {
   border-color: var(--twitch-90) !important;
+}
+:root .neutral-95 {
+  color: var(--neutral-95) !important;
+}
+:root .background-neutral-95 {
+  background-color: var(--neutral-95) !important;
+}
+:root .border-neutral-95 {
+  border-color: var(--neutral-95) !important;
 }
 :root .purple-95 {
   color: var(--purple-95) !important;
@@ -7595,15 +7796,6 @@
 }
 :root .border-pink-95 {
   border-color: var(--pink-95) !important;
-}
-:root .gray-95 {
-  color: var(--gray-95) !important;
-}
-:root .background-gray-95 {
-  background-color: var(--gray-95) !important;
-}
-:root .border-gray-95 {
-  border-color: var(--gray-95) !important;
 }
 :root .red-95 {
   color: var(--red-95) !important;
@@ -7749,6 +7941,15 @@
 :root .border-x-95 {
   border-color: var(--x-95) !important;
 }
+:root .tiktok-95 {
+  color: var(--tiktok-95) !important;
+}
+:root .background-tiktok-95 {
+  background-color: var(--tiktok-95) !important;
+}
+:root .border-tiktok-95 {
+  border-color: var(--tiktok-95) !important;
+}
 :root .twitch-95 {
   color: var(--twitch-95) !important;
 }
@@ -7757,6 +7958,15 @@
 }
 :root .border-twitch-95 {
   border-color: var(--twitch-95) !important;
+}
+:root .neutral-100 {
+  color: var(--neutral-100) !important;
+}
+:root .background-neutral-100 {
+  background-color: var(--neutral-100) !important;
+}
+:root .border-neutral-100 {
+  border-color: var(--neutral-100) !important;
 }
 :root .purple-100 {
   color: var(--purple-100) !important;
@@ -7775,15 +7985,6 @@
 }
 :root .border-pink-100 {
   border-color: var(--pink-100) !important;
-}
-:root .gray-100 {
-  color: var(--gray-100) !important;
-}
-:root .background-gray-100 {
-  background-color: var(--gray-100) !important;
-}
-:root .border-gray-100 {
-  border-color: var(--gray-100) !important;
 }
 :root .red-100 {
   color: var(--red-100) !important;
@@ -7928,6 +8129,15 @@
 }
 :root .border-x-100 {
   border-color: var(--x-100) !important;
+}
+:root .tiktok-100 {
+  color: var(--tiktok-100) !important;
+}
+:root .background-tiktok-100 {
+  background-color: var(--tiktok-100) !important;
+}
+:root .border-tiktok-100 {
+  border-color: var(--tiktok-100) !important;
 }
 :root .twitch-100 {
   color: var(--twitch-100) !important;
@@ -9006,6 +9216,90 @@ body.light {
 }
 
 /* Classes */
+:root {
+  --color_text-icon_neutral_primary: var(--neutral-10);
+  --color_text-icon_neutral_secondary: var(--neutral-30);
+  --color_text-icon_neutral_tertiary: var(--neutral-40);
+  --color_text-icon_neutral_disabled: var(--neutral-95);
+  --color_text-icon_neutral_inverse: var(--neutral-100);
+  --color_text-icon_link: var(--instagram-30);
+  --color_text-icon_brand_danger: var(--red-40);
+  --color_text-icon_brand_warning: var(--yellow-40);
+  --color_text-icon_brand_success: var(--green-40);
+  --color_text-icon_brand_information: var(--blue-40);
+  --color_text-icon_brand_discovery: var(--lilac-40);
+  --color_text-icon_system_danger: var(--red-30);
+  --color_text-icon_system_warning: var(--yellow-30);
+  --color_text-icon_system_success: var(--green-30);
+  --color_text-icon_system_information: var(--blue-30);
+  --color_text-icon_system_discovery: var(--lilac-30);
+  --color_text-icon_highlight_orange: var(--orange-30);
+  --color_text-icon_highlight_aqua: var(--aqua-30);
+  --color_text-icon_social_instagram: var(--instagram-30);
+  --color_text-icon_social_youtube: var(--youtube-30);
+  --color_text-icon_social_pinterest: var(--pinterest-30);
+  --color_text-icon_social_google: var(--google-30);
+  --color_text-icon_social_whatsapp: var(--whatsapp-30);
+  --color_text-icon_social_twitter: var(--twitter-30);
+  --color_text-icon_social_linkedin: var(--linkedin-30);
+  --color_text-icon_social_facebook: var(--facebook-30);
+  --color_text-icon_social_twitch: var(--twitch-30);
+  --color_bg_box_neutral_primary: var(--neutral-100);
+  --color_bg_box_neutral_primary_hover: var(--neutral-90);
+  --color_bg_box_neutral_primary_inverse: var(--neutral-10);
+  --color_bg_box_neutral_primary_inverse_hover: var(--neutral-20);
+  --color_bg_box_neutral_secondary: var(--neutral-90);
+  --color_bg_box_neutral_secondary_hover: var(--neutral-80);
+  --color_bg_box_neutral_secondary_inverse: var(--neutral-20);
+  --color_bg_box_neutral_secondary_inverse_hover: var(--neutral-30);
+  --color_bg_box_neutral_disabled: var(--neutral-85);
+  --color_bg_box_system_danger: var(--red-95);
+  --color_bg_box_system_warning: var(--yellow-95);
+  --color_bg_box_system_success: var(--green-95);
+  --color_bg_box_system_information: var(--blue-95);
+  --color_bg_box_system_discovery: var(--lilac-95);
+  --color_bg_box_system_danger_hover: var(--red-85);
+  --color_bg_box_system_warning_hover: var(--yellow-85);
+  --color_bg_box_system_success_hover: var(--green-85);
+  --color_bg_box_system_information_hover: var(--blue-85);
+  --color_bg_box_system_discovery_hover: var(--lilac-85);
+  --color_bg_box_highlight_orange: var(--orange-95);
+  --color_bg_box_highlight_aqua: var(--aqua-95);
+  --color_bg_box_highlight_orange_hover: var(--orange-85);
+  --color_bg_box_highlight_aqua_hover: var(--aqua-85);
+  --color_bg_box_social_instagram: var(--instagram-95);
+  --color_bg_box_social_youtube: var(--youtube-95);
+  --color_bg_box_social_pinterest: var(--pinterest-95);
+  --color_bg_box_social_google: var(--google-95);
+  --color_bg_box_social_whatsapp: var(--whatsapp-95);
+  --color_bg_box_social_twitter: var(--twitter-95);
+  --color_bg_box_social_linkedin: var(--linkedin-95);
+  --color_bg_box_social_facebook: var(--facebook-95);
+  --color_bg_box_social_twitch: var(--twitch-95);
+  --color_bg_box_social_instagram_hover: var(--instagram-85);
+  --color_bg_box_social_youtube_hover: var(--youtube-85);
+  --color_bg_box_social_pinterest_hover: var(--pinterest-85);
+  --color_bg_box_social_google_hover: var(--google-85);
+  --color_bg_box_social_whatsapp_hover: var(--whatsapp-85);
+  --color_bg_box_social_twitter_hover: var(--twitter-85);
+  --color_bg_box_social_linkedin_hover: var(--linkedin-85);
+  --color_bg_box_social_facebook_hover: var(--facebook-85);
+  --color_bg_box_social_twitch_hover: var(--twitch-85);
+  --color_text-icon_neutral_placeholder: var(--neutral-50);
+  --color_text-icon_universal_black_primary: var(--black-10);
+  --color_text-icon_universal_black_secondary: var(--black-30);
+  --color_text-icon_universal_black_tertiary: var(--black-40);
+  --color_text-icon_universal_black_disabled: var(--neutral-70);
+  --color_text-icon_universal_white_primary: var(--neutral-100);
+  --color_text-icon_universal_white_secondary: var(--neutral-70);
+  --color_text-icon_universal_white_tertiary: var(--neutral-60);
+  --color_text-icon_universal_white_disabled: var(--neutral-40);
+  --color_text-icon_universal_brand_wake: var(--purple-70);
+  --color_text-icon_universal_brand_squid: var(--pink-70);
+  --color_text-icon_social_x: var(--x-0);
+  --color_text-icon_social_tiktok: var(--tiktok-0);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

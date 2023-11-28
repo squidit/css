@@ -59,3 +59,22 @@ function generateCSSVariables (colorName, colorArray) {
   cssVariables += '}';
   return cssVariables;
 }
+
+function createColor (colorName, hexColor) {
+  const colorArray = generateBrightnessScale(hexColor);
+  const cssVariables = generateCSSVariables(colorName, colorArray);
+  return {
+    name: colorName,
+    hex: hexColor,
+    scale: colorArray,
+    cssVariables: cssVariables
+  };
+}
+
+function createInCss (colorName, hexColor) {
+  const colorResponse = createColor(colorName, hexColor);
+  const styleTag = document.createElement('style');
+  styleTag.setAttribute('type', 'text/css');
+  styleTag.innerHTML = colorResponse.cssVariables;
+  document.head.appendChild(styleTag);
+}
