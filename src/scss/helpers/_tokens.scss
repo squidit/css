@@ -10,34 +10,33 @@
   --#{"" + $prefix + "_" + $name + $suffixParsed}: var(--#{$color}-#{$scale});
 }
 
-$brands: (
-  wake: 'purple',
-  squid: 'pink'
-);
-
-$system: (
-  danger: 'red',
-  warning: 'yellow',
-  success: 'green',
-  information: 'blue',
-  discovery: 'lilac'
-);
-
-$highlight: (
-  orange: 'orange',
-  aqua: 'aqua'
-);
-
-$social: (
-  instagram: 'instagram',
-  youtube: 'youtube',
-  pinterest: 'pinterest',
-  google: 'google',
-  whatsapp: 'whatsapp',
-  twitter: 'twitter',
-  linkedin: 'linkedin',
-  facebook: 'facebook',
-  twitch: 'twitch'
+$lists: (
+  brands: (
+    wake: 'purple',
+    squid: 'pink'
+  ),
+  system: (
+    danger: 'red',
+    warning: 'yellow',
+    success: 'green',
+    information: 'blue',
+    discovery: 'lilac'
+  ),
+  highlight: (
+    orange: 'orange',
+    aqua: 'aqua'
+  ),
+  social: (
+    instagram: 'instagram',
+    youtube: 'youtube',
+    pinterest: 'pinterest',
+    google: 'google',
+    whatsapp: 'whatsapp',
+    twitter: 'twitter',
+    linkedin: 'linkedin',
+    facebook: 'facebook',
+    twitch: 'twitch'
+  )
 );
 
 @mixin theme-light {
@@ -46,13 +45,8 @@ $social: (
   @include generate-variable('neutral_secondary', 'neutral', 30, 'color_text-icon');
   @include generate-variable('neutral_tertiary', 'neutral', 40, 'color_text-icon');
   @include generate-variable('neutral_disabled', 'neutral', 95, 'color_text-icon');
-  @include generate-variable('neutral_inverse', 'neutral', 100, 'color_text-icon');
+  @include generate-variable('neutral', 'neutral', 100, 'color_text-icon', 'inverse');
   @include generate-variable('link', 'instagram', 30, 'color_text-icon');
-
-  @include generate-by-list($system, 40, 'color_text-icon_brand');
-  @include generate-by-list($system, 30, 'color_text-icon_system');
-  @include generate-by-list($highlight, 30, 'color_text-icon_highlight');
-  @include generate-by-list($social, 30, 'color_text-icon_social');
 
   // BOX
   @include generate-variable('neutral_primary', 'neutral', 100, 'color_bg_box');
@@ -65,12 +59,45 @@ $social: (
   @include generate-variable('neutral_secondary', 'neutral', 30, 'color_bg_box', 'inverse-hover');
   @include generate-variable('neutral_disabled', 'neutral', 85, 'color_bg_box');
 
-  @include generate-by-list($system, 95, 'color_bg_box_system');
-  @include generate-by-list($system, 85, 'color_bg_box_system', 'hover');
-  @include generate-by-list($highlight, 95, 'color_bg_box_highlight');
-  @include generate-by-list($highlight, 85, 'color_bg_box_highlight', 'hover');
-  @include generate-by-list($social, 95, 'color_bg_box_social');
-  @include generate-by-list($social, 85, 'color_bg_box_social', 'hover');
+  // INPUT
+  @include generate-variable('input', 'neutral', 95, 'color_bg');
+  @include generate-variable('input_disabled', 'neutral', 85, 'color_bg');
+
+  // BORDER
+  @include generate-variable('neutral_primary', 'neutral', 90, 'color_border_box');
+  @include generate-variable('neutral_secondary', 'neutral', 95, 'color_border_box');
+  @include generate-variable('neutral_disabled', 'neutral', 85, 'color_border_box');
+  @include generate-variable('neutral', 'neutral', 10, 'color_border_button');
+  @include generate-variable('enabled', 'neutral', 90, 'color_border_input');
+  @include generate-variable('hover', 'neutral', 65, 'color_border_input');
+  @include generate-variable('focus', 'blue', 40, 'color_border_input');
+  @include generate-variable('disabled', 'neutral', 80, 'color_border_input');
+  @include generate-variable('error', 'red', 40, 'color_border_input');
+  @include generate-variable('success', 'green', 40, 'color_border_input');
+
+  // SURFACE
+  @include generate-variable('primary', 'neutral', 95, 'color_surface');
+  @include generate-variable('secondary', 'neutral', 85, 'color_surface');
+  @include generate-variable('primary', 'neutral', 05, 'color_surface', 'inverse');
+  @include generate-variable('secondary', 'neutral', 15, 'color_surface', 'inverse');
+
+  @each $name, $list in $lists {
+    // TEXT ICON
+    @include generate-by-list($list, 30, #{'color_text-icon_' + $name});
+
+    // BOX
+    @include generate-by-list($list, 95, #{'color_bg_box_' + $name});
+    @include generate-by-list($list, 85, #{'color_bg_box_' + $name}, 'hover');
+
+    // BUTTON
+    @include generate-by-list($list, 40, #{'color_bg_button_' + $name});
+    @include generate-by-list($list, 50, #{'color_bg_button_' + $name}, 'hover');
+    @include generate-by-list($list, 90, #{'color_bg_button_' + $name}, 'inverse-hover');
+
+    // BORDER
+    @include generate-by-list($list, 90, #{'color_border_box_' + $name});
+    @include generate-by-list($list, 30, #{'color_border_button_' + $name});
+  }
 }
 
 @mixin theme-dark {
@@ -79,13 +106,8 @@ $social: (
   @include generate-variable('neutral_secondary', 'neutral', 70, 'color_text-icon');
   @include generate-variable('neutral_tertiary', 'neutral', 60, 'color_text-icon');
   @include generate-variable('neutral_disabled', 'neutral', 5, 'color_text-icon');
-  @include generate-variable('neutral_inverse', 'neutral', 10, 'color_text-icon');
+  @include generate-variable('neutral', 'neutral', 10, 'color_text-icon', 'inverse');
   @include generate-variable('link', 'instagram', 70, 'color_text-icon');
-
-  @include generate-by-list($system, 70, 'color_text-icon_brand');
-  @include generate-by-list($system, 70, 'color_text-icon_system');
-  @include generate-by-list($highlight, 70, 'color_text-icon_highlight');
-  @include generate-by-list($social, 70, 'color_text-icon_social');
 
   // BOX
   @include generate-variable('neutral_primary', 'neutral', 10, 'color_bg_box');
@@ -98,12 +120,45 @@ $social: (
   @include generate-variable('neutral_secondary', 'neutral', 80, 'color_bg_box', 'inverse-hover');
   @include generate-variable('neutral_disabled', 'neutral', 25, 'color_bg_box');
 
-  @include generate-by-list($system, 10, 'color_bg_box_system');
-  @include generate-by-list($system, 20, 'color_bg_box_system', 'hover');
-  @include generate-by-list($highlight, 10, 'color_bg_box_highlight');
-  @include generate-by-list($highlight, 20, 'color_bg_box_highlight', 'hover');
-  @include generate-by-list($social, 10, 'color_bg_box_social');
-  @include generate-by-list($social, 20, 'color_bg_box_social', 'hover');
+  // INPUT
+  @include generate-variable('input', 'neutral', 15, 'color_bg');
+  @include generate-variable('input_disabled', 'neutral', 25, 'color_bg');
+
+  // BORDER
+  @include generate-variable('neutral_primary', 'neutral', 10, 'color_border_box');
+  @include generate-variable('neutral_secondary', 'neutral', 5, 'color_border_box');
+  @include generate-variable('neutral_disabled', 'neutral', 15, 'color_border_box');
+  @include generate-variable('neutral', 'neutral', 100, 'color_border_button');
+  @include generate-variable('enabled', 'neutral', 20, 'color_border_input');
+  @include generate-variable('hover', 'neutral', 35, 'color_border_input');
+  @include generate-variable('focus', 'blue', 70, 'color_border_input');
+  @include generate-variable('disabled', 'neutral', 30, 'color_border_input');
+  @include generate-variable('error', 'red', 70, 'color_border_input');
+  @include generate-variable('success', 'green', 70, 'color_border_input');
+
+  // SURFACE
+  @include generate-variable('primary', 'neutral', 05, 'color_surface');
+  @include generate-variable('secondary', 'neutral', 15, 'color_surface');
+  @include generate-variable('primary', 'neutral', 95, 'color_surface', 'inverse');
+  @include generate-variable('secondary', 'neutral', 85, 'color_surface', 'inverse');
+
+  @each $name, $list in $lists {
+    // TEXT ICON
+    @include generate-by-list($list, 70, #{'color_text-icon_' + $name});
+
+    // BOX
+    @include generate-by-list($list, 10, #{'color_bg_box_' + $name});
+    @include generate-by-list($list, 20, #{'color_bg_box_' + $name}, 'hover');
+
+    // BUTTON
+    @include generate-by-list($list, 70, #{'color_bg_button_' + $name});
+    @include generate-by-list($list, 60, #{'color_bg_button_' + $name}, 'hover');
+    @include generate-by-list($list, 10, #{'color_bg_button_' + $name}, 'inverse-hover');
+
+    // BORDER
+    @include generate-by-list($list, 15, #{'color_border_box_' + $name});
+    @include generate-by-list($list, 70, #{'color_border_button_' + $name});
+  }
 }
 
 @mixin theme-global {
@@ -125,9 +180,32 @@ $social: (
 
   @include generate-variable('universal_social_x', 'x', 0, 'color_text-icon');
   @include generate-variable('universal_social_tiktok', 'tiktok', 0, 'color_text-icon');
+
+  // SURFACE
+  @include generate-variable('universal_black', 'neutral', 10, 'color_surface');
 }
 
 :root {
   @include theme-light;
   @include theme-global;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @include theme-light;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include theme-dark;
+  }
+}
+
+body.light {
+  @include theme-light;
+}
+
+body.dark {
+  @include theme-dark;
 }
