@@ -22,9 +22,9 @@ $weights: (
 
 .disabled {
   cursor: not-allowed !important;
-  color: var(--gray_light) !important;
-  border-color: var(--gray) !important;
-  background: var(--gray_dark) !important;
+  color: var(--color_text-icon_neutral_disabled) !important;
+  border-color: var(--color_border_input_disabled) !important;
+  background: var(--color_bg_input_disabled) !important;
   opacity: 0.3;
 }
 
