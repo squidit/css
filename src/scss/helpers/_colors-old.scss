@@ -1,171 +1,135 @@
-/* Sass Vars */
-$amoutLigthen: 25%;
-$amountDarken: 25%;
-
-$black:      #212529 !default;
-$blackLight: #495057 !default;
-$blackMedium:#3b3b3b !default;
-$blackHtml:  #000000 !default;
-$white:      #F6F6F8 !default;
-$whiteHtml:  #FFFFFF !default;
-$gray:       #98A0A8 !default;
-$grayLight:  #E9EBF0 !default;
-$grayDark:   #707981 !default;
-$pink:       #E94589 !default;
-$lilac:      #7C70D1 !default;
-$cian:       #5ACAED !default;
-$green:      #299C39 !default;
-$aqua:       #12ACA2 !default;
-$yellow:     #F6AB2F !default;
-$red:        #E02D2D !default;
-$red-bl:     #FF4F33 !default;
-$blue:       #5E9BFF !default;
-$pomegranate:#ee7177 !default;
-$lemon:      #fcff05 !default;
-$gold:       #fccc0a !default;
-$pastry:     #fdef72 !default;
-$instagram:  #F42A9C !default;
-$twitter:    #1DA1F2 !default;
-$youtube:    #FF0000 !default;
-$pinterest:  #E60023 !default;
-$facebook:   #4267B2 !default;
-$google:     #0F9D58 !default;
-$linkedin:   #2867B2 !default;
-$whatsapp:   #25D366 !default;
-$tiktok:     #000000 !default;
-
 $colors: (
   black: (
-    base: $black,
-    light: $blackLight,
-    medium: $blackMedium,
+    base:  var(--neutral-10),
+    light:  var(--neutral-30),
+    medium: var(--neutral-20)
   ),
   white: (
-    base: $white
+    base: var(--neutral-95)
   ),
   black-html: (
-    base: $blackHtml
+    base: black
   ),
   white-html: (
-    base: $whiteHtml
+    base: white
   ),
   transparent: (
     base: transparent
   ),
   gray: (
-    base: $gray,
-    light: $grayLight,
-    dark: $grayDark
+    base: var(--neutral-50),
+    light: var(--neutral-90),
+    dark: var(--neutral-50)
   ),
   pink: (
-    base: $pink,
-    light: lighten($pink, $amoutLigthen),
-    dark: darken($pink, $amountDarken)
+    base: var(--pink-50),
+    light: var(--pink-70),
+    dark: var(--pink-30)
   ),
   lilac: (
-    base: $lilac,
-    light: lighten($lilac, $amoutLigthen),
-    dark: darken($lilac, $amountDarken)
+    base: var(--lilac-50),
+    light: var(--lilac-70),
+    dark: var(--lilac-30)
   ),
   cian: (
-    base: $cian,
-    light: lighten($cian, $amoutLigthen),
-    dark: darken($cian, $amountDarken) 
+    base: var(--aqua-50),
+    light: var(--aqua-70),
+    dark: var(--aqua-30)
   ),
   green: (
-    base: $green,
-    light: lighten($green, $amoutLigthen),
-    dark: darken($green, $amountDarken)
+    base: var(--green-50),
+    light: var(--green-70),
+    dark: var(--green-30)
   ),
   aqua: (
-    base: $aqua,
-    light: lighten($aqua, $amoutLigthen),
-    dark: darken($aqua, $amountDarken)
+    base: var(--aqua-50),
+    light: var(--aqua-70),
+    dark: var(--aqua-30)
   ),
   yellow: (
-    base: $yellow,
-    light: lighten($yellow, $amoutLigthen),
-    dark: darken($yellow, $amountDarken)
+    base: var(--yellow-50),
+    light: var(--yellow-70),
+    dark: var(--yellow-30)
   ),
   red: (
-    base: $red,
-    light: lighten($red, $amoutLigthen),
-    dark: darken($red, $amountDarken)
+    base: var(--red-50),
+    light: var(--red-70),
+    dark: var(--red-30)
   ),
   red-bl: (
-    base: $red-bl,
-    light: lighten($red-bl, $amoutLigthen),
-    dark: darken($red-bl, $amountDarken)
+    base: var(--red-50),
+    light: var(--red-70),
+    dark: var(--red-30)
   ),
   blue: (
-    base: $blue,
-    light: lighten($blue, $amoutLigthen),
-    dark: darken($blue, $amountDarken)
+    base: var(--blue-50),
+    light: var(--blue-70),
+    dark: var(--blue-30)
   ),
   pomegranate: (
-    base: $pomegranate,
-    light: lighten($pomegranate, $amoutLigthen),
-    dark: darken($pomegranate, $amountDarken)
+    base: var(--red-50),
+    light: var(--red-70),
+    dark: var(--red-30)
   ),
   lemon: (
-    base: $lemon,
-    light: lighten($lemon, $amoutLigthen),
-    dark: darken($lemon, $amountDarken)
+    base: var(--yellow-50),
+    light: var(--yellow-70),
+    dark: var(--yellow-30)
   ),
   gold: (
-    base: $gold,
-    light: lighten($gold, $amoutLigthen),
-    dark: darken($gold, $amountDarken)
+    base: var(--yellow-50),
+    light: var(--yellow-70),
+    dark: var(--yellow-30)
   ),
   pastry: (
-    base: $pastry,
-    light: lighten($pastry, $amoutLigthen),
-    dark: darken($pastry, $amountDarken)
+    base: var(--yellow-50),
+    light: var(--yellow-70),
+    dark: var(--yellow-30)
   ),
   instagram: (
-    base: $instagram,
-    light: lighten($instagram, $amoutLigthen),
-    dark: darken($instagram, $amountDarken)
+    base: var(--instagram-50),
+    light: var(--instagram-70),
+    dark: var(--instagram-30)
   ),
   twitter: (
-    base: $twitter,
-    light: lighten($twitter, $amoutLigthen),
-    dark: darken($twitter, $amountDarken)
+    base: var(--twitter-50),
+    light: var(--twitter-70),
+    dark: var(--twitter-30)
   ),
   youtube: (
-    base: $youtube,
-    light: lighten($youtube, $amoutLigthen),
-    dark: darken($youtube, $amountDarken)
+    base: var(--youtube-50),
+    light: var(--youtube-70),
+    dark: var(--youtube-30)
   ),
   pinterest: (
-    base: $pinterest,
-    light: lighten($pinterest, $amoutLigthen),
-    dark: darken($pinterest, $amountDarken)
+    base: var(--pinterest-50),
+    light: var(--pinterest-70),
+    dark: var(--pinterest-30)
   ),
   facebook: (
-    base: $facebook,
-    light: lighten($facebook, $amoutLigthen),
-    dark: darken($facebook, $amountDarken)
+    base: var(--facebook-50),
+    light: var(--facebook-70),
+    dark: var(--facebook-30)
   ),
   google: (
-    base: $google,
-    light: lighten($google, $amoutLigthen),
-    dark: darken($google, $amountDarken)
+    base: var(--google-50),
+    light: var(--google-70),
+    dark: var(--google-30)
   ),
   linkedin: (
-    base: $linkedin,
-    light: lighten($linkedin, $amoutLigthen),
-    dark: darken($linkedin, $amountDarken)
+    base: var(--linkedin-50),
+    light: var(--linkedin-70),
+    dark: var(--linkedin-30)
   ),
   whatsapp: (
-    base: $whatsapp,
-    light: lighten($whatsapp, $amoutLigthen),
-    dark: darken($whatsapp, $amountDarken)
+    base: var(--whatsapp-50),
+    light: var(--whatsapp-70),
+    dark: var(--whatsapp-30)
   ),
   tiktok: (
-    base: $tiktok,
-    light: lighten($tiktok, $amoutLigthen),
-    dark: darken($tiktok, $amountDarken)
+    base: var(--tiktok-0),
+    light: var(--tiktok-100),
+    dark:   var(--tiktok-0)
   )
 ) !default;
 /* Sass Vars */
@@ -181,17 +145,17 @@ $colors: (
       }
     }
   }
-  --border_color: var(--gray_light, #98a0a8);
-  --black_background: var(--black_medium, #3b3b3b);
-  --black_text: var(--white, #F6F6F8);
-  --black_title: var(--white-html, #FFFFFF);
-  --black_secondary: var(--black, #212529);
-  --black_border: var(--gray_dark, #707981);
-  --white_background: var(--white, #f6f6f8);
-  --white_text: var(--black_medium, #3b3b3b);
-  --white_title: var(--black, #212529);
-  --white_secondary: var(--white-html, #ffffff);
-  --white_border: var(--gray_light, #98a0a8);
+  --border_color: var(--gray_light);
+  --black_background: var(--black_medium);
+  --black_text: var(--white);
+  --black_title: var(--white-html);
+  --black_secondary: var(--black);
+  --black_border: var(--gray_dark);
+  --white_background: var(--white);
+  --white_text: var(--black_medium);
+  --white_title: var(--black);
+  --white_secondary: var(--white-html);
+  --white_border: var(--gray_light);
   --background: var(--white);
   --background_secondary: var(--white_background);
   --text_color: var(--white_text);
@@ -200,7 +164,7 @@ $colors: (
   --background_reset: var(--white-html);
   --shadow_color: #64647680;
   --box_shadow: 0px 4px 12px -5px var(--shadow_color);
-  --border_color: var(--gray_light, #98a0a8);
+  --border_color: var(--gray_light);
 }
 
 @media (prefers-color-scheme: light) {
@@ -222,7 +186,7 @@ $colors: (
     --background_secondary: var(--black_secondary);
     --text_color: var(--black_text);
     --title_color: var(--black_title);
-    --background_third: var(--black_light, #495057);
+    --background_third: var(--black_light);
     --shadow_color: #00000040;
     --background_reset: #101010;
     --box_shadow: 0px 4px 20px 0px var(--shadow_color);
@@ -235,7 +199,7 @@ body.dark {
   --background_secondary: var(--black_secondary) !important;
   --text_color: var(--black_text) !important;
   --title_color: var(--black_title) !important;
-  --background_third: var(--black_light, #495057) !important;
+  --background_third: var(--black_light) !important;
   --shadow_color: #00000040 !important;
   --background_reset: #101010  !important;
   --box_shadow: 0px 4px 20px 0px var(--shadow_color) !important;
