@@ -36,8 +36,8 @@ $weights: (
 
 select, input, textarea, button {
   &.readonly {
-    background: var(--background) !important;
-    border-color: var(--gray_dark) !important;
+    background: var(--color_bg_input_disabled) !important;
+    border-color: var(--neutral-50) !important;
   }
 }
 

@@ -35,7 +35,7 @@
   padding: $gutter;
   margin: $gutter;
   color: var(--black);
-  background-color: var(--white-html);
+  background-color: white;
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr;
@@ -54,12 +54,12 @@
     padding: 1rem 1.5rem;
   }
   &.success {
-    background: var(--green_light);
-    color: var(--green_dark);
+    background: var(--green-70);
+    color: var(--green-30);
   }
   &.inverted {
     background: var(--black);
-    color: var(--white-html);
+    color: white;
   }
   &.info {
     background: var(--blue_light);

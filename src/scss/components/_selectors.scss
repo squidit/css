@@ -33,7 +33,7 @@
         display: block;
         transition: $transition;
         content: "\2713";
-        color: var(--white-html);
+        color: white;
         font-weight: 700;
         font-size: 12px;
         line-height: 1.5;
@@ -55,7 +55,7 @@
           height: 10px;
           width: 10px;
           border-radius: 50%;
-          background: var(--white-html);
+          background: white;
           left: 4px;
           top: 4px;
           opacity: 0;
@@ -65,7 +65,7 @@
     }
     &:checked {
       & + label.checkbox {
-        background-color: var(--green);
+        background-color: var(--green-50);
         &::after {
           opacity: 1;
         }
@@ -73,20 +73,20 @@
       &[disabled],
       &.disabled {
         & + label.checkbox,  + label.radio {
-          background-color: var(--green_light) !important;
+          background-color: var(--green-70) !important;
         }
       }
       &[readonly],
       &.readonly {
         & + label.checkbox,  + label.radio {
-          background-color: var(--green_light) !important;
+          background-color: var(--green-70) !important;
         }
       }
     }
     &[indeterminate],
     &.indeterminate {
       & + label.checkbox {
-        background-color: var(--green);
+        background-color: var(--green-50);
         &::after {
           line-height: 16px;
           content: "\2014";
@@ -123,7 +123,7 @@
           height: 18px;
           width: 18px;
           border-radius: 50%;
-          background: var(--white-html);
+          background: white;
           left: 4px;
           top: 2px;
         }

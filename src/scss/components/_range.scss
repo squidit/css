@@ -16,14 +16,14 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: var(--pink);
+    background: var(--pink-50);
     cursor: pointer;
     transition: $transition;
     padding: 2px;
     background-clip: content-box;
     border: 2px solid transparent;
     &:hover {
-      border-color: var(--pink);
+      border-color: var(--pink-70);
     }
   }
   &::-moz-range-thumb {

@@ -22,16 +22,16 @@
   }
   &.error {
     border-width: 1px;
-    border-color: var(--red);
+    border-color: var(--red-50);
     &:focus {
-      box-shadow: 0px 0px 0px 1px var(--red);
+      box-shadow: 0px 0px 0px 1px var(--red-50);
     }
   }
   &.valid {
     border-width: 1px;
-    border-color: var(--green);
+    border-color: var(--green-50);
     &:focus {
-      box-shadow: 0px 0px 0px 1px var(--green);
+      box-shadow: 0px 0px 0px 1px var(--green-50);
     }
   }
   &[readonly],
@@ -117,12 +117,12 @@
   }
   &.box-invalid {
     i, svg {
-      color: var(--red);
+      color: var(--red-50);
     }
   }
   &.box-valid {
     i, svg {
-      color: var(--green);
+      color: var(--green-50);
     }
   }
   &.show {
