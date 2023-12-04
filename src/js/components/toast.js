@@ -41,6 +41,9 @@
       theme: {
         className: ''
       },
+      discovery: {
+        className: ''
+      },
       error: {
         className: '',
         duration: 10000,

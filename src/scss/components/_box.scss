@@ -18,7 +18,7 @@
   }
   &.inverted {
     background: var(--color_bg_box_neutral_primary_inverse);
-    color: white;
+    color: var(--color_bg_box_neutral_primary);
   }
   &.info {
     background: var(--color_bg_box_system_information);

@@ -54,28 +54,32 @@
     padding: 1rem 1.5rem;
   }
   &.success {
-    background: var(--green-70);
-    color: var(--green-30);
+    background: var(--color_bg_box_system_success);
+    color: var(--color_text-icon_system_success);
   }
   &.inverted {
-    background: var(--black);
-    color: white;
+    background: var(--color_bg_box_neutral_primary_inverse);
+    color: var(--color_bg_box_neutral_primary);
   }
   &.info {
-    background: var(--blue_light);
-    color: var(--blue_dark);
+    background: var(--color_bg_box_system_information);
+    color: var(--color_text-icon_system_information);
   }
   &.warning {
-    background: var(--yellow_light);
-    color: var(--yellow_dark);
+    background: var(--color_bg_box_system_warning);
+    color: var(--color_text-icon_system_warning);
   }
   &.error {
-    background: var(--red_light);
-    color: var(--red_dark);
+    background: var(--color_bg_box_system_danger);
+    color: var(--color_text-icon_system_danger);
   }
   &.grayscale {
-    background: var(--white);
-    color: var(--black);
+    background: var(--color_bg_box_neutral_secondary);
+    color: var(--color_text-icon_neutral_secondary);
+  }
+  &.discovery {
+    background: var(--color_bg_box_system_discovery);
+    color: var(--color_text-icon_system_discovery);
   }
   &.theme {
     background: var(--text_color);

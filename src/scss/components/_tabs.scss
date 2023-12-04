@@ -91,12 +91,12 @@
         }
       }
       &.active {
-        color: var(--pink);
-        border-color: var(--pink);
+        color: var(--pink-50);
+        border-color: var(--pink-50);
         font-weight: 500;
         box-shadow: none;
         &::before {
-          background: var(--pink);
+          background: var(--pink-50);
         }
       }
     }
