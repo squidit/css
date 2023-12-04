@@ -2,15 +2,18 @@
 .input {
   min-height: 44px;
   border: 1px solid var(--border_color);
-  background: var(--background);
+  background: var(--color_bg_input);
   padding: 0.75rem $gutter;
   transition: $transition;
   color: var(--text_color);
   @extend .border-radius;
+  &.rounded {
+    border-radius: 30px;
+  }
   &.small {
     min-height: 25px;
     padding: 0.25rem $gutter;
-    background-color: var(--background);
+    background-color: var(--color_bg_input);
     border-radius: 30px;
     color: var(--text_color);
     border-color: var(--text_color);
