@@ -78,3 +78,79 @@ function createInCss (colorName, hexColor) {
   styleTag.innerHTML = colorResponse.cssVariables;
   document.head.appendChild(styleTag);
 }
+
+function createColorDiv (color) {
+  const colorBox = document.createElement('div');
+  colorBox.className = 'box p-0 m-0';
+  colorBox.style.borderRadius = '5px';
+
+  const colorInfo = document.createElement('div');
+  colorInfo.className = `py-3 text-center white-html background-${color}-50`;
+
+  const colorName = document.createElement('p');
+  colorName.style.textTransform = 'capitalize';
+  colorName.textContent = color;
+
+  const colorVar = document.createElement('p');
+  colorVar.style.fontSize = '0.86rem';
+  colorVar.textContent = `Default: var(--${color}-50)`;
+
+  colorInfo.appendChild(colorName);
+  colorInfo.appendChild(colorVar);
+
+  colorBox.appendChild(colorInfo);
+
+  for (let i = 5; i <= 95; i += 5) {
+    const colorDiv = document.createElement('div');
+    colorDiv.className = `py-2 text-center white-html background-${color}-${i}`;
+    colorDiv.textContent = `var(--${color}-${i})`;
+
+    colorBox.appendChild(colorDiv);
+  }
+
+  return colorBox;
+}
+
+async function renderColors () {
+  const colors = [
+    'neutral',
+    'purple',
+    'pink',
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'aqua',
+    'blue',
+    'lilac',
+    'instagram',
+    'youtube',
+    'pinterest',
+    'google',
+    'whatsapp',
+    'twitter',
+    'linkedin',
+    'facebook',
+    'x',
+    'tiktok',
+    'twitch'
+  ]
+
+  const div = document.createElement('div');
+  div.style.display = 'grid';
+  div.style.gridTemplateColumns = 'repeat(3, 1fr)';
+  div.style.gap = '1.5rem';
+
+  for (const color of colors) {
+    div.appendChild(createColorDiv(color))
+  }
+
+  const colorsDiv = document.getElementById('colors');
+  colorsDiv.appendChild(div);
+}
+
+if (typeof window !== 'undefined') {
+  window.onload = function () {
+    renderColors();
+  };
+}
