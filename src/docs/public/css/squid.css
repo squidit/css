@@ -9176,7 +9176,7 @@ html {
   --color_text-icon_neutral_primary: var(--neutral-10) ;
   --color_text-icon_neutral_secondary: var(--neutral-30) ;
   --color_text-icon_neutral_tertiary: var(--neutral-40) ;
-  --color_text-icon_neutral_disabled: var(--neutral-95) ;
+  --color_text-icon_neutral_disabled: var(--neutral-40) ;
   --color_text-icon_neutral_inverse: var(--neutral-100) ;
   --color_text-icon_link: var(--instagram-30) ;
   --color_bg_box_neutral_primary: var(--neutral-100) ;
@@ -9194,7 +9194,7 @@ html {
   --color_border_box_neutral_secondary: var(--neutral-95) ;
   --color_border_box_neutral_disabled: var(--neutral-85) ;
   --color_border_button_neutral: var(--neutral-10) ;
-  --color_border_input_enabled: var(--neutral-90) ;
+  --color_border_input: var(--neutral-90) ;
   --color_border_input_hover: var(--neutral-65) ;
   --color_border_input_focus: var(--blue-40) ;
   --color_border_input_disabled: var(--neutral-80) ;
@@ -9358,7 +9358,7 @@ html {
     --color_text-icon_neutral_primary: var(--neutral-100) ;
     --color_text-icon_neutral_secondary: var(--neutral-70) ;
     --color_text-icon_neutral_tertiary: var(--neutral-60) ;
-    --color_text-icon_neutral_disabled: var(--neutral-5) ;
+    --color_text-icon_neutral_disabled: var(--neutral-60) ;
     --color_text-icon_neutral_inverse: var(--neutral-10) ;
     --color_text-icon_link: var(--instagram-70) ;
     --color_bg_box_neutral_primary: var(--neutral-10) ;
@@ -9376,8 +9376,8 @@ html {
     --color_border_box_neutral_secondary: var(--neutral-5) ;
     --color_border_box_neutral_disabled: var(--neutral-15) ;
     --color_border_button_neutral: var(--neutral-100) ;
-    --color_border_input_enabled: var(--neutral-20) ;
-    --color_border_input_hover: var(--neutral-35) ;
+    --color_border_input: var(--neutral-30) ;
+    --color_border_input_hover: var(--neutral-40) ;
     --color_border_input_focus: var(--blue-70) ;
     --color_border_input_disabled: var(--neutral-30) ;
     --color_border_input_error: var(--red-70) ;
@@ -9539,7 +9539,7 @@ html.light {
   --color_text-icon_neutral_primary: var(--neutral-10) !important;
   --color_text-icon_neutral_secondary: var(--neutral-30) !important;
   --color_text-icon_neutral_tertiary: var(--neutral-40) !important;
-  --color_text-icon_neutral_disabled: var(--neutral-95) !important;
+  --color_text-icon_neutral_disabled: var(--neutral-40) !important;
   --color_text-icon_neutral_inverse: var(--neutral-100) !important;
   --color_text-icon_link: var(--instagram-30) !important;
   --color_bg_box_neutral_primary: var(--neutral-100) !important;
@@ -9557,7 +9557,7 @@ html.light {
   --color_border_box_neutral_secondary: var(--neutral-95) !important;
   --color_border_box_neutral_disabled: var(--neutral-85) !important;
   --color_border_button_neutral: var(--neutral-10) !important;
-  --color_border_input_enabled: var(--neutral-90) !important;
+  --color_border_input: var(--neutral-90) !important;
   --color_border_input_hover: var(--neutral-65) !important;
   --color_border_input_focus: var(--blue-40) !important;
   --color_border_input_disabled: var(--neutral-80) !important;
@@ -9720,7 +9720,7 @@ html.dark {
   --color_text-icon_neutral_primary: var(--neutral-100) !important;
   --color_text-icon_neutral_secondary: var(--neutral-70) !important;
   --color_text-icon_neutral_tertiary: var(--neutral-60) !important;
-  --color_text-icon_neutral_disabled: var(--neutral-5) !important;
+  --color_text-icon_neutral_disabled: var(--neutral-60) !important;
   --color_text-icon_neutral_inverse: var(--neutral-10) !important;
   --color_text-icon_link: var(--instagram-70) !important;
   --color_bg_box_neutral_primary: var(--neutral-10) !important;
@@ -9738,8 +9738,8 @@ html.dark {
   --color_border_box_neutral_secondary: var(--neutral-5) !important;
   --color_border_box_neutral_disabled: var(--neutral-15) !important;
   --color_border_button_neutral: var(--neutral-100) !important;
-  --color_border_input_enabled: var(--neutral-20) !important;
-  --color_border_input_hover: var(--neutral-35) !important;
+  --color_border_input: var(--neutral-30) !important;
+  --color_border_input_hover: var(--neutral-40) !important;
   --color_border_input_focus: var(--blue-70) !important;
   --color_border_input_disabled: var(--neutral-30) !important;
   --color_border_input_error: var(--red-70) !important;
@@ -10491,18 +10491,17 @@ html.light {
   color: var(--color_text-icon_neutral_disabled) !important;
   border-color: var(--color_border_input_disabled) !important;
   background: var(--color_bg_input_disabled) !important;
-  opacity: 0.3;
+  opacity: 0.3 !important;
 }
 
 .readonly, .wrapper-selectors input[readonly] + label.checkbox, .wrapper-selectors input.readonly + label.checkbox, .input[readonly], [readonly].select, [readonly].textarea, .input.readonly, .readonly.select, .readonly.textarea {
   color: var(--color_text-icon_neutral_secondary) !important;
   cursor: initial !important;
-  opacity: 1 !important;
+  opacity: 0.7 !important;
 }
 
 select.readonly, select.input[readonly], select[readonly].select, select[readonly].textarea, select.input.readonly, select.readonly.select, select.readonly.textarea, input.readonly, input.input[readonly], input[readonly].select, input[readonly].textarea, input.input.readonly, input.readonly.select, input.readonly.textarea, textarea.readonly, textarea.input[readonly], textarea[readonly].select, textarea[readonly].textarea, textarea.input.readonly, textarea.readonly.select, textarea.readonly.textarea, button.readonly, button.input[readonly], button[readonly].select, button[readonly].textarea, button.input.readonly, button.readonly.select, button.readonly.textarea {
-  background: var(--color_bg_input_disabled) !important;
-  border-color: var(--neutral-50) !important;
+  border-color: var(--color_border_input) !important;
 }
 
 .text-ellipsis {
@@ -12790,7 +12789,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 
 .input, .select, .textarea {
   min-height: 44px;
-  border: 1px solid var(--color_border_box_neutral_primary);
+  border: 1px solid var(--color_border_input);
   background: var(--color_bg_input);
   padding: 0.75rem 1rem;
   transition: all 0.3s ease;
@@ -12802,22 +12801,19 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .input.small, .small.select, .small.textarea {
   min-height: 25px;
   padding: 0.25rem 1rem;
-  background-color: var(--color_bg_input);
   border-radius: 30px;
-  color: var(--color_text-icon_neutral_secondary);
-  border-color: var(--color_text-icon_neutral_secondary);
+  border-color: var(--color_border_input);
 }
 .input:focus, .select:focus, .textarea:focus {
   outline: none;
   box-shadow: 0px 0px 0px 1px var(--shadow_color);
-  border-color: var(--color_border_box_neutral_primary);
 }
 .input.error, .error.select, .error.textarea {
   border-width: 1px;
-  border-color: var(--color_border_input_danger);
+  border-color: var(--color_border_input_error);
 }
 .input.error:focus, .error.select:focus, .error.textarea:focus {
-  box-shadow: 0px 0px 0px 1px var(--color_border_input_danger);
+  box-shadow: 0px 0px 0px 1px var(--color_border_input_error);
 }
 .input.valid, .valid.select, .valid.textarea {
   border-width: 1px;
@@ -12860,13 +12856,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 0.5rem 1rem;
   text-align: center;
   white-space: nowrap;
-  border: 1px solid var(--color_border_box_neutral_primary);
+  border: 1px solid var(--color_border_input);
 }
 .wrapper-input .input-group-text:not(button):not(.loader) {
   font-weight: 400;
   line-height: 1.5;
   color: var(--color_text-icon_neutral_secondary);
-  background-color: var(--color_surface_secondary);
+  background-color: var(--color_bg_box_neutral_primary);
 }
 .wrapper-input > :not(:first-child):not(.box-validation):not(.tooltip) {
   margin-left: -1px;
@@ -12941,8 +12937,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   line-height: 1.5;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid var(--color_border_box_neutral_primary);
-  background: var(--color_surface_primary);
+  border: 1px solid var(--color_border_input);
+  background: var(--color_bg_input);
   color: var(--color_text-icon_neutral_secondary);
   font-size: 16px;
   transition: all 0.3s ease;
@@ -13032,7 +13028,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   appearance: none;
   width: 100%;
   height: 10px;
-  background: var(--color_border_box_neutral_primary);
+  background: var(--color_bg_input);
   outline: none;
   opacity: 0.9;
   border-radius: 12px;

@@ -49,7 +49,7 @@ $lists: (
   @include generate-variable('neutral_primary', 'neutral', 10, 'color_text-icon', '', $force);
   @include generate-variable('neutral_secondary', 'neutral', 30, 'color_text-icon', '', $force);
   @include generate-variable('neutral_tertiary', 'neutral', 40, 'color_text-icon', '', $force);
-  @include generate-variable('neutral_disabled', 'neutral', 95, 'color_text-icon', '', $force);
+  @include generate-variable('neutral_disabled', 'neutral', 40, 'color_text-icon', '', $force);
   @include generate-variable('neutral', 'neutral', 100, 'color_text-icon', 'inverse', $force);
   @include generate-variable('link', 'instagram', 30, 'color_text-icon', '', $force);
 
@@ -73,12 +73,12 @@ $lists: (
   @include generate-variable('neutral_secondary', 'neutral', 95, 'color_border_box', '', $force);
   @include generate-variable('neutral_disabled', 'neutral', 85, 'color_border_box', '', $force);
   @include generate-variable('neutral', 'neutral', 10, 'color_border_button', '', $force);
-  @include generate-variable('enabled', 'neutral', 90, 'color_border_input', '', $force);
-  @include generate-variable('hover', 'neutral', 65, 'color_border_input', '', $force);
-  @include generate-variable('focus', 'blue', 40, 'color_border_input', '', $force);
-  @include generate-variable('disabled', 'neutral', 80, 'color_border_input', '', $force);
-  @include generate-variable('error', 'red', 40, 'color_border_input', '', $force);
-  @include generate-variable('success', 'green', 40, 'color_border_input', '', $force);
+  @include generate-variable('input', 'neutral', 90, 'color_border', '', $force);
+  @include generate-variable('input', 'neutral', 65, 'color_border', 'hover', $force);
+  @include generate-variable('input', 'blue', 40, 'color_border', 'focus', $force);
+  @include generate-variable('input', 'neutral', 80, 'color_border', 'disabled', $force);
+  @include generate-variable('input', 'red', 40, 'color_border', 'error', $force);
+  @include generate-variable('input', 'green', 40, 'color_border', 'success', $force);
 
   // SURFACE
   @include generate-variable('primary', 'neutral', 95, 'color_surface', '', $force);
@@ -118,7 +118,7 @@ $lists: (
   @include generate-variable('neutral_primary', 'neutral', 100, 'color_text-icon', '', $force);
   @include generate-variable('neutral_secondary', 'neutral', 70, 'color_text-icon', '', $force);
   @include generate-variable('neutral_tertiary', 'neutral', 60, 'color_text-icon', '', $force);
-  @include generate-variable('neutral_disabled', 'neutral', 5, 'color_text-icon', '', $force);
+  @include generate-variable('neutral_disabled', 'neutral', 60, 'color_text-icon', '', $force);
   @include generate-variable('neutral', 'neutral', 10, 'color_text-icon', 'inverse', $force);
   @include generate-variable('link', 'instagram', 70, 'color_text-icon', '', $force);
 
@@ -142,12 +142,12 @@ $lists: (
   @include generate-variable('neutral_secondary', 'neutral', 5, 'color_border_box', '', $force);
   @include generate-variable('neutral_disabled', 'neutral', 15, 'color_border_box', '', $force);
   @include generate-variable('neutral', 'neutral', 100, 'color_border_button', '', $force);
-  @include generate-variable('enabled', 'neutral', 20, 'color_border_input', '', $force);
-  @include generate-variable('hover', 'neutral', 35, 'color_border_input', '', $force);
-  @include generate-variable('focus', 'blue', 70, 'color_border_input', '', $force);
-  @include generate-variable('disabled', 'neutral', 30, 'color_border_input', '', $force);
-  @include generate-variable('error', 'red', 70, 'color_border_input', '', $force);
-  @include generate-variable('success', 'green', 70, 'color_border_input', '', $force);
+  @include generate-variable('input', 'neutral', 30, 'color_border', '', $force);
+  @include generate-variable('input', 'neutral', 40, 'color_border', 'hover', $force);
+  @include generate-variable('input', 'blue', 70, 'color_border', 'focus', $force);
+  @include generate-variable('input', 'neutral', 30, 'color_border', 'disabled', $force);
+  @include generate-variable('input', 'red', 70, 'color_border', 'error', $force);
+  @include generate-variable('input', 'green', 70, 'color_border', 'success', $force);
 
   // SURFACE
   @include generate-variable('primary', 'neutral', 5, 'color_surface', '', $force);

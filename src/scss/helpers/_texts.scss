@@ -25,19 +25,18 @@ $weights: (
   color: var(--color_text-icon_neutral_disabled) !important;
   border-color: var(--color_border_input_disabled) !important;
   background: var(--color_bg_input_disabled) !important;
-  opacity: 0.3;
+  opacity: 0.3 !important;
 }
 
 .readonly {
   color: var(--color_text-icon_neutral_secondary) !important;
   cursor: initial !important;
-  opacity: 1 !important;
+  opacity: 0.7 !important;
 }
 
 select, input, textarea, button {
   &.readonly {
-    background: var(--color_bg_input_disabled) !important;
-    border-color: var(--neutral-50) !important;
+    border-color: var(--color_border_input) !important;
   }
 }
 
