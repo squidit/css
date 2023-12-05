@@ -200,21 +200,21 @@ $lists: (
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  html{
     @include theme-light;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  html {
     @include theme-dark;
   }
 }
 
-body.light {
+html body.light {
   @include theme-light(true);
 }
 
-body.dark {
+html body.dark {
   @include theme-dark(true);
 }

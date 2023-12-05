@@ -1,16 +1,16 @@
 .scrollbar {
-  scrollbar-color: var(--color_surface_primary) var(--color_text-icon_neutral_secondary);
+  scrollbar-color: var(--color_surface_secondary) var(--neutral-50);
   scrollbar-width: thin;
   &::-webkit-scrollbar {
     width: 7px;
     height: 7px;
   }
   &::-webkit-scrollbar-track {
-    background: var(--color_surface_primary);
+    background: var(--color_surface_secondary);
     border-radius: 7px;
   }
   &::-webkit-scrollbar-thumb {
-    background: var(--color_text-icon_neutral_secondary);
+    background: var(--neutral-50);
     border-radius: 7px;
   }
   &::-webkit-scrollbar-thumb:hover {

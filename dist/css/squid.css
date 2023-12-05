@@ -9347,7 +9347,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  html {
     --shadow_color: #64647680 ;
     --color_text-icon_neutral_primary: var(--neutral-10) ;
     --color_text-icon_neutral_secondary: var(--neutral-30) ;
@@ -9527,7 +9527,7 @@
   }
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  html {
     --shadow_color: #00000040 ;
     --color_text-icon_neutral_primary: var(--neutral-100) ;
     --color_text-icon_neutral_secondary: var(--neutral-70) ;
@@ -9706,7 +9706,7 @@
     --color_border_button_social_twitch: var(--twitch-70) ;
   }
 }
-body.light {
+html body.light {
   --shadow_color: #64647680 !important;
   --color_text-icon_neutral_primary: var(--neutral-10) !important;
   --color_text-icon_neutral_secondary: var(--neutral-30) !important;
@@ -9885,7 +9885,7 @@ body.light {
   --color_border_button_social_twitch: var(--twitch-30) !important;
 }
 
-body.dark {
+html body.dark {
   --shadow_color: #00000040 !important;
   --color_text-icon_neutral_primary: var(--neutral-100) !important;
   --color_text-icon_neutral_secondary: var(--neutral-70) !important;
@@ -12297,7 +12297,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 
 .scrollbar, .table, .table-overflow, .modal, .dropdown, .collapse.active .collapse-body, .textarea {
-  scrollbar-color: var(--color_surface_primary) var(--color_text-icon_neutral_secondary);
+  scrollbar-color: var(--color_surface_secondary) var(--neutral-50);
   scrollbar-width: thin;
 }
 .scrollbar::-webkit-scrollbar, .table::-webkit-scrollbar, .table-overflow::-webkit-scrollbar, .modal::-webkit-scrollbar, .dropdown::-webkit-scrollbar, .collapse.active .collapse-body::-webkit-scrollbar, .textarea::-webkit-scrollbar {
@@ -12305,11 +12305,11 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   height: 7px;
 }
 .scrollbar::-webkit-scrollbar-track, .table::-webkit-scrollbar-track, .table-overflow::-webkit-scrollbar-track, .modal::-webkit-scrollbar-track, .dropdown::-webkit-scrollbar-track, .collapse.active .collapse-body::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track {
-  background: var(--color_surface_primary);
+  background: var(--color_surface_secondary);
   border-radius: 7px;
 }
 .scrollbar::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb, .table-overflow::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb, .dropdown::-webkit-scrollbar-thumb, .collapse.active .collapse-body::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb {
-  background: var(--color_text-icon_neutral_secondary);
+  background: var(--neutral-50);
   border-radius: 7px;
 }
 .scrollbar::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover, .table-overflow::-webkit-scrollbar-thumb:hover, .modal::-webkit-scrollbar-thumb:hover, .dropdown::-webkit-scrollbar-thumb:hover, .collapse.active .collapse-body::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
