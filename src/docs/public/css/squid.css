@@ -12814,30 +12814,30 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .input.error, .error.select, .error.textarea {
   border-width: 1px;
-  border-color: var(--red-50);
+  border-color: var(--color_border_input_danger);
 }
 .input.error:focus, .error.select:focus, .error.textarea:focus {
-  box-shadow: 0px 0px 0px 1px var(--red-50);
+  box-shadow: 0px 0px 0px 1px var(--color_border_input_danger);
 }
 .input.valid, .valid.select, .valid.textarea {
   border-width: 1px;
-  border-color: var(--green-50);
+  border-color: var(--color_border_input_success);
 }
 .input.valid:focus, .valid.select:focus, .valid.textarea:focus {
-  box-shadow: 0px 0px 0px 1px var(--green-50);
+  box-shadow: 0px 0px 0px 1px var(--color_border_input_success);
 }
 .input::-webkit-calendar-picker-indicator, .select::-webkit-calendar-picker-indicator, .textarea::-webkit-calendar-picker-indicator {
-  background-color: var(--gray_light);
+  background-color: var(--neutral-85);
   border-radius: 50%;
   padding: 3px;
   cursor: pointer;
   width: 15px;
   height: 15px;
   transition: var(--transition);
-  color: var(--black);
+  color: var(--neutral-5);
 }
 .input::-webkit-calendar-picker-indicator:hover, .select::-webkit-calendar-picker-indicator:hover, .textarea::-webkit-calendar-picker-indicator:hover {
-  background-color: var(--white);
+  background-color: var(--neutral-95);
 }
 
 .textarea {
@@ -12897,10 +12897,10 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   margin: 0 0.25rem 0 0;
 }
 .box-validation.box-invalid i, .box-validation.box-invalid svg {
-  color: var(--red-50);
+  color: var(--color_text-icon_system_danger);
 }
 .box-validation.box-valid i, .box-validation.box-valid svg {
-  color: var(--green-50);
+  color: var(--color_text-icon_system_success);
 }
 .box-validation.show {
   display: block;

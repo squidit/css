@@ -25,16 +25,16 @@
   }
   &.error {
     border-width: 1px;
-    border-color: var(--red-50);
+    border-color: var(--color_border_input_danger);
     &:focus {
-      box-shadow: 0px 0px 0px 1px var(--red-50);
+      box-shadow: 0px 0px 0px 1px var(--color_border_input_danger);
     }
   }
   &.valid {
     border-width: 1px;
-    border-color: var(--green-50);
+    border-color: var(--color_border_input_success);
     &:focus {
-      box-shadow: 0px 0px 0px 1px var(--green-50);
+      box-shadow: 0px 0px 0px 1px var(--color_border_input_success);
     }
   }
   &[readonly],
@@ -46,16 +46,16 @@
     @extend .disabled;
   }
   &::-webkit-calendar-picker-indicator {
-    background-color: var(--gray_light);
+    background-color: var(--neutral-85);
     border-radius: 50%;
     padding: 3px;
     cursor: pointer;
     width: 15px;
     height: 15px;
     transition: var(--transition);
-    color: var(--black);
+    color: var(--neutral-5);
     &:hover {
-      background-color: var(--white);
+      background-color: var(--neutral-95);
     }
   }
 }
@@ -120,12 +120,12 @@
   }
   &.box-invalid {
     i, svg {
-      color: var(--red-50);
+      color: var(--color_text-icon_system_danger);
     }
   }
   &.box-valid {
     i, svg {
-      color: var(--green-50);
+      color: var(--color_text-icon_system_success);
     }
   }
   &.show {
