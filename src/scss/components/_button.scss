@@ -34,8 +34,8 @@
     }
   }
   &.inverted {
-    background-color: var(--background);
-    color: var(--text_color);
+    background-color: var(--color_surface_primary);
+    color: var(--color_text-icon_neutral_secondary);
     &:hover {
       color: white;
       background-color: var(--black);
@@ -70,7 +70,7 @@
     }
     &.button-#{"" + $colorName}.inverted {
       color: var(--#{"" + $colorName});
-      background-color: var(--background);
+      background-color: var(--color_surface_primary);
       border-color: var(--#{"" + $colorName});
       @if ($colorName == yellow or $colorName == cian or $colorName == white) {
         
@@ -78,7 +78,7 @@
       &:hover, &:focus {
         background-color: var(--#{"" + $colorName});
         border-color: var(--#{"" + $colorName});
-        color: var(--background);
+        color: var(--color_surface_primary);
         @if (
           $colorName == yellow or
           $colorName == cian or

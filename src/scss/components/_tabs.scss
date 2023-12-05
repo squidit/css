@@ -2,7 +2,7 @@
   display: inline-flex;
   border-radius: 10px;
   padding: 0.5rem;
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   list-style: none;
   align-items: center;
   margin: 0;
@@ -27,7 +27,7 @@
     border-radius: 10px;
     text-align: center;
     color: var(--gray);
-    background-color: var(--background);
+    background-color: var(--color_surface_primary);
     display: inline-flex;
     justify-content: center;
     border: 1px solid transparent;
@@ -42,12 +42,12 @@
     }
     &:hover {
       color: var(--gray_dark);
-      border-color: var(--background_third);
+      border-color: var(--color_surface_primary);
     }
     &.active {
       flex-shrink: 0;
       width: auto;
-      background-color: var(--background_third);
+      background-color: var(--color_surface_primary);
       color: var(--gray);
       font-weight: 700;
     }
@@ -82,21 +82,21 @@
         position: relative;
         margin-top: calc(1rem - 4px);
         transition: $transition;
-        background: var(--border_color);
+        background: var(--color_border_box_neutral_primary);
       }
       &:hover {
-        color: var(--border_color);
+        color: var(--color_border_box_neutral_primary);
         &::before {
-          background: var(--background_secondary);
+          background: var(--color_surface_secondary);
         }
       }
       &.active {
-        color: var(--pink-50);
-        border-color: var(--pink-50);
+        color: var(--primary_color);
+        border-color: var(--primary_color);
         font-weight: 500;
         box-shadow: none;
         &::before {
-          background: var(--pink-50);
+          background: var(--primary_color);
         }
       }
     }

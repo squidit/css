@@ -1,12 +1,12 @@
 @use "sass:math";
 .tag-box {
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--color_border_box_neutral_primary);
   transition: $transition;
   padding: 0.25rem 0.5rem;
   font-weight: 700;
   position: relative;
   display: inline-block;
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   font-size: 0.9rem;
   line-height: 1;
   &:hover {
