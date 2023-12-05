@@ -1,5 +1,39 @@
 // Global Variables or functions here
 
+const colors = [
+  'neutral',
+  'purple',
+  'pink',
+  'red',
+  'orange',
+  'yellow',
+  'green',
+  'aqua',
+  'blue',
+  'lilac',
+  'instagram',
+  'youtube',
+  'pinterest',
+  'google',
+  'whatsapp',
+  'twitter',
+  'linkedin',
+  'facebook',
+  'x',
+  'tiktok',
+  'twitch'
+]
+
+function applyDisplay (collapses, index) {
+  if (collapses[index].children[0].children[0].children[1]) {
+    if (collapses[index].classList.value.includes('active')) {
+      collapses[index].children[0].children[0].children[1].style.display = ''
+    } else {
+      collapses[index].children[0].children[0].children[1].style.display = 'none'
+    }
+  }
+}
+
 function initAccordion (element) {
   const collapses = [...element.children]
   let currentTabIndex = 0
@@ -14,9 +48,11 @@ function initAccordion (element) {
           collapses[currentTabIndex].classList.remove('active')
           collapses[index].classList.add('active')
         } else {
+          applyDisplay(collapses, index)
           collapses[index].classList.toggle('active')
         }
       } else if (!element.classList.contains('only-one')) {
+        applyDisplay(collapses, index)
         collapses[index].classList.toggle('active')
       }
       currentTabIndex = index
@@ -762,78 +798,80 @@ function createInCss (colorName, hexColor) {
 }
 
 function createColorDiv (color) {
-  const colorBox = document.createElement('div');
-  colorBox.className = 'box p-0 m-0';
-  colorBox.style.borderRadius = '5px';
+  const collapse = document.createElement('div');
+  collapse.className = 'collapse';
 
-  const colorInfo = document.createElement('div');
-  colorInfo.className = `py-3 text-center white-html background-${color}-50`;
+  const collapseTitle = document.createElement('p');
+  collapseTitle.className = `collapse-title white-html background-${color}-50`;
 
-  const colorName = document.createElement('p');
+  const colorName = document.createElement('span');
   colorName.style.textTransform = 'capitalize';
   colorName.textContent = color;
 
-  const colorVar = document.createElement('p');
-  colorVar.style.fontSize = '0.86rem';
-  colorVar.textContent = `Default: var(--${color}-50)`;
+  const defaultVar = document.createElement('span');
+  defaultVar.id = 'default-var-accordion';
+  defaultVar.textContent = `var(--${color}-50)`;
 
-  colorInfo.appendChild(colorName);
-  colorInfo.appendChild(colorVar);
+  const div = document.createElement('div');
+  div.style.display = 'flex';
+  div.style.flexDirection = 'column';
+  div.style.alignItems = 'center';
 
-  colorBox.appendChild(colorInfo);
+  div.appendChild(colorName);
+  div.appendChild(defaultVar);
+
+  collapseTitle.appendChild(div);
+
+  const span = document.createElement('span');
+  span.className = 'icon';
+
+  const chevronDown = document.createElement('i');
+  chevronDown.className = 'far fa-chevron-down';
+
+  span.appendChild(chevronDown);
+
+  collapseTitle.appendChild(span);
+
+  collapse.appendChild(collapseTitle);
+
+  const collapseBody = document.createElement('div');
+  collapseBody.className = 'collapse-body p-0';
 
   for (let i = 5; i <= 95; i += 5) {
     const colorDiv = document.createElement('div');
     colorDiv.className = `py-2 text-center white-html background-${color}-${i}`;
     colorDiv.textContent = `var(--${color}-${i})`;
 
-    colorBox.appendChild(colorDiv);
+    collapseBody.appendChild(colorDiv);
   }
 
-  return colorBox;
+  collapse.appendChild(collapseBody);
+
+  return collapse;
 }
 
 async function renderColors () {
-  const colors = [
-    'neutral',
-    'purple',
-    'pink',
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'aqua',
-    'blue',
-    'lilac',
-    'instagram',
-    'youtube',
-    'pinterest',
-    'google',
-    'whatsapp',
-    'twitter',
-    'linkedin',
-    'facebook',
-    'x',
-    'tiktok',
-    'twitch'
-  ]
-
-  const div = document.createElement('div');
-  div.style.display = 'grid';
-  div.style.gridTemplateColumns = 'repeat(3, 1fr)';
-  div.style.gap = '1.5rem';
+  const accordion = document.createElement('div');
+  accordion.className = 'accordion';
+  accordion.setAttribute('data-accordion', '');
+  accordion.style.display = 'grid';
+  accordion.style.gridTemplateColumns = 'repeat(3, 1fr)';
+  accordion.style.gap = '1.5rem';
 
   for (const color of colors) {
-    div.appendChild(createColorDiv(color))
+    accordion.appendChild(createColorDiv(color))
   }
 
   const colorsDiv = document.getElementById('colors');
-  colorsDiv.appendChild(div);
+  colorsDiv.appendChild(accordion);
 }
 
 if (typeof window !== 'undefined') {
   window.onload = function () {
     renderColors();
+    (function () {
+      [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
+    })();
   };
 }
 
