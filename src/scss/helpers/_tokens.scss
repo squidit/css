@@ -103,6 +103,10 @@ $lists: (
     @include generate-by-list($list, 90, #{'color_border_box_' + $name}, '', $force);
     @include generate-by-list($list, 30, #{'color_border_button_' + $name}, '', $force);
   }
+
+  // Primary
+  --primary_color: var(--pink-40) #{$important};
+  --secondary_color: white #{$important};
 }
 
 @mixin theme-dark($force: false) {
@@ -168,6 +172,10 @@ $lists: (
     @include generate-by-list($list, 15, #{'color_border_box_' + $name}, '', $force);
     @include generate-by-list($list, 70, #{'color_border_button_' + $name}, '', $force);
   }
+
+  // Primary
+  --primary_color: var(--pink-70) #{$important};
+  --secondary_color: white #{$important};
 }
 
 @mixin theme-global {
@@ -201,6 +209,10 @@ $lists: (
   --title_color: var(--color_text-icon_neutral_primary);
   --background_third: var(--color_surface_primary);
   --box_shadow: 0px 4px 12px -5px var(--shadow_color);
+
+  // Primary
+  --primary_color: var(--pink-50);
+  --secondary_color: white;
 }
 
 :root {

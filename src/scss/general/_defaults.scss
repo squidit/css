@@ -7,7 +7,7 @@
 }
 
 hr {
-  border-color: var(--border_color);
+  border-color: var(--color_border_neutral_primary);
   margin: $gutter 0;
   border-style: solid;
 }
@@ -17,14 +17,14 @@ figure {
 }
 
 body, html {
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   scroll-behavior: smooth;
 }
 
 body {
   &.block {
     overflow: hidden;
-    padding-right: 7px;
+    padding-right: calc(1rem / 2);
   }
 }
 
@@ -62,7 +62,7 @@ caption {
   height: auto;
 }
 
-.small {
+.small, small {
   font-size: 85%;
 }
 
@@ -80,13 +80,12 @@ ol {
 label {
   display: block;
   font-weight: 500;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   margin-bottom: 0.5rem;
   text-align: left;
   &.small {
     font-size: 12px;
     margin-bottom: 0.25rem;
-    color: var(--text_color);
   }
 }
 
@@ -102,7 +101,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: var(--title_color);
+  color: var(--color_text-icon_neutral_primary);
   margin: 0 auto 1rem;
   font-weight: 700;
   width: 100%;
@@ -147,22 +146,22 @@ i {
 }
 
 *::placeholder {
-  color: var(--gray);
+  color: var(--color_text-icon_neutral_placeholder);
 }
 
 .disabled::placeholder {
-  color: var(--white) !important;
+  color: var(--color_text-icon_neutral_placeholder) !important;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--text_color);
+  background-color: var(--color_surface_primary);
+  color: var(--color_text-icon_neutral_secondary);
   overflow-x: hidden;
   min-height: -webkit-fill-available;
 }
 
 a {
-  color: inherit;
+  color: var(--color_text-icon_link);
   text-decoration: underline;
   font-size: inherit;
   line-height: inherit;
@@ -177,18 +176,18 @@ a {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  html {
     --arrow_url: url('https://hub-cdn.squidit.com.br/arrow_down.png');
   }
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  html {
     --arrow_url: url('https://hub-cdn.squidit.com.br/arrow_down_white.png');
   }
 }
-body.dark {
+html.dark {
   --arrow_url: url('https://hub-cdn.squidit.com.br/arrow_down_white.png') !important;
 }
-body.light {
+html.light {
   --arrow_url: url('https://hub-cdn.squidit.com.br/arrow_down.png') !important;
 }
