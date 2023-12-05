@@ -39,7 +39,7 @@ $icon-box: 16px !default;
       height: $icon-box;
       width: $icon-box;
       right: $gutter;
-      top: $gutter;
+      top: calc($gutter + 3px);
       margin-left: math.div($gutter, 2);
       font-size: 1rem;
       line-height: $icon-box;
