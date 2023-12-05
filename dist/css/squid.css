@@ -13352,7 +13352,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   list-style: none;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: var(--color_surface_secondary);
+  background-color: var(--color_bg_box_neutral_primary);
   border: 1px solid var(--color_border_box_neutral_primary);
   border-radius: 0;
   padding: 0;
@@ -13389,13 +13389,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   width: 100%;
   border: none;
   box-shadow: none;
-  background-color: var(--color_surface_secondary);
+  background-color: transparent;
   transition: all 0.3s ease;
   color: inherit;
   text-align: left;
 }
 .dropdown li button:hover, .dropdown li a:hover {
   background-color: var(--color_surface_primary);
+  color: var(--color_text-icon_neutral_primary);
 }
 .dropdown-divider {
   padding: 0 !important;
@@ -13515,7 +13516,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: var(--color_surface_secondary);
+  background-color: var(--color_bg_box_neutral_primary);
   background-clip: padding-box;
   border: 1px solid var(--color_border_box_neutral_primary);
   border-radius: 0;
