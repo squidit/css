@@ -86,6 +86,13 @@ $lists: (
   @include generate-variable('primary', 'neutral', 05, 'color_surface', 'inverse', $force);
   @include generate-variable('secondary', 'neutral', 15, 'color_surface', 'inverse', $force);
 
+    // BUTTON
+    @include generate-variable('button', 'neutral', 10, 'color_bg', '', $force);
+    @include generate-variable('button', 'neutral', 20, 'color_bg', 'hover', $force);
+    @include generate-variable('button', 'neutral', 100, 'color_bg', 'inverse', $force);
+    @include generate-variable('button', 'neutral', 90, 'color_bg', 'inverse-hover', $force);
+    @include generate-variable('button', 'neutral', 75, 'color_bg', 'disabled', $force);
+
   @each $name, $list in $lists {
     // TEXT ICON
     @include generate-by-list($list, 30, #{'color_text-icon_' + $name}, '', $force);
@@ -154,6 +161,13 @@ $lists: (
   @include generate-variable('secondary', 'neutral', 15, 'color_surface', '', $force);
   @include generate-variable('primary', 'neutral', 95, 'color_surface', 'inverse', $force);
   @include generate-variable('secondary', 'neutral', 85, 'color_surface', 'inverse', $force);
+
+  // BUTTON
+  @include generate-variable('button', 'neutral', 100, 'color_bg', '', $force);
+  @include generate-variable('button', 'neutral', 90, 'color_bg', 'hover', $force);
+  @include generate-variable('button', 'neutral', 10, 'color_bg', 'inverse', $force);
+  @include generate-variable('button', 'neutral', 20, 'color_bg', 'inverse-hover', $force);
+  @include generate-variable('button', 'neutral', 20, 'color_bg', 'disabled', $force);
 
   @each $name, $list in $lists {
     // TEXT ICON

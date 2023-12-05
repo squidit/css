@@ -18,6 +18,7 @@
   &.readonly-tag {
     cursor: default;
     background: var(--white) !important;
+    opacity: 0.7;
     &:hover {
       box-shadow: none;
     }

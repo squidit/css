@@ -9204,6 +9204,11 @@ html {
   --color_surface_secondary: var(--neutral-85) ;
   --color_surface_primary_inverse: var(--neutral-5) ;
   --color_surface_secondary_inverse: var(--neutral-15) ;
+  --color_bg_button: var(--neutral-10) ;
+  --color_bg_button_hover: var(--neutral-20) ;
+  --color_bg_button_inverse: var(--neutral-100) ;
+  --color_bg_button_inverse-hover: var(--neutral-90) ;
+  --color_bg_button_disabled: var(--neutral-75) ;
   --color_text-icon_brands_wake: var(--purple-30) ;
   --color_text-icon_brands_squid: var(--pink-30) ;
   --color_bg_box_brands_wake: var(--purple-95) ;
@@ -9386,6 +9391,11 @@ html {
     --color_surface_secondary: var(--neutral-15) ;
     --color_surface_primary_inverse: var(--neutral-95) ;
     --color_surface_secondary_inverse: var(--neutral-85) ;
+    --color_bg_button: var(--neutral-100) ;
+    --color_bg_button_hover: var(--neutral-90) ;
+    --color_bg_button_inverse: var(--neutral-10) ;
+    --color_bg_button_inverse-hover: var(--neutral-20) ;
+    --color_bg_button_disabled: var(--neutral-20) ;
     --color_text-icon_brands_wake: var(--purple-70) ;
     --color_text-icon_brands_squid: var(--pink-70) ;
     --color_bg_box_brands_wake: var(--purple-10) ;
@@ -9567,6 +9577,11 @@ html.light {
   --color_surface_secondary: var(--neutral-85) !important;
   --color_surface_primary_inverse: var(--neutral-5) !important;
   --color_surface_secondary_inverse: var(--neutral-15) !important;
+  --color_bg_button: var(--neutral-10) !important;
+  --color_bg_button_hover: var(--neutral-20) !important;
+  --color_bg_button_inverse: var(--neutral-100) !important;
+  --color_bg_button_inverse-hover: var(--neutral-90) !important;
+  --color_bg_button_disabled: var(--neutral-75) !important;
   --color_text-icon_brands_wake: var(--purple-30) !important;
   --color_text-icon_brands_squid: var(--pink-30) !important;
   --color_bg_box_brands_wake: var(--purple-95) !important;
@@ -9748,6 +9763,11 @@ html.dark {
   --color_surface_secondary: var(--neutral-15) !important;
   --color_surface_primary_inverse: var(--neutral-95) !important;
   --color_surface_secondary_inverse: var(--neutral-85) !important;
+  --color_bg_button: var(--neutral-100) !important;
+  --color_bg_button_hover: var(--neutral-90) !important;
+  --color_bg_button_inverse: var(--neutral-10) !important;
+  --color_bg_button_inverse-hover: var(--neutral-20) !important;
+  --color_bg_button_disabled: var(--neutral-20) !important;
   --color_text-icon_brands_wake: var(--purple-70) !important;
   --color_text-icon_brands_squid: var(--pink-70) !important;
   --color_bg_box_brands_wake: var(--purple-10) !important;
@@ -12823,17 +12843,17 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   box-shadow: 0px 0px 0px 1px var(--color_border_input_success);
 }
 .input::-webkit-calendar-picker-indicator, .select::-webkit-calendar-picker-indicator, .textarea::-webkit-calendar-picker-indicator {
-  background-color: var(--neutral-85);
+  background-color: white;
   border-radius: 50%;
   padding: 3px;
   cursor: pointer;
   width: 15px;
   height: 15px;
   transition: var(--transition);
-  color: var(--neutral-5);
+  color: black;
 }
 .input::-webkit-calendar-picker-indicator:hover, .select::-webkit-calendar-picker-indicator:hover, .textarea::-webkit-calendar-picker-indicator:hover {
-  background-color: var(--neutral-95);
+  opacity: 0.7;
 }
 
 .textarea {
@@ -13103,6 +13123,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tag-box.readonly-tag {
   cursor: default;
   background: var(--white) !important;
+  opacity: 0.7;
 }
 .tag-box.readonly-tag:hover {
   box-shadow: none;
