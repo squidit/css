@@ -1,19 +1,19 @@
 .scrollbar {
-  scrollbar-color: var(--background) var(--gray_dark);
+  scrollbar-color: var(--color_surface_primary) var(--color_text-icon_neutral_secondary);
   scrollbar-width: thin;
   &::-webkit-scrollbar {
     width: 7px;
     height: 7px;
   }
   &::-webkit-scrollbar-track {
-    background: var(--background);
+    background: var(--color_surface_primary);
     border-radius: 7px;
   }
   &::-webkit-scrollbar-thumb {
-    background: var(--text_color);
+    background: var(--color_text-icon_neutral_secondary);
     border-radius: 7px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: var(--background_secondary);
+    background: var(--color_text-icon_neutral_primary);
   }
 }
