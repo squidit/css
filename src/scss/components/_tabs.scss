@@ -1,7 +1,7 @@
 .tabs-header {
   display: inline-flex;
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 0.25rem;
   background-color: var(--color_surface_primary);
   list-style: none;
   align-items: center;
@@ -26,7 +26,7 @@
     padding: $gutter;
     border-radius: 10px;
     text-align: center;
-    color: var(--gray);
+    color: var(--color_text-icon_neutral_secondary);
     background-color: var(--color_surface_primary);
     display: inline-flex;
     justify-content: center;
@@ -41,14 +41,14 @@
       padding: 0.35rem 1rem;
     }
     &:hover {
-      color: var(--gray_dark);
-      border-color: var(--color_surface_primary);
+      color: var(--color_text-icon_neutral_primary);
+      border-color: var(--color_surface_secondary);
     }
     &.active {
       flex-shrink: 0;
       width: auto;
-      background-color: var(--color_surface_primary);
-      color: var(--gray);
+      background-color: var(--color_surface_secondary);
+      color: var(--color_text-icon_neutral_primary);
       font-weight: 700;
     }
     &.disabled {
@@ -62,7 +62,6 @@
     li {
       background: var(--transparent);
       border-radius: 0;
-      color: var(--gray);
       position: relative;
       align-items: center;
       padding: $gutter $gutter 0;
@@ -82,12 +81,11 @@
         position: relative;
         margin-top: calc(1rem - 4px);
         transition: $transition;
-        background: var(--color_border_box_neutral_primary);
+        background: var(--color_text-icon_neutral_secondary);
       }
       &:hover {
-        color: var(--color_border_box_neutral_primary);
         &::before {
-          background: var(--color_surface_secondary);
+          opacity: 0.7;
         }
       }
       &.active {
@@ -95,6 +93,7 @@
         border-color: var(--primary_color);
         font-weight: 500;
         box-shadow: none;
+        opacity: 1;
         &::before {
           background: var(--primary_color);
         }

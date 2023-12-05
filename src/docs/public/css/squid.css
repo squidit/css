@@ -9191,7 +9191,7 @@ html {
   --color_bg_input: var(--neutral-95) ;
   --color_bg_input_disabled: var(--neutral-85) ;
   --color_border_box_neutral_primary: var(--neutral-90) ;
-  --color_border_box_neutral_secondary: var(--neutral-95) ;
+  --color_border_box_neutral_secondary: var(--neutral-65) ;
   --color_border_box_neutral_disabled: var(--neutral-85) ;
   --color_border_button_neutral: var(--neutral-10) ;
   --color_border_input: var(--neutral-90) ;
@@ -9359,7 +9359,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
   html {
-    --shadow_color: #00000040 ;
+    --shadow_color: #000000 ;
     --color_text-icon_neutral_primary: var(--neutral-100) ;
     --color_text-icon_neutral_secondary: var(--neutral-70) ;
     --color_text-icon_neutral_tertiary: var(--neutral-60) ;
@@ -9377,8 +9377,8 @@ html {
     --color_bg_box_neutral_disabled: var(--neutral-25) ;
     --color_bg_input: var(--neutral-15) ;
     --color_bg_input_disabled: var(--neutral-25) ;
-    --color_border_box_neutral_primary: var(--neutral-10) ;
-    --color_border_box_neutral_secondary: var(--neutral-5) ;
+    --color_border_box_neutral_primary: var(--neutral-30) ;
+    --color_border_box_neutral_secondary: var(--neutral-40) ;
     --color_border_box_neutral_disabled: var(--neutral-15) ;
     --color_border_button_neutral: var(--neutral-100) ;
     --color_border_input: var(--neutral-30) ;
@@ -9564,7 +9564,7 @@ html.light {
   --color_bg_input: var(--neutral-95) !important;
   --color_bg_input_disabled: var(--neutral-85) !important;
   --color_border_box_neutral_primary: var(--neutral-90) !important;
-  --color_border_box_neutral_secondary: var(--neutral-95) !important;
+  --color_border_box_neutral_secondary: var(--neutral-65) !important;
   --color_border_box_neutral_disabled: var(--neutral-85) !important;
   --color_border_button_neutral: var(--neutral-10) !important;
   --color_border_input: var(--neutral-90) !important;
@@ -9731,7 +9731,7 @@ html.light {
 }
 
 html.dark {
-  --shadow_color: #00000040 !important;
+  --shadow_color: #000000 !important;
   --color_text-icon_neutral_primary: var(--neutral-100) !important;
   --color_text-icon_neutral_secondary: var(--neutral-70) !important;
   --color_text-icon_neutral_tertiary: var(--neutral-60) !important;
@@ -9749,8 +9749,8 @@ html.dark {
   --color_bg_box_neutral_disabled: var(--neutral-25) !important;
   --color_bg_input: var(--neutral-15) !important;
   --color_bg_input_disabled: var(--neutral-25) !important;
-  --color_border_box_neutral_primary: var(--neutral-10) !important;
-  --color_border_box_neutral_secondary: var(--neutral-5) !important;
+  --color_border_box_neutral_primary: var(--neutral-30) !important;
+  --color_border_box_neutral_secondary: var(--neutral-40) !important;
   --color_border_box_neutral_disabled: var(--neutral-15) !important;
   --color_border_button_neutral: var(--neutral-100) !important;
   --color_border_input: var(--neutral-30) !important;
@@ -13603,7 +13603,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tabs-header {
   display: inline-flex;
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 0.25rem;
   background-color: var(--color_surface_primary);
   list-style: none;
   align-items: center;
@@ -13631,7 +13631,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
-  color: var(--gray);
+  color: var(--color_text-icon_neutral_secondary);
   background-color: var(--color_surface_primary);
   display: inline-flex;
   justify-content: center;
@@ -13643,14 +13643,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 0.35rem 1rem;
 }
 .tabs-header li:hover {
-  color: var(--gray_dark);
-  border-color: var(--color_surface_primary);
+  color: var(--color_text-icon_neutral_primary);
+  border-color: var(--color_surface_secondary);
 }
 .tabs-header li.active {
   flex-shrink: 0;
   width: auto;
-  background-color: var(--color_surface_primary);
-  color: var(--gray);
+  background-color: var(--color_surface_secondary);
+  color: var(--color_text-icon_neutral_primary);
   font-weight: 700;
 }
 .tabs-header.line-style {
@@ -13661,7 +13661,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tabs-header.line-style li {
   background: var(--transparent);
   border-radius: 0;
-  color: var(--gray);
   position: relative;
   align-items: center;
   padding: 1rem 1rem 0;
@@ -13682,19 +13681,17 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   margin-top: calc(1rem - 4px);
   transition: all 0.3s ease;
-  background: var(--color_border_box_neutral_primary);
-}
-.tabs-header.line-style li:hover {
-  color: var(--color_border_box_neutral_primary);
+  background: var(--color_text-icon_neutral_secondary);
 }
 .tabs-header.line-style li:hover::before {
-  background: var(--color_surface_secondary);
+  opacity: 0.7;
 }
 .tabs-header.line-style li.active {
   color: var(--primary_color);
   border-color: var(--primary_color);
   font-weight: 500;
   box-shadow: none;
+  opacity: 1;
 }
 .tabs-header.line-style li.active::before {
   background: var(--primary_color);
@@ -14165,7 +14162,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   justify-content: space-around;
   border-radius: 20px;
   overflow: hidden;
-  background: var(--color_border_box_neutral_primary);
+  background: var(--color_surface_secondary);
   position: relative;
   padding: 0.2rem;
 }
