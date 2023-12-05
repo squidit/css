@@ -10495,7 +10495,7 @@ html.light {
 }
 
 .readonly, .wrapper-selectors input[readonly] + label.checkbox, .wrapper-selectors input.readonly + label.checkbox, .input[readonly], [readonly].select, [readonly].textarea, .input.readonly, .readonly.select, .readonly.textarea {
-  color: var(--text_color) !important;
+  color: var(--color_text-icon_neutral_secondary) !important;
   cursor: initial !important;
   opacity: 1 !important;
 }
@@ -12169,7 +12169,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 
 .progress {
   width: 100%;
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-radius: 12px;
   height: 10px;
   overflow: hidden;
@@ -12183,7 +12183,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: var(--pink-50);
+  background-color: var(--primary_color);
   transition: width 0.6s ease;
 }
 .progress .progress-bar.background-dashed {
@@ -12203,8 +12203,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   width: 2rem;
   height: 2rem;
   vertical-align: -0.125em;
-  border: 0.25rem solid var(--pink-50);
-  border-right-color: var(--background) !important;
+  border: 0.25rem solid var(--primary_color);
+  border-right-color: var(--color_surface_primary) !important;
   border-radius: 50%;
   animation: 1s linear infinite rotate360;
 }
@@ -12261,8 +12261,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   border-color: inherit;
 }
 .button.inverted {
-  background-color: var(--background);
-  color: var(--text_color);
+  background-color: var(--color_surface_primary);
+  color: var(--color_text-icon_neutral_secondary);
 }
 .button.inverted:hover {
   color: white;
@@ -12281,13 +12281,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-black.inverted {
   color: var(--black);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--black);
 }
 .button.button-black.inverted:hover, .button.button-black.inverted:focus {
   background-color: var(--black);
   border-color: var(--black);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-white {
   background-color: var(--white);
@@ -12300,13 +12300,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-white.inverted {
   color: var(--white);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--white);
 }
 .button.button-white.inverted:hover, .button.button-white.inverted:focus {
   background-color: var(--white);
   border-color: var(--white);
-  color: var(--background);
+  color: var(--color_surface_primary);
   color: var(--black);
 }
 .button.button-black-html {
@@ -12319,13 +12319,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-black-html.inverted {
   color: var(--black-html);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--black-html);
 }
 .button.button-black-html.inverted:hover, .button.button-black-html.inverted:focus {
   background-color: var(--black-html);
   border-color: var(--black-html);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-white-html {
   background-color: var(--white-html);
@@ -12337,13 +12337,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-white-html.inverted {
   color: var(--white-html);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--white-html);
 }
 .button.button-white-html.inverted:hover, .button.button-white-html.inverted:focus {
   background-color: var(--white-html);
   border-color: var(--white-html);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-transparent {
   background-color: var(--transparent);
@@ -12355,13 +12355,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-transparent.inverted {
   color: var(--transparent);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--transparent);
 }
 .button.button-transparent.inverted:hover, .button.button-transparent.inverted:focus {
   background-color: var(--transparent);
   border-color: var(--transparent);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-gray {
   background-color: var(--gray);
@@ -12373,13 +12373,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-gray.inverted {
   color: var(--gray);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--gray);
 }
 .button.button-gray.inverted:hover, .button.button-gray.inverted:focus {
   background-color: var(--gray);
   border-color: var(--gray);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-pink {
   background-color: var(--pink);
@@ -12391,13 +12391,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-pink.inverted {
   color: var(--pink);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--pink);
 }
 .button.button-pink.inverted:hover, .button.button-pink.inverted:focus {
   background-color: var(--pink);
   border-color: var(--pink);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-lilac {
   background-color: var(--lilac);
@@ -12409,13 +12409,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-lilac.inverted {
   color: var(--lilac);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--lilac);
 }
 .button.button-lilac.inverted:hover, .button.button-lilac.inverted:focus {
   background-color: var(--lilac);
   border-color: var(--lilac);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-cian {
   background-color: var(--cian);
@@ -12428,13 +12428,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-cian.inverted {
   color: var(--cian);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--cian);
 }
 .button.button-cian.inverted:hover, .button.button-cian.inverted:focus {
   background-color: var(--cian);
   border-color: var(--cian);
-  color: var(--background);
+  color: var(--color_surface_primary);
   color: var(--black);
 }
 .button.button-green {
@@ -12447,13 +12447,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-green.inverted {
   color: var(--green);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--green);
 }
 .button.button-green.inverted:hover, .button.button-green.inverted:focus {
   background-color: var(--green);
   border-color: var(--green);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-aqua {
   background-color: var(--aqua);
@@ -12465,13 +12465,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-aqua.inverted {
   color: var(--aqua);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--aqua);
 }
 .button.button-aqua.inverted:hover, .button.button-aqua.inverted:focus {
   background-color: var(--aqua);
   border-color: var(--aqua);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-yellow {
   background-color: var(--yellow);
@@ -12484,13 +12484,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-yellow.inverted {
   color: var(--yellow);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--yellow);
 }
 .button.button-yellow.inverted:hover, .button.button-yellow.inverted:focus {
   background-color: var(--yellow);
   border-color: var(--yellow);
-  color: var(--background);
+  color: var(--color_surface_primary);
   color: var(--black);
 }
 .button.button-red {
@@ -12503,13 +12503,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-red.inverted {
   color: var(--red);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--red);
 }
 .button.button-red.inverted:hover, .button.button-red.inverted:focus {
   background-color: var(--red);
   border-color: var(--red);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-red-bl {
   background-color: var(--red-bl);
@@ -12521,13 +12521,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-red-bl.inverted {
   color: var(--red-bl);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--red-bl);
 }
 .button.button-red-bl.inverted:hover, .button.button-red-bl.inverted:focus {
   background-color: var(--red-bl);
   border-color: var(--red-bl);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-blue {
   background-color: var(--blue);
@@ -12539,13 +12539,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-blue.inverted {
   color: var(--blue);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--blue);
 }
 .button.button-blue.inverted:hover, .button.button-blue.inverted:focus {
   background-color: var(--blue);
   border-color: var(--blue);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-pomegranate {
   background-color: var(--pomegranate);
@@ -12557,13 +12557,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-pomegranate.inverted {
   color: var(--pomegranate);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--pomegranate);
 }
 .button.button-pomegranate.inverted:hover, .button.button-pomegranate.inverted:focus {
   background-color: var(--pomegranate);
   border-color: var(--pomegranate);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-lemon {
   background-color: var(--lemon);
@@ -12576,13 +12576,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-lemon.inverted {
   color: var(--lemon);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--lemon);
 }
 .button.button-lemon.inverted:hover, .button.button-lemon.inverted:focus {
   background-color: var(--lemon);
   border-color: var(--lemon);
-  color: var(--background);
+  color: var(--color_surface_primary);
   color: var(--black);
 }
 .button.button-gold {
@@ -12596,13 +12596,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-gold.inverted {
   color: var(--gold);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--gold);
 }
 .button.button-gold.inverted:hover, .button.button-gold.inverted:focus {
   background-color: var(--gold);
   border-color: var(--gold);
-  color: var(--background);
+  color: var(--color_surface_primary);
   color: var(--black);
 }
 .button.button-pastry {
@@ -12616,13 +12616,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-pastry.inverted {
   color: var(--pastry);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--pastry);
 }
 .button.button-pastry.inverted:hover, .button.button-pastry.inverted:focus {
   background-color: var(--pastry);
   border-color: var(--pastry);
-  color: var(--background);
+  color: var(--color_surface_primary);
   color: var(--black);
 }
 .button.button-instagram {
@@ -12635,13 +12635,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-instagram.inverted {
   color: var(--instagram);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--instagram);
 }
 .button.button-instagram.inverted:hover, .button.button-instagram.inverted:focus {
   background-color: var(--instagram);
   border-color: var(--instagram);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-twitter {
   background-color: var(--twitter);
@@ -12653,13 +12653,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-twitter.inverted {
   color: var(--twitter);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--twitter);
 }
 .button.button-twitter.inverted:hover, .button.button-twitter.inverted:focus {
   background-color: var(--twitter);
   border-color: var(--twitter);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-youtube {
   background-color: var(--youtube);
@@ -12671,13 +12671,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-youtube.inverted {
   color: var(--youtube);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--youtube);
 }
 .button.button-youtube.inverted:hover, .button.button-youtube.inverted:focus {
   background-color: var(--youtube);
   border-color: var(--youtube);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-pinterest {
   background-color: var(--pinterest);
@@ -12689,13 +12689,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-pinterest.inverted {
   color: var(--pinterest);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--pinterest);
 }
 .button.button-pinterest.inverted:hover, .button.button-pinterest.inverted:focus {
   background-color: var(--pinterest);
   border-color: var(--pinterest);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-facebook {
   background-color: var(--facebook);
@@ -12707,13 +12707,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-facebook.inverted {
   color: var(--facebook);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--facebook);
 }
 .button.button-facebook.inverted:hover, .button.button-facebook.inverted:focus {
   background-color: var(--facebook);
   border-color: var(--facebook);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-google {
   background-color: var(--google);
@@ -12725,13 +12725,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-google.inverted {
   color: var(--google);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--google);
 }
 .button.button-google.inverted:hover, .button.button-google.inverted:focus {
   background-color: var(--google);
   border-color: var(--google);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-linkedin {
   background-color: var(--linkedin);
@@ -12743,13 +12743,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-linkedin.inverted {
   color: var(--linkedin);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--linkedin);
 }
 .button.button-linkedin.inverted:hover, .button.button-linkedin.inverted:focus {
   background-color: var(--linkedin);
   border-color: var(--linkedin);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-whatsapp {
   background-color: var(--whatsapp);
@@ -12761,13 +12761,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-whatsapp.inverted {
   color: var(--whatsapp);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--whatsapp);
 }
 .button.button-whatsapp.inverted:hover, .button.button-whatsapp.inverted:focus {
   background-color: var(--whatsapp);
   border-color: var(--whatsapp);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 .button.button-tiktok {
   background-color: var(--tiktok);
@@ -12779,22 +12779,22 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-tiktok.inverted {
   color: var(--tiktok);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-color: var(--tiktok);
 }
 .button.button-tiktok.inverted:hover, .button.button-tiktok.inverted:focus {
   background-color: var(--tiktok);
   border-color: var(--tiktok);
-  color: var(--background);
+  color: var(--color_surface_primary);
 }
 
 .input, .select, .textarea {
   min-height: 44px;
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--color_border_box_neutral_primary);
   background: var(--color_bg_input);
   padding: 0.75rem 1rem;
   transition: all 0.3s ease;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
 }
 .input.rounded, .rounded.select, .rounded.textarea {
   border-radius: 30px;
@@ -12804,13 +12804,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 0.25rem 1rem;
   background-color: var(--color_bg_input);
   border-radius: 30px;
-  color: var(--text_color);
-  border-color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
+  border-color: var(--color_text-icon_neutral_secondary);
 }
 .input:focus, .select:focus, .textarea:focus {
   outline: none;
   box-shadow: 0px 0px 0px 1px var(--shadow_color);
-  border-color: var(--border_color);
+  border-color: var(--color_border_box_neutral_primary);
 }
 .input.error, .error.select, .error.textarea {
   border-width: 1px;
@@ -12844,7 +12844,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   min-height: 80px;
   resize: none;
   overflow: auto;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
 }
 
 .wrapper-input {
@@ -12860,13 +12860,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 0.5rem 1rem;
   text-align: center;
   white-space: nowrap;
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--color_border_box_neutral_primary);
 }
 .wrapper-input .input-group-text:not(button):not(.loader) {
   font-weight: 400;
   line-height: 1.5;
-  color: var(--text_color);
-  background-color: var(--background_secondary);
+  color: var(--color_text-icon_neutral_secondary);
+  background-color: var(--color_surface_secondary);
 }
 .wrapper-input > :not(:first-child):not(.box-validation):not(.tooltip) {
   margin-left: -1px;
@@ -12889,7 +12889,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   width: 100%;
   margin-top: 0.25rem;
   font-size: 12px;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   text-align: left;
 }
 .box-validation i, .box-validation svg {
@@ -12941,9 +12941,9 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   line-height: 1.5;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid var(--border_color);
-  background: var(--background);
-  color: var(--text_color);
+  border: 1px solid var(--color_border_box_neutral_primary);
+  background: var(--color_surface_primary);
+  color: var(--color_text-icon_neutral_secondary);
   font-size: 16px;
   transition: all 0.3s ease;
   font-weight: 700;
@@ -13032,7 +13032,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   appearance: none;
   width: 100%;
   height: 10px;
-  background: var(--border_color);
+  background: var(--color_border_box_neutral_primary);
   outline: none;
   opacity: 0.9;
   border-radius: 12px;
@@ -13047,15 +13047,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--pink-50);
+  background: var(--primary_color);
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 2px;
   background-clip: content-box;
   border: 2px solid transparent;
-}
-.range[type=range]::-webkit-slider-thumb:hover {
-  border-color: var(--pink-70);
 }
 .range[type=range]::-moz-range-thumb {
   appearance: none;
@@ -13063,7 +13060,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--pink-50);
+  background: var(--primary_color);
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 2px;
@@ -13071,7 +13068,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   border: 2px solid transparent;
 }
 .range[type=range]::-moz-range-thumb:hover {
-  border-color: var(--pink-50);
+  border-color: var(--primary_color);
 }
 .range[type=range].disabled, .collapse.collapse-disabled .range[type=range].collapse-title, .wrapper-selectors .collapse.collapse-disabled input.collapse-title + label.range[type=range].checkbox, .collapse.collapse-disabled .wrapper-selectors input.collapse-title + label.range[type=range].checkbox, .wrapper-selectors input[disabled] + label.range[type=range].checkbox, .wrapper-selectors input.disabled + label.range[type=range].checkbox, .range[type=range][disabled] {
   cursor: not-allowed;
@@ -13081,7 +13078,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   height: 22px;
   width: 22px;
   border: none !important;
-  background: var(--gray);
+  background: var(--color_bg_input_disabled);
   cursor: not-allowed;
 }
 .range[type=range].disabled::-moz-range-thumb, .collapse.collapse-disabled .range[type=range].collapse-title::-moz-range-thumb, .wrapper-selectors .collapse.collapse-disabled input.collapse-title + label.range[type=range].checkbox::-moz-range-thumb, .collapse.collapse-disabled .wrapper-selectors input.collapse-title + label.range[type=range].checkbox::-moz-range-thumb, .wrapper-selectors input[disabled] + label.range[type=range].checkbox::-moz-range-thumb, .wrapper-selectors input.disabled + label.range[type=range].checkbox::-moz-range-thumb, .range[type=range][disabled]::-moz-range-thumb {
@@ -13089,18 +13086,18 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   height: 22px;
   width: 22px;
   border: none !important;
-  background: var(--gray);
+  background: var(--color_bg_input_disabled);
   cursor: not-allowed;
 }
 
 .tag-box {
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--color_border_box_neutral_primary);
   transition: all 0.3s ease;
   padding: 0.25rem 0.5rem;
   font-weight: 700;
   position: relative;
   display: inline-block;
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   font-size: 0.9rem;
   line-height: 1;
 }
@@ -13209,7 +13206,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 
 .card {
-  border-left: 0.5rem solid var(--pink-50);
+  border-left: 0.5rem solid var(--primary_color);
 }
 .card.borded {
   border-left-width: 0.5rem;
@@ -13223,7 +13220,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   align-items: center;
 }
 .breadcrumb li {
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   display: block;
   margin: 0 0.5rem;
   padding: 0.5rem;
@@ -13270,14 +13267,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   padding: 1rem 2rem;
   width: 100%;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   font-size: 1.15rem;
   line-height: 1.5;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 5px;
@@ -13338,15 +13335,15 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   list-style: none;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: var(--background_secondary);
-  border: 1px solid var(--border_color);
+  background-color: var(--color_surface_secondary);
+  border: 1px solid var(--color_border_box_neutral_primary);
   border-radius: 0;
   padding: 0;
   background-clip: padding-box;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0.25rem 0;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   font-size: 0;
 }
 .dropdown.open {
@@ -13375,13 +13372,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   width: 100%;
   border: none;
   box-shadow: none;
-  background-color: var(--background_secondary);
+  background-color: var(--color_surface_secondary);
   transition: all 0.3s ease;
   color: inherit;
   text-align: left;
 }
 .dropdown li button:hover, .dropdown li a:hover {
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
 }
 .dropdown-divider {
   padding: 0 !important;
@@ -13413,7 +13410,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   justify-content: center;
   padding: 1rem 0;
   flex-wrap: wrap;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
 }
 @media (max-width: 767px) {
   .modal {
@@ -13473,7 +13470,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 
 .button-close {
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -13492,7 +13489,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   justify-content: center;
 }
 .button-close:hover {
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
 }
 
 .modal-content {
@@ -13501,16 +13498,16 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: var(--background_secondary);
+  background-color: var(--color_surface_secondary);
   background-clip: padding-box;
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--color_border_box_neutral_primary);
   border-radius: 0;
   padding: 0;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   outline: 0;
 }
 .modal-content .modal-header {
-  border-bottom: 1px solid var(--border_color);
+  border-bottom: 1px solid var(--color_border_box_neutral_primary);
   padding: 1rem;
   display: block;
   width: 100%;
@@ -13521,7 +13518,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 0 1rem;
 }
 .modal-content .modal-footer {
-  border-top: 1px solid var(--border_color);
+  border-top: 1px solid var(--color_border_box_neutral_primary);
   margin: 0;
   padding: 1rem;
   width: 100%;
@@ -13552,24 +13549,24 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--color_border_box_neutral_primary);
   border-radius: 5px;
   overflow: hidden;
 }
 .pagination li {
   display: block;
-  color: var(--text_color);
-  border-left: 1px solid var(--border_color);
+  color: var(--color_text-icon_neutral_secondary);
+  border-left: 1px solid var(--color_border_box_neutral_primary);
   font-size: 1rem;
   line-height: 1.5;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .pagination li:hover {
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
 }
 .pagination li.active {
-  color: var(--pink-50);
+  color: var(--primary_color);
   font-weight: 700;
 }
 .pagination li a, .pagination li button {
@@ -13590,7 +13587,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   display: inline-flex;
   border-radius: 10px;
   padding: 0.5rem;
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   list-style: none;
   align-items: center;
   margin: 0;
@@ -13618,7 +13615,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   border-radius: 10px;
   text-align: center;
   color: var(--gray);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   display: inline-flex;
   justify-content: center;
   border: 1px solid transparent;
@@ -13630,12 +13627,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .tabs-header li:hover {
   color: var(--gray_dark);
-  border-color: var(--background_third);
+  border-color: var(--color_surface_primary);
 }
 .tabs-header li.active {
   flex-shrink: 0;
   width: auto;
-  background-color: var(--background_third);
+  background-color: var(--color_surface_primary);
   color: var(--gray);
   font-weight: 700;
 }
@@ -13668,22 +13665,22 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   margin-top: calc(1rem - 4px);
   transition: all 0.3s ease;
-  background: var(--border_color);
+  background: var(--color_border_box_neutral_primary);
 }
 .tabs-header.line-style li:hover {
-  color: var(--border_color);
+  color: var(--color_border_box_neutral_primary);
 }
 .tabs-header.line-style li:hover::before {
-  background: var(--background_secondary);
+  background: var(--color_surface_secondary);
 }
 .tabs-header.line-style li.active {
-  color: var(--pink-50);
-  border-color: var(--pink-50);
+  color: var(--primary_color);
+  border-color: var(--primary_color);
   font-weight: 500;
   box-shadow: none;
 }
 .tabs-header.line-style li.active::before {
-  background: var(--pink-50);
+  background: var(--primary_color);
 }
 .tabs-header.tabs-center {
   width: 100%;
@@ -13795,8 +13792,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   color: var(--color_text-icon_system_discovery);
 }
 .toast.theme {
-  background: var(--text_color);
-  color: var(--background_secondary);
+  background: var(--color_text-icon_neutral_secondary);
+  color: var(--color_surface_secondary);
 }
 .toast.theme * {
   color: inherit;
@@ -13960,11 +13957,11 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .table {
   width: 100%;
   overflow: auto;
-  border-color: var(--border_color);
+  border-color: var(--color_border_box_neutral_primary);
   vertical-align: top;
   position: relative;
   border-collapse: collapse;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
 }
 .table caption {
   caption-side: top;
@@ -13994,7 +13991,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   top: 5px;
   padding: 0 0.5rem;
   height: calc(100% - 8px);
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border: none;
 }
 @media (max-width: 992px) {
@@ -14024,14 +14021,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .table > thead th,
 .table > thead td {
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   font-size: 14px;
   line-height: 1.5;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   font-weight: 700;
   padding: 1rem 0.5rem;
   border: none;
-  border-bottom: 4px solid var(--background);
+  border-bottom: 4px solid var(--color_surface_primary);
 }
 .table > thead th:first-child,
 .table > thead td:first-child {
@@ -14045,11 +14042,11 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .table > tbody {
   vertical-align: middle;
   position: relative;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
 }
 .table > tbody > tr {
-  background-color: var(--background);
-  border-bottom: 1px solid var(--border_color);
+  background-color: var(--color_surface_primary);
+  border-bottom: 1px solid var(--color_border_box_neutral_primary);
   transition: all 0.3s ease;
 }
 .table > tbody > tr:hover .wrapper-buttons {
@@ -14061,15 +14058,15 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 1rem 0.5rem;
 }
 .table > tbody > tr:last-child {
-  border-bottom: 1px solid var(--border_color);
+  border-bottom: 1px solid var(--color_border_box_neutral_primary);
 }
 .table > tfoot {
   vertical-align: middle;
   position: relative;
 }
 .table > tfoot tr {
-  background-color: var(--background);
-  border-bottom: 1px solid var(--border_color);
+  background-color: var(--color_surface_primary);
+  border-bottom: 1px solid var(--color_border_box_neutral_primary);
 }
 .table > tfoot tr td,
 .table > tfoot tr th {
@@ -14092,16 +14089,16 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
     left: -9999px;
   }
   .table.table-responsive tr {
-    border: 1px solid var(--border_color);
+    border: 1px solid var(--color_border_box_neutral_primary);
   }
   .table.table-responsive tr:hover {
     background-color: inherit;
   }
   .table.table-responsive tr:last-child {
-    border-bottom: 1px solid var(--border_color);
+    border-bottom: 1px solid var(--color_border_box_neutral_primary);
   }
   .table.table-responsive tr:nth-of-type(odd) {
-    background: var(--white);
+    background: var(--color_surface_secondary);
   }
   .table.table-responsive td {
     border: none;
@@ -14138,7 +14135,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 
 .steps {
   padding: 1rem;
-  background: var(--background);
+  background: var(--color_surface_primary);
 }
 .steps ul {
   padding: 0;
@@ -14151,7 +14148,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   justify-content: space-around;
   border-radius: 20px;
   overflow: hidden;
-  background: var(--border_color);
+  background: var(--color_border_box_neutral_primary);
   position: relative;
   padding: 0.2rem;
 }
@@ -14173,15 +14170,15 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   border-top-right-radius: 20px;
 }
 .steps ul li.active {
-  background: linear-gradient(90deg, var(--pink-50) 0%, var(--pink-50) 50%, transparent 51%);
+  background: linear-gradient(90deg, var(--primary_color) 0%, var(--primary_color) 50%, transparent 51%);
 }
 .steps ul li.old {
-  background: var(--pink);
+  background: var(--primary_color);
 }
 .steps ul li span {
   display: block;
   margin: 0;
-  background: var(--background);
+  background: var(--color_surface_primary);
   width: 6px;
   height: 6px;
   border-radius: 50%;

@@ -1,11 +1,11 @@
 @use "sass:math";
 .input {
   min-height: 44px;
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--color_border_box_neutral_primary);
   background: var(--color_bg_input);
   padding: 0.75rem $gutter;
   transition: $transition;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   @extend .border-radius;
   &.rounded {
     border-radius: 30px;
@@ -15,13 +15,13 @@
     padding: 0.25rem $gutter;
     background-color: var(--color_bg_input);
     border-radius: 30px;
-    color: var(--text_color);
-    border-color: var(--text_color);
+    color: var(--color_text-icon_neutral_secondary);
+    border-color: var(--color_text-icon_neutral_secondary);
   }
   &:focus {
     outline: none;
     box-shadow: 0px 0px 0px 1px var(--shadow_color);
-    border-color: var(--border_color);
+    border-color: var(--color_border_box_neutral_primary);
   }
   &.error {
     border-width: 1px;
@@ -66,7 +66,7 @@
   min-height: 80px;
   resize: none;
   overflow: auto;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
 }
 
 .wrapper-input {
@@ -81,13 +81,13 @@
     padding: math.div($gutter, 2) $gutter;
     text-align: center;
     white-space: nowrap;
-    border: 1px solid var(--border_color);
+    border: 1px solid var(--color_border_box_neutral_primary);
     @extend .border-radius;
     &:not(button):not(.loader) {
       font-weight: 400;
       line-height: 1.5;
-      color: var(--text_color);
-      background-color: var(--background_secondary);
+      color: var(--color_text-icon_neutral_secondary);
+      background-color: var(--color_surface_secondary);
     }
   }
   &>:not(:first-child):not(.box-validation):not(.tooltip) {
@@ -112,7 +112,7 @@
   width: 100%;
   margin-top: math.div($gutter, 4);
   font-size: 12px;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   text-align: left;
   i, svg  {
     font-size: 11px;

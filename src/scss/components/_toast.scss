@@ -82,8 +82,8 @@
     color: var(--color_text-icon_system_discovery);
   }
   &.theme {
-    background: var(--text_color);
-    color: var(--background_secondary);
+    background: var(--color_text-icon_neutral_secondary);
+    color: var(--color_surface_secondary);
     * {
       color: inherit;
     }
