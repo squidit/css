@@ -192,17 +192,23 @@ $lists: (
 
   // SURFACE
   @include generate-variable('universal_black', 'neutral', 10, 'color_surface');
+
+  // OLD
+  --border_color: var(--color_border_box_neutral_primary);
+  --background: var(--color_surface_primary);
+  --background_secondary: var(--color_surface_secondary);
+  --text_color: var(--color_text-icon_neutral_secondary);
+  --title_color: var(--color_text-icon_neutral_primary);
+  --background_third: var(--color_surface_primary);
+  --box_shadow: 0px 4px 12px -5px var(--shadow_color);
 }
 
 :root {
-  @include theme-light;
   @include theme-global;
 }
 
-@media (prefers-color-scheme: light) {
-  html{
-    @include theme-light;
-  }
+html {
+  @include theme-light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -211,10 +217,10 @@ $lists: (
   }
 }
 
-html body.light {
+html.light {
   @include theme-light(true);
 }
 
-html body.dark {
+html.dark {
   @include theme-dark(true);
 }
