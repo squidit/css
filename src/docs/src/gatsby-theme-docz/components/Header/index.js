@@ -24,7 +24,7 @@ export const Header = props => {
   }, [setColorMode])
 
   const toggleColorMode = () => {
-    document.body.classList.value = `scrollbar ${colorMode === 'light' ? 'dark' : 'light'}`
+    document.html.classList.value = `scrollbar ${colorMode === 'light' ? 'dark' : 'light'}`
     setColorMode(colorMode === 'light' ? 'dark' : 'light')
   }
 
