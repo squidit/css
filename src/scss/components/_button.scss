@@ -107,15 +107,12 @@
     }
     &.button-#{"" + $colorName}.inverted {
       color: var(--#{"" + $colorName});
-      background-color: var(--color_surface_primary);
+      background-color: transparent;
       border-color: var(--#{"" + $colorName});
-      @if ($colorName == yellow or $colorName == cian or $colorName == white) {
-        
-      }
       &:hover, &:focus {
         background-color: var(--#{"" + $colorName});
         border-color: var(--#{"" + $colorName});
-        color: var(--color_surface_primary);
+        color: white;
         @if (
           $colorName == yellow or
           $colorName == cian or
@@ -124,7 +121,7 @@
           $colorName == gold or
           $colorName == pastry
         ) {
-          color: var(--black);
+          color: black;
         }
       }
     }

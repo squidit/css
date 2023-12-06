@@ -12614,13 +12614,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-black.inverted {
   color: var(--black);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--black);
 }
 .button.button-black.inverted:hover, .button.button-black.inverted:focus {
   background-color: var(--black);
   border-color: var(--black);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-white {
   background-color: var(--white);
@@ -12633,14 +12633,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-white.inverted {
   color: var(--white);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--white);
 }
 .button.button-white.inverted:hover, .button.button-white.inverted:focus {
   background-color: var(--white);
   border-color: var(--white);
-  color: var(--color_surface_primary);
-  color: var(--black);
+  color: white;
+  color: black;
 }
 .button.button-black-html {
   background-color: var(--black-html);
@@ -12652,13 +12652,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-black-html.inverted {
   color: var(--black-html);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--black-html);
 }
 .button.button-black-html.inverted:hover, .button.button-black-html.inverted:focus {
   background-color: var(--black-html);
   border-color: var(--black-html);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-white-html {
   background-color: var(--white-html);
@@ -12670,13 +12670,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-white-html.inverted {
   color: var(--white-html);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--white-html);
 }
 .button.button-white-html.inverted:hover, .button.button-white-html.inverted:focus {
   background-color: var(--white-html);
   border-color: var(--white-html);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-transparent {
   background-color: var(--transparent);
@@ -12688,13 +12688,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-transparent.inverted {
   color: var(--transparent);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--transparent);
 }
 .button.button-transparent.inverted:hover, .button.button-transparent.inverted:focus {
   background-color: var(--transparent);
   border-color: var(--transparent);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-gray {
   background-color: var(--gray);
@@ -12706,13 +12706,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-gray.inverted {
   color: var(--gray);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--gray);
 }
 .button.button-gray.inverted:hover, .button.button-gray.inverted:focus {
   background-color: var(--gray);
   border-color: var(--gray);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-pink {
   background-color: var(--pink);
@@ -12724,13 +12724,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-pink.inverted {
   color: var(--pink);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--pink);
 }
 .button.button-pink.inverted:hover, .button.button-pink.inverted:focus {
   background-color: var(--pink);
   border-color: var(--pink);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-lilac {
   background-color: var(--lilac);
@@ -12742,13 +12742,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-lilac.inverted {
   color: var(--lilac);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--lilac);
 }
 .button.button-lilac.inverted:hover, .button.button-lilac.inverted:focus {
   background-color: var(--lilac);
   border-color: var(--lilac);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-cian {
   background-color: var(--cian);
@@ -12761,14 +12761,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-cian.inverted {
   color: var(--cian);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--cian);
 }
 .button.button-cian.inverted:hover, .button.button-cian.inverted:focus {
   background-color: var(--cian);
   border-color: var(--cian);
-  color: var(--color_surface_primary);
-  color: var(--black);
+  color: white;
+  color: black;
 }
 .button.button-green {
   background-color: var(--green);
@@ -12780,13 +12780,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-green.inverted {
   color: var(--green);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--green);
 }
 .button.button-green.inverted:hover, .button.button-green.inverted:focus {
   background-color: var(--green);
   border-color: var(--green);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-aqua {
   background-color: var(--aqua);
@@ -12798,13 +12798,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-aqua.inverted {
   color: var(--aqua);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--aqua);
 }
 .button.button-aqua.inverted:hover, .button.button-aqua.inverted:focus {
   background-color: var(--aqua);
   border-color: var(--aqua);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-yellow {
   background-color: var(--yellow);
@@ -12817,14 +12817,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-yellow.inverted {
   color: var(--yellow);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--yellow);
 }
 .button.button-yellow.inverted:hover, .button.button-yellow.inverted:focus {
   background-color: var(--yellow);
   border-color: var(--yellow);
-  color: var(--color_surface_primary);
-  color: var(--black);
+  color: white;
+  color: black;
 }
 .button.button-red {
   background-color: var(--red);
@@ -12836,13 +12836,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-red.inverted {
   color: var(--red);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--red);
 }
 .button.button-red.inverted:hover, .button.button-red.inverted:focus {
   background-color: var(--red);
   border-color: var(--red);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-red-bl {
   background-color: var(--red-bl);
@@ -12854,13 +12854,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-red-bl.inverted {
   color: var(--red-bl);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--red-bl);
 }
 .button.button-red-bl.inverted:hover, .button.button-red-bl.inverted:focus {
   background-color: var(--red-bl);
   border-color: var(--red-bl);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-blue {
   background-color: var(--blue);
@@ -12872,13 +12872,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-blue.inverted {
   color: var(--blue);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--blue);
 }
 .button.button-blue.inverted:hover, .button.button-blue.inverted:focus {
   background-color: var(--blue);
   border-color: var(--blue);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-pomegranate {
   background-color: var(--pomegranate);
@@ -12890,13 +12890,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-pomegranate.inverted {
   color: var(--pomegranate);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--pomegranate);
 }
 .button.button-pomegranate.inverted:hover, .button.button-pomegranate.inverted:focus {
   background-color: var(--pomegranate);
   border-color: var(--pomegranate);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-lemon {
   background-color: var(--lemon);
@@ -12909,14 +12909,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-lemon.inverted {
   color: var(--lemon);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--lemon);
 }
 .button.button-lemon.inverted:hover, .button.button-lemon.inverted:focus {
   background-color: var(--lemon);
   border-color: var(--lemon);
-  color: var(--color_surface_primary);
-  color: var(--black);
+  color: white;
+  color: black;
 }
 .button.button-gold {
   background-color: var(--gold);
@@ -12929,14 +12929,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-gold.inverted {
   color: var(--gold);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--gold);
 }
 .button.button-gold.inverted:hover, .button.button-gold.inverted:focus {
   background-color: var(--gold);
   border-color: var(--gold);
-  color: var(--color_surface_primary);
-  color: var(--black);
+  color: white;
+  color: black;
 }
 .button.button-pastry {
   background-color: var(--pastry);
@@ -12949,14 +12949,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-pastry.inverted {
   color: var(--pastry);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--pastry);
 }
 .button.button-pastry.inverted:hover, .button.button-pastry.inverted:focus {
   background-color: var(--pastry);
   border-color: var(--pastry);
-  color: var(--color_surface_primary);
-  color: var(--black);
+  color: white;
+  color: black;
 }
 .button.button-instagram {
   background-color: var(--instagram);
@@ -12968,13 +12968,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-instagram.inverted {
   color: var(--instagram);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--instagram);
 }
 .button.button-instagram.inverted:hover, .button.button-instagram.inverted:focus {
   background-color: var(--instagram);
   border-color: var(--instagram);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-twitter {
   background-color: var(--twitter);
@@ -12986,13 +12986,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-twitter.inverted {
   color: var(--twitter);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--twitter);
 }
 .button.button-twitter.inverted:hover, .button.button-twitter.inverted:focus {
   background-color: var(--twitter);
   border-color: var(--twitter);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-youtube {
   background-color: var(--youtube);
@@ -13004,13 +13004,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-youtube.inverted {
   color: var(--youtube);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--youtube);
 }
 .button.button-youtube.inverted:hover, .button.button-youtube.inverted:focus {
   background-color: var(--youtube);
   border-color: var(--youtube);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-pinterest {
   background-color: var(--pinterest);
@@ -13022,13 +13022,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-pinterest.inverted {
   color: var(--pinterest);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--pinterest);
 }
 .button.button-pinterest.inverted:hover, .button.button-pinterest.inverted:focus {
   background-color: var(--pinterest);
   border-color: var(--pinterest);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-facebook {
   background-color: var(--facebook);
@@ -13040,13 +13040,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-facebook.inverted {
   color: var(--facebook);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--facebook);
 }
 .button.button-facebook.inverted:hover, .button.button-facebook.inverted:focus {
   background-color: var(--facebook);
   border-color: var(--facebook);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-google {
   background-color: var(--google);
@@ -13058,13 +13058,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-google.inverted {
   color: var(--google);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--google);
 }
 .button.button-google.inverted:hover, .button.button-google.inverted:focus {
   background-color: var(--google);
   border-color: var(--google);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-linkedin {
   background-color: var(--linkedin);
@@ -13076,13 +13076,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-linkedin.inverted {
   color: var(--linkedin);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--linkedin);
 }
 .button.button-linkedin.inverted:hover, .button.button-linkedin.inverted:focus {
   background-color: var(--linkedin);
   border-color: var(--linkedin);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-whatsapp {
   background-color: var(--whatsapp);
@@ -13094,13 +13094,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-whatsapp.inverted {
   color: var(--whatsapp);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--whatsapp);
 }
 .button.button-whatsapp.inverted:hover, .button.button-whatsapp.inverted:focus {
   background-color: var(--whatsapp);
   border-color: var(--whatsapp);
-  color: var(--color_surface_primary);
+  color: white;
 }
 .button.button-tiktok {
   background-color: var(--tiktok);
@@ -13112,13 +13112,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .button.button-tiktok.inverted {
   color: var(--tiktok);
-  background-color: var(--color_surface_primary);
+  background-color: transparent;
   border-color: var(--tiktok);
 }
 .button.button-tiktok.inverted:hover, .button.button-tiktok.inverted:focus {
   background-color: var(--tiktok);
   border-color: var(--tiktok);
-  color: var(--color_surface_primary);
+  color: white;
 }
 
 .input, .select, .textarea {
