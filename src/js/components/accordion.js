@@ -1,3 +1,13 @@
+function applyDisplay (collapses, index) {
+  if (collapses[index].children[0].children[0].children[1]) {
+    if (collapses[index].classList.value.includes('active')) {
+      collapses[index].children[0].children[0].children[1].style.display = ''
+    } else {
+      collapses[index].children[0].children[0].children[1].style.display = 'none'
+    }
+  }
+}
+
 function initAccordion (element) {
   const collapses = [...element.children]
   let currentTabIndex = 0
@@ -12,9 +22,11 @@ function initAccordion (element) {
           collapses[currentTabIndex].classList.remove('active')
           collapses[index].classList.add('active')
         } else {
+          applyDisplay(collapses, index)
           collapses[index].classList.toggle('active')
         }
       } else if (!element.classList.contains('only-one')) {
+        applyDisplay(collapses, index)
         collapses[index].classList.toggle('active')
       }
       currentTabIndex = index

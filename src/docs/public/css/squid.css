@@ -13312,7 +13312,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   height: 16px;
   width: 16px;
   right: 1rem;
-  top: calc(1rem + 3px);
   margin-left: 0.5rem;
   font-size: 1rem;
   line-height: 16px;
