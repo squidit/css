@@ -71,7 +71,7 @@ const Theme = ({ children }) => {
       colorMode = 'dark'
     }
     document.body.classList.add('scrollbar')
-    document.body.classList.add(colorMode)
+    document.html.classList.add(colorMode)
   }
   const style = `
     .grid-box {
