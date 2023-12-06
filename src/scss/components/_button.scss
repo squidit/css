@@ -61,27 +61,7 @@
     }
   }
 
-  @each $groupName, $list in $lists {
-    @each $name, $color in $list {
-      &.button-#{"" + $name} {
-        background-color: var(--color_bg_button_#{$groupName}_#{$name});
-        border-color: var(--color_border_button_#{$groupName}_#{$name});
-        &:hover, &:focus {
-          background-color: var(--color_bg_button_#{$groupName}_#{$name}_hover);
-        }
-      }
-      &.button-#{"" + $name}.inverted {
-        color: var(--color_border_button_#{$groupName}_#{$name});
-        border-color: var(--color_border_button_#{$groupName}_#{$name});
-        background-color: transparent;
-        &:hover, &:focus {
-          background-color: var(--color_bg_button_#{$groupName}_#{$name}_inverse-hover);
-          color: inherit;
-        }
-      }
-    }
-  }
-
+  // OLD colors
   @each $colorName, $colorGroup in $colors {
     &.button-#{"" + $colorName} {
       background-color: var(--#{"" + $colorName});
@@ -122,6 +102,44 @@
           $colorName == pastry
         ) {
           color: black;
+        }
+      }
+    }
+  }
+
+  // New Colors
+  @each $groupName, $list in $lists {
+    @each $name, $color in $list {
+      &.button-#{"" + $name} {
+        background-color: var(--color_bg_button_#{$groupName}_#{$name});
+        border-color: var(--color_border_button_#{$groupName}_#{$name});
+        color: white;
+        @if (
+          $color == orange or
+          $color == yellow or
+          $color == white
+        ) {
+          color: black;
+        }
+        &:hover, &:focus {
+          background-color: var(--color_bg_button_#{$groupName}_#{$name}_hover);
+        }
+      }
+      &.button-#{"" + $name}.inverted {
+        color: var(--color_border_button_#{$groupName}_#{$name});
+        border-color: var(--color_border_button_#{$groupName}_#{$name});
+        background-color: transparent;
+        &:hover, &:focus {
+          color: var(--color_text-icon_#{$groupName}_#{$name});
+          background-color: var(--color_bg_button_#{$groupName}_#{$name}_inverse-hover);
+          color: white;
+          @if (
+            $color == orange or
+            $color == yellow or
+            $color == white
+          ) {
+            color: black;
+          }
         }
       }
     }
