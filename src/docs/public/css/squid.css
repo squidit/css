@@ -12322,8 +12322,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_brands_wake_hover);
 }
 .button.button-wake.inverted {
-  color: var(--color_border_button_brands_wake_inverse);
-  border-color: var(--color_border_button_brands_wake_inverse);
+  color: var(--color_border_button_brands_wake);
+  border-color: var(--color_border_button_brands_wake);
   background-color: transparent;
 }
 .button.button-wake.inverted:hover, .button.button-wake.inverted:focus {
@@ -12338,8 +12338,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_brands_squid_hover);
 }
 .button.button-squid.inverted {
-  color: var(--color_border_button_brands_squid_inverse);
-  border-color: var(--color_border_button_brands_squid_inverse);
+  color: var(--color_border_button_brands_squid);
+  border-color: var(--color_border_button_brands_squid);
   background-color: transparent;
 }
 .button.button-squid.inverted:hover, .button.button-squid.inverted:focus {
@@ -12354,8 +12354,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_system_danger_hover);
 }
 .button.button-danger.inverted {
-  color: var(--color_border_button_system_danger_inverse);
-  border-color: var(--color_border_button_system_danger_inverse);
+  color: var(--color_border_button_system_danger);
+  border-color: var(--color_border_button_system_danger);
   background-color: transparent;
 }
 .button.button-danger.inverted:hover, .button.button-danger.inverted:focus {
@@ -12370,8 +12370,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_system_warning_hover);
 }
 .button.button-warning.inverted {
-  color: var(--color_border_button_system_warning_inverse);
-  border-color: var(--color_border_button_system_warning_inverse);
+  color: var(--color_border_button_system_warning);
+  border-color: var(--color_border_button_system_warning);
   background-color: transparent;
 }
 .button.button-warning.inverted:hover, .button.button-warning.inverted:focus {
@@ -12386,8 +12386,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_system_success_hover);
 }
 .button.button-success.inverted {
-  color: var(--color_border_button_system_success_inverse);
-  border-color: var(--color_border_button_system_success_inverse);
+  color: var(--color_border_button_system_success);
+  border-color: var(--color_border_button_system_success);
   background-color: transparent;
 }
 .button.button-success.inverted:hover, .button.button-success.inverted:focus {
@@ -12402,8 +12402,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_system_information_hover);
 }
 .button.button-information.inverted {
-  color: var(--color_border_button_system_information_inverse);
-  border-color: var(--color_border_button_system_information_inverse);
+  color: var(--color_border_button_system_information);
+  border-color: var(--color_border_button_system_information);
   background-color: transparent;
 }
 .button.button-information.inverted:hover, .button.button-information.inverted:focus {
@@ -12418,8 +12418,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_system_discovery_hover);
 }
 .button.button-discovery.inverted {
-  color: var(--color_border_button_system_discovery_inverse);
-  border-color: var(--color_border_button_system_discovery_inverse);
+  color: var(--color_border_button_system_discovery);
+  border-color: var(--color_border_button_system_discovery);
   background-color: transparent;
 }
 .button.button-discovery.inverted:hover, .button.button-discovery.inverted:focus {
@@ -12434,8 +12434,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_highlight_orange_hover);
 }
 .button.button-orange.inverted {
-  color: var(--color_border_button_highlight_orange_inverse);
-  border-color: var(--color_border_button_highlight_orange_inverse);
+  color: var(--color_border_button_highlight_orange);
+  border-color: var(--color_border_button_highlight_orange);
   background-color: transparent;
 }
 .button.button-orange.inverted:hover, .button.button-orange.inverted:focus {
@@ -12450,8 +12450,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_highlight_aqua_hover);
 }
 .button.button-aqua.inverted {
-  color: var(--color_border_button_highlight_aqua_inverse);
-  border-color: var(--color_border_button_highlight_aqua_inverse);
+  color: var(--color_border_button_highlight_aqua);
+  border-color: var(--color_border_button_highlight_aqua);
   background-color: transparent;
 }
 .button.button-aqua.inverted:hover, .button.button-aqua.inverted:focus {
@@ -12466,8 +12466,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_instagram_hover);
 }
 .button.button-instagram.inverted {
-  color: var(--color_border_button_social_instagram_inverse);
-  border-color: var(--color_border_button_social_instagram_inverse);
+  color: var(--color_border_button_social_instagram);
+  border-color: var(--color_border_button_social_instagram);
   background-color: transparent;
 }
 .button.button-instagram.inverted:hover, .button.button-instagram.inverted:focus {
@@ -12482,8 +12482,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_youtube_hover);
 }
 .button.button-youtube.inverted {
-  color: var(--color_border_button_social_youtube_inverse);
-  border-color: var(--color_border_button_social_youtube_inverse);
+  color: var(--color_border_button_social_youtube);
+  border-color: var(--color_border_button_social_youtube);
   background-color: transparent;
 }
 .button.button-youtube.inverted:hover, .button.button-youtube.inverted:focus {
@@ -12498,8 +12498,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_pinterest_hover);
 }
 .button.button-pinterest.inverted {
-  color: var(--color_border_button_social_pinterest_inverse);
-  border-color: var(--color_border_button_social_pinterest_inverse);
+  color: var(--color_border_button_social_pinterest);
+  border-color: var(--color_border_button_social_pinterest);
   background-color: transparent;
 }
 .button.button-pinterest.inverted:hover, .button.button-pinterest.inverted:focus {
@@ -12514,8 +12514,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_google_hover);
 }
 .button.button-google.inverted {
-  color: var(--color_border_button_social_google_inverse);
-  border-color: var(--color_border_button_social_google_inverse);
+  color: var(--color_border_button_social_google);
+  border-color: var(--color_border_button_social_google);
   background-color: transparent;
 }
 .button.button-google.inverted:hover, .button.button-google.inverted:focus {
@@ -12530,8 +12530,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_whatsapp_hover);
 }
 .button.button-whatsapp.inverted {
-  color: var(--color_border_button_social_whatsapp_inverse);
-  border-color: var(--color_border_button_social_whatsapp_inverse);
+  color: var(--color_border_button_social_whatsapp);
+  border-color: var(--color_border_button_social_whatsapp);
   background-color: transparent;
 }
 .button.button-whatsapp.inverted:hover, .button.button-whatsapp.inverted:focus {
@@ -12546,8 +12546,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_twitter_hover);
 }
 .button.button-twitter.inverted {
-  color: var(--color_border_button_social_twitter_inverse);
-  border-color: var(--color_border_button_social_twitter_inverse);
+  color: var(--color_border_button_social_twitter);
+  border-color: var(--color_border_button_social_twitter);
   background-color: transparent;
 }
 .button.button-twitter.inverted:hover, .button.button-twitter.inverted:focus {
@@ -12562,8 +12562,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_linkedin_hover);
 }
 .button.button-linkedin.inverted {
-  color: var(--color_border_button_social_linkedin_inverse);
-  border-color: var(--color_border_button_social_linkedin_inverse);
+  color: var(--color_border_button_social_linkedin);
+  border-color: var(--color_border_button_social_linkedin);
   background-color: transparent;
 }
 .button.button-linkedin.inverted:hover, .button.button-linkedin.inverted:focus {
@@ -12578,8 +12578,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_facebook_hover);
 }
 .button.button-facebook.inverted {
-  color: var(--color_border_button_social_facebook_inverse);
-  border-color: var(--color_border_button_social_facebook_inverse);
+  color: var(--color_border_button_social_facebook);
+  border-color: var(--color_border_button_social_facebook);
   background-color: transparent;
 }
 .button.button-facebook.inverted:hover, .button.button-facebook.inverted:focus {
@@ -12594,8 +12594,8 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_social_twitch_hover);
 }
 .button.button-twitch.inverted {
-  color: var(--color_border_button_social_twitch_inverse);
-  border-color: var(--color_border_button_social_twitch_inverse);
+  color: var(--color_border_button_social_twitch);
+  border-color: var(--color_border_button_social_twitch);
   background-color: transparent;
 }
 .button.button-twitch.inverted:hover, .button.button-twitch.inverted:focus {

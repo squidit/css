@@ -71,8 +71,8 @@
         }
       }
       &.button-#{"" + $name}.inverted {
-        color: var(--color_border_button_#{$groupName}_#{$name}_inverse);
-        border-color: var(--color_border_button_#{$groupName}_#{$name}_inverse);
+        color: var(--color_border_button_#{$groupName}_#{$name});
+        border-color: var(--color_border_button_#{$groupName}_#{$name});
         background-color: transparent;
         &:hover, &:focus {
           background-color: var(--color_bg_button_#{$groupName}_#{$name}_inverse-hover);
