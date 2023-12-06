@@ -12833,8 +12833,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .input.small, .small.select, .small.textarea {
   min-height: 25px;
   padding: 0.25rem 1rem;
-  border-radius: 30px;
-  border-color: var(--color_border_input);
 }
 .input:focus, .select:focus, .textarea:focus {
   outline: none;

@@ -13,8 +13,6 @@
   &.small {
     min-height: 25px;
     padding: 0.25rem $gutter;
-    border-radius: 30px;
-    border-color: var(--color_border_input);
   }
   &:focus {
     outline: none;
