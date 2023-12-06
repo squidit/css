@@ -42,12 +42,12 @@
     }
     &:hover {
       color: var(--color_text-icon_neutral_primary);
-      border-color: var(--color_surface_secondary);
+      border-color: var(--color_surface_tertiary);
     }
     &.active {
       flex-shrink: 0;
       width: auto;
-      background-color: var(--color_surface_secondary);
+      background-color: var(--color_surface_tertiary);
       color: var(--color_text-icon_neutral_primary);
       font-weight: 700;
     }

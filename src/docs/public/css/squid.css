@@ -9165,7 +9165,7 @@
   --background_secondary: var(--color_surface_secondary);
   --text_color: var(--color_text-icon_neutral_secondary);
   --title_color: var(--color_text-icon_neutral_primary);
-  --background_third: var(--color_surface_primary);
+  --background_third: var(--color_surface_tertiary);
   --box_shadow: 0px 4px 12px -5px var(--shadow_color);
   --primary_color: var(--pink-50);
   --secondary_color: white;
@@ -9173,6 +9173,7 @@
 
 html {
   --shadow_color: #64647680 ;
+  --background_reset: var(--neutral-100) ;
   --color_text-icon_neutral_primary: var(--neutral-10) ;
   --color_text-icon_neutral_secondary: var(--neutral-30) ;
   --color_text-icon_neutral_tertiary: var(--neutral-40) ;
@@ -9202,8 +9203,10 @@ html {
   --color_border_input_success: var(--green-40) ;
   --color_surface_primary: var(--neutral-95) ;
   --color_surface_secondary: var(--neutral-85) ;
-  --color_surface_primary_inverse: var(--neutral-5) ;
-  --color_surface_secondary_inverse: var(--neutral-15) ;
+  --color_surface_tertiary: var(--neutral-75) ;
+  --color_surface_primary_inverse: var(--neutral-15) ;
+  --color_surface_secondary_inverse: var(--neutral-10) ;
+  --color_surface_tertiary_inverse: var(--neutral-5) ;
   --color_bg_button: var(--neutral-10) ;
   --color_bg_button_hover: var(--neutral-20) ;
   --color_bg_button_inverse: var(--neutral-100) ;
@@ -9360,6 +9363,7 @@ html {
 @media (prefers-color-scheme: dark) {
   html {
     --shadow_color: #000000 ;
+    --background_reset: var(--neutral-5) ;
     --color_text-icon_neutral_primary: var(--neutral-100) ;
     --color_text-icon_neutral_secondary: var(--neutral-70) ;
     --color_text-icon_neutral_tertiary: var(--neutral-60) ;
@@ -9387,10 +9391,12 @@ html {
     --color_border_input_disabled: var(--neutral-30) ;
     --color_border_input_error: var(--red-70) ;
     --color_border_input_success: var(--green-70) ;
-    --color_surface_primary: var(--neutral-5) ;
-    --color_surface_secondary: var(--neutral-15) ;
+    --color_surface_primary: var(--neutral-15) ;
+    --color_surface_secondary: var(--neutral-10) ;
+    --color_surface_tertiary: var(--neutral-5) ;
     --color_surface_primary_inverse: var(--neutral-95) ;
     --color_surface_secondary_inverse: var(--neutral-85) ;
+    --color_surface_tertiary_inverse: var(--neutral-75) ;
     --color_bg_button: var(--neutral-100) ;
     --color_bg_button_hover: var(--neutral-90) ;
     --color_bg_button_inverse: var(--neutral-10) ;
@@ -9546,6 +9552,7 @@ html {
 }
 html.light {
   --shadow_color: #64647680 !important;
+  --background_reset: var(--neutral-100) !important;
   --color_text-icon_neutral_primary: var(--neutral-10) !important;
   --color_text-icon_neutral_secondary: var(--neutral-30) !important;
   --color_text-icon_neutral_tertiary: var(--neutral-40) !important;
@@ -9575,8 +9582,10 @@ html.light {
   --color_border_input_success: var(--green-40) !important;
   --color_surface_primary: var(--neutral-95) !important;
   --color_surface_secondary: var(--neutral-85) !important;
-  --color_surface_primary_inverse: var(--neutral-5) !important;
-  --color_surface_secondary_inverse: var(--neutral-15) !important;
+  --color_surface_tertiary: var(--neutral-75) !important;
+  --color_surface_primary_inverse: var(--neutral-15) !important;
+  --color_surface_secondary_inverse: var(--neutral-10) !important;
+  --color_surface_tertiary_inverse: var(--neutral-5) !important;
   --color_bg_button: var(--neutral-10) !important;
   --color_bg_button_hover: var(--neutral-20) !important;
   --color_bg_button_inverse: var(--neutral-100) !important;
@@ -9732,6 +9741,7 @@ html.light {
 
 html.dark {
   --shadow_color: #000000 !important;
+  --background_reset: var(--neutral-5) !important;
   --color_text-icon_neutral_primary: var(--neutral-100) !important;
   --color_text-icon_neutral_secondary: var(--neutral-70) !important;
   --color_text-icon_neutral_tertiary: var(--neutral-60) !important;
@@ -9759,10 +9769,12 @@ html.dark {
   --color_border_input_disabled: var(--neutral-30) !important;
   --color_border_input_error: var(--red-70) !important;
   --color_border_input_success: var(--green-70) !important;
-  --color_surface_primary: var(--neutral-5) !important;
-  --color_surface_secondary: var(--neutral-15) !important;
+  --color_surface_primary: var(--neutral-15) !important;
+  --color_surface_secondary: var(--neutral-10) !important;
+  --color_surface_tertiary: var(--neutral-5) !important;
   --color_surface_primary_inverse: var(--neutral-95) !important;
   --color_surface_secondary_inverse: var(--neutral-85) !important;
+  --color_surface_tertiary_inverse: var(--neutral-75) !important;
   --color_bg_button: var(--neutral-100) !important;
   --color_bg_button_hover: var(--neutral-90) !important;
   --color_bg_button_inverse: var(--neutral-10) !important;
@@ -13645,12 +13657,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .tabs-header li:hover {
   color: var(--color_text-icon_neutral_primary);
-  border-color: var(--color_surface_secondary);
+  border-color: var(--color_surface_tertiary);
 }
 .tabs-header li.active {
   flex-shrink: 0;
   width: auto;
-  background-color: var(--color_surface_secondary);
+  background-color: var(--color_surface_tertiary);
   color: var(--color_text-icon_neutral_primary);
   font-weight: 700;
 }
