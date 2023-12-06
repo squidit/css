@@ -162,6 +162,7 @@ body {
 
 a {
   color: var(--color_text-icon_link);
+  color: inherit;
   text-decoration: underline;
   font-size: inherit;
   line-height: inherit;

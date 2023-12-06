@@ -116,7 +116,7 @@ $lists: (
 
   // Primary
   --primary_color: var(--pink-40) #{$important};
-  --secondary_color: white #{$important};
+  --primary_color_hover: var(--pink-50) #{$important};
 }
 
 @mixin theme-dark($force: false) {
@@ -195,7 +195,7 @@ $lists: (
 
   // Primary
   --primary_color: var(--pink-70) #{$important};
-  --secondary_color: white #{$important};
+  --primary_color_hover: var(--pink-60) #{$important};
 }
 
 @mixin theme-global {
@@ -231,7 +231,6 @@ $lists: (
   --box_shadow: 0px 4px 12px -5px var(--shadow_color);
 
   // Primary
-  --primary_color: var(--pink-50);
   --secondary_color: white;
 }
 
