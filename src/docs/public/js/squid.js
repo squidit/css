@@ -24,6 +24,34 @@ const colors = [
   'twitch'
 ]
 
+const buttons = [
+  'neutral',
+  'wake',
+  'squid',
+  'danger',
+  'warning',
+  'success',
+  'information',
+  'discovery',
+  'orange',
+  'aqua',
+  'instagram',
+  'youtube',
+  'pinterest',
+  'google',
+  'whatsapp',
+  'twitter',
+  'linkedin',
+  'facebook'
+]
+
+const buttonSizes = [
+  { text: 'Small', value: 'sm' },
+  { text: 'Medium/Default', value: '' },
+  { text: 'Big', value: 'lg' },
+  { text: 'Extra Large', value: 'xl' }
+]
+
 function applyDisplay (collapses, index) {
   if (collapses[index].children[0].children[0].children[1]) {
     if (collapses[index].classList.value.includes('active')) {
@@ -64,10 +92,6 @@ function initAccordion (element) {
   // eslint-disable-next-line
   collapses.forEach((x, i) => x.onclick = event => setTab(i))
 }
-
-(function () {
-  [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
-})();
 
 (function () {
   'use strict'
@@ -716,6 +740,63 @@ window.onpopstate = (e) => {
   }
 })();
 
+function renderButtons () {
+  const target = document.getElementById('buttons');
+
+  const sizes = document.createElement('div');
+  sizes.className = 'mb-5'
+  sizes.style.display = 'grid';
+  sizes.style.gridTemplateColumns = 'repeat(4, 1fr)';
+  sizes.style.gap = '1.5rem';
+
+  for (const size of buttonSizes) {
+    const div = document.createElement('div');
+
+    const title = document.createElement('h6');
+    title.textContent = size.text
+
+    const button = document.createElement('button');
+    button.className = `button button-primary ${size.value ? 'button-' + size.value : ''}`;
+    button.style.width = '100%'
+    button.textContent = 'Click me';
+
+    div.appendChild(title)
+    div.appendChild(button)
+
+    sizes.appendChild(div)
+  }
+
+  target.appendChild(sizes);
+
+  const div = document.createElement('div');
+
+  for (const type of ['Default', 'Inverted']) {
+    const title = document.createElement('h6');
+    title.textContent = type;
+
+    div.appendChild(title);
+
+    const examples = document.createElement('div');
+    examples.className = 'mb-5'
+    examples.style.display = 'grid';
+    examples.style.gridTemplateColumns = 'repeat(5, 1fr)';
+    examples.style.gap = '1.5rem';
+
+    for (const color of buttons) {
+      const button = document.createElement('button');
+      button.className = `button ${color ? 'button-' + color : ''} ${type === 'Inverted' ? type.toLowerCase() : ''}`;
+      button.style.width = '100%'
+      button.textContent = color;
+
+      examples.appendChild(button);
+    }
+
+    div.appendChild(examples);
+  }
+
+  target.appendChild(div);
+}
+
 function hexToRgb (hex) {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return result
@@ -797,7 +878,7 @@ function createInCss (colorName, hexColor) {
   document.head.appendChild(styleTag);
 }
 
-function createColorDiv (color) {
+function createColors (color) {
   const collapse = document.createElement('div');
   collapse.className = 'collapse';
 
@@ -859,20 +940,11 @@ async function renderColors () {
   accordion.style.gap = '1.5rem';
 
   for (const color of colors) {
-    accordion.appendChild(createColorDiv(color))
+    accordion.appendChild(createColors(color))
   }
 
   const colorsDiv = document.getElementById('colors');
   colorsDiv.appendChild(accordion);
-}
-
-if (typeof window !== 'undefined') {
-  window.onload = function () {
-    renderColors();
-    (function () {
-      [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
-    })();
-  };
 }
 
 // // Listen all events on document/window
@@ -907,4 +979,14 @@ function loadScript (file) {
   script.type = 'text/javascript'
   script.src = file
   document.body.appendChild(script)
+}
+
+if (typeof window !== 'undefined') {
+  window.onload = function () {
+    renderColors();
+    renderButtons();
+    (function () {
+      [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
+    })();
+  };
 }

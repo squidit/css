@@ -79,7 +79,7 @@ function createInCss (colorName, hexColor) {
   document.head.appendChild(styleTag);
 }
 
-function createColorDiv (color) {
+function createColors (color) {
   const collapse = document.createElement('div');
   collapse.className = 'collapse';
 
@@ -141,18 +141,9 @@ async function renderColors () {
   accordion.style.gap = '1.5rem';
 
   for (const color of colors) {
-    accordion.appendChild(createColorDiv(color))
+    accordion.appendChild(createColors(color))
   }
 
   const colorsDiv = document.getElementById('colors');
   colorsDiv.appendChild(accordion);
-}
-
-if (typeof window !== 'undefined') {
-  window.onload = function () {
-    renderColors();
-    (function () {
-      [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
-    })();
-  };
 }
