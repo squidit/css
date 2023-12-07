@@ -113,13 +113,17 @@
       &.button-#{"" + $name} {
         background-color: var(--color_bg_button_#{$groupName}_#{$name});
         border-color: var(--color_border_button_#{$groupName}_#{$name});
-        color: white;
+        color: var(--color_text-icon_neutral_inverse);
         @if (
           $color == orange or
           $color == yellow or
-          $color == white
+          $color == white or
+          $name == warning or
+          $name == success or
+          $name == aqua or
+          $name == google
         ) {
-          color: black;
+          color: var(--color_text-icon_universal_black_primary);
         }
         &:hover, &:focus {
           background-color: var(--color_bg_button_#{$groupName}_#{$name}_hover);
@@ -132,13 +136,13 @@
         &:hover, &:focus {
           color: var(--color_text-icon_#{$groupName}_#{$name});
           background-color: var(--color_bg_button_#{$groupName}_#{$name}_inverse-hover);
-          color: white;
+          color: var(--color_text-icon_neutral_primary);
           @if (
             $color == orange or
             $color == yellow or
             $color == white
           ) {
-            color: black;
+            color: var(--color_text-icon_universal_black_primary);
           }
         }
       }
