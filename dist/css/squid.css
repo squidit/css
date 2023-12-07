@@ -9161,8 +9161,8 @@
   --color_text-icon_universal_social_tiktok: var(--tiktok-0) ;
   --color_surface_universal_black: var(--neutral-10) ;
   --border_color: var(--color_border_box_neutral_primary);
-  --background: var(--color_surface_primary);
-  --background_secondary: var(--color_surface_secondary);
+  --background: var(--color_surface_secondary);
+  --background_secondary: var(--color_surface_primary);
   --text_color: var(--color_text-icon_neutral_secondary);
   --title_color: var(--color_text-icon_neutral_primary);
   --background_third: var(--color_surface_tertiary);
