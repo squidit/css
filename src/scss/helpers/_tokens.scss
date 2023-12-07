@@ -83,7 +83,7 @@ $lists: (
 
   // SURFACE
   @include generate-variable('primary', 'neutral', 95, 'color_surface', '', $force);
-  @include generate-variable('secondary', 'neutral', 85, 'color_surface', '', $force);
+  @include generate-variable('secondary', 'neutral', 100, 'color_surface', '', $force);
   @include generate-variable('tertiary', 'neutral', 75, 'color_surface', '', $force);
   @include generate-variable('primary', 'neutral', 15, 'color_surface', 'inverse', $force);
   @include generate-variable('secondary', 'neutral', 10, 'color_surface', 'inverse', $force);
@@ -165,7 +165,7 @@ $lists: (
   @include generate-variable('secondary', 'neutral', 10, 'color_surface', '', $force);
   @include generate-variable('tertiary', 'neutral', 5, 'color_surface', '', $force);
   @include generate-variable('primary', 'neutral', 95, 'color_surface', 'inverse', $force);
-  @include generate-variable('secondary', 'neutral', 85, 'color_surface', 'inverse', $force);
+  @include generate-variable('secondary', 'neutral', 100, 'color_surface', 'inverse', $force);
   @include generate-variable('tertiary', 'neutral', 75, 'color_surface', 'inverse', $force);
 
   // BUTTON
@@ -223,8 +223,8 @@ $lists: (
 
   // OLD
   --border_color: var(--color_border_box_neutral_primary);
-  --background: var(--color_surface_secondary);
-  --background_secondary: var(--color_surface_primary);
+  --background: var(--color_surface_primary);
+  --background_secondary: var(--color_surface_secondary);
   --text_color: var(--color_text-icon_neutral_secondary);
   --title_color: var(--color_text-icon_neutral_primary);
   --background_third: var(--color_surface_tertiary);

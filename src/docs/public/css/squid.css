@@ -9161,8 +9161,8 @@
   --color_text-icon_universal_social_tiktok: var(--tiktok-0) ;
   --color_surface_universal_black: var(--neutral-10) ;
   --border_color: var(--color_border_box_neutral_primary);
-  --background: var(--color_surface_secondary);
-  --background_secondary: var(--color_surface_primary);
+  --background: var(--color_surface_primary);
+  --background_secondary: var(--color_surface_secondary);
   --text_color: var(--color_text-icon_neutral_secondary);
   --title_color: var(--color_text-icon_neutral_primary);
   --background_third: var(--color_surface_tertiary);
@@ -9201,7 +9201,7 @@ html {
   --color_border_input_error: var(--red-40) ;
   --color_border_input_success: var(--green-40) ;
   --color_surface_primary: var(--neutral-95) ;
-  --color_surface_secondary: var(--neutral-85) ;
+  --color_surface_secondary: var(--neutral-100) ;
   --color_surface_tertiary: var(--neutral-75) ;
   --color_surface_primary_inverse: var(--neutral-15) ;
   --color_surface_secondary_inverse: var(--neutral-10) ;
@@ -9394,7 +9394,7 @@ html {
     --color_surface_secondary: var(--neutral-10) ;
     --color_surface_tertiary: var(--neutral-5) ;
     --color_surface_primary_inverse: var(--neutral-95) ;
-    --color_surface_secondary_inverse: var(--neutral-85) ;
+    --color_surface_secondary_inverse: var(--neutral-100) ;
     --color_surface_tertiary_inverse: var(--neutral-75) ;
     --color_bg_button: var(--neutral-100) ;
     --color_bg_button_hover: var(--neutral-90) ;
@@ -9580,7 +9580,7 @@ html.light {
   --color_border_input_error: var(--red-40) !important;
   --color_border_input_success: var(--green-40) !important;
   --color_surface_primary: var(--neutral-95) !important;
-  --color_surface_secondary: var(--neutral-85) !important;
+  --color_surface_secondary: var(--neutral-100) !important;
   --color_surface_tertiary: var(--neutral-75) !important;
   --color_surface_primary_inverse: var(--neutral-15) !important;
   --color_surface_secondary_inverse: var(--neutral-10) !important;
@@ -9772,7 +9772,7 @@ html.dark {
   --color_surface_secondary: var(--neutral-10) !important;
   --color_surface_tertiary: var(--neutral-5) !important;
   --color_surface_primary_inverse: var(--neutral-95) !important;
-  --color_surface_secondary_inverse: var(--neutral-85) !important;
+  --color_surface_secondary_inverse: var(--neutral-100) !important;
   --color_surface_tertiary_inverse: var(--neutral-75) !important;
   --color_bg_button: var(--neutral-100) !important;
   --color_bg_button_hover: var(--neutral-90) !important;
