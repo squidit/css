@@ -42,7 +42,9 @@ const buttons = [
   'whatsapp',
   'twitter',
   'linkedin',
-  'facebook'
+  'facebook',
+  'disabled',
+  'rounded'
 ]
 
 const buttonSizes = [

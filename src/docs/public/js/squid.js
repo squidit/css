@@ -42,7 +42,9 @@ const buttons = [
   'whatsapp',
   'twitter',
   'linkedin',
-  'facebook'
+  'facebook',
+  'disabled',
+  'rounded'
 ]
 
 const buttonSizes = [
@@ -782,13 +784,17 @@ function renderButtons () {
     examples.style.gridTemplateColumns = 'repeat(5, 1fr)';
     examples.style.gap = '1.5rem';
 
-    for (const color of buttons) {
-      const button = document.createElement('button');
-      button.className = `button ${color ? 'button-' + color : ''} ${type === 'Inverted' ? type.toLowerCase() : ''}`;
-      button.style.width = '100%'
-      button.textContent = color;
+    for (const button of buttons) {
+      const buttonElement = document.createElement('button');
+      buttonElement.className = `button 
+        ${['disabled', 'rounded'].includes(button) ? 'button-squid' : button ? 'button-' + button : ''} 
+        ${type === 'Inverted' ? type.toLowerCase() : ''} 
+        ${['disabled', 'rounded'].includes(button) ? button : ''}
+      `;
+      buttonElement.style.width = '100%'
+      buttonElement.textContent = button;
 
-      examples.appendChild(button);
+      examples.appendChild(buttonElement);
     }
 
     div.appendChild(examples);
