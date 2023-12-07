@@ -38,7 +38,3 @@ function initAccordion (element) {
   // eslint-disable-next-line
   collapses.forEach((x, i) => x.onclick = event => setTab(i))
 }
-
-(function () {
-  [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
-})();

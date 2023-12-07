@@ -65,8 +65,8 @@ const themeConfig = {
 
 const Theme = ({ children }) => {
   const config = useConfig()
-  const html = document.getElementsByTagName('html')[0]
   if (typeof document !== `undefined`) {
+    const html = document.getElementsByTagName('html')[0]
     let colorMode = 'light'
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       colorMode = 'dark'

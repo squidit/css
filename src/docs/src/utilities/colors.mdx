@@ -7,33 +7,33 @@ route: /utilities/colors
 # Colors
 
 We use a relatively extensive set of cores within CSS. <br/>
-All colors in addition to being SASS variables (like `$pink`) are also CSS variables to use globally like `var(--pink)`.
+All colors in addition to being SASS variables (like `$pink-50`) are also CSS variables to use globally like `var(--pink-50)`.
 <p>To see all the colors and their variations go to the <a className='pink' href='/styleguide'>Styleguide page</a></p>
-<p className='mb-3'>All colors have three types of auxiliary classes.</p>
+<p className='mb-3'>All colors have tone variations from 5 to 95, jumping every 5 like var(--pink-5), var(--pink-10), var(--pink-15)...</p>
 
 ## Color Attribute
 
 To change the `color` rule just use the color name as class.
 
-<p class='pink'>
-  I`m a pink paragraph
+<p class='pink-50'>
+  I`m a pink paragraph like 'var(--pink-50)'
 </p>
-<p class='pink-light'>
-  I`m a pink light paragraph
+<p class='pink-30'>
+  I`m a lighter pink paragraph like 'var(--pink-30)'
 </p>
-<p class='blue'>
-  I`m a blue paragraph
+<p class='aqua-50'>
+  I`m a aqua paragraph like 'var(--aqua-30)'
 </p>
 
 ```html
-<p class='pink'>
-  I`m a pink paragraph
+<p class='pink-50'>
+  I`m a pink paragraph like 'var(--pink-50)'
 </p>
-<p class='pink-light'>
-  I`m a pink light paragraph
+<p class='pink-30'>
+  I`m a lighter pink paragraph like 'var(--pink-30)'
 </p>
-<p class='blue'>
-  I`m a blue paragraph
+<p class='aqua-50'>
+  I`m a aqua paragraph like 'var(--aqua-30)'
 </p>
 ```
 
@@ -41,25 +41,25 @@ To change the `color` rule just use the color name as class.
 
 To change the `background-color` rule just use the color name as class with the prefix `background-`.
 
-<p class='background-pink p-2'>
-  I`m a paragraph with background pink
+<p class='background-pink-50 white-html p-2'>
+  I`m a paragraph with background pink like 'var(--pink-50)'
 </p>
-<p class='background-pink-light black p-2'>
-  I`m a paragraph with background pink light
+<p class='background-pink-30 white-html p-2'>
+  I`m a paragraph with lighter background pink like 'var(--pink-30)'
 </p>
-<p class='background-blue p-2'>
-  I`m a paragraph with background blue
+<p class='background-aqua-50 white-html p-2'>
+  I`m a paragraph with background aqua like 'var(--aqua-30)'
 </p>
 
 ```html
-<p class='background-pink'>
-  I`m a paragraph with background pink
+<p class='background-pink-50'>
+  I`m a paragraph with background pink like 'var(--pink-50)'
 </p>
-<p class='background-pink-light'>
-  I`m a paragraph with background pink light
+<p class='background-pink-30'>
+  I`m a paragraph with lighter background pink like 'var(--pink-30)'
 </p>
-<p class='background-blue'>
-  I`m a paragraph with background blue
+<p class='background-aqua-50'>
+  I`m a paragraph with background aqua like 'var(--aqua-30)'
 </p>
 ```
 
@@ -69,24 +69,24 @@ To change the `border-color` rule just use the color name as class with the pref
 The element needs to have the `border` property set, the example below is using `border: 1px solid transparent`.
 The `transparent` will be overwritten by the color class.
 
-<p class='border-pink p-2' style='border: 1px solid transparent'>
-  I`m a paragraph with border pink
+<p class='border-pink-50 p-2' style='border: 1px solid transparent'>
+  I`m a paragraph with border pink like 'var(--pink-50)'
 </p>
-<p class='border-pink-light p-2' style='border: 1px solid transparent'>
-  I`m a paragraph with border pink light
+<p class='border-pink-30 p-2' style='border: 1px solid transparent'>
+  I`m a paragraph with lighter border pink like 'var(--pink-30)'
 </p>
-<p class='border-blue p-2' style='border: 1px solid transparent'>
-  I`m a paragraph with border blue
+<p class='border-aqua-50 p-2' style='border: 1px solid transparent'>
+  I`m a paragraph with border aqua like 'var(--aqua-30)'
 </p>
 
 ```html
-<p class='border-pink' style='border: 1px solid transparent'>
-  I`m a paragraph with border pink
+<p class='border-pink-50' style='border: 1px solid transparent'>
+  I`m a paragraph with border pink like 'var(--pink-50)'
 </p>
-<p class='border-pink-light' style='border: 1px solid transparent'>
-  I`m a paragraph with border pink light
+<p class='border-pink-30' style='border: 1px solid transparent'>
+  I`m a paragraph with lighter border pink like 'var(--pink-30)'
 </p>
-<p class='border-blue' style='border: 1px solid transparent'>
-  I`m a paragraph with border blue
+<p class='border-aqua-50' style='border: 1px solid transparent'>
+  I`m a paragraph with border aqua like 'var(--aqua-30)'
 </p>
 ```
