@@ -44,8 +44,6 @@ $lists: (
   $important: if($force, '!important', '');
 
   --shadow_color: #64647680 #{$important};
-  --background_reset: var(--neutral-100) #{$important};
-  --background_secondary: var(--neutral-100) #{$important};
 
   // TEXT ICON
   @include generate-variable('neutral_primary', 'neutral', 10, 'color_text-icon', '', $force);
@@ -124,8 +122,6 @@ $lists: (
   $important: if($force, '!important', '');
 
   --shadow_color: #000000 #{$important};
-  --background_reset: var(--neutral-5) #{$important};
-  --background_secondary: var(--color_surface_secondary) #{$important};
 
   // TEXT ICON
   @include generate-variable('neutral_primary', 'neutral', 100, 'color_text-icon', '', $force);
@@ -224,11 +220,16 @@ $lists: (
   @include generate-variable('universal_black', 'neutral', 10, 'color_surface');
 
   // OLD
-  --border_color: var(--color_border_box_neutral_primary);
+  --border_color: var(--color_border_box_neutral_secondary); // TROCAR
+
   --background: var(--color_surface_primary);
+  --background_secondary: var(--color_bg_box_neutral_primary); // TROCAR
+  --background_third: var(--color_surface_secondary);
+  --background_reset: var(--color_bg_box_neutral_primary);
+
   --text_color: var(--color_text-icon_neutral_secondary);
   --title_color: var(--color_text-icon_neutral_primary);
-  --background_third: var(--color_surface_tertiary);
+
   --box_shadow: 0px 4px 12px -5px var(--shadow_color);
 
   // Primary

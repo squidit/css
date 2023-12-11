@@ -9160,19 +9160,19 @@
   --color_text-icon_universal_social_x: var(--x-0) ;
   --color_text-icon_universal_social_tiktok: var(--tiktok-0) ;
   --color_surface_universal_black: var(--neutral-10) ;
-  --border_color: var(--color_border_box_neutral_primary);
+  --border_color: var(--color_border_box_neutral_secondary);
   --background: var(--color_surface_primary);
+  --background_secondary: var(--color_bg_box_neutral_primary);
+  --background_third: var(--color_surface_secondary);
+  --background_reset: var(--color_bg_box_neutral_primary);
   --text_color: var(--color_text-icon_neutral_secondary);
   --title_color: var(--color_text-icon_neutral_primary);
-  --background_third: var(--color_surface_tertiary);
   --box_shadow: 0px 4px 12px -5px var(--shadow_color);
   --secondary_color: white;
 }
 
 html {
   --shadow_color: #64647680 ;
-  --background_reset: var(--neutral-100) ;
-  --background_secondary: var(--neutral-100) ;
   --color_text-icon_neutral_primary: var(--neutral-10) ;
   --color_text-icon_neutral_secondary: var(--neutral-30) ;
   --color_text-icon_neutral_tertiary: var(--neutral-40) ;
@@ -9362,8 +9362,6 @@ html {
 @media (prefers-color-scheme: dark) {
   html {
     --shadow_color: #000000 ;
-    --background_reset: var(--neutral-5) ;
-    --background_secondary: var(--color_surface_secondary) ;
     --color_text-icon_neutral_primary: var(--neutral-100) ;
     --color_text-icon_neutral_secondary: var(--neutral-70) ;
     --color_text-icon_neutral_tertiary: var(--neutral-60) ;
@@ -9552,8 +9550,6 @@ html {
 }
 html.light {
   --shadow_color: #64647680 !important;
-  --background_reset: var(--neutral-100) !important;
-  --background_secondary: var(--neutral-100) !important;
   --color_text-icon_neutral_primary: var(--neutral-10) !important;
   --color_text-icon_neutral_secondary: var(--neutral-30) !important;
   --color_text-icon_neutral_tertiary: var(--neutral-40) !important;
@@ -9742,8 +9738,6 @@ html.light {
 
 html.dark {
   --shadow_color: #000000 !important;
-  --background_reset: var(--neutral-5) !important;
-  --background_secondary: var(--color_surface_secondary) !important;
   --color_text-icon_neutral_primary: var(--neutral-100) !important;
   --color_text-icon_neutral_secondary: var(--neutral-70) !important;
   --color_text-icon_neutral_tertiary: var(--neutral-60) !important;
@@ -13958,13 +13952,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tabs-header {
   display: inline-flex;
   border-radius: 10px;
-  padding: 0.25rem;
+  padding: 0.5rem;
   background-color: var(--color_surface_primary);
   list-style: none;
   align-items: center;
   margin: 0;
   flex-wrap: wrap;
-  color: var(--black);
+  color: var(--color_text-icon_neutral_secondary);
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
@@ -13999,12 +13993,12 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 }
 .tabs-header li:hover {
   color: var(--color_text-icon_neutral_primary);
-  border-color: var(--color_surface_tertiary);
+  border-color: var(--color_surface_secondary);
 }
 .tabs-header li.active {
   flex-shrink: 0;
   width: auto;
-  background-color: var(--color_surface_tertiary);
+  background-color: var(--color_surface_secondary);
   color: var(--color_text-icon_neutral_primary);
   font-weight: 700;
 }
@@ -14016,6 +14010,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tabs-header.line-style li {
   background: var(--transparent);
   border-radius: 0;
+  color: var(--color_border_box_neutral_secondary);
   position: relative;
   align-items: center;
   padding: 1rem 1rem 0;
@@ -14036,17 +14031,19 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   margin-top: calc(1rem - 4px);
   transition: all 0.3s ease;
-  background: var(--color_text-icon_neutral_secondary);
+  background: var(--color_border_box_neutral_secondary);
+}
+.tabs-header.line-style li:hover {
+  color: var(--color_text-icon_neutral_primary);
 }
 .tabs-header.line-style li:hover::before {
-  opacity: 0.7;
+  background: var(--color_text-icon_neutral_primary);
 }
 .tabs-header.line-style li.active {
   color: var(--primary_color);
   border-color: var(--primary_color);
   font-weight: 500;
   box-shadow: none;
-  opacity: 1;
 }
 .tabs-header.line-style li.active::before {
   background: var(--primary_color);

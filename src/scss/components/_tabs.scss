@@ -1,13 +1,13 @@
 .tabs-header {
   display: inline-flex;
   border-radius: 10px;
-  padding: 0.25rem;
+  padding: 0.5rem;
   background-color: var(--color_surface_primary);
   list-style: none;
   align-items: center;
   margin: 0;
   flex-wrap: wrap;
-  color: var(--black);
+  color: var(--color_text-icon_neutral_secondary);
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
@@ -42,12 +42,12 @@
     }
     &:hover {
       color: var(--color_text-icon_neutral_primary);
-      border-color: var(--color_surface_tertiary);
+      border-color: var(--color_surface_secondary);
     }
     &.active {
       flex-shrink: 0;
       width: auto;
-      background-color: var(--color_surface_tertiary);
+      background-color: var(--color_surface_secondary);
       color: var(--color_text-icon_neutral_primary);
       font-weight: 700;
     }
@@ -62,6 +62,7 @@
     li {
       background: var(--transparent);
       border-radius: 0;
+      color: var(--color_border_box_neutral_secondary);
       position: relative;
       align-items: center;
       padding: $gutter $gutter 0;
@@ -81,11 +82,12 @@
         position: relative;
         margin-top: calc(1rem - 4px);
         transition: $transition;
-        background: var(--color_text-icon_neutral_secondary);
+        background: var(--color_border_box_neutral_secondary);
       }
       &:hover {
+        color: var(--color_text-icon_neutral_primary);
         &::before {
-          opacity: 0.7;
+          background: var(--color_text-icon_neutral_primary);
         }
       }
       &.active {
@@ -93,7 +95,6 @@
         border-color: var(--primary_color);
         font-weight: 500;
         box-shadow: none;
-        opacity: 1;
         &::before {
           background: var(--primary_color);
         }
