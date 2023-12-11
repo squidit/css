@@ -7,9 +7,9 @@
   border-radius: 5px; 
   overflow: hidden;
   box-shadow: none;
-  color: var(--white);
-  background-color: var(--black);
-  border: 2px solid var(--black);
+  color: var(--color_text-icon_neutral_inverse);
+  background-color: var(--color_bg_button);
+  border: 2px solid var(--color_border_button_neutral);
   transition: $transition;
   &.rounded {
     border-radius: 4rem;
@@ -27,24 +27,41 @@
   &:hover, &:focus {
     outline: none;
     cursor: pointer;
-    background-color: var(--gray_dark);
-    border: 2px solid var(--gray_dark);
+    background-color: var(--color_bg_button_hover);
     &:before {
       border-color: inherit;
     }
   }
   &.inverted {
-    background-color: var(--background);
-    color: var(--text_color);
+    background-color: transparent;
+    color: var(--color_border_button_neutral);
     &:hover {
-      color: var(--white-html);
-      background-color: var(--black);
-      border-color: var(--black);
+      background-color: var(--color_bg_button_inverse-hover);
     }
   }
   &[disabled] {
     @extend .disabled;
   }
+
+  &.button-primary {
+    background-color: var(--primary_color);
+    border-color: var(--primary_color);
+    color: var(--secondary_color);
+    &:hover, &:focus {
+      background-color: var(--primary_color_hover);
+    }
+  }
+  &.button-primary.inverted {
+    background-color: transparent;
+    color: var(--primary_color);
+    border-color: var(--primary_color);
+    &:hover, &:focus {
+      background-color: var(--primary_color);
+      color: var(--secondary_color);
+    }
+  }
+
+  // OLD colors
   @each $colorName, $colorGroup in $colors {
     &.button-#{"" + $colorName} {
       background-color: var(--#{"" + $colorName});
@@ -70,15 +87,12 @@
     }
     &.button-#{"" + $colorName}.inverted {
       color: var(--#{"" + $colorName});
-      background-color: var(--background);
+      background-color: transparent;
       border-color: var(--#{"" + $colorName});
-      @if ($colorName == yellow or $colorName == cian or $colorName == white) {
-        
-      }
       &:hover, &:focus {
         background-color: var(--#{"" + $colorName});
         border-color: var(--#{"" + $colorName});
-        color: var(--background);
+        color: white;
         @if (
           $colorName == yellow or
           $colorName == cian or
@@ -87,7 +101,49 @@
           $colorName == gold or
           $colorName == pastry
         ) {
-          color: var(--black);
+          color: black;
+        }
+      }
+    }
+  }
+
+  // New Colors
+  @each $groupName, $list in $lists {
+    @each $name, $color in $list {
+      &.button-#{"" + $name} {
+        background-color: var(--color_bg_button_#{$groupName}_#{$name});
+        border-color: var(--color_border_button_#{$groupName}_#{$name});
+        color: var(--color_text-icon_neutral_inverse);
+        @if (
+          $color == orange or
+          $color == yellow or
+          $color == white or
+          $name == warning or
+          $name == success or
+          $name == aqua or
+          $name == google
+        ) {
+          color: var(--color_text-icon_universal_black_primary);
+        }
+        &:hover, &:focus {
+          background-color: var(--color_bg_button_#{$groupName}_#{$name}_hover);
+        }
+      }
+      &.button-#{"" + $name}.inverted {
+        color: var(--color_border_button_#{$groupName}_#{$name});
+        border-color: var(--color_border_button_#{$groupName}_#{$name});
+        background-color: transparent;
+        &:hover, &:focus {
+          color: var(--color_text-icon_#{$groupName}_#{$name});
+          background-color: var(--color_bg_button_#{$groupName}_#{$name}_inverse-hover);
+          color: var(--color_text-icon_neutral_primary);
+          @if (
+            $color == orange or
+            $color == yellow or
+            $color == white
+          ) {
+            color: var(--color_text-icon_universal_black_primary);
+          }
         }
       }
     }

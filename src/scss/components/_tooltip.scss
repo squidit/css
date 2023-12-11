@@ -100,7 +100,7 @@ $tooltip-arrow-height: 6px !default;
 
 .tooltip-dark {
   background: var(--black_light);
-  color: var(--white-html);
+  color: white;
   &.tooltip-left-top,
   &.tooltip-right-top,
   &.tooltip-center-top {

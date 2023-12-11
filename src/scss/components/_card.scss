@@ -1,7 +1,7 @@
 @use "sass:math";
 .card {
   @extend .box;
-  border-left: math.div($gutter, 2) solid var(--pink);
+  border-left: math.div($gutter, 2) solid var(--primary_color);
   &.borded {
     border-left-width: math.div($gutter, 2);
   }

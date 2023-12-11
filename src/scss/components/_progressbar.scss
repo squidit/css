@@ -3,7 +3,7 @@ $animate-bg-linear: move-bg 1.5s linear infinite;
 
 .progress {
   width: 100%;
-  background-color: var(--background);
+  background-color: var(--color_surface_primary);
   border-radius: 12px;
   height: 10px;
   overflow: hidden;
@@ -16,7 +16,7 @@ $animate-bg-linear: move-bg 1.5s linear infinite;
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: var(--pink);
+    background-color: var(--primary_color);
     transition: width 0.6s ease;
     &.background-dashed {
       background-size: 50px 50px;

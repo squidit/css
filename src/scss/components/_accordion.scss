@@ -22,14 +22,14 @@ $icon-box: 16px !default;
     position: relative;
     padding: $gutter $gutter * 2;
     width: 100%;
-    color: var(--text_color);
+    color: var(--color_text-icon_neutral_secondary);
     font-size: 1.15rem;
     line-height: 1.5;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    background-color: var(--background);
+    background-color: var(--color_surface_primary);
     cursor: pointer;
     transition: $transition;
     border-radius: 5px;
@@ -39,7 +39,6 @@ $icon-box: 16px !default;
       height: $icon-box;
       width: $icon-box;
       right: $gutter;
-      top: $gutter;
       margin-left: math.div($gutter, 2);
       font-size: 1rem;
       line-height: $icon-box;
@@ -65,10 +64,12 @@ $icon-box: 16px !default;
         transform: rotate(180deg);
       }
     }
-    .collapse-body {               
+    .collapse-body {
+      @extend .scrollbar;    
       padding: $gutter $gutter * 2;
       opacity: 1;
-      max-height: 9999px;           
+      max-height: 9999px;
+      overflow-y: auto;        
     }
   }
   &.collapse-loading {

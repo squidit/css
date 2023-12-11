@@ -1,0 +1,177 @@
+$colors: (
+  black: (
+    base:  var(--neutral-10),
+    light:  var(--neutral-30),
+    medium: var(--neutral-20)
+  ),
+  white: (
+    base: var(--neutral-95)
+  ),
+  black-html: (
+    base: black
+  ),
+  white-html: (
+    base: white
+  ),
+  transparent: (
+    base: transparent
+  ),
+  gray: (
+    base: var(--neutral-50),
+    light: var(--neutral-90),
+    dark: var(--neutral-50)
+  ),
+  pink: (
+    base: var(--pink-50),
+    light: var(--pink-70),
+    dark: var(--pink-30)
+  ),
+  lilac: (
+    base: var(--lilac-50),
+    light: var(--lilac-70),
+    dark: var(--lilac-30)
+  ),
+  cian: (
+    base: var(--aqua-50),
+    light: var(--aqua-70),
+    dark: var(--aqua-30)
+  ),
+  green: (
+    base: var(--green-50),
+    light: var(--green-70),
+    dark: var(--green-30)
+  ),
+  aqua: (
+    base: var(--aqua-50),
+    light: var(--aqua-70),
+    dark: var(--aqua-30)
+  ),
+  yellow: (
+    base: var(--yellow-50),
+    light: var(--yellow-70),
+    dark: var(--yellow-30)
+  ),
+  red: (
+    base: var(--red-50),
+    light: var(--red-70),
+    dark: var(--red-30)
+  ),
+  red-bl: (
+    base: var(--red-50),
+    light: var(--red-70),
+    dark: var(--red-30)
+  ),
+  blue: (
+    base: var(--blue-50),
+    light: var(--blue-70),
+    dark: var(--blue-30)
+  ),
+  pomegranate: (
+    base: var(--red-50),
+    light: var(--red-70),
+    dark: var(--red-30)
+  ),
+  lemon: (
+    base: var(--yellow-50),
+    light: var(--yellow-70),
+    dark: var(--yellow-30)
+  ),
+  gold: (
+    base: var(--yellow-50),
+    light: var(--yellow-70),
+    dark: var(--yellow-30)
+  ),
+  pastry: (
+    base: var(--yellow-50),
+    light: var(--yellow-70),
+    dark: var(--yellow-30)
+  ),
+  instagram: (
+    base: var(--instagram-50),
+    light: var(--instagram-70),
+    dark: var(--instagram-30)
+  ),
+  twitter: (
+    base: var(--twitter-50),
+    light: var(--twitter-70),
+    dark: var(--twitter-30)
+  ),
+  youtube: (
+    base: var(--youtube-50),
+    light: var(--youtube-70),
+    dark: var(--youtube-30)
+  ),
+  pinterest: (
+    base: var(--pinterest-50),
+    light: var(--pinterest-70),
+    dark: var(--pinterest-30)
+  ),
+  facebook: (
+    base: var(--facebook-50),
+    light: var(--facebook-70),
+    dark: var(--facebook-30)
+  ),
+  google: (
+    base: var(--google-50),
+    light: var(--google-70),
+    dark: var(--google-30)
+  ),
+  linkedin: (
+    base: var(--linkedin-50),
+    light: var(--linkedin-70),
+    dark: var(--linkedin-30)
+  ),
+  whatsapp: (
+    base: var(--whatsapp-50),
+    light: var(--whatsapp-70),
+    dark: var(--whatsapp-30)
+  ),
+  tiktok: (
+    base: var(--tiktok-0),
+    light: var(--tiktok-100),
+    dark:   var(--tiktok-0)
+  )
+) !default;
+/* Sass Vars */
+
+/* CSS Vars */
+:root {
+  @each $colorName, $colorGroup in $colors {
+    @each $tone, $color in $colorGroup {
+      @if ($tone == base) {
+        --#{"" + $colorName}: #{$color};
+      } @else {
+        --#{"" + $colorName}_#{$tone}: #{$color};
+      }
+    }
+  }
+}
+/* CSS Vars */
+
+/* Classes */
+@each $colorName, $colorGroup in $colors {
+  @each $tone, $color in $colorGroup {
+    @if ($tone == base) {
+      .#{"" + $colorName} {
+        color: #{$color} !important;
+      }
+      .background-#{"" + $colorName} {
+        background-color: #{$color} !important;
+      }
+      .border-#{"" + $colorName} {
+        border-color: #{$color} !important;
+      }
+    } @else {
+      .#{"" + $colorName}-#{$tone} {
+        color: #{$color} !important;
+      }
+      .background-#{"" + $colorName}-#{$tone} {
+        background-color: #{$color} !important;
+      }
+      .border-#{"" + $colorName}-#{$tone} {
+        border-color: #{$color} !important;
+      }
+    }
+  }
+}
+/* Classes */
