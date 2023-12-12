@@ -12269,23 +12269,23 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   animation: move-bg 1.5s linear infinite;
 }
 
-.scrollbar, .table, .table-overflow, .modal, .dropdown, .collapse.active .collapse-body, .textarea {
+.scrollbar, .table, .table-overflow, .modal, .dropdown, .textarea {
   scrollbar-color: var(--color_surface_secondary) var(--neutral-50);
   scrollbar-width: thin;
 }
-.scrollbar::-webkit-scrollbar, .table::-webkit-scrollbar, .table-overflow::-webkit-scrollbar, .modal::-webkit-scrollbar, .dropdown::-webkit-scrollbar, .collapse.active .collapse-body::-webkit-scrollbar, .textarea::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar, .table::-webkit-scrollbar, .table-overflow::-webkit-scrollbar, .modal::-webkit-scrollbar, .dropdown::-webkit-scrollbar, .textarea::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
-.scrollbar::-webkit-scrollbar-track, .table::-webkit-scrollbar-track, .table-overflow::-webkit-scrollbar-track, .modal::-webkit-scrollbar-track, .dropdown::-webkit-scrollbar-track, .collapse.active .collapse-body::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track, .table::-webkit-scrollbar-track, .table-overflow::-webkit-scrollbar-track, .modal::-webkit-scrollbar-track, .dropdown::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track {
   background: var(--color_surface_secondary);
   border-radius: 7px;
 }
-.scrollbar::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb, .table-overflow::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb, .dropdown::-webkit-scrollbar-thumb, .collapse.active .collapse-body::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb, .table-overflow::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb, .dropdown::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb {
   background: var(--neutral-50);
   border-radius: 7px;
 }
-.scrollbar::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover, .table-overflow::-webkit-scrollbar-thumb:hover, .modal::-webkit-scrollbar-thumb:hover, .dropdown::-webkit-scrollbar-thumb:hover, .collapse.active .collapse-body::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
+.scrollbar::-webkit-scrollbar-thumb:hover, .table::-webkit-scrollbar-thumb:hover, .table-overflow::-webkit-scrollbar-thumb:hover, .modal::-webkit-scrollbar-thumb:hover, .dropdown::-webkit-scrollbar-thumb:hover, .textarea::-webkit-scrollbar-thumb:hover {
   background: var(--color_text-icon_neutral_primary);
 }
 
@@ -13479,7 +13479,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tag-box.readonly-tag {
   cursor: default;
   background: var(--white) !important;
-  opacity: 0.7;
 }
 .tag-box.readonly-tag:hover {
   box-shadow: none;
@@ -13658,6 +13657,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   height: 16px;
   width: 16px;
   right: 1rem;
+  top: 1rem;
   margin-left: 0.5rem;
   font-size: 1rem;
   line-height: 16px;
@@ -13682,7 +13682,6 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 1rem 2rem;
   opacity: 1;
   max-height: 9999px;
-  overflow-y: auto;
 }
 .collapse.collapse-loading .collapse-body {
   opacity: 0;
@@ -13744,7 +13743,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   width: 100%;
   border: none;
   box-shadow: none;
-  background-color: transparent;
+  background-color: var(--color_bg_box_neutral_primary);
   transition: all 0.3s ease;
   color: inherit;
   text-align: left;
@@ -13909,7 +13908,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: var(--black-html);
   opacity: 0;
 }
 .modal-backdrop.show {
@@ -13965,7 +13964,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   align-items: center;
   margin: 0;
   flex-wrap: wrap;
-  color: var(--color_text-icon_neutral_secondary);
+  color: var(--black);
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
@@ -13987,7 +13986,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
-  color: var(--color_text-icon_neutral_secondary);
+  color: var(--gray);
   background-color: var(--color_surface_primary);
   display: inline-flex;
   justify-content: center;
@@ -13999,14 +13998,14 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   padding: 0.35rem 1rem;
 }
 .tabs-header li:hover {
-  color: var(--color_text-icon_neutral_primary);
+  color: var(--gray_dark);
   border-color: var(--color_surface_secondary);
 }
 .tabs-header li.active {
   flex-shrink: 0;
   width: auto;
   background-color: var(--color_surface_secondary);
-  color: var(--color_text-icon_neutral_primary);
+  color: var(--gray);
   font-weight: 700;
 }
 .tabs-header.line-style {
@@ -14017,7 +14016,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
 .tabs-header.line-style li {
   background: var(--transparent);
   border-radius: 0;
-  color: var(--color_border_box_neutral_secondary);
+  color: var(--gray);
   position: relative;
   align-items: center;
   padding: 1rem 1rem 0;
@@ -14038,13 +14037,13 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   position: relative;
   margin-top: calc(1rem - 4px);
   transition: all 0.3s ease;
-  background: var(--color_border_box_neutral_secondary);
+  background: var(--color_border_box_neutral_primary);
 }
 .tabs-header.line-style li:hover {
-  color: var(--color_text-icon_neutral_primary);
+  color: var(--color_border_box_neutral_primary);
 }
 .tabs-header.line-style li:hover::before {
-  background: var(--color_text-icon_neutral_primary);
+  background: var(--color_bg_box_neutral_primary);
 }
 .tabs-header.line-style li.active {
   color: var(--primary_color);
@@ -14471,7 +14470,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
     border-bottom: 1px solid var(--color_border_box_neutral_primary);
   }
   .table.table-responsive tr:nth-of-type(odd) {
-    background: var(--color_surface_secondary);
+    background: var(--white);
   }
   .table.table-responsive td {
     border: none;
@@ -14521,7 +14520,7 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   justify-content: space-around;
   border-radius: 20px;
   overflow: hidden;
-  background: var(--color_surface_secondary);
+  background: var(--color_border_box_neutral_primary);
   position: relative;
   padding: 0.2rem;
 }

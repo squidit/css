@@ -46,7 +46,7 @@
       width: 100%;
       border: none;
       box-shadow: none;
-      background-color: transparent;
+      background-color: var(--color_bg_box_neutral_primary);
       transition: $transition;
       color: inherit;
       text-align: left;

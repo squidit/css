@@ -39,6 +39,7 @@ $icon-box: 16px !default;
       height: $icon-box;
       width: $icon-box;
       right: $gutter;
+      top: $gutter;
       margin-left: math.div($gutter, 2);
       font-size: 1rem;
       line-height: $icon-box;
@@ -64,12 +65,10 @@ $icon-box: 16px !default;
         transform: rotate(180deg);
       }
     }
-    .collapse-body {
-      @extend .scrollbar;    
+    .collapse-body {               
       padding: $gutter $gutter * 2;
       opacity: 1;
-      max-height: 9999px;
-      overflow-y: auto;        
+      max-height: 9999px;           
     }
   }
   &.collapse-loading {
