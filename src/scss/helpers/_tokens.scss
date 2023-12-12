@@ -40,6 +40,13 @@ $lists: (
   )
 );
 
+$blackWhiteList: (
+  social: (
+    tiktok: 'tiktok',
+    x: 'x'
+  )
+);
+
 @mixin theme-light($force: false) {
   $important: if($force, '!important', '');
 
@@ -96,6 +103,24 @@ $lists: (
     @include generate-variable('button', 'neutral', 75, 'color_bg', 'disabled', $force);
 
   @each $name, $list in $lists {
+    // TEXT ICON
+    @include generate-by-list($list, 30, #{'color_text-icon_' + $name}, '', $force);
+
+    // BOX
+    @include generate-by-list($list, 95, #{'color_bg_box_' + $name}, '', $force);
+    @include generate-by-list($list, 85, #{'color_bg_box_' + $name}, 'hover', $force);
+
+    // BUTTON
+    @include generate-by-list($list, 40, #{'color_bg_button_' + $name}, '', $force);
+    @include generate-by-list($list, 50, #{'color_bg_button_' + $name}, 'hover', $force);
+    @include generate-by-list($list, 90, #{'color_bg_button_' + $name}, 'inverse-hover', $force);
+
+    // BORDER
+    @include generate-by-list($list, 90, #{'color_border_box_' + $name}, '', $force);
+    @include generate-by-list($list, 30, #{'color_border_button_' + $name}, '', $force);
+  }
+
+  @each $name, $list in $blackWhiteList {
     // TEXT ICON
     @include generate-by-list($list, 30, #{'color_text-icon_' + $name}, '', $force);
 
@@ -191,6 +216,24 @@ $lists: (
     @include generate-by-list($list, 70, #{'color_border_button_' + $name}, '', $force);
   }
 
+  @each $name, $list in $blackWhiteList {
+    // TEXT ICON
+    @include generate-by-list($list, 100, #{'color_text-icon_' + $name}, '', $force);
+
+    // BOX
+    @include generate-by-list($list, 100, #{'color_bg_box_' + $name}, '', $force);
+    @include generate-by-list($list, 95, #{'color_bg_box_' + $name}, 'hover', $force);
+
+    // BUTTON
+    @include generate-by-list($list, 100, #{'color_bg_button_' + $name}, '', $force);
+    @include generate-by-list($list, 95, #{'color_bg_button_' + $name}, 'hover', $force);
+    @include generate-by-list($list, 95, #{'color_bg_button_' + $name}, 'inverse-hover', $force);
+
+    // BORDER
+    @include generate-by-list($list, 95, #{'color_border_box_' + $name}, '', $force);
+    @include generate-by-list($list, 100, #{'color_border_button_' + $name}, '', $force);
+  }
+
   // Primary
   --primary_color: var(--pink-70) #{$important};
   --primary_color_hover: var(--pink-60) #{$important};
@@ -212,9 +255,6 @@ $lists: (
 
   @include generate-variable('universal_brand_wake', 'purple', 70, 'color_text-icon');
   @include generate-variable('universal_brand_squid', 'pink', 70, 'color_text-icon');
-
-  @include generate-variable('universal_social_x', 'x', 0, 'color_text-icon');
-  @include generate-variable('universal_social_tiktok', 'tiktok', 0, 'color_text-icon');
 
   // SURFACE
   @include generate-variable('universal_black', 'neutral', 10, 'color_surface');

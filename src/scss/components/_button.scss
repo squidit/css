@@ -1,3 +1,5 @@
+$fullLists: map-merge($lists, $blackWhiteList);
+
 .button {
   display: inline-block;
   position: relative;
@@ -108,7 +110,7 @@
   }
 
   // New Colors
-  @each $groupName, $list in $lists {
+  @each $groupName, $list in $fullLists {
     @each $name, $color in $list {
       &.button-#{"" + $name} {
         background-color: var(--color_bg_button_#{$groupName}_#{$name});
@@ -140,7 +142,9 @@
           @if (
             $color == orange or
             $color == yellow or
-            $color == white
+            $color == white or
+            $name == tiktok or
+            $name == x
           ) {
             color: var(--color_text-icon_universal_black_primary);
           }

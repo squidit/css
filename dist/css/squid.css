@@ -8241,6 +8241,9 @@ body, html {
   --tiktok: var(--tiktok-0);
   --tiktok_light: var(--tiktok-100);
   --tiktok_dark: var(--tiktok-0);
+  --x: var(--x-0);
+  --x_light: var(--x-100);
+  --x_dark: var(--x-0);
 }
 
 /* CSS Vars */
@@ -9157,6 +9160,42 @@ body, html {
   border-color: var(--tiktok-0) !important;
 }
 
+.x {
+  color: var(--x-0) !important;
+}
+
+.background-x {
+  background-color: var(--x-0) !important;
+}
+
+.border-x {
+  border-color: var(--x-0) !important;
+}
+
+.x-light {
+  color: var(--x-100) !important;
+}
+
+.background-x-light {
+  background-color: var(--x-100) !important;
+}
+
+.border-x-light {
+  border-color: var(--x-100) !important;
+}
+
+.x-dark {
+  color: var(--x-0) !important;
+}
+
+.background-x-dark {
+  background-color: var(--x-0) !important;
+}
+
+.border-x-dark {
+  border-color: var(--x-0) !important;
+}
+
 /* Classes */
 :root {
   --color_text-icon_neutral_placeholder: var(--neutral-50) ;
@@ -9170,8 +9209,6 @@ body, html {
   --color_text-icon_universal_white_disabled: var(--neutral-40) ;
   --color_text-icon_universal_brand_wake: var(--purple-70) ;
   --color_text-icon_universal_brand_squid: var(--pink-70) ;
-  --color_text-icon_universal_social_x: var(--x-0) ;
-  --color_text-icon_universal_social_tiktok: var(--tiktok-0) ;
   --color_surface_universal_black: var(--neutral-10) ;
   --border_color: var(--color_border_box_neutral_primary);
   --background: var(--color_surface_primary);
@@ -9368,6 +9405,22 @@ html {
   --color_border_button_social_linkedin: var(--linkedin-30) ;
   --color_border_button_social_facebook: var(--facebook-30) ;
   --color_border_button_social_twitch: var(--twitch-30) ;
+  --color_text-icon_social_tiktok: var(--tiktok-30) ;
+  --color_text-icon_social_x: var(--x-30) ;
+  --color_bg_box_social_tiktok: var(--tiktok-95) ;
+  --color_bg_box_social_x: var(--x-95) ;
+  --color_bg_box_social_tiktok_hover: var(--tiktok-85) ;
+  --color_bg_box_social_x_hover: var(--x-85) ;
+  --color_bg_button_social_tiktok: var(--tiktok-40) ;
+  --color_bg_button_social_x: var(--x-40) ;
+  --color_bg_button_social_tiktok_hover: var(--tiktok-50) ;
+  --color_bg_button_social_x_hover: var(--x-50) ;
+  --color_bg_button_social_tiktok_inverse-hover: var(--tiktok-90) ;
+  --color_bg_button_social_x_inverse-hover: var(--x-90) ;
+  --color_border_box_social_tiktok: var(--tiktok-90) ;
+  --color_border_box_social_x: var(--x-90) ;
+  --color_border_button_social_tiktok: var(--tiktok-30) ;
+  --color_border_button_social_x: var(--x-30) ;
   --primary_color: var(--pink-40) ;
   --primary_color_hover: var(--pink-50) ;
 }
@@ -9557,6 +9610,22 @@ html {
     --color_border_button_social_linkedin: var(--linkedin-70) ;
     --color_border_button_social_facebook: var(--facebook-70) ;
     --color_border_button_social_twitch: var(--twitch-70) ;
+    --color_text-icon_social_tiktok: var(--tiktok-100) ;
+    --color_text-icon_social_x: var(--x-100) ;
+    --color_bg_box_social_tiktok: var(--tiktok-100) ;
+    --color_bg_box_social_x: var(--x-100) ;
+    --color_bg_box_social_tiktok_hover: var(--tiktok-95) ;
+    --color_bg_box_social_x_hover: var(--x-95) ;
+    --color_bg_button_social_tiktok: var(--tiktok-100) ;
+    --color_bg_button_social_x: var(--x-100) ;
+    --color_bg_button_social_tiktok_hover: var(--tiktok-95) ;
+    --color_bg_button_social_x_hover: var(--x-95) ;
+    --color_bg_button_social_tiktok_inverse-hover: var(--tiktok-95) ;
+    --color_bg_button_social_x_inverse-hover: var(--x-95) ;
+    --color_border_box_social_tiktok: var(--tiktok-95) ;
+    --color_border_box_social_x: var(--x-95) ;
+    --color_border_button_social_tiktok: var(--tiktok-100) ;
+    --color_border_button_social_x: var(--x-100) ;
     --primary_color: var(--pink-70) ;
     --primary_color_hover: var(--pink-60) ;
   }
@@ -9745,6 +9814,22 @@ html.light {
   --color_border_button_social_linkedin: var(--linkedin-30) !important;
   --color_border_button_social_facebook: var(--facebook-30) !important;
   --color_border_button_social_twitch: var(--twitch-30) !important;
+  --color_text-icon_social_tiktok: var(--tiktok-30) !important;
+  --color_text-icon_social_x: var(--x-30) !important;
+  --color_bg_box_social_tiktok: var(--tiktok-95) !important;
+  --color_bg_box_social_x: var(--x-95) !important;
+  --color_bg_box_social_tiktok_hover: var(--tiktok-85) !important;
+  --color_bg_box_social_x_hover: var(--x-85) !important;
+  --color_bg_button_social_tiktok: var(--tiktok-40) !important;
+  --color_bg_button_social_x: var(--x-40) !important;
+  --color_bg_button_social_tiktok_hover: var(--tiktok-50) !important;
+  --color_bg_button_social_x_hover: var(--x-50) !important;
+  --color_bg_button_social_tiktok_inverse-hover: var(--tiktok-90) !important;
+  --color_bg_button_social_x_inverse-hover: var(--x-90) !important;
+  --color_border_box_social_tiktok: var(--tiktok-90) !important;
+  --color_border_box_social_x: var(--x-90) !important;
+  --color_border_button_social_tiktok: var(--tiktok-30) !important;
+  --color_border_button_social_x: var(--x-30) !important;
   --primary_color: var(--pink-40) !important;
   --primary_color_hover: var(--pink-50) !important;
 }
@@ -9933,6 +10018,22 @@ html.dark {
   --color_border_button_social_linkedin: var(--linkedin-70) !important;
   --color_border_button_social_facebook: var(--facebook-70) !important;
   --color_border_button_social_twitch: var(--twitch-70) !important;
+  --color_text-icon_social_tiktok: var(--tiktok-100) !important;
+  --color_text-icon_social_x: var(--x-100) !important;
+  --color_bg_box_social_tiktok: var(--tiktok-100) !important;
+  --color_bg_box_social_x: var(--x-100) !important;
+  --color_bg_box_social_tiktok_hover: var(--tiktok-95) !important;
+  --color_bg_box_social_x_hover: var(--x-95) !important;
+  --color_bg_button_social_tiktok: var(--tiktok-100) !important;
+  --color_bg_button_social_x: var(--x-100) !important;
+  --color_bg_button_social_tiktok_hover: var(--tiktok-95) !important;
+  --color_bg_button_social_x_hover: var(--x-95) !important;
+  --color_bg_button_social_tiktok_inverse-hover: var(--tiktok-95) !important;
+  --color_bg_button_social_x_inverse-hover: var(--x-95) !important;
+  --color_border_box_social_tiktok: var(--tiktok-95) !important;
+  --color_border_box_social_x: var(--x-95) !important;
+  --color_border_button_social_tiktok: var(--tiktok-100) !important;
+  --color_border_button_social_x: var(--x-100) !important;
   --primary_color: var(--pink-70) !important;
   --primary_color_hover: var(--pink-60) !important;
 }
@@ -12842,6 +12943,24 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   border-color: var(--tiktok);
   color: white;
 }
+.button.button-x {
+  background-color: var(--x);
+  border-color: var(--x);
+}
+.button.button-x:hover, .button.button-x:focus {
+  background-color: var(--x_dark);
+  border-color: var(--x_dark);
+}
+.button.button-x.inverted {
+  color: var(--x);
+  background-color: transparent;
+  border-color: var(--x);
+}
+.button.button-x.inverted:hover, .button.button-x.inverted:focus {
+  background-color: var(--x);
+  border-color: var(--x);
+  color: white;
+}
 .button.button-wake {
   background-color: var(--color_bg_button_brands_wake);
   border-color: var(--color_border_button_brands_wake);
@@ -13007,168 +13126,43 @@ select.readonly, select.input[readonly], select[readonly].select, select[readonl
   background-color: var(--color_bg_button_highlight_aqua_inverse-hover);
   color: var(--color_text-icon_neutral_primary);
 }
-.button.button-instagram {
-  background-color: var(--color_bg_button_social_instagram);
-  border-color: var(--color_border_button_social_instagram);
+.button.button-tiktok {
+  background-color: var(--color_bg_button_social_tiktok);
+  border-color: var(--color_border_button_social_tiktok);
   color: var(--color_text-icon_neutral_inverse);
 }
-.button.button-instagram:hover, .button.button-instagram:focus {
-  background-color: var(--color_bg_button_social_instagram_hover);
+.button.button-tiktok:hover, .button.button-tiktok:focus {
+  background-color: var(--color_bg_button_social_tiktok_hover);
 }
-.button.button-instagram.inverted {
-  color: var(--color_border_button_social_instagram);
-  border-color: var(--color_border_button_social_instagram);
+.button.button-tiktok.inverted {
+  color: var(--color_border_button_social_tiktok);
+  border-color: var(--color_border_button_social_tiktok);
   background-color: transparent;
 }
-.button.button-instagram.inverted:hover, .button.button-instagram.inverted:focus {
-  color: var(--color_text-icon_social_instagram);
-  background-color: var(--color_bg_button_social_instagram_inverse-hover);
+.button.button-tiktok.inverted:hover, .button.button-tiktok.inverted:focus {
+  color: var(--color_text-icon_social_tiktok);
+  background-color: var(--color_bg_button_social_tiktok_inverse-hover);
   color: var(--color_text-icon_neutral_primary);
-}
-.button.button-youtube {
-  background-color: var(--color_bg_button_social_youtube);
-  border-color: var(--color_border_button_social_youtube);
-  color: var(--color_text-icon_neutral_inverse);
-}
-.button.button-youtube:hover, .button.button-youtube:focus {
-  background-color: var(--color_bg_button_social_youtube_hover);
-}
-.button.button-youtube.inverted {
-  color: var(--color_border_button_social_youtube);
-  border-color: var(--color_border_button_social_youtube);
-  background-color: transparent;
-}
-.button.button-youtube.inverted:hover, .button.button-youtube.inverted:focus {
-  color: var(--color_text-icon_social_youtube);
-  background-color: var(--color_bg_button_social_youtube_inverse-hover);
-  color: var(--color_text-icon_neutral_primary);
-}
-.button.button-pinterest {
-  background-color: var(--color_bg_button_social_pinterest);
-  border-color: var(--color_border_button_social_pinterest);
-  color: var(--color_text-icon_neutral_inverse);
-}
-.button.button-pinterest:hover, .button.button-pinterest:focus {
-  background-color: var(--color_bg_button_social_pinterest_hover);
-}
-.button.button-pinterest.inverted {
-  color: var(--color_border_button_social_pinterest);
-  border-color: var(--color_border_button_social_pinterest);
-  background-color: transparent;
-}
-.button.button-pinterest.inverted:hover, .button.button-pinterest.inverted:focus {
-  color: var(--color_text-icon_social_pinterest);
-  background-color: var(--color_bg_button_social_pinterest_inverse-hover);
-  color: var(--color_text-icon_neutral_primary);
-}
-.button.button-google {
-  background-color: var(--color_bg_button_social_google);
-  border-color: var(--color_border_button_social_google);
-  color: var(--color_text-icon_neutral_inverse);
   color: var(--color_text-icon_universal_black_primary);
 }
-.button.button-google:hover, .button.button-google:focus {
-  background-color: var(--color_bg_button_social_google_hover);
-}
-.button.button-google.inverted {
-  color: var(--color_border_button_social_google);
-  border-color: var(--color_border_button_social_google);
-  background-color: transparent;
-}
-.button.button-google.inverted:hover, .button.button-google.inverted:focus {
-  color: var(--color_text-icon_social_google);
-  background-color: var(--color_bg_button_social_google_inverse-hover);
-  color: var(--color_text-icon_neutral_primary);
-}
-.button.button-whatsapp {
-  background-color: var(--color_bg_button_social_whatsapp);
-  border-color: var(--color_border_button_social_whatsapp);
+.button.button-x {
+  background-color: var(--color_bg_button_social_x);
+  border-color: var(--color_border_button_social_x);
   color: var(--color_text-icon_neutral_inverse);
 }
-.button.button-whatsapp:hover, .button.button-whatsapp:focus {
-  background-color: var(--color_bg_button_social_whatsapp_hover);
+.button.button-x:hover, .button.button-x:focus {
+  background-color: var(--color_bg_button_social_x_hover);
 }
-.button.button-whatsapp.inverted {
-  color: var(--color_border_button_social_whatsapp);
-  border-color: var(--color_border_button_social_whatsapp);
+.button.button-x.inverted {
+  color: var(--color_border_button_social_x);
+  border-color: var(--color_border_button_social_x);
   background-color: transparent;
 }
-.button.button-whatsapp.inverted:hover, .button.button-whatsapp.inverted:focus {
-  color: var(--color_text-icon_social_whatsapp);
-  background-color: var(--color_bg_button_social_whatsapp_inverse-hover);
+.button.button-x.inverted:hover, .button.button-x.inverted:focus {
+  color: var(--color_text-icon_social_x);
+  background-color: var(--color_bg_button_social_x_inverse-hover);
   color: var(--color_text-icon_neutral_primary);
-}
-.button.button-twitter {
-  background-color: var(--color_bg_button_social_twitter);
-  border-color: var(--color_border_button_social_twitter);
-  color: var(--color_text-icon_neutral_inverse);
-}
-.button.button-twitter:hover, .button.button-twitter:focus {
-  background-color: var(--color_bg_button_social_twitter_hover);
-}
-.button.button-twitter.inverted {
-  color: var(--color_border_button_social_twitter);
-  border-color: var(--color_border_button_social_twitter);
-  background-color: transparent;
-}
-.button.button-twitter.inverted:hover, .button.button-twitter.inverted:focus {
-  color: var(--color_text-icon_social_twitter);
-  background-color: var(--color_bg_button_social_twitter_inverse-hover);
-  color: var(--color_text-icon_neutral_primary);
-}
-.button.button-linkedin {
-  background-color: var(--color_bg_button_social_linkedin);
-  border-color: var(--color_border_button_social_linkedin);
-  color: var(--color_text-icon_neutral_inverse);
-}
-.button.button-linkedin:hover, .button.button-linkedin:focus {
-  background-color: var(--color_bg_button_social_linkedin_hover);
-}
-.button.button-linkedin.inverted {
-  color: var(--color_border_button_social_linkedin);
-  border-color: var(--color_border_button_social_linkedin);
-  background-color: transparent;
-}
-.button.button-linkedin.inverted:hover, .button.button-linkedin.inverted:focus {
-  color: var(--color_text-icon_social_linkedin);
-  background-color: var(--color_bg_button_social_linkedin_inverse-hover);
-  color: var(--color_text-icon_neutral_primary);
-}
-.button.button-facebook {
-  background-color: var(--color_bg_button_social_facebook);
-  border-color: var(--color_border_button_social_facebook);
-  color: var(--color_text-icon_neutral_inverse);
-}
-.button.button-facebook:hover, .button.button-facebook:focus {
-  background-color: var(--color_bg_button_social_facebook_hover);
-}
-.button.button-facebook.inverted {
-  color: var(--color_border_button_social_facebook);
-  border-color: var(--color_border_button_social_facebook);
-  background-color: transparent;
-}
-.button.button-facebook.inverted:hover, .button.button-facebook.inverted:focus {
-  color: var(--color_text-icon_social_facebook);
-  background-color: var(--color_bg_button_social_facebook_inverse-hover);
-  color: var(--color_text-icon_neutral_primary);
-}
-.button.button-twitch {
-  background-color: var(--color_bg_button_social_twitch);
-  border-color: var(--color_border_button_social_twitch);
-  color: var(--color_text-icon_neutral_inverse);
-}
-.button.button-twitch:hover, .button.button-twitch:focus {
-  background-color: var(--color_bg_button_social_twitch_hover);
-}
-.button.button-twitch.inverted {
-  color: var(--color_border_button_social_twitch);
-  border-color: var(--color_border_button_social_twitch);
-  background-color: transparent;
-}
-.button.button-twitch.inverted:hover, .button.button-twitch.inverted:focus {
-  color: var(--color_text-icon_social_twitch);
-  background-color: var(--color_bg_button_social_twitch_inverse-hover);
-  color: var(--color_text-icon_neutral_primary);
+  color: var(--color_text-icon_universal_black_primary);
 }
 
 .input, .select, .textarea {

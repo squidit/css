@@ -130,7 +130,12 @@ $colors: (
     base: var(--tiktok-0),
     light: var(--tiktok-100),
     dark:   var(--tiktok-0)
-  )
+  ),
+  x: (
+    base: var(--x-0),
+    light: var(--x-100),
+    dark:   var(--x-0)
+  ),
 ) !default;
 /* Sass Vars */
 
