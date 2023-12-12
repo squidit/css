@@ -2,7 +2,7 @@
   padding: $gutter $gutter * 2;
   margin: 0 0 $gutter * 2;
   overflow: hidden;
-  background-color: var(--background_secondary);
+  background-color: var(--color_bg_box_neutral_primary);
   box-shadow: var(--box_shadow);
   @extend .box-shadow;
   .borded {
@@ -13,27 +13,31 @@
     margin: 0 0 $gutter;
   }
   &.success {
-    background: var(--green_light);
-    color: var(--green_dark);
+    background: var(--color_bg_box_system_success);
+    color: var(--color_text-icon_system_success);
   }
   &.inverted {
-    background: var(--black);
-    color: var(--white-html);
+    background: var(--color_bg_box_neutral_primary_inverse);
+    color: var(--color_bg_box_neutral_primary);
   }
   &.info {
-    background: var(--blue_light);
-    color: var(--blue_dark);
+    background: var(--color_bg_box_system_information);
+    color: var(--color_text-icon_system_information);
   }
   &.warning {
-    background: var(--yellow_light);
-    color: var(--yellow_dark);
+    background: var(--color_bg_box_system_warning);
+    color: var(--color_text-icon_system_warning);
   }
   &.error {
-    background: var(--red_light);
-    color: var(--red_dark);
+    background: var(--color_bg_box_system_danger);
+    color: var(--color_text-icon_system_danger);
   }
   &.grayscale {
-    background: var(--white);
-    color: var(--black);
+    background: var(--color_bg_box_neutral_secondary);
+    color: var(--color_text-icon_neutral_secondary);
+  }
+  &.discovery {
+    background: var(--color_bg_box_system_discovery);
+    color: var(--color_text-icon_system_discovery);
   }
 }

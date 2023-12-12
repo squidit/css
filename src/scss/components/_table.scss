@@ -10,12 +10,12 @@
 .table {
   width: 100%;
   overflow: auto;
-  border-color: var(--border_color);
+  border-color: var(--color_border_box_neutral_primary);
   vertical-align: top;
   position: relative;
   border-collapse: collapse;
   @extend .scrollbar;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
 
   caption {
     caption-side: top;
@@ -48,7 +48,7 @@
     top: 5px;
     padding: 0 math.div($gutter, 2);
     height: calc(100% - 8px);
-    background-color: var(--background);
+    background-color: var(--color_surface_primary);
     border: none;
 
     @media (max-width: map-get($grid-breakpoints, lg)) {
@@ -86,14 +86,14 @@
 
     th,
     td {
-      background-color: var(--background);
+      background-color: var(--color_surface_primary);
       font-size: 14px;
       line-height: 1.5;
-      color: var(--text_color);
+      color: var(--color_text-icon_neutral_secondary);
       font-weight: 700;
       padding: $gutter math.div($gutter, 2);
       border: none;
-      border-bottom: 4px solid var(--background);
+      border-bottom: 4px solid var(--color_surface_primary);
 
       &:first-child {
         border-radius: 5px 0 0 0;
@@ -109,11 +109,11 @@
   >tbody {
     vertical-align: middle;
     position: relative;
-    color: var(--text_color);
+    color: var(--color_text-icon_neutral_secondary);
 
     &>tr {
-      background-color: var(--background);
-      border-bottom: 1px solid var(--border_color);
+      background-color: var(--color_surface_primary);
+      border-bottom: 1px solid var(--color_border_box_neutral_primary);
       transition: $transition;
 
       &:hover {
@@ -129,7 +129,7 @@
       }
 
       &:last-child {
-        border-bottom: 1px solid var(--border_color);
+        border-bottom: 1px solid var(--color_border_box_neutral_primary);
       }
     }
   }
@@ -139,8 +139,8 @@
     position: relative;
 
     tr {
-      background-color: var(--background);
-      border-bottom: 1px solid var(--border_color);
+      background-color: var(--color_surface_primary);
+      border-bottom: 1px solid var(--color_border_box_neutral_primary);
 
       td,
       th {
@@ -168,19 +168,19 @@
       }
 
       tr {
-        border: 1px solid var(--border_color);
+        border: 1px solid var(--color_border_box_neutral_primary);
 
         &:hover {
           background-color: inherit;
         }
 
         &:last-child {
-          border-bottom: 1px solid var(--border_color);
+          border-bottom: 1px solid var(--color_border_box_neutral_primary);
         }
       }
 
       tr:nth-of-type(odd) {
-        background: var(--white);
+        background: var(--color_surface_secondary);
       }
 
       td {

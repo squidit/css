@@ -1,6 +1,6 @@
 .steps {
   padding: 1rem;
-  background: var(--background);
+  background: var(--color_surface_primary);
 
   ul {
     padding: 0;
@@ -13,7 +13,7 @@
     justify-content: space-around;
     border-radius: 20px;
     overflow: hidden;
-    background: var(--border_color);
+    background: var(--color_surface_secondary);
     position: relative;
     padding: 0.2rem;
 
@@ -37,17 +37,17 @@
       }
 
       &.active {
-        background: linear-gradient(90deg, var(--pink) 0%, var(--pink) 50%, transparent 51%);
+        background: linear-gradient(90deg, var(--primary_color) 0%, var(--primary_color) 50%, transparent 51%);
       }
 
       &.old {
-        background: var(--pink);
+        background: var(--primary_color);
       }
 
       span {
         display: block;
         margin: 0;
-        background: var(--background);
+        background: var(--color_surface_primary);
         width: 6px;
         height: 6px;
         border-radius: 50%;

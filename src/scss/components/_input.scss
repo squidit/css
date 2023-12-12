@@ -1,37 +1,35 @@
 @use "sass:math";
 .input {
   min-height: 44px;
-  border: 1px solid var(--border_color);
-  background: var(--background);
+  border: 1px solid var(--color_border_input);
+  background: var(--color_bg_input);
   padding: 0.75rem $gutter;
   transition: $transition;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   @extend .border-radius;
+  &.rounded {
+    border-radius: 30px;
+  }
   &.small {
     min-height: 25px;
     padding: 0.25rem $gutter;
-    background-color: var(--background);
-    border-radius: 30px;
-    color: var(--text_color);
-    border-color: var(--text_color);
   }
   &:focus {
     outline: none;
     box-shadow: 0px 0px 0px 1px var(--shadow_color);
-    border-color: var(--border_color);
   }
   &.error {
     border-width: 1px;
-    border-color: var(--red);
+    border-color: var(--color_border_input_error);
     &:focus {
-      box-shadow: 0px 0px 0px 1px var(--red);
+      box-shadow: 0px 0px 0px 1px var(--color_border_input_error);
     }
   }
   &.valid {
     border-width: 1px;
-    border-color: var(--green);
+    border-color: var(--color_border_input_success);
     &:focus {
-      box-shadow: 0px 0px 0px 1px var(--green);
+      box-shadow: 0px 0px 0px 1px var(--color_border_input_success);
     }
   }
   &[readonly],
@@ -43,16 +41,16 @@
     @extend .disabled;
   }
   &::-webkit-calendar-picker-indicator {
-    background-color: var(--gray_light);
+    background-color: white;
     border-radius: 50%;
     padding: 3px;
     cursor: pointer;
     width: 15px;
     height: 15px;
     transition: var(--transition);
-    color: var(--black);
+    color: black;
     &:hover {
-      background-color: var(--white);
+      opacity: 0.7;
     }
   }
 }
@@ -63,7 +61,7 @@
   min-height: 80px;
   resize: none;
   overflow: auto;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
 }
 
 .wrapper-input {
@@ -78,13 +76,13 @@
     padding: math.div($gutter, 2) $gutter;
     text-align: center;
     white-space: nowrap;
-    border: 1px solid var(--border_color);
+    border: 1px solid var(--color_border_input);
     @extend .border-radius;
     &:not(button):not(.loader) {
       font-weight: 400;
       line-height: 1.5;
-      color: var(--text_color);
-      background-color: var(--background_secondary);
+      color: var(--color_text-icon_neutral_secondary);
+      background-color: var(--color_bg_box_neutral_primary);
     }
   }
   &>:not(:first-child):not(.box-validation):not(.tooltip) {
@@ -109,7 +107,7 @@
   width: 100%;
   margin-top: math.div($gutter, 4);
   font-size: 12px;
-  color: var(--text_color);
+  color: var(--color_text-icon_neutral_secondary);
   text-align: left;
   i, svg  {
     font-size: 11px;
@@ -117,12 +115,12 @@
   }
   &.box-invalid {
     i, svg {
-      color: var(--red);
+      color: var(--color_text-icon_system_danger);
     }
   }
   &.box-valid {
     i, svg {
-      color: var(--green);
+      color: var(--color_text-icon_system_success);
     }
   }
   &.show {

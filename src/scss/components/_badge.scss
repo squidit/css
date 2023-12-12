@@ -5,8 +5,8 @@ $badge-horizontal-position: calc(100% - 0.35rem) !default;
 
 .badge {
   padding: 0 math.div($gutter, 4);
-  background-color: var(--red);
-  color: var(--white-html);
+  background-color: var(--red-50);
+  color: white;
   font-size: 8px;
   font-weight: 500;
   display: inline-block;

@@ -1,19 +1,19 @@
 .scrollbar {
-  scrollbar-color: var(--background) var(--gray_dark);
+  scrollbar-color: var(--color_surface_secondary) var(--neutral-50);
   scrollbar-width: thin;
   &::-webkit-scrollbar {
     width: 7px;
     height: 7px;
   }
   &::-webkit-scrollbar-track {
-    background: var(--background);
+    background: var(--color_surface_secondary);
     border-radius: 7px;
   }
   &::-webkit-scrollbar-thumb {
-    background: var(--text_color);
+    background: var(--neutral-50);
     border-radius: 7px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: var(--background_secondary);
+    background: var(--color_text-icon_neutral_primary);
   }
 }
