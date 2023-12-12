@@ -9160,7 +9160,7 @@
   --color_text-icon_universal_social_x: var(--x-0) ;
   --color_text-icon_universal_social_tiktok: var(--tiktok-0) ;
   --color_surface_universal_black: var(--neutral-10) ;
-  --border_color: var(--color_border_box_neutral_secondary);
+  --border_color: var(--color_border_box_neutral_primary);
   --background: var(--color_surface_primary);
   --background_secondary: var(--color_bg_box_neutral_primary);
   --background_third: var(--color_surface_secondary);
@@ -10272,7 +10272,7 @@ template {
 }
 
 hr {
-  border-color: var(--color_border_neutral_primary);
+  border-color: var(--color_border_box_neutral_primary);
   margin: 1rem 0;
   border-style: solid;
 }
