@@ -1,4 +1,17 @@
 @charset "UTF-8";
+body, html {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+* {
+  min-width: 0;
+  min-height: 0;
+}
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
