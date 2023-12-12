@@ -43,6 +43,8 @@ const buttons = [
   'twitter',
   'linkedin',
   'facebook',
+  'x',
+  'tiktok',
   'disabled',
   'rounded'
 ]
