@@ -220,7 +220,7 @@ $lists: (
   @include generate-variable('universal_black', 'neutral', 10, 'color_surface');
 
   // OLD
-  --border_color: var(--color_border_box_neutral_secondary); // TROCAR
+  --border_color: var(--color_border_box_neutral_primary); // TROCAR
 
   --background: var(--color_surface_primary);
   --background_secondary: var(--color_bg_box_neutral_primary); // TROCAR
