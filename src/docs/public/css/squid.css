@@ -10666,6 +10666,7 @@ button.readonly.select,
 button.readonly.textarea {
   background: var(--color_border_input) !important;
   border-color: var(--color_border_input_disabled) !important;
+  opacity: 1 !important;
 }
 
 .text-ellipsis {

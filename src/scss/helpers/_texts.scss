@@ -39,6 +39,7 @@ button {
   &.readonly {
     background: var(--color_border_input) !important;
     border-color: var(--color_border_input_disabled) !important;
+    opacity: 1 !important;
   }
 }
 
