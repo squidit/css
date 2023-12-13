@@ -37,8 +37,8 @@ input,
 textarea,
 button {
   &.readonly {
-    background: var(--color_bg_input_disabled) !important;
-    border-color: var(--color_border_input) !important;
+    background: var(--color_border_input) !important;
+    border-color: var(--color_border_input_disabled) !important;
   }
 }
 

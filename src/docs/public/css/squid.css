@@ -10640,11 +10640,32 @@ html.light {
 .readonly, .wrapper-selectors input[readonly] + label.checkbox, .wrapper-selectors input.readonly + label.checkbox, .input[readonly], [readonly].select, [readonly].textarea, .input.readonly, .readonly.select, .readonly.textarea {
   color: var(--color_text-icon_neutral_secondary) !important;
   cursor: initial !important;
-  opacity: 0.7 !important;
 }
 
-select.readonly, select.input[readonly], select[readonly].select, select[readonly].textarea, select.input.readonly, select.readonly.select, select.readonly.textarea, input.readonly, input.input[readonly], input[readonly].select, input[readonly].textarea, input.input.readonly, input.readonly.select, input.readonly.textarea, textarea.readonly, textarea.input[readonly], textarea[readonly].select, textarea[readonly].textarea, textarea.input.readonly, textarea.readonly.select, textarea.readonly.textarea, button.readonly, button.input[readonly], button[readonly].select, button[readonly].textarea, button.input.readonly, button.readonly.select, button.readonly.textarea {
-  border-color: var(--color_border_input) !important;
+select.readonly, select.input[readonly], select[readonly].select, select[readonly].textarea, select.input.readonly, select.readonly.select, select.readonly.textarea,
+input.readonly,
+input.input[readonly],
+input[readonly].select,
+input[readonly].textarea,
+input.input.readonly,
+input.readonly.select,
+input.readonly.textarea,
+textarea.readonly,
+textarea.input[readonly],
+textarea[readonly].select,
+textarea[readonly].textarea,
+textarea.input.readonly,
+textarea.readonly.select,
+textarea.readonly.textarea,
+button.readonly,
+button.input[readonly],
+button[readonly].select,
+button[readonly].textarea,
+button.input.readonly,
+button.readonly.select,
+button.readonly.textarea {
+  background: var(--color_border_input) !important;
+  border-color: var(--color_border_input_disabled) !important;
 }
 
 .text-ellipsis {
