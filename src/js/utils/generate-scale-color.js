@@ -133,17 +133,19 @@ function createColors (color) {
 }
 
 async function renderColors () {
-  const accordion = document.createElement('div');
-  accordion.className = 'accordion';
-  accordion.setAttribute('data-accordion', '');
-  accordion.style.display = 'grid';
-  accordion.style.gridTemplateColumns = 'repeat(3, 1fr)';
-  accordion.style.gap = '1.5rem';
+  const target = document.getElementById('generated-colors');
+  if (target) {
+    const accordion = document.createElement('div');
+    accordion.className = 'accordion';
+    accordion.setAttribute('data-accordion', '');
+    accordion.style.display = 'grid';
+    accordion.style.gridTemplateColumns = 'repeat(3, 1fr)';
+    accordion.style.gap = '1.5rem';
 
-  for (const color of colors) {
-    accordion.appendChild(createColors(color))
+    for (const color of colors) {
+      accordion.appendChild(createColors(color))
+    }
+
+    target.appendChild(accordion);
   }
-
-  const colorsDiv = document.getElementById('colors');
-  colorsDiv.appendChild(accordion);
 }
