@@ -5,8 +5,7 @@ $weights: (
   regular: 400,
   medium: 500,
   bold: 700,
-  black: 900
-) !default;
+  black: 900) !default;
 
 @each $align in $aligns {
   .text-#{"" + $align} {
@@ -31,12 +30,16 @@ $weights: (
 .readonly {
   color: var(--color_text-icon_neutral_secondary) !important;
   cursor: initial !important;
-  opacity: 0.7 !important;
 }
 
-select, input, textarea, button {
+select,
+input,
+textarea,
+button {
   &.readonly {
-    border-color: var(--color_border_input) !important;
+    background: var(--color_border_input) !important;
+    border-color: var(--color_border_input_disabled) !important;
+    opacity: 1 !important;
   }
 }
 
