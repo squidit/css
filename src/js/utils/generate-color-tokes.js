@@ -76,49 +76,49 @@ function createTokens (tokens) {
   return tokensDiv;
 }
 
-function createTypes (teste1, teste2) {
+function createTokenTypes (token, tokenMap) {
   const div = document.createElement('div');
   div.style.marginBottom = '1rem';
 
   const h3 = document.createElement('h3');
-  h3.textContent = teste2.name || teste2
+  h3.textContent = tokenMap.name || tokenMap
 
   div.appendChild(h3);
 
-  if (teste2.maps) {
-    for (const map of Object.keys(teste2.maps)) {
+  if (tokenMap.maps) {
+    for (const fisrtMap of Object.keys(tokenMap.maps)) {
       const typeDiv = document.createElement('div');
       typeDiv.style.margin = '0 0 1rem 2rem';
 
       const h3 = document.createElement('h3');
       h3.style.textTransform = 'capitalize';
-      h3.textContent = teste2.maps[map]?.name || teste2.maps[map];
+      h3.textContent = tokenMap.maps[fisrtMap]?.name || tokenMap.maps[fisrtMap];
 
       typeDiv.appendChild(h3);
 
-      if (teste2.maps[map]?.maps) {
-        for (const mapInside of Object.keys(teste2.maps[map]?.maps)) {
+      if (tokenMap.maps[fisrtMap]?.maps) {
+        for (const secondMap of Object.keys(tokenMap.maps[fisrtMap]?.maps)) {
           const divInside = document.createElement('div');
           divInside.style.margin = '0 0 1rem 2rem';
 
           const h4 = document.createElement('h4');
           h4.style.textTransform = 'capitalize';
-          h4.textContent = teste2.maps[map]?.maps[mapInside]
+          h4.textContent = tokenMap.maps[fisrtMap]?.maps[secondMap]
 
           divInside.appendChild(h4);
 
-          divInside.appendChild(createTokens(teste1[map][mapInside]))
+          divInside.appendChild(createTokens(token[fisrtMap][secondMap]))
 
           typeDiv.appendChild(divInside);
         }
       } else {
-        typeDiv.appendChild(createTokens(teste1[map]))
+        typeDiv.appendChild(createTokens(token[fisrtMap]))
       }
 
       div.appendChild(typeDiv);
     }
   } else {
-    div.appendChild(createTokens(teste1));
+    div.appendChild(createTokens(token));
   }
 
   return div
@@ -128,7 +128,7 @@ function renderTokens () {
   const target = document.getElementById('generated-tokens');
   if (target) {
     Object.keys(tokensMap).forEach((key) => {
-      target.appendChild(createTypes(tokens[key], tokensMap[key]))
+      target.appendChild(createTokenTypes(tokens[key], tokensMap[key]))
     })
   }
 }

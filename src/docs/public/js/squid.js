@@ -457,401 +457,6 @@ const buttonSizes = [
   { text: 'Extra Large', value: 'xl' }
 ]
 
-function renderButtons () {
-  const target = document.getElementById('generated-buttons');
-  if (target) {
-    const sizes = document.createElement('div');
-    sizes.className = 'mb-5'
-    sizes.style.display = 'grid';
-    sizes.style.gridTemplateColumns = 'repeat(4, 1fr)';
-    sizes.style.gap = '1.5rem';
-
-    for (const size of buttonSizes) {
-      const div = document.createElement('div');
-
-      const title = document.createElement('h6');
-      title.textContent = size.text
-
-      const button = document.createElement('button');
-      button.className = `button button-primary ${size.value ? 'button-' + size.value : ''}`;
-      button.style.width = '100%'
-      button.textContent = 'Click me';
-
-      div.appendChild(title)
-      div.appendChild(button)
-
-      sizes.appendChild(div)
-    }
-
-    target.appendChild(sizes);
-
-    const div = document.createElement('div');
-
-    for (const type of ['Default', 'Inverted']) {
-      const title = document.createElement('h6');
-      title.textContent = type;
-
-      div.appendChild(title);
-
-      const examples = document.createElement('div');
-      examples.className = 'mb-5'
-      examples.style.display = 'grid';
-      examples.style.gridTemplateColumns = 'repeat(5, 1fr)';
-      examples.style.gap = '1.5rem';
-
-      for (const button of buttons) {
-        const buttonElement = document.createElement('button');
-        buttonElement.className = `button 
-          ${['disabled', 'rounded'].includes(button) ? 'button-squid' : button ? 'button-' + button : ''} 
-          ${type === 'Inverted' ? type.toLowerCase() : ''} 
-          ${['disabled', 'rounded'].includes(button) ? button : ''}
-        `;
-        buttonElement.style.width = '100%'
-        buttonElement.textContent = button;
-
-        examples.appendChild(buttonElement);
-      }
-
-      div.appendChild(examples);
-    }
-
-    target.appendChild(div);
-  }
-}
-
-function createTokenRoles (role) {
-  const div = document.createElement('div');
-  div.className = 'display-flex align-items-center py-1 px-3 mb-3'
-  div.style.backgroundColor = 'var(--background)';
-  div.style.maxWidth = 'fit-content';
-  div.style.borderRadius = '4rem';
-  div.style.gap = '1rem';
-
-  const color = document.createElement('div');
-  color.className = `background-${role.color}-50 p-3`
-  color.style.borderRadius = '4rem';
-  color.style.border = '1px solid var(--border_color)'
-
-  div.appendChild(color);
-
-  const name = document.createElement('strong');
-  name.style.minWidth = 'min-content';
-  name.textContent = role.name;
-
-  div.appendChild(name)
-
-  const dash = document.createElement('div');
-  dash.textContent = '-';
-
-  div.appendChild(dash)
-
-  const description = document.createElement('p');
-  description.className = 'm-0'
-  description.textContent = role.description;
-
-  div.appendChild(description)
-
-  return div
-}
-
-function renderTokenRoles () {
-  const target = document.getElementById('generated-token-roles');
-  if (target) {
-    for (const role of tokenRoles) {
-      target.appendChild(createTokenRoles(role))
-    }
-  }
-}
-
-function createTokens (tokens) {
-  const tokensDiv = document.createElement('div');
-  tokensDiv.style.display = 'grid';
-  tokensDiv.style.gridTemplateColumns = 'repeat(2, 1fr)';
-  tokensDiv.style.gap = '1.5rem';
-
-  for (const token of tokens) {
-    const tokenDiv = document.createElement('div');
-    tokenDiv.className = 'display-flex align-items-center py-1 px-3'
-    tokenDiv.style.backgroundColor = 'var(--background)';
-    tokenDiv.style.maxWidth = 'fit-content';
-    tokenDiv.style.borderRadius = '4rem';
-    tokenDiv.style.gap = '1rem';
-
-    const color = document.createElement('div');
-    color.style.backgroundColor = `var(${token})`;
-    color.style.padding = '1rem';
-    color.style.borderRadius = '4rem';
-    color.style.border = '1px solid var(--border_color)'
-
-    tokenDiv.appendChild(color);
-
-    const name = document.createElement('strong');
-    name.style.minWidth = 'min-content';
-    name.textContent = token;
-
-    tokenDiv.appendChild(name);
-
-    tokensDiv.appendChild(tokenDiv);
-  }
-
-  return tokensDiv;
-}
-
-function createTypes (teste1, teste2) {
-  const div = document.createElement('div');
-  div.style.marginBottom = '1rem';
-
-  const h3 = document.createElement('h3');
-  h3.textContent = teste2.name || teste2
-
-  div.appendChild(h3);
-
-  if (teste2.maps) {
-    for (const map of Object.keys(teste2.maps)) {
-      const typeDiv = document.createElement('div');
-      typeDiv.style.margin = '0 0 1rem 2rem';
-
-      const h3 = document.createElement('h3');
-      h3.style.textTransform = 'capitalize';
-      h3.textContent = teste2.maps[map]?.name || teste2.maps[map];
-
-      typeDiv.appendChild(h3);
-
-      if (teste2.maps[map]?.maps) {
-        for (const mapInside of Object.keys(teste2.maps[map]?.maps)) {
-          const divInside = document.createElement('div');
-          divInside.style.margin = '0 0 1rem 2rem';
-
-          const h4 = document.createElement('h4');
-          h4.style.textTransform = 'capitalize';
-          h4.textContent = teste2.maps[map]?.maps[mapInside]
-
-          divInside.appendChild(h4);
-
-          divInside.appendChild(createTokens(teste1[map][mapInside]))
-
-          typeDiv.appendChild(divInside);
-        }
-      } else {
-        typeDiv.appendChild(createTokens(teste1[map]))
-      }
-
-      div.appendChild(typeDiv);
-    }
-  } else {
-    div.appendChild(createTokens(teste1));
-  }
-
-  return div
-}
-
-function renderTokens () {
-  const target = document.getElementById('generated-tokens');
-  if (target) {
-    Object.keys(tokensMap).forEach((key) => {
-      target.appendChild(createTypes(tokens[key], tokensMap[key]))
-    })
-  }
-}
-
-function hexToRgb (hex) {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result
-    ? {
-        r: parseInt(result[1], 16),
-        g: parseInt(result[2], 16),
-        b: parseInt(result[3], 16)
-      }
-    : null;
-}
-
-function rgbToHex (r, g, b) {
-  r = r.toString(16);
-  g = g.toString(16);
-  b = b.toString(16);
-
-  if (r.length === 1) { r = '0' + r; }
-  if (g.length === 1) { g = '0' + g; }
-  if (b.length === 1) { b = '0' + b; }
-
-  return '#' + r + g + b;
-}
-
-function mix (color1, color2, i) {
-  const weight = i <= 50 ? i / 50 : 1 - ((i - 50) / 50);
-
-  const rgbColor1 = hexToRgb(color1);
-  const rgbColor2 = hexToRgb(color2);
-
-  let r = rgbColor1.r * (1 - weight) + rgbColor2.r * weight;
-  let g = rgbColor1.g * (1 - weight) + rgbColor2.g * weight;
-  let b = rgbColor1.b * (1 - weight) + rgbColor2.b * weight;
-
-  // Ensure RGB values are within the valid range
-  r = Math.max(0, Math.min(255, Math.round(r)));
-  g = Math.max(0, Math.min(255, Math.round(g)));
-  b = Math.max(0, Math.min(255, Math.round(b)));
-
-  return rgbToHex(r, g, b);
-}
-
-function generateBrightnessScale (hexColor, step = 5) {
-  const scale = [];
-  for (let i = 0; i <= 100; i += step) {
-    const color = mix(i > 50 ? '#ffffff' : '#000000', hexColor, i);
-    scale.push({
-      color: color,
-      brightness: i
-    });
-  }
-  return scale;
-}
-
-function generateCSSVariables (colorName, colorArray) {
-  let cssVariables = ':root {\n';
-  colorArray.forEach(({ color, brightness }) => {
-    cssVariables += `  --${colorName}-${brightness}: ${color};\n`;
-  });
-  cssVariables += '}';
-  return cssVariables;
-}
-
-function createColor (colorName, hexColor) {
-  const colorArray = generateBrightnessScale(hexColor);
-  const cssVariables = generateCSSVariables(colorName, colorArray);
-  return {
-    name: colorName,
-    hex: hexColor,
-    scale: colorArray,
-    cssVariables: cssVariables
-  };
-}
-
-function createInCss (colorName, hexColor) {
-  const colorResponse = createColor(colorName, hexColor);
-  const styleTag = document.createElement('style');
-  styleTag.setAttribute('type', 'text/css');
-  styleTag.innerHTML = colorResponse.cssVariables;
-  document.head.appendChild(styleTag);
-}
-
-function createColors (color) {
-  const collapse = document.createElement('div');
-  collapse.className = 'collapse';
-
-  const collapseTitle = document.createElement('p');
-  collapseTitle.className = `collapse-title white-html background-${color}-50`;
-
-  const colorName = document.createElement('span');
-  colorName.style.textTransform = 'capitalize';
-  colorName.textContent = color;
-
-  const defaultVar = document.createElement('span');
-  defaultVar.id = 'default-var-accordion';
-  defaultVar.textContent = `var(--${color}-50)`;
-
-  const div = document.createElement('div');
-  div.style.display = 'flex';
-  div.style.flexDirection = 'column';
-  div.style.alignItems = 'center';
-
-  div.appendChild(colorName);
-  div.appendChild(defaultVar);
-
-  collapseTitle.appendChild(div);
-
-  const span = document.createElement('span');
-  span.className = 'icon';
-
-  const chevronDown = document.createElement('i');
-  chevronDown.className = 'far fa-chevron-down';
-
-  span.appendChild(chevronDown);
-
-  collapseTitle.appendChild(span);
-
-  collapse.appendChild(collapseTitle);
-
-  const collapseBody = document.createElement('div');
-  collapseBody.className = 'collapse-body p-0';
-
-  for (let i = 5; i <= 95; i += 5) {
-    const colorDiv = document.createElement('div');
-    colorDiv.className = `py-2 text-center white-html background-${color}-${i}`;
-    colorDiv.textContent = `var(--${color}-${i})`;
-
-    collapseBody.appendChild(colorDiv);
-  }
-
-  collapse.appendChild(collapseBody);
-
-  return collapse;
-}
-
-async function renderColors () {
-  const target = document.getElementById('generated-colors');
-  if (target) {
-    const accordion = document.createElement('div');
-    accordion.className = 'accordion';
-    accordion.setAttribute('data-accordion', '');
-    accordion.style.display = 'grid';
-    accordion.style.gridTemplateColumns = 'repeat(3, 1fr)';
-    accordion.style.gap = '1.5rem';
-
-    for (const color of colors) {
-      accordion.appendChild(createColors(color))
-    }
-
-    target.appendChild(accordion);
-  }
-}
-
-// // Listen all events on document/window
-const liveDom = new MutationObserver((mutations) => {
-  mutations.forEach((mutation) => {
-    mutation.addedNodes.forEach((node) => {
-      if (node.hasAttribute) {
-        if (node.hasAttribute('data-tabs')) {
-          tabify(node)
-        }
-        if (node.hasAttribute('data-accordion')) {
-          initAccordion(node)
-        }
-        if (node.hasAttribute('data-modal')) {
-          node.addEventListener('click', (event) => createModal(event, node))
-        }
-      }
-    })
-  })
-});
-
-// To use live Realod Components
-// liveDom.observe((document.documentElement || document.body), {
-//   attributes: true,
-//   childList: true,
-//   subtree: true,
-//   characterData: true
-// });
-
-function loadScript (file) {
-  const script = document.createElement('script')
-  script.type = 'text/javascript'
-  script.src = file
-  document.body.appendChild(script)
-}
-
-if (typeof window !== 'undefined') {
-  window.onload = function () {
-    renderColors();
-    renderButtons();
-    renderTokenRoles();
-    renderTokens();
-    (function () {
-      [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
-    })();
-  };
-}
-
 function applyDisplay (collapses, index) {
   if (collapses[index].children[0].children[0].children[1]) {
     if (collapses[index].classList.value.includes('active')) {
@@ -1539,3 +1144,398 @@ window.onpopstate = (e) => {
     tooltip.style.top = top + scrollY + 'px'
   }
 })();
+
+function renderButtons () {
+  const target = document.getElementById('generated-buttons');
+  if (target) {
+    const sizes = document.createElement('div');
+    sizes.className = 'mb-5'
+    sizes.style.display = 'grid';
+    sizes.style.gridTemplateColumns = 'repeat(4, 1fr)';
+    sizes.style.gap = '1.5rem';
+
+    for (const size of buttonSizes) {
+      const div = document.createElement('div');
+
+      const title = document.createElement('h6');
+      title.textContent = size.text
+
+      const button = document.createElement('button');
+      button.className = `button button-primary ${size.value ? 'button-' + size.value : ''}`;
+      button.style.width = '100%'
+      button.textContent = 'Click me';
+
+      div.appendChild(title)
+      div.appendChild(button)
+
+      sizes.appendChild(div)
+    }
+
+    target.appendChild(sizes);
+
+    const div = document.createElement('div');
+
+    for (const type of ['Default', 'Inverted']) {
+      const title = document.createElement('h6');
+      title.textContent = type;
+
+      div.appendChild(title);
+
+      const examples = document.createElement('div');
+      examples.className = 'mb-5'
+      examples.style.display = 'grid';
+      examples.style.gridTemplateColumns = 'repeat(5, 1fr)';
+      examples.style.gap = '1.5rem';
+
+      for (const button of buttons) {
+        const buttonElement = document.createElement('button');
+        buttonElement.className = `button 
+          ${['disabled', 'rounded'].includes(button) ? 'button-squid' : button ? 'button-' + button : ''} 
+          ${type === 'Inverted' ? type.toLowerCase() : ''} 
+          ${['disabled', 'rounded'].includes(button) ? button : ''}
+        `;
+        buttonElement.style.width = '100%'
+        buttonElement.textContent = button;
+
+        examples.appendChild(buttonElement);
+      }
+
+      div.appendChild(examples);
+    }
+
+    target.appendChild(div);
+  }
+}
+
+function createTokenRoles (role) {
+  const div = document.createElement('div');
+  div.className = 'display-flex align-items-center py-1 px-3 mb-3'
+  div.style.backgroundColor = 'var(--background)';
+  div.style.maxWidth = 'fit-content';
+  div.style.borderRadius = '4rem';
+  div.style.gap = '1rem';
+
+  const color = document.createElement('div');
+  color.className = `background-${role.color}-50 p-3`
+  color.style.borderRadius = '4rem';
+  color.style.border = '1px solid var(--border_color)'
+
+  div.appendChild(color);
+
+  const name = document.createElement('strong');
+  name.style.minWidth = 'min-content';
+  name.textContent = role.name;
+
+  div.appendChild(name)
+
+  const dash = document.createElement('div');
+  dash.textContent = '-';
+
+  div.appendChild(dash)
+
+  const description = document.createElement('p');
+  description.className = 'm-0'
+  description.textContent = role.description;
+
+  div.appendChild(description)
+
+  return div
+}
+
+function renderTokenRoles () {
+  const target = document.getElementById('generated-token-roles');
+  if (target) {
+    for (const role of tokenRoles) {
+      target.appendChild(createTokenRoles(role))
+    }
+  }
+}
+
+function createTokens (tokens) {
+  const tokensDiv = document.createElement('div');
+  tokensDiv.style.display = 'grid';
+  tokensDiv.style.gridTemplateColumns = 'repeat(2, 1fr)';
+  tokensDiv.style.gap = '1.5rem';
+
+  for (const token of tokens) {
+    const tokenDiv = document.createElement('div');
+    tokenDiv.className = 'display-flex align-items-center py-1 px-3'
+    tokenDiv.style.backgroundColor = 'var(--background)';
+    tokenDiv.style.maxWidth = 'fit-content';
+    tokenDiv.style.borderRadius = '4rem';
+    tokenDiv.style.gap = '1rem';
+
+    const color = document.createElement('div');
+    color.style.backgroundColor = `var(${token})`;
+    color.style.padding = '1rem';
+    color.style.borderRadius = '4rem';
+    color.style.border = '1px solid var(--border_color)'
+
+    tokenDiv.appendChild(color);
+
+    const name = document.createElement('strong');
+    name.style.minWidth = 'min-content';
+    name.textContent = token;
+
+    tokenDiv.appendChild(name);
+
+    tokensDiv.appendChild(tokenDiv);
+  }
+
+  return tokensDiv;
+}
+
+function createTokenTypes (token, tokenMap) {
+  const div = document.createElement('div');
+  div.style.marginBottom = '1rem';
+
+  const h3 = document.createElement('h3');
+  h3.textContent = tokenMap.name || tokenMap
+
+  div.appendChild(h3);
+
+  if (tokenMap.maps) {
+    for (const fisrtMap of Object.keys(tokenMap.maps)) {
+      const typeDiv = document.createElement('div');
+      typeDiv.style.margin = '0 0 1rem 2rem';
+
+      const h3 = document.createElement('h3');
+      h3.style.textTransform = 'capitalize';
+      h3.textContent = tokenMap.maps[fisrtMap]?.name || tokenMap.maps[fisrtMap];
+
+      typeDiv.appendChild(h3);
+
+      if (tokenMap.maps[fisrtMap]?.maps) {
+        for (const secondMap of Object.keys(tokenMap.maps[fisrtMap]?.maps)) {
+          const divInside = document.createElement('div');
+          divInside.style.margin = '0 0 1rem 2rem';
+
+          const h4 = document.createElement('h4');
+          h4.style.textTransform = 'capitalize';
+          h4.textContent = tokenMap.maps[fisrtMap]?.maps[secondMap]
+
+          divInside.appendChild(h4);
+
+          divInside.appendChild(createTokens(token[fisrtMap][secondMap]))
+
+          typeDiv.appendChild(divInside);
+        }
+      } else {
+        typeDiv.appendChild(createTokens(token[fisrtMap]))
+      }
+
+      div.appendChild(typeDiv);
+    }
+  } else {
+    div.appendChild(createTokens(token));
+  }
+
+  return div
+}
+
+function renderTokens () {
+  const target = document.getElementById('generated-tokens');
+  if (target) {
+    Object.keys(tokensMap).forEach((key) => {
+      target.appendChild(createTokenTypes(tokens[key], tokensMap[key]))
+    })
+  }
+}
+
+function hexToRgb (hex) {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result
+    ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+      }
+    : null;
+}
+
+function rgbToHex (r, g, b) {
+  r = r.toString(16);
+  g = g.toString(16);
+  b = b.toString(16);
+
+  if (r.length === 1) { r = '0' + r; }
+  if (g.length === 1) { g = '0' + g; }
+  if (b.length === 1) { b = '0' + b; }
+
+  return '#' + r + g + b;
+}
+
+function mix (color1, color2, i) {
+  const weight = i <= 50 ? i / 50 : 1 - ((i - 50) / 50);
+
+  const rgbColor1 = hexToRgb(color1);
+  const rgbColor2 = hexToRgb(color2);
+
+  let r = rgbColor1.r * (1 - weight) + rgbColor2.r * weight;
+  let g = rgbColor1.g * (1 - weight) + rgbColor2.g * weight;
+  let b = rgbColor1.b * (1 - weight) + rgbColor2.b * weight;
+
+  // Ensure RGB values are within the valid range
+  r = Math.max(0, Math.min(255, Math.round(r)));
+  g = Math.max(0, Math.min(255, Math.round(g)));
+  b = Math.max(0, Math.min(255, Math.round(b)));
+
+  return rgbToHex(r, g, b);
+}
+
+function generateBrightnessScale (hexColor, step = 5) {
+  const scale = [];
+  for (let i = 0; i <= 100; i += step) {
+    const color = mix(i > 50 ? '#ffffff' : '#000000', hexColor, i);
+    scale.push({
+      color: color,
+      brightness: i
+    });
+  }
+  return scale;
+}
+
+function generateCSSVariables (colorName, colorArray) {
+  let cssVariables = ':root {\n';
+  colorArray.forEach(({ color, brightness }) => {
+    cssVariables += `  --${colorName}-${brightness}: ${color};\n`;
+  });
+  cssVariables += '}';
+  return cssVariables;
+}
+
+function createColor (colorName, hexColor) {
+  const colorArray = generateBrightnessScale(hexColor);
+  const cssVariables = generateCSSVariables(colorName, colorArray);
+  return {
+    name: colorName,
+    hex: hexColor,
+    scale: colorArray,
+    cssVariables: cssVariables
+  };
+}
+
+function createInCss (colorName, hexColor) {
+  const colorResponse = createColor(colorName, hexColor);
+  const styleTag = document.createElement('style');
+  styleTag.setAttribute('type', 'text/css');
+  styleTag.innerHTML = colorResponse.cssVariables;
+  document.head.appendChild(styleTag);
+}
+
+function createColors (color) {
+  const collapse = document.createElement('div');
+  collapse.className = 'collapse';
+
+  const collapseTitle = document.createElement('p');
+  collapseTitle.className = `collapse-title white-html background-${color}-50`;
+
+  const colorName = document.createElement('span');
+  colorName.style.textTransform = 'capitalize';
+  colorName.textContent = color;
+
+  const defaultVar = document.createElement('span');
+  defaultVar.id = 'default-var-accordion';
+  defaultVar.textContent = `var(--${color}-50)`;
+
+  const div = document.createElement('div');
+  div.style.display = 'flex';
+  div.style.flexDirection = 'column';
+  div.style.alignItems = 'center';
+
+  div.appendChild(colorName);
+  div.appendChild(defaultVar);
+
+  collapseTitle.appendChild(div);
+
+  const span = document.createElement('span');
+  span.className = 'icon';
+
+  const chevronDown = document.createElement('i');
+  chevronDown.className = 'far fa-chevron-down';
+
+  span.appendChild(chevronDown);
+
+  collapseTitle.appendChild(span);
+
+  collapse.appendChild(collapseTitle);
+
+  const collapseBody = document.createElement('div');
+  collapseBody.className = 'collapse-body p-0';
+
+  for (let i = 5; i <= 95; i += 5) {
+    const colorDiv = document.createElement('div');
+    colorDiv.className = `py-2 text-center white-html background-${color}-${i}`;
+    colorDiv.textContent = `var(--${color}-${i})`;
+
+    collapseBody.appendChild(colorDiv);
+  }
+
+  collapse.appendChild(collapseBody);
+
+  return collapse;
+}
+
+async function renderColors () {
+  const target = document.getElementById('generated-colors');
+  if (target) {
+    const accordion = document.createElement('div');
+    accordion.className = 'accordion';
+    accordion.setAttribute('data-accordion', '');
+    accordion.style.display = 'grid';
+    accordion.style.gridTemplateColumns = 'repeat(3, 1fr)';
+    accordion.style.gap = '1.5rem';
+
+    for (const color of colors) {
+      accordion.appendChild(createColors(color))
+    }
+
+    target.appendChild(accordion);
+  }
+}
+
+// // Listen all events on document/window
+const liveDom = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    mutation.addedNodes.forEach((node) => {
+      if (node.hasAttribute) {
+        if (node.hasAttribute('data-tabs')) {
+          tabify(node)
+        }
+        if (node.hasAttribute('data-accordion')) {
+          initAccordion(node)
+        }
+        if (node.hasAttribute('data-modal')) {
+          node.addEventListener('click', (event) => createModal(event, node))
+        }
+      }
+    })
+  })
+});
+
+// To use live Realod Components
+// liveDom.observe((document.documentElement || document.body), {
+//   attributes: true,
+//   childList: true,
+//   subtree: true,
+//   characterData: true
+// });
+
+function loadScript (file) {
+  const script = document.createElement('script')
+  script.type = 'text/javascript'
+  script.src = file
+  document.body.appendChild(script)
+}
+
+if (typeof window !== 'undefined') {
+  window.onload = function () {
+    renderColors();
+    renderButtons();
+    renderTokenRoles();
+    renderTokens();
+    (function () {
+      [...document.querySelectorAll('[data-accordion]')].forEach(x => initAccordion(x))
+    })();
+  };
+}
