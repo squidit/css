@@ -83,7 +83,7 @@
       // eslint-disable-next-line
       default:
       case 'center':
-        left = parseInt(parentCoords.left) + ((parent.offsetWidth - tooltip.offsetWidth) / 2)
+        left = (parseInt(parentCoords.left) - (tooltip.offsetWidth / 2)) + (parent.offsetWidth / 2)
     }
 
     switch (posVertical) {
