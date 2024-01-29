@@ -1,34 +1,30 @@
 @mixin generate-by-list($list, $scale, $prefix, $suffix: "", $force: false) {
   @each $name, $color in $list {
     @include generate-variable($name, $color, $scale, $prefix, $suffix, $force);
-  }  
+  }
 }
 
 @mixin generate-variable($name, $color, $scale, $prefix, $suffix: "", $force: false) {
   $important: if($force, '!important', '');
-  $suffixParsed: if($suffix != "", #{"_" + $suffix}, '');
+  $suffixParsed: if($suffix !="", #{"_" + $suffix}, '');
 
   --#{"" + $prefix + "_" + $name + $suffixParsed}: var(--#{$color}-#{$scale}) #{$important};
 }
 
 $lists: (
-  brands: (
-    wake: 'purple',
+  brands: (wake: 'purple',
     squid: 'pink'
   ),
-  system: (
-    danger: 'red',
+  system: (danger: 'red',
     warning: 'yellow',
     success: 'green',
     information: 'blue',
     discovery: 'lilac'
   ),
-  highlight: (
-    orange: 'orange',
+  highlight: (orange: 'orange',
     aqua: 'aqua'
   ),
-  social: (
-    instagram: 'instagram',
+  social: (instagram: 'instagram',
     youtube: 'youtube',
     pinterest: 'pinterest',
     google: 'google',
@@ -41,8 +37,7 @@ $lists: (
 );
 
 $blackWhiteList: (
-  social: (
-    tiktok: 'tiktok',
+  social: (tiktok: 'tiktok',
     x: 'x'
   )
 );
@@ -95,20 +90,20 @@ $blackWhiteList: (
   @include generate-variable('secondary', 'neutral', 10, 'color_surface', 'inverse', $force);
   @include generate-variable('tertiary', 'neutral', 5, 'color_surface', 'inverse', $force);
 
-    // BUTTON
-    @include generate-variable('button', 'neutral', 10, 'color_bg', '', $force);
-    @include generate-variable('button', 'neutral', 20, 'color_bg', 'hover', $force);
-    @include generate-variable('button', 'neutral', 100, 'color_bg', 'inverse', $force);
-    @include generate-variable('button', 'neutral', 90, 'color_bg', 'inverse-hover', $force);
-    @include generate-variable('button', 'neutral', 75, 'color_bg', 'disabled', $force);
+  // BUTTON
+  @include generate-variable('button', 'neutral', 10, 'color_bg', '', $force);
+  @include generate-variable('button', 'neutral', 20, 'color_bg', 'hover', $force);
+  @include generate-variable('button', 'neutral', 100, 'color_bg', 'inverse', $force);
+  @include generate-variable('button', 'neutral', 90, 'color_bg', 'inverse-hover', $force);
+  @include generate-variable('button', 'neutral', 75, 'color_bg', 'disabled', $force);
 
   @each $name, $list in $lists {
     // TEXT ICON
     @include generate-by-list($list, 30, #{'color_text-icon_' + $name}, '', $force);
 
     // BOX
-    @include generate-by-list($list, 95, #{'color_bg_box_' + $name}, '', $force);
-    @include generate-by-list($list, 85, #{'color_bg_box_' + $name}, 'hover', $force);
+    @include generate-by-list($list, 90, #{'color_bg_box_' + $name}, '', $force);
+    @include generate-by-list($list, 80, #{'color_bg_box_' + $name}, 'hover', $force);
 
     // BUTTON
     @include generate-by-list($list, 40, #{'color_bg_button_' + $name}, '', $force);
@@ -203,8 +198,8 @@ $blackWhiteList: (
     @include generate-by-list($list, 70, #{'color_text-icon_' + $name}, '', $force);
 
     // BOX
-    @include generate-by-list($list, 10, #{'color_bg_box_' + $name}, '', $force);
-    @include generate-by-list($list, 20, #{'color_bg_box_' + $name}, 'hover', $force);
+    @include generate-by-list($list, 15, #{'color_bg_box_' + $name}, '', $force);
+    @include generate-by-list($list, 25, #{'color_bg_box_' + $name}, 'hover', $force);
 
     // BUTTON
     @include generate-by-list($list, 70, #{'color_bg_button_' + $name}, '', $force);
