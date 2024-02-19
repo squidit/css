@@ -44949,10 +44949,7 @@ a {
     padding-left: 3rem !important;
   }
 }
-.scrollbar, .table, .table-overflow, .modal, .dropdown, .textarea {
-  scrollbar-color: var(--background) var(--gray_dark);
-  scrollbar-width: thin;
-}
+
 .scrollbar::-webkit-scrollbar, .table::-webkit-scrollbar, .table-overflow::-webkit-scrollbar, .modal::-webkit-scrollbar, .dropdown::-webkit-scrollbar, .textarea::-webkit-scrollbar {
   width: 7px;
   height: 7px;
