@@ -1,5 +1,6 @@
 .scrollbar {
   &::-webkit-scrollbar {
+    /* Sempre que mudar o width do scroll, lembrar de mudar o padding-right do body.block no _defaults.scss  */
     width: 7px;
     height: 7px;
   }
