@@ -10371,7 +10371,7 @@ body, html {
 
 body.block {
   overflow: hidden;
-  padding-right: 0.5rem;
+  padding-right: 7px;
 }
 
 p,
