@@ -24,8 +24,7 @@ body, html {
 body {
   &.block {
     overflow: hidden;
-    /* Esse valor é o mesmo valor do width do scroll  */
-    padding-right: 7px;
+    padding-right: $scrollWidth;
   }
 }
 

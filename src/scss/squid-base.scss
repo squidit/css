@@ -1,5 +1,8 @@
 @charset 'UTF-8';
+
 $transition: all 0.3s ease;
+$scrollWidth: 7px;
+
 @import 'external/animate';
 @import 'helpers/breakpoints';
 @import 'helpers/animations';
