@@ -76,8 +76,8 @@
         content: " ";
         border-radius: 5px 5px 0 0;
         height: 4px;
-        width: 75%;
-        max-width: 100px;
+        width: 100%;
+        max-width: initial;
         display: block;
         position: relative;
         margin-top: calc(1rem - 4px);
