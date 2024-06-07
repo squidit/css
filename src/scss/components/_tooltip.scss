@@ -1,6 +1,7 @@
 @use "sass:math";
 $tooltip-arrow-width: 12px !default;
 $tooltip-arrow-height: 6px !default;
+
 .tooltip {
   z-index: 1080;
   position: absolute;
@@ -9,88 +10,104 @@ $tooltip-arrow-height: 6px !default;
   border-radius: 5px;
   padding: math.div($gutter, 2);
   text-align: center;
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.5;
   max-width: 300px;
   box-shadow: var(--box-shadow);
+
   .tooltip-arrow {
     position: absolute;
     display: block;
+
     &::before {
       position: absolute;
       content: "";
       border-color: transparent;
       border-style: solid;
     }
+
     &.tooltip-not-arrow {
       display: none;
     }
   }
 }
+
 .tooltip-left-center {
   .tooltip-arrow {
     width: $tooltip-arrow-width;
     right: -$tooltip-arrow-height;
     top: calc(50% - $tooltip-arrow-height);
+
     &::before {
       left: 5px;
       border-width: math.div($tooltip-arrow-width, 2) 0 math.div($tooltip-arrow-width, 2) $tooltip-arrow-height;
     }
   }
 }
+
 .tooltip-left-bottom {
   .tooltip-arrow {
     display: none;
   }
 }
+
 .tooltip-left-top {
   .tooltip-arrow {
     display: none;
   }
 }
+
 .tooltip-right-center {
   .tooltip-arrow {
     width: $tooltip-arrow-width;
     left: -$tooltip-arrow-height;
     top: calc(50% - $tooltip-arrow-height);
+
     &::before {
       right: 5px;
       border-width: math.div($tooltip-arrow-width, 2) $tooltip-arrow-height math.div($tooltip-arrow-width, 2) 0;
     }
   }
 }
+
 .tooltip-right-bottom {
   .tooltip-arrow {
     display: none;
   }
 }
+
 .tooltip-right-top {
   .tooltip-arrow {
     display: none;
   }
 }
+
 .tooltip-center-center {
   .tooltip-arrow {
     display: none;
   }
 }
+
 .tooltip-center-bottom {
   .tooltip-arrow {
     height: $tooltip-arrow-height;
     top: -7px;
     left: calc(50% - math.div($tooltip-arrow-width, 2));
+
     &::before {
       bottom: -1px;
       border-width: 0 math.div($tooltip-arrow-width, 2) $tooltip-arrow-height;
     }
   }
 }
+
 .tooltip-center-top {
   .tooltip-arrow {
     height: $tooltip-arrow-height;
     bottom: -7px;
     left: calc(50% - math.div($tooltip-arrow-width, 2));
+
     &::before {
       top: -1px;
       border-width: $tooltip-arrow-height math.div($tooltip-arrow-width, 2) 0;
@@ -101,6 +118,7 @@ $tooltip-arrow-height: 6px !default;
 .tooltip-dark {
   background: var(--black_light);
   color: white;
+
   &.tooltip-left-top,
   &.tooltip-right-top,
   &.tooltip-center-top {
@@ -110,6 +128,7 @@ $tooltip-arrow-height: 6px !default;
       }
     }
   }
+
   &.tooltip-left-bottom,
   &.tooltip-right-bottom,
   &.tooltip-center-bottom {
@@ -119,6 +138,7 @@ $tooltip-arrow-height: 6px !default;
       }
     }
   }
+
   &.tooltip-left-center {
     .tooltip-arrow {
       &::before {
@@ -126,6 +146,7 @@ $tooltip-arrow-height: 6px !default;
       }
     }
   }
+
   &.tooltip-right-center {
     .tooltip-arrow {
       &::before {
@@ -138,6 +159,7 @@ $tooltip-arrow-height: 6px !default;
 .tooltip-light {
   background-color: var(--gray_light);
   color: var(--black_light);
+
   &.tooltip-left-top,
   &.tooltip-right-top,
   &.tooltip-center-top {
@@ -147,6 +169,7 @@ $tooltip-arrow-height: 6px !default;
       }
     }
   }
+
   &.tooltip-left-bottom,
   &.tooltip-right-bottom,
   &.tooltip-center-bottom {
@@ -156,6 +179,7 @@ $tooltip-arrow-height: 6px !default;
       }
     }
   }
+
   &.tooltip-left-center {
     .tooltip-arrow {
       &::before {
@@ -163,6 +187,7 @@ $tooltip-arrow-height: 6px !default;
       }
     }
   }
+
   &.tooltip-right-center {
     .tooltip-arrow {
       &::before {

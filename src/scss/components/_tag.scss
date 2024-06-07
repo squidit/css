@@ -1,4 +1,5 @@
 @use "sass:math";
+
 .tag-box {
   border: 1px solid var(--color_border_box_neutral_primary);
   transition: $transition;
@@ -7,27 +8,34 @@
   position: relative;
   display: inline-block;
   background-color: var(--color_surface_primary);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1;
+
   &:hover {
     @extend .box-shadow;
   }
+
   &.pointer {
     cursor: pointer;
   }
+
   &.readonly-tag {
     cursor: default;
     background: var(--white) !important;
+
     &:hover {
       box-shadow: none;
     }
   }
+
   &.disabled {
     @extend .disabled;
+
     &:hover {
       box-shadow: none;
     }
   }
+
   &.rounded {
     border-radius: 50px !important;
   }
