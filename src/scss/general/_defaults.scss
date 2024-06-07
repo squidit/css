@@ -1,4 +1,6 @@
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: border-box;
 }
 
@@ -16,9 +18,18 @@ figure {
   margin: 0;
 }
 
-body, html {
+body,
+html {
+  font-size: 16px;
   color: var(--color_text-icon_neutral_secondary);
   scroll-behavior: smooth;
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  body,
+  html {
+    font-size: 12px;
+  }
 }
 
 body {
@@ -52,6 +63,7 @@ caption {
   text-decoration: none;
   font-weight: 400;
   margin: 0;
+
   &:hover {
     text-decoration: none;
   }
@@ -62,7 +74,8 @@ caption {
   height: auto;
 }
 
-.small, small {
+.small,
+small {
   font-size: 85%;
 }
 
@@ -83,8 +96,9 @@ label {
   color: var(--color_text-icon_neutral_secondary);
   margin-bottom: 0.5rem;
   text-align: left;
+
   &.small {
-    font-size: 12px;
+    font-size: 85%;
     margin-bottom: 0.25rem;
   }
 }
@@ -107,32 +121,38 @@ h6,
   width: 100%;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2rem;
   line-height: 1.5;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 1.8rem;
   line-height: 1.5;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.28rem;
   line-height: 1.5;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.15rem;
   line-height: 1.5;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -181,14 +201,17 @@ a {
     --arrow_url: url('https://hub-cdn.squidit.com.br/arrow_down.png');
   }
 }
+
 @media (prefers-color-scheme: dark) {
   html {
     --arrow_url: url('https://hub-cdn.squidit.com.br/arrow_down_white.png');
   }
 }
+
 html.dark {
   --arrow_url: url('https://hub-cdn.squidit.com.br/arrow_down_white.png') !important;
 }
+
 html.light {
   --arrow_url: url('https://hub-cdn.squidit.com.br/arrow_down.png') !important;
 }
