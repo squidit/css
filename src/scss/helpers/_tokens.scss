@@ -134,8 +134,8 @@ $blackWhiteList: (
   }
 
   // Primary
-  --primary_color: var(--pink-40) #{$important};
-  --primary_color_hover: var(--pink-50) #{$important};
+  --primary_color: var(--purple-40) #{$important};
+  --primary_color_hover: var(--purple-50) #{$important};
 }
 
 @mixin theme-dark($force: false) {
@@ -230,8 +230,8 @@ $blackWhiteList: (
   }
 
   // Primary
-  --primary_color: var(--pink-70) #{$important};
-  --primary_color_hover: var(--pink-60) #{$important};
+  --primary_color: var(--purple-70) #{$important};
+  --primary_color_hover: var(--purple-60) #{$important};
 }
 
 @mixin theme-global {
