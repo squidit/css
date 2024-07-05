@@ -154,6 +154,7 @@ $colors: (
 /* CSS Vars */
 
 /* Classes */
+@import 'primary';
 @each $colorName, $colorGroup in $colors {
   @each $tone, $color in $colorGroup {
     @if ($tone == base) {
