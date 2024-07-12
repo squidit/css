@@ -9231,7 +9231,6 @@ body, html {
   --text_color: var(--color_text-icon_neutral_secondary);
   --title_color: var(--color_text-icon_neutral_primary);
   --box_shadow: 0px 4px 12px -5px var(--shadow_color);
-  --secondary_color: white;
 }
 
 html {
@@ -9436,6 +9435,7 @@ html {
   --color_border_button_social_x: var(--x-30) ;
   --primary_color: var(--purple-40) ;
   --primary_color_hover: var(--purple-50) ;
+  --secondary_color: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -9641,6 +9641,7 @@ html {
     --color_border_button_social_x: var(--x-100) ;
     --primary_color: var(--purple-70) ;
     --primary_color_hover: var(--purple-60) ;
+    --secondary_color: var(--neutral-10) ;
   }
 }
 html.light {
@@ -9845,6 +9846,7 @@ html.light {
   --color_border_button_social_x: var(--x-30) !important;
   --primary_color: var(--purple-40) !important;
   --primary_color_hover: var(--purple-50) !important;
+  --secondary_color: white;
 }
 
 html.dark {
@@ -10049,6 +10051,7 @@ html.dark {
   --color_border_button_social_x: var(--x-100) !important;
   --primary_color: var(--purple-70) !important;
   --primary_color_hover: var(--purple-60) !important;
+  --secondary_color: var(--neutral-10) !important;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

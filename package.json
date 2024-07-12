@@ -1,6 +1,6 @@
 {
   "name": "@squidit/css",
-  "version": "2.0.32",
+  "version": "2.0.33",
   "scripts": {
     "prepare": "npm install -g husky eslint sass gulp uglify-js && husky install",
     "start": "gulp watch",
@@ -20,8 +20,8 @@
     "src/js/**/*.{js,map}",
     "src/scss/**/*.scss"
   ],
-  "dependencies": {},
-  "devDependencies": {
+"dependencies": {},
+"devDependencies": {
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",

@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://squidit.com.br" target='_blank'>
-    <img src="https://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg" alt="Squid logo">
+    <img src="https://storage.googleapis.com/squid-static/wake-creators/logos/Logo_WakeCreators_RGB_FundoBranco_SemFundo.svg" alt="Squid logo">
   </a>
 </p>
 

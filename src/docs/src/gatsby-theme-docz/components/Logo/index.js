@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, Flex } from 'theme-ui'
 import { Link, useConfig } from 'docz'
+import { Flex, jsx } from 'theme-ui'
 import * as styles from './styles'
 
 export const Logo = () => {
@@ -9,9 +9,10 @@ export const Logo = () => {
     <Flex alignItems="center" className='justify-content-center' sx={styles.logo} data-testid="logo">
       <Link to="/" sx={styles.link}>
         <img
-          src='http://squidit.com.br/wp-content/themes/squid/assets/img/logo.svg'
-          alt='Squid Logo'
-          title='Squid Logo'
+          src='https://storage.googleapis.com/squid-static/wake-creators/logos/Logo_WakeCreators_RGB_FundoBranco_SemFundo.svg'
+          alt='Wake Creators Logo'
+          title='Wake Creators Logo'
+          width='100'
           className='mr-3 img-fluid'
         />
         {config.title}
