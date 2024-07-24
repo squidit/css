@@ -134,8 +134,11 @@ $blackWhiteList: (
   }
 
   // Primary
-  --primary_color: var(--pink-40) #{$important};
-  --primary_color_hover: var(--pink-50) #{$important};
+  --primary_color: var(--purple-40) #{$important};
+  --primary_color_hover: var(--purple-50) #{$important};
+
+  // Secondary
+  --secondary_color: white;
 }
 
 @mixin theme-dark($force: false) {
@@ -230,8 +233,9 @@ $blackWhiteList: (
   }
 
   // Primary
-  --primary_color: var(--pink-70) #{$important};
-  --primary_color_hover: var(--pink-60) #{$important};
+  --primary_color: var(--purple-70) #{$important};
+  --primary_color_hover: var(--purple-60) #{$important};
+  --secondary_color: var(--neutral-10) #{$important};
 }
 
 @mixin theme-global {
@@ -266,9 +270,6 @@ $blackWhiteList: (
   --title_color: var(--color_text-icon_neutral_primary);
 
   --box_shadow: 0px 4px 12px -5px var(--shadow_color);
-
-  // Primary
-  --secondary_color: white;
 }
 
 :root {

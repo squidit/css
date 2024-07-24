@@ -19,27 +19,30 @@ $base: (
   facebook: #456CBA,
   x: #000000,
   tiktok: #000000,
-  twitch: #456CBA
-) !default;
+  twitch: #456CBA) !default;
 
 @function adjust-color($i, $color) {
-  @return mix(if($i > 50, white, black), $color, abs($i - 50) * 2);
+  @return mix(if($i > 50, white, black), $color, abs($i - 50) * 2 * 1%);
 }
 
 :root {
   @for $i from 0 through 100 {
     $brightness: $i * 1%;
-    @if $i % 5 == 0 {
+
+    @if $i % 5==0 {
       @each $name, $color in $base {
         $adjustedName: #{$name}-#{$i};
         $adjustedColor: adjust-color($i, $color);
         --#{"" + $adjustedName}: #{$adjustedColor};
+
         .#{"" + $adjustedName} {
           color: var(--#{$adjustedName}) !important;
         }
+
         .background-#{"" + $adjustedName} {
           background-color: var(--#{$adjustedName}) !important;
         }
+
         .border-#{"" + $adjustedName} {
           border-color: var(--#{$adjustedName}) !important;
         }
