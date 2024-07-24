@@ -72,27 +72,9 @@ If necessary remember to declare the fonts contained in the `/dist/fonts` folder
 
 Use [NGX-CSS](https://github.com/squidit/ngx-css)
 
-#### React.js Install
+#### React Install
 
-After install, import CSS into your global style:
-
-```scss
-  // Overwrite default font path
-  $fontsFolderPath: '~@squidit/css/dist/fonts';
-  // Import all Framework Styles
-  @import '~@squidit/css/src/scss/squid.scss';
-```
-
-And in your `index.{jsx,tsx}` on root just add:
-
-```js
-  if (typeof window !== 'undefined') {
-    require('@squidit/css/dist/js/squid.min.js')
-  }
-```
-
-Obs: Probably components that need javascript will not work as they are loaded in onload event. They need some implementation within React.
-A library for React will be developed soon.
+Use [React-CSS](https://github.com/squidit/react-css)
 
 #### Vue.js Install
 
