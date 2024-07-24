@@ -2,14 +2,14 @@
   "name": "@squidit/css",
   "version": "2.0.4",
   "scripts": {
-    "prepare": "npm install -g husky eslint sass gulp uglify-js && husky install",
-    "start": "gulp watch",
+    "prepare": "npm install -g husky eslint chokidar sass uglify-js && husky install",
+    "start": "npm-run-all --parallel css:watch js:watch",
     "css": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed && sass src/scss/squid-minor.scss:dist/css/squid-minor.min.css --style compressed && sass src/scss/squid-components.scss:dist/css/squid-components.min.css --style compressed",
     "css:watch": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed --watch",
     "css:minor:watch": "sass src/scss/squid-minor.scss:dist/css/squid-minor.min.css --style compressed --watch",
     "css:components:watch": "sass src/scss/squid-components.scss:dist/css/squid-components.min.css --style compressed --watch",
     "js": "uglifyjs src/js/*.js src/js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
-    "js:watch": "gulp watch-js",
+    "js:watch": "chokidar 'src/js/*.js' 'src/js/**/*.js' -c 'npm run js'",
     "dist": "npm-run-all --parallel css js",
     "lint": "npx eslint ./src/js/**/*.js"
   },
@@ -20,21 +20,18 @@
     "src/js/**/*.{js,map}",
     "src/scss/**/*.scss"
   ],
-  "dependencies": {},
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.0",
+    "chokidar-cli": "^3.0.0",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
     "husky": "^6.0.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.49.9",
-    "uglify-js": "^3.13.5"
+    "uglify-js": "^3.19.0"
   },
   "keywords": [
     "css",
