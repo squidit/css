@@ -8,7 +8,7 @@
     "css:watch": "sass src/scss/squid.scss:dist/css/squid.min.css --style compressed --watch",
     "css:minor:watch": "sass src/scss/squid-minor.scss:dist/css/squid-minor.min.css --style compressed --watch",
     "css:components:watch": "sass src/scss/squid-components.scss:dist/css/squid-components.min.css --style compressed --watch",
-    "css:dev": "sass src/scss/squid.scss:dist/css/squid.css && sass src/scss/squid-minor.scss:dist/css/squid-minor.css && sass src/scss/squid-components.scss:dist/css/squid-components.css",
+    "css:dev": "sass src/scss/squid.scss:dist/css/squid.css --watch && sass src/scss/squid-minor.scss:dist/css/squid-minor.css --watch && sass src/scss/squid-components.scss:dist/css/squid-components.css --watch",
     "js": "uglifyjs src/js/*.js src/js/**/*.js --compress --mangle --source-map --output dist/js/squid.min.js",
     "js:watch": "chokidar 'src/js/*.js' 'src/js/**/*.js' -c 'npm run js:dev'",
     "js:dev": "uglifyjs src/js/*.js src/js/**/*.js --output dist/js/squid.js --beautify",
