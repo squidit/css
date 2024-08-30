@@ -669,7 +669,7 @@ window.onpopstate = e => {
         e.target.setAttribute("data-tooltip-open", tooltipCount);
         tooltipArrow.className = "tooltip-arrow";
         tooltip.appendChild(tooltipArrow);
-        tooltip.append(e.target.getAttribute("data-tooltip"));
+        tooltip.innerHTML += (e.target.getAttribute("data-tooltip"));
         document.body.appendChild(tooltip);
         const posHorizontal = pos.split(" ")[0];
         const posVertical = pos.split(" ")[1];
@@ -763,9 +763,9 @@ function renderButtons() {
             examples.style.gap = "1.5rem";
             for (const button of buttons) {
                 const buttonElement = document.createElement("button");
-                buttonElement.className = `button 
-          ${[ "disabled", "rounded" ].includes(button) ? "button-squid" : button ? "button-" + button : ""} 
-          ${type === "Inverted" ? type.toLowerCase() : ""} 
+                buttonElement.className = `button
+          ${[ "disabled", "rounded" ].includes(button) ? "button-squid" : button ? "button-" + button : ""}
+          ${type === "Inverted" ? type.toLowerCase() : ""}
           ${[ "disabled", "rounded" ].includes(button) ? button : ""}
         `;
                 buttonElement.style.width = "100%";
