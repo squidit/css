@@ -1,0 +1,48 @@
+.flow {
+  width: 100%;
+  ul {
+    padding: 0.2rem;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    position: relative;
+    gap: 1rem;
+
+    li {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      overflow: hidden;
+      border-radius: 20px;
+      background-color: var(--color_border_box_neutral_primary);
+      flex-shrink: 0;
+      min-width: 12px;
+
+      &.active {
+        background: var(--primary_color);
+        width: -webkit-fill-available;
+        border-radius: 20px;
+        flex-shrink: 1;
+      }
+
+      span {
+        display: block;
+        margin: 0;
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &.pointer {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
