@@ -14299,7 +14299,7 @@ button.readonly.textarea {
 }
 .flow ul li.active {
   background: var(--primary_color);
-  width: -webkit-fill-available;
+  flex-grow: 1;
   border-radius: 20px;
   flex-shrink: 1;
 }
