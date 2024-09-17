@@ -14295,6 +14295,7 @@ button.readonly.textarea {
   background-color: var(--color_border_box_neutral_primary);
   flex-shrink: 0;
   min-width: 12px;
+  min-height: 12px;
 }
 .flow ul li.active {
   background: var(--primary_color);
