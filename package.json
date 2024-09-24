@@ -1,6 +1,6 @@
 {
   "name": "@squidit/css",
-  "version": "2.0.6",
+  "version": "2.1.0",
   "scripts": {
     "prepare": "npm install -g husky eslint chokidar sass uglify-js && husky install",
     "start": "npm-run-all --parallel css:dev js:watch",
