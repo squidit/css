@@ -1,13 +1,19 @@
 @charset "UTF-8";
 body,
 html {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   max-width: 100%;
   display: block;
   position: relative;
 }
 
+@media (min-width: 992px) and (max-width: 1399px) {
+  body,
+  html {
+    font-size: 12px;
+  }
+}
 * {
   min-width: 0;
   min-height: 0;
@@ -14267,6 +14273,52 @@ button.readonly.textarea {
   overflow: hidden;
 }
 .steps ul li span.pointer {
+  cursor: pointer;
+}
+
+.flow {
+  width: 100%;
+}
+.flow ul {
+  padding: 0.2rem;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  position: relative;
+  gap: 1rem;
+}
+.flow ul li {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: var(--color_border_box_neutral_primary);
+  flex-shrink: 0;
+  min-width: 12px;
+  min-height: 12px;
+}
+.flow ul li.active {
+  background: var(--primary_color);
+  flex-grow: 1;
+  border-radius: 20px;
+  flex-shrink: 1;
+}
+.flow ul li span {
+  display: block;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.flow ul li span.pointer {
   cursor: pointer;
 }
 
