@@ -669,7 +669,7 @@ window.onpopstate = e => {
         e.target.setAttribute("data-tooltip-open", tooltipCount);
         tooltipArrow.className = "tooltip-arrow";
         tooltip.appendChild(tooltipArrow);
-        tooltip.append(e.target.getAttribute("data-tooltip"));
+        tooltip.innerHTML += e.target.getAttribute("data-tooltip");
         document.body.appendChild(tooltip);
         const posHorizontal = pos.split(" ")[0];
         const posVertical = pos.split(" ")[1];
