@@ -13030,41 +13030,28 @@ button.readonly.textarea {
 }
 .wrapper-selectors input + label.checkbox {
   width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  line-height: 1.5;
   text-align: center;
   border-radius: 2px;
   border: 1px solid var(--color_border_input);
   background: var(--color_bg_input);
   color: var(--color_text-icon_neutral_secondary);
-  font-size: 16px;
+  font-size: 12px;
   transition: all 0.3s ease;
   font-weight: 700;
-  display: inline-block;
   margin-right: 0.5rem;
 }
 .wrapper-selectors input + label.checkbox::after {
-  display: block;
   transition: all 0.3s ease;
   content: "✓";
   color: white;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.5;
-  height: 20px;
-  width: 20px;
-  text-align: center;
-  left: 0;
-  top: 0;
   opacity: 0;
-  position: relative;
-  margin: 0;
 }
 .wrapper-selectors input[type=radio] + label.checkbox {
+  height: 20px;
   border-radius: 50%;
 }
 .wrapper-selectors input[type=radio] + label.checkbox::after {
+  display: block;
   content: " ";
   height: 10px;
   width: 10px;
@@ -13109,14 +13096,16 @@ button.readonly.textarea {
   border-radius: 96px;
 }
 .wrapper-selectors.toggle input + label.checkbox::after {
+  display: block;
   opacity: 1;
   content: " ";
   height: 18px;
   width: 18px;
   border-radius: 50%;
   background: white;
-  left: 4px;
+  left: 2px;
   top: 2px;
+  position: relative;
 }
 .wrapper-selectors.toggle input:checked + label.checkbox::after {
   left: 26px;
