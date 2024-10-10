@@ -50,10 +50,10 @@ $spacers: map-merge(
       .gap#{$infix}-#{$size} {
         gap: $length !important;
       }
-      .gapx#{$infix}-#{$size} {
+      .column-gap#{$infix}-#{$size} {
         column-gap: $length !important;
       }
-      .gapy#{$infix}-#{$size} {
+      .row-gap#{$infix}-#{$size} {
         row-gap: $length !important;
       }
     }
