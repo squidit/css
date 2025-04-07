@@ -1,0 +1,24 @@
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+}
+
+.skeleton::after {
+  background: linear-gradient(
+    90deg,
+    rgba(215, 215, 215,) 0%,
+    rgb(245, 245, 245) 50%,
+    rgba(215, 215, 215,) 100%
+  );
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+}
