@@ -1,78 +1,81 @@
 /** @jsx jsx */
-import { theme, useConfig, ComponentsProvider } from 'docz'
-import { jsx, Styled, ThemeProvider } from 'theme-ui'
-import defaultTheme from '~theme'
-import components from '~components'
+import { theme, useConfig, ComponentsProvider } from "docz";
+import { jsx, Styled, ThemeProvider } from "theme-ui";
+import defaultTheme from "~theme";
+import components from "~components";
 
 const themeConfig = {
   ...defaultTheme,
   colors: {
     ...defaultTheme.colors,
-    white: '#fff',
-    primary: 'var(--purple-40)',
-    text: 'var(--text_color)',
-    muted: 'var(--gray)',
-    link: 'var(--purple-40)',
-    background: 'var(--background_secondary)',
-    border: 'var(--border_color)',
+    white: "#fff",
+    primary: "var(--pink-40)",
+    text: "var(--text_color)",
+    muted: "var(--gray)",
+    link: "var(--pink-40)",
+    background: "var(--background_secondary)",
+    border: "var(--border_color)",
     sidebar: {
-      bg: 'var(--background_secondary)',
-      navGroup: 'var(--text_color)',
-      navLink: 'var(--text_color)',
-      navLinkActive: 'var(--purple-40)',
-      tocLink: 'var(--text_color)',
-      tocLinkActive: 'var(--purple-40)',
+      bg: "var(--background_secondary)",
+      navGroup: "var(--text_color)",
+      navLink: "var(--text_color)",
+      navLinkActive: "var(--pink-40)",
+      tocLink: "var(--text_color)",
+      tocLinkActive: "var(--pink-40)"
     },
     header: {
-      bg:  'var(--background_secondary)',
-      text: 'var(--text_color)',
-      border: 'var(--border_color)',
+      bg: "var(--background_secondary)",
+      text: "var(--text_color)",
+      border: "var(--border_color)",
       button: {
-        bg: 'var(--black)',
-        color: 'var(--white)',
-      },
+        bg: "var(--black)",
+        color: "var(--white)"
+      }
     },
     modes: {
       dark: {
         ...defaultTheme.colors.modes.dark,
-        primary: 'var(--pink)',
-        link: 'var(--purple-70)',
-        text: 'var(--text_color)',
-        muted: 'var(--gray)',
-        border: 'var(--border_color)',
-        background: 'var(--background_secondary)',
+        primary: "var(--pink)",
+        link: "var(--pink-70)",
+        text: "var(--text_color)",
+        muted: "var(--gray)",
+        border: "var(--border_color)",
+        background: "var(--background_secondary)",
         sidebar: {
-          bg: 'var(--background_secondary)',
-          navGroup: 'var(--text_color)',
-          navLink: 'var(--text_color)',
-          navLinkActive: 'var(--purple-70)',
-          tocLink: 'var(--text_color)',
-          tocLinkActive: 'var(--purple-70)',
+          bg: "var(--background_secondary)",
+          navGroup: "var(--text_color)",
+          navLink: "var(--text_color)",
+          navLinkActive: "var(--pink-70)",
+          tocLink: "var(--text_color)",
+          tocLinkActive: "var(--pink-70)"
         },
         header: {
-          bg:  'var(--background_secondary)',
-          text: 'var(--text_color)',
-          border: 'var(--border_color)',
+          bg: "var(--background_secondary)",
+          text: "var(--text_color)",
+          border: "var(--border_color)",
           button: {
-            bg: 'var(--white)',
-            color: 'var(--black)',
-          },
-        },
-      },
-    },
-  },
-}
+            bg: "var(--white)",
+            color: "var(--black)"
+          }
+        }
+      }
+    }
+  }
+};
 
 const Theme = ({ children }) => {
-  const config = useConfig()
+  const config = useConfig();
   if (typeof document !== `undefined`) {
-    const html = document.getElementsByTagName('html')[0]
-    let colorMode = 'light'
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      colorMode = 'dark'
+    const html = document.getElementsByTagName("html")[0];
+    let colorMode = "light";
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      colorMode = "dark";
     }
-    document.body.classList.add('scrollbar')
-    html.classList.add(colorMode)
+    document.body.classList.add("scrollbar");
+    html.classList.add(colorMode);
   }
   const style = `
     .grid-box {
@@ -173,16 +176,16 @@ const Theme = ({ children }) => {
     .dropdown li:last-child {
       margin: 0 0 -15px 0;
     }
-  `
+  `;
   return (
     <ThemeProvider theme={config.themeConfig}>
-      <style dangerouslySetInnerHTML={{__html: style}} />
+      <style dangerouslySetInnerHTML={{ __html: style }} />
       <ComponentsProvider components={components}>
         {/* eslint-disable-next-line */}
         <Styled.root>{children}</Styled.root>
       </ComponentsProvider>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default theme(themeConfig)(Theme)
+export default theme(themeConfig)(Theme);

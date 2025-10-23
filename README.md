@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://squidit.com.br" target='_blank'>
-    <img src="https://storage.googleapis.com/squid-static/wake-creators/logos/Logo_WakeCreators_RGB_FundoBranco_SemFundo.svg" alt="Squid logo">
+    <img src="https://storage.googleapis.com/squid-static/squid/logos/logoSquid-pink.svg" alt="Squid logo">
   </a>
 </p>
 
@@ -44,9 +44,9 @@ You can easily install with npm
 
 or download [here](https://github.com/squidit/css/releases)
 
-or use CDN`https://www.jsdelivr.com/package/gh/squidit/css`*
+or use CDN`https://www.jsdelivr.com/package/gh/squidit/css`\*
 
-or use `https://css-cdn.squidit.com.br`*
+or use `https://css-cdn.squidit.com.br`\*
 
 -> Use the path from references above on CDN's to find the files. Exemple: `https://css-cdn.squidit.com.br/dist/css/squid.min.css`
 
@@ -59,11 +59,11 @@ If necessary remember to declare the fonts contained in the `/dist/fonts` folder
 <html>
   <head>
     ...
-    <link rel="stylesheet" href="path-to-files/dist/css/squid.min.css">
+    <link rel="stylesheet" href="path-to-files/dist/css/squid.min.css" />
   </head>
   <body>
     ...
-    <script defer src='path-to-files/dist/js/squid.min.js'></script>
+    <script defer src="path-to-files/dist/js/squid.min.js"></script>
   </body>
 </html>
 ```
@@ -96,22 +96,26 @@ See Intructions [here](https://github.com/squidit/css/blob/master/src/docs/READM
 
 The official CDN for Squid CSS is jsdelivr, which is even where the framework documentation consumes assets.
 
-On [GitHub Releases](https://github.com/squidit/css/releases) create a new release, with a new tag version** and using `master` branch
+On [GitHub Releases](https://github.com/squidit/css/releases) create a new release, with a new tag version\*\* and using `master` branch
 
 ### jsdelivr usage
 
 ```html
 ...
-<link src="https://cdn.jsdelivr.net/gh/squidit/css@latest/dist/css/squid.min.css" rel=stylesheet>
+<link
+  src="https://cdn.jsdelivr.net/gh/squidit/css@latest/dist/css/squid.min.css"
+  rel="stylesheet"
+/>
 ...
-<script src='https://cdn.jsdelivr.net/gh/squidit/css@latest/dist/js/squid.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/squidit/css@latest/dist/js/squid.min.js"></script>
 ```
 
 ### Deploy yo NPM
 
 > Just draft a new release here on Github and an actions will starts
 
-**Important to use the same tag as package.json
+\*\*Important to use the same tag as package.json
+
 ## Documentation
 
 See Docs [here](https://css.squidit.com.br)
