@@ -1,6 +1,6 @@
 {
   "name": "@squidit/css",
-  "version": "2.1.43",
+  "version": "2.2.0",
   "scripts": {
     "prepare": "npm install -g husky eslint chokidar sass uglify-js && husky install",
     "start": "npm-run-all --parallel css:dev js:watch",
@@ -46,6 +46,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/squidit/front-end.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "main": "dist/js/squid.min.js",
   "style": "dist/css/squid.min.css",
